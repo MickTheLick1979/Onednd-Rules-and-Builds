@@ -1,0 +1,20 @@
+# Normalise text files to LF in repo; Git will check out native endings if configured.
+*               text=auto eol=lf
+
+# Enforce LF for data/code we diff a lot (deterministic across OS).
+*.json          text eol=lf
+*.md            text eol=lf
+*.py            text eol=lf
+*.ps1           text eol=lf
+*.yml           text eol=lf
+*.yaml          text eol=lf
+
+# Keep Windows batch files with CRLF, to avoid execution quirks.
+*.bat           text eol=crlf
+
+# Treat these as binary (no EOL munging).
+*.png           binary
+*.jpg           binary
+*.jpeg          binary
+*.webp          binary
+*.pdf           binary
