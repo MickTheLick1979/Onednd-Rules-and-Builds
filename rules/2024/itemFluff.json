@@ -712,6 +712,20 @@
       ]
     },
     {
+      "name": "Cloak of Many Fashions",
+      "source": "XGE",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XGE/Cloak of Many Fashions.webp"
+          },
+          "credit": "Brian Valeza"
+        }
+      ]
+    },
+    {
       "name": "Cloak of Protection",
       "source": "XDMG",
       "images": [
@@ -979,6 +993,20 @@
             "type": "internal",
             "path": "items/XDMG/Dread Helm.webp"
           }
+        }
+      ]
+    },
+    {
+      "name": "Dread Helm",
+      "source": "XGE",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XGE/Dread Helm.webp"
+          },
+          "credit": "Daarken"
         }
       ]
     },
@@ -2639,6 +2667,20 @@
       ]
     },
     {
+      "name": "Orb of Direction",
+      "source": "XGE",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XGE/Orb of Direction.webp"
+          },
+          "credit": "Irina Nordsol"
+        }
+      ]
+    },
+    {
       "name": "Orb of Dragonkind",
       "source": "XDMG",
       "images": [
@@ -2719,6 +2761,20 @@
       ]
     },
     {
+      "name": "Pipe of Smoke Monsters",
+      "source": "XGE",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XGE/Pipe of Smoke Monsters.webp"
+          },
+          "credit": "David René Christensen"
+        }
+      ]
+    },
+    {
       "name": "Pipes of Haunting",
       "source": "XDMG",
       "images": [
@@ -2782,6 +2838,20 @@
             "type": "internal",
             "path": "items/XDMG/Pole of Collapsing.webp"
           }
+        }
+      ]
+    },
+    {
+      "name": "Pole of Collapsing",
+      "source": "XGE",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XGE/Pole of Collapsing.webp"
+          },
+          "credit": "Paul Scott Canavan"
         }
       ]
     },
@@ -4177,6 +4247,20 @@
       ]
     },
     {
+      "name": "Talking Doll",
+      "source": "XGE",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XGE/Talking Doll.webp"
+          },
+          "credit": "Matt Stewart"
+        }
+      ]
+    },
+    {
       "name": "Tentacle Rod",
       "source": "XDMG",
       "images": [
@@ -4287,6 +4371,19 @@
             "path": "items/XPHB/Trinkets 2.webp"
           },
           "credit": "CoupleOfKooks"
+        }
+      ]
+    },
+    {
+      "name": "Unbreakable Arrow",
+      "source": "XGE",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XGE/Unbreakable Arrow.webp"
+          }
         }
       ]
     },

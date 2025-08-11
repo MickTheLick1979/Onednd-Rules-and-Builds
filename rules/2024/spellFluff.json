@@ -85,6 +85,19 @@
       ]
     },
     {
+      "name": "Control Flames",
+      "source": "XGE",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/XGE/Control Flames.webp"
+          }
+        }
+      ]
+    },
+    {
       "name": "Control Weather",
       "source": "XPHB",
       "images": [
@@ -95,6 +108,19 @@
             "path": "spells/XPHB/Control Weather.webp"
           },
           "credit": "Alexandre Honoré"
+        }
+      ]
+    },
+    {
+      "name": "Danse Macabre",
+      "source": "XGE",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/XGE/Danse Macabre.webp"
+          }
         }
       ]
     },
@@ -169,6 +195,19 @@
       ]
     },
     {
+      "name": "Erupting Earth",
+      "source": "XGE",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/XGE/Erupting Earth.webp"
+          }
+        }
+      ]
+    },
+    {
       "name": "Evard's Black Tentacles",
       "source": "XPHB",
       "images": [
@@ -193,6 +232,19 @@
             "path": "spells/XPHB/Find Familiar.webp"
           },
           "credit": "Brian Valeza"
+        }
+      ]
+    },
+    {
+      "name": "Find Greater Steed",
+      "source": "XGE",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/XGE/Find Greater Steed.webp"
+          }
         }
       ]
     },
@@ -281,6 +333,19 @@
       ]
     },
     {
+      "name": "Infernal Calling",
+      "source": "XGE",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/XGE/Infernal Calling.webp"
+          }
+        }
+      ]
+    },
+    {
       "name": "Jallarzi's Storm of Radiance",
       "source": "XPHB",
       "images": [
@@ -347,6 +412,19 @@
             "path": "spells/XPHB/Melf's Acid Arrow.webp"
           },
           "credit": "Martin Mottet"
+        }
+      ]
+    },
+    {
+      "name": "Mighty Fortress",
+      "source": "XGE",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/XGE/Mighty Fortress.webp"
+          }
         }
       ]
     },
@@ -421,6 +499,19 @@
       ]
     },
     {
+      "name": "Shadow Blade",
+      "source": "XGE",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/XGE/Shadow Blade.webp"
+          }
+        }
+      ]
+    },
+    {
       "name": "Shapechange",
       "source": "XPHB",
       "images": [
@@ -473,6 +564,19 @@
             "path": "spells/XPHB/Spiritual Weapon.webp"
           },
           "credit": "Justine Cruz"
+        }
+      ]
+    },
+    {
+      "name": "Storm Sphere",
+      "source": "XGE",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/XGE/Storm Sphere.webp"
+          }
         }
       ]
     },
@@ -603,6 +707,19 @@
       ]
     },
     {
+      "name": "Tiny Servant",
+      "source": "XGE",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/XGE/Tiny Servant.webp"
+          }
+        }
+      ]
+    },
+    {
       "name": "Transport via Plants",
       "source": "XPHB",
       "images": [
@@ -683,6 +800,19 @@
             "path": "spells/XPHB/Water Walk.webp"
           },
           "credit": "Andrew Mar"
+        }
+      ]
+    },
+    {
+      "name": "Whirlwind",
+      "source": "XGE",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/XGE/Whirlwind.webp"
+          }
         }
       ]
     },

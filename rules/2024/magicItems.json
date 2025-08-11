@@ -195,6 +195,485 @@
       ]
     },
     {
+      "name": "Arcana - Legendary",
+      "source": "XDMG",
+      "page": 326,
+      "type": "arcana.legendary",
+      "table": [
+        {
+          "min": 1,
+          "max": 4,
+          "item": "{@item Apparatus of Kwalish|XDMG}"
+        },
+        {
+          "min": 5,
+          "max": 8,
+          "item": "{@item Cloak of Invisibility|XDMG}"
+        },
+        {
+          "min": 9,
+          "max": 12,
+          "item": "{@item Crystal Ball of Mind Reading|XDMG}"
+        },
+        {
+          "min": 13,
+          "max": 16,
+          "item": "{@item Crystal Ball of Telepathy|XDMG}"
+        },
+        {
+          "min": 17,
+          "max": 20,
+          "item": "{@item Crystal Ball of True Seeing|XDMG}"
+        },
+        {
+          "min": 21,
+          "max": 22,
+          "item": "{@item Cubic Gate|XDMG}"
+        },
+        {
+          "min": 23,
+          "max": 23,
+          "item": "{@item Deck of Many Things|XDMG}"
+        },
+        {
+          "min": 24,
+          "max": 27,
+          "item": "{@item Enspelled Staff|XDMG} (level 6, 7, or 8 spell)",
+          "choose": {
+            "fromItems": [
+              "Enspelled Staff (Level 6)|XDMG",
+              "Enspelled Staff (Level 7)|XDMG",
+              "Enspelled Staff (Level 8)|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 28,
+          "max": 31,
+          "item": "{@item Ioun Stone|XDMG} ({@item Ioun Stone, Greater Absorption|XDMG|greater absorption}, {@item Ioun Stone, Mastery|XDMG|mastery}, or {@item Ioun Stone, Regeneration|XDMG|regeneration})",
+          "choose": {
+            "fromItems": [
+              "Ioun Stone, Greater Absorption|XDMG",
+              "Ioun Stone, Mastery|XDMG",
+              "Ioun Stone, Regeneration|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 32,
+          "max": 33,
+          "item": "{@item Iron Flask|XDMG}"
+        },
+        {
+          "min": 34,
+          "max": 41,
+          "item": "{@item Potion of Storm Giant Strength|XDMG|Potion of Storm Giant Strength (storm)}"
+        },
+        {
+          "min": 42,
+          "max": 45,
+          "item": "{@item Ring of Djinni Summoning|XDMG}"
+        },
+        {
+          "min": 46,
+          "max": 49,
+          "item": "{@item Ring of Elemental Command|XDMG} ({@item Ring of Elemental Command (Air)|XDMG|air}, {@item Ring of Elemental Command (Earth)|XDMG|earth}, {@item Ring of Elemental Command (Fire)|XDMG|fire}, or {@item Ring of Elemental Command (Water)|XDMG|water})",
+          "choose": {
+            "fromItems": [
+              "Ring of Elemental Command (Air)|XDMG",
+              "Ring of Elemental Command (Earth)|XDMG",
+              "Ring of Elemental Command (Fire)|XDMG",
+              "Ring of Elemental Command (Water)|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 50,
+          "max": 53,
+          "item": "{@item Ring of Invisibility|XDMG}"
+        },
+        {
+          "min": 54,
+          "max": 57,
+          "item": "{@item Ring of Spell Turning|XDMG}"
+        },
+        {
+          "min": 58,
+          "max": 58,
+          "item": "{@item Ring of Three Wishes|XDMG}"
+        },
+        {
+          "min": 59,
+          "max": 59,
+          "item": "{@item Robe of the Archmagi|XDMG}"
+        },
+        {
+          "min": 60,
+          "max": 61,
+          "item": "{@item Scroll of Titan Summoning|XDMG}"
+        },
+        {
+          "min": 62,
+          "max": 65,
+          "item": "{@item Sovereign Glue|XDMG}"
+        },
+        {
+          "min": 66,
+          "max": 83,
+          "item": "{@item Spell Scroll (Level 9)|XDMG|Spell Scroll (level 9} spell)"
+        },
+        {
+          "min": 84,
+          "max": 84,
+          "item": "{@item Sphere of Annihilation|XDMG}"
+        },
+        {
+          "min": 85,
+          "max": 85,
+          "item": "{@item Staff of the Magi|XDMG}"
+        },
+        {
+          "min": 86,
+          "max": 88,
+          "item": "{@item Talisman of the Sphere|XDMG}"
+        },
+        {
+          "min": 89,
+          "max": 92,
+          "item": "{@item Tome of the Stilled Tongue|XDMG}"
+        },
+        {
+          "min": 93,
+          "max": 96,
+          "item": "{@item Universal Solvent|XDMG}"
+        },
+        {
+          "min": 97,
+          "max": 100,
+          "item": "{@item Well of Many Worlds|XDMG}"
+        }
+      ]
+    },
+    {
+      "name": "Arcana - Rare",
+      "source": "XDMG",
+      "page": 326,
+      "type": "arcana.rare",
+      "table": [
+        {
+          "min": 1,
+          "max": 1,
+          "item": "{@item Bag of Beans|XDMG}"
+        },
+        {
+          "min": 2,
+          "max": 3,
+          "item": "{@item Bead of Force|XDMG}"
+        },
+        {
+          "min": 4,
+          "max": 4,
+          "item": "{@item Bowl of Commanding Water Elementals|XDMG}"
+        },
+        {
+          "min": 5,
+          "max": 6,
+          "item": "{@item Bracers of Defense|XDMG}"
+        },
+        {
+          "min": 7,
+          "max": 7,
+          "item": "{@item Brazier of Commanding Fire Elementals|XDMG}"
+        },
+        {
+          "min": 8,
+          "max": 9,
+          "item": "{@item Cape of the Mountebank|XDMG}"
+        },
+        {
+          "min": 10,
+          "max": 10,
+          "item": "{@item Censer of Controlling Air Elementals|XDMG}"
+        },
+        {
+          "min": 11,
+          "max": 12,
+          "item": "{@item Chime of Opening|XDMG}"
+        },
+        {
+          "min": 13,
+          "max": 14,
+          "item": "{@item Cloak of Displacement|XDMG}"
+        },
+        {
+          "min": 15,
+          "max": 16,
+          "item": "{@item Cloak of the Bat|XDMG}"
+        },
+        {
+          "min": 17,
+          "max": 17,
+          "item": "{@item Cube of Force|XDMG}"
+        },
+        {
+          "min": 18,
+          "max": 18,
+          "item": "{@item Cube of Summoning|XDMG}"
+        },
+        {
+          "min": 19,
+          "max": 19,
+          "item": "{@item Daern's Instant Fortress|XDMG}"
+        },
+        {
+          "min": 20,
+          "max": 21,
+          "item": "{@item Enspelled Staff|XDMG} (level 2 or 3 spell)",
+          "choose": {
+            "fromItems": [
+              "Enspelled Staff (Level 2)|XDMG",
+              "Enspelled Staff (Level 3)|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 22,
+          "max": 23,
+          "item": "{@item Figurine of Wondrous Power|XDMG} ({@item Figurine of Wondrous Power, Bronze Griffon|XDMG|bronze griffon}, {@item Figurine of Wondrous Power, Ebony Fly|XDMG|ebony fly}, {@item Figurine of Wondrous Power, Golden Lions|XDMG|golden lions}, {@item Figurine of Wondrous Power, Ivory Goats|XDMG|ivory goats}, {@item Figurine of Wondrous Power, Marble Elephant|XDMG|marble elephant}, {@item Figurine of Wondrous Power, Onyx Dog|XDMG|onyx dog}, or {@item Figurine of Wondrous Power, Serpentine Owl|XDMG|serpentine owl})",
+          "choose": {
+            "fromItems": [
+              "Figurine of Wondrous Power, Bronze Griffon|XDMG",
+              "Figurine of Wondrous Power, Ebony Fly|XDMG",
+              "Figurine of Wondrous Power, Golden Lions|XDMG",
+              "Figurine of Wondrous Power, Ivory Goats|XDMG",
+              "Figurine of Wondrous Power, Marble Elephant|XDMG",
+              "Figurine of Wondrous Power, Onyx Dog|XDMG",
+              "Figurine of Wondrous Power, Serpentine Owl|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 24,
+          "max": 25,
+          "item": "{@item Folding Boat|XDMG}"
+        },
+        {
+          "min": 26,
+          "max": 27,
+          "item": "{@item Gem of Seeing|XDMG}"
+        },
+        {
+          "min": 28,
+          "max": 28,
+          "item": "{@item Helm of Teleportation|XDMG}"
+        },
+        {
+          "min": 29,
+          "max": 30,
+          "item": "{@item Heward's Handy Haversack|XDMG}"
+        },
+        {
+          "min": 31,
+          "max": 32,
+          "item": "{@item Horseshoes of Speed|XDMG}"
+        },
+        {
+          "min": 33,
+          "max": 34,
+          "item": "{@item Ioun Stone, Reserve|XDMG|Ioun Stone (reserve)}"
+        },
+        {
+          "min": 35,
+          "max": 35,
+          "item": "{@item Iron Bands of Bilarro|XDMG}"
+        },
+        {
+          "min": 36,
+          "max": 36,
+          "item": "{@item Mantle of Spell Resistance|XDMG}"
+        },
+        {
+          "min": 37,
+          "max": 38,
+          "item": "{@item Necklace of Fireballs|XDMG}"
+        },
+        {
+          "min": 39,
+          "max": 39,
+          "item": "{@item Oil of Etherealness|XDMG}"
+        },
+        {
+          "min": 40,
+          "max": 40,
+          "item": "{@item Portable Hole|XDMG}"
+        },
+        {
+          "min": 41,
+          "max": 42,
+          "item": "{@item Potion of Clairvoyance|XDMG}"
+        },
+        {
+          "min": 43,
+          "max": 44,
+          "item": "{@item Potion of Diminution|XDMG}"
+        },
+        {
+          "min": 45,
+          "max": 46,
+          "item": "{@item Potion of Gaseous Form|XDMG}"
+        },
+        {
+          "min": 47,
+          "max": 47,
+          "item": "{@item Potion of Fire Giant Strength|XDMG|Potion of Giant Strength (fire)}"
+        },
+        {
+          "min": 48,
+          "max": 49,
+          "item": "{@item Potion of Giant Strength|XDMG} ({@item Potion of Frost Giant Strength|XDMG|frost} or {@item Potion of Stone Giant Strength|XDMG|stone})",
+          "choose": {
+            "fromItems": [
+              "Potion of Frost Giant Strength|XDMG",
+              "Potion of Stone Giant Strength|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 50,
+          "max": 51,
+          "item": "{@item Potion of Heroism|XDMG}"
+        },
+        {
+          "min": 52,
+          "max": 53,
+          "item": "{@item Potion of Invisibility|XDMG}"
+        },
+        {
+          "min": 54,
+          "max": 55,
+          "item": "{@item Potion of Invulnerability|XDMG}"
+        },
+        {
+          "min": 56,
+          "max": 57,
+          "item": "{@item Potion of Mind Reading|XDMG}"
+        },
+        {
+          "min": 58,
+          "max": 59,
+          "item": "{@item Quaal's Feather Token|XDMG} ({@item Quaal's Feather Token, Bird|XDMG|bird}, {@item Quaal's Feather Token, Swan Boat|XDMG|swan boat}, or {@item Quaal's Feather Token, Whip|XDMG|whip})",
+          "choose": {
+            "fromItems": [
+              "Quaal's Feather Token, Bird|XDMG",
+              "Quaal's Feather Token, Swan Boat|XDMG",
+              "Quaal's Feather Token, Whip|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 60,
+          "max": 61,
+          "item": "{@item Ring of Feather Falling|XDMG}"
+        },
+        {
+          "min": 62,
+          "max": 62,
+          "item": "{@item Ring of Spell Storing|XDMG}"
+        },
+        {
+          "min": 63,
+          "max": 63,
+          "item": "{@item Ring of X-ray Vision|XDMG}"
+        },
+        {
+          "min": 64,
+          "max": 65,
+          "item": "{@item Robe of Eyes|XDMG}"
+        },
+        {
+          "min": 66,
+          "max": 66,
+          "item": "{@item Rod of Rulership|XDMG}"
+        },
+        {
+          "min": 67,
+          "max": 68,
+          "item": "{@item +2 Rod of the Pact Keeper|XDMG|Rod of the Pact Keeper, +2}"
+        },
+        {
+          "min": 69,
+          "max": 70,
+          "item": "{@item Scroll of Protection|XDMG}"
+        },
+        {
+          "min": 71,
+          "max": 75,
+          "item": "{@item Spell Scroll|XDMG} ({@item Spell Scroll (Level 4)|XDMG|level 4} or {@item Spell Scroll (Level 5)|XDMG|level 5} spell)",
+          "choose": {
+            "fromItems": [
+              "Spell Scroll (Level 4)|XDMG",
+              "Spell Scroll (Level 5)|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 76,
+          "max": 77,
+          "item": "{@item Staff of Charming|XDMG}"
+        },
+        {
+          "min": 78,
+          "max": 79,
+          "item": "{@item Staff of Swarming Insects|XDMG}"
+        },
+        {
+          "min": 80,
+          "max": 81,
+          "item": "{@item Staff of Withering|XDMG}"
+        },
+        {
+          "min": 82,
+          "max": 82,
+          "item": "{@item Stone of Controlling Earth Elementals|XDMG}"
+        },
+        {
+          "min": 83,
+          "max": 84,
+          "item": "{@item Wand of Binding|XDMG}"
+        },
+        {
+          "min": 85,
+          "max": 86,
+          "item": "{@item Wand of Fear|XDMG}"
+        },
+        {
+          "min": 87,
+          "max": 90,
+          "item": "{@item Wand of Fireballs|XDMG}"
+        },
+        {
+          "min": 91,
+          "max": 94,
+          "item": "{@item Wand of Lightning Bolts|XDMG}"
+        },
+        {
+          "min": 95,
+          "max": 96,
+          "item": "{@item +2 Wand of the War Mage|XDMG|Wand of the War Mage, +2}"
+        },
+        {
+          "min": 97,
+          "max": 98,
+          "item": "{@item Wand of Wonder|XDMG}"
+        },
+        {
+          "min": 99,
+          "max": 100,
+          "item": "{@item Wings of Flying|XDMG}"
+        }
+      ]
+    },
+    {
       "name": "Arcana - Uncommon",
       "source": "XDMG",
       "page": 326,
@@ -536,325 +1015,6 @@
       ]
     },
     {
-      "name": "Arcana - Rare",
-      "source": "XDMG",
-      "page": 326,
-      "type": "arcana.rare",
-      "table": [
-        {
-          "min": 1,
-          "max": 1,
-          "item": "{@item Bag of Beans|XDMG}"
-        },
-        {
-          "min": 2,
-          "max": 3,
-          "item": "{@item Bead of Force|XDMG}"
-        },
-        {
-          "min": 4,
-          "max": 4,
-          "item": "{@item Bowl of Commanding Water Elementals|XDMG}"
-        },
-        {
-          "min": 5,
-          "max": 6,
-          "item": "{@item Bracers of Defense|XDMG}"
-        },
-        {
-          "min": 7,
-          "max": 7,
-          "item": "{@item Brazier of Commanding Fire Elementals|XDMG}"
-        },
-        {
-          "min": 8,
-          "max": 9,
-          "item": "{@item Cape of the Mountebank|XDMG}"
-        },
-        {
-          "min": 10,
-          "max": 10,
-          "item": "{@item Censer of Controlling Air Elementals|XDMG}"
-        },
-        {
-          "min": 11,
-          "max": 12,
-          "item": "{@item Chime of Opening|XDMG}"
-        },
-        {
-          "min": 13,
-          "max": 14,
-          "item": "{@item Cloak of Displacement|XDMG}"
-        },
-        {
-          "min": 15,
-          "max": 16,
-          "item": "{@item Cloak of the Bat|XDMG}"
-        },
-        {
-          "min": 17,
-          "max": 17,
-          "item": "{@item Cube of Force|XDMG}"
-        },
-        {
-          "min": 18,
-          "max": 18,
-          "item": "{@item Cube of Summoning|XDMG}"
-        },
-        {
-          "min": 19,
-          "max": 19,
-          "item": "{@item Daern's Instant Fortress|XDMG}"
-        },
-        {
-          "min": 20,
-          "max": 21,
-          "item": "{@item Enspelled Staff|XDMG} (level 2 or 3 spell)",
-          "choose": {
-            "fromItems": [
-              "Enspelled Staff (Level 2)|XDMG",
-              "Enspelled Staff (Level 3)|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 22,
-          "max": 23,
-          "item": "{@item Figurine of Wondrous Power|XDMG} ({@item Figurine of Wondrous Power, Bronze Griffon|XDMG|bronze griffon}, {@item Figurine of Wondrous Power, Ebony Fly|XDMG|ebony fly}, {@item Figurine of Wondrous Power, Golden Lions|XDMG|golden lions}, {@item Figurine of Wondrous Power, Ivory Goats|XDMG|ivory goats}, {@item Figurine of Wondrous Power, Marble Elephant|XDMG|marble elephant}, {@item Figurine of Wondrous Power, Onyx Dog|XDMG|onyx dog}, or {@item Figurine of Wondrous Power, Serpentine Owl|XDMG|serpentine owl})",
-          "choose": {
-            "fromItems": [
-              "Figurine of Wondrous Power, Bronze Griffon|XDMG",
-              "Figurine of Wondrous Power, Ebony Fly|XDMG",
-              "Figurine of Wondrous Power, Golden Lions|XDMG",
-              "Figurine of Wondrous Power, Ivory Goats|XDMG",
-              "Figurine of Wondrous Power, Marble Elephant|XDMG",
-              "Figurine of Wondrous Power, Onyx Dog|XDMG",
-              "Figurine of Wondrous Power, Serpentine Owl|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 24,
-          "max": 25,
-          "item": "{@item Folding Boat|XDMG}"
-        },
-        {
-          "min": 26,
-          "max": 27,
-          "item": "{@item Gem of Seeing|XDMG}"
-        },
-        {
-          "min": 28,
-          "max": 28,
-          "item": "{@item Helm of Teleportation|XDMG}"
-        },
-        {
-          "min": 29,
-          "max": 30,
-          "item": "{@item Heward's Handy Haversack|XDMG}"
-        },
-        {
-          "min": 31,
-          "max": 32,
-          "item": "{@item Horseshoes of Speed|XDMG}"
-        },
-        {
-          "min": 33,
-          "max": 34,
-          "item": "{@item Ioun Stone, Reserve|XDMG|Ioun Stone (reserve)}"
-        },
-        {
-          "min": 35,
-          "max": 35,
-          "item": "{@item Iron Bands of Bilarro|XDMG}"
-        },
-        {
-          "min": 36,
-          "max": 36,
-          "item": "{@item Mantle of Spell Resistance|XDMG}"
-        },
-        {
-          "min": 37,
-          "max": 38,
-          "item": "{@item Necklace of Fireballs|XDMG}"
-        },
-        {
-          "min": 39,
-          "max": 39,
-          "item": "{@item Oil of Etherealness|XDMG}"
-        },
-        {
-          "min": 40,
-          "max": 40,
-          "item": "{@item Portable Hole|XDMG}"
-        },
-        {
-          "min": 41,
-          "max": 42,
-          "item": "{@item Potion of Clairvoyance|XDMG}"
-        },
-        {
-          "min": 43,
-          "max": 44,
-          "item": "{@item Potion of Diminution|XDMG}"
-        },
-        {
-          "min": 45,
-          "max": 46,
-          "item": "{@item Potion of Gaseous Form|XDMG}"
-        },
-        {
-          "min": 47,
-          "max": 47,
-          "item": "{@item Potion of Fire Giant Strength|XDMG|Potion of Giant Strength (fire)}"
-        },
-        {
-          "min": 48,
-          "max": 49,
-          "item": "{@item Potion of Giant Strength|XDMG} ({@item Potion of Frost Giant Strength|XDMG|frost} or {@item Potion of Stone Giant Strength|XDMG|stone})",
-          "choose": {
-            "fromItems": [
-              "Potion of Frost Giant Strength|XDMG",
-              "Potion of Stone Giant Strength|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 50,
-          "max": 51,
-          "item": "{@item Potion of Heroism|XDMG}"
-        },
-        {
-          "min": 52,
-          "max": 53,
-          "item": "{@item Potion of Invisibility|XDMG}"
-        },
-        {
-          "min": 54,
-          "max": 55,
-          "item": "{@item Potion of Invulnerability|XDMG}"
-        },
-        {
-          "min": 56,
-          "max": 57,
-          "item": "{@item Potion of Mind Reading|XDMG}"
-        },
-        {
-          "min": 58,
-          "max": 59,
-          "item": "{@item Quaal's Feather Token|XDMG} ({@item Quaal's Feather Token, Bird|XDMG|bird}, {@item Quaal's Feather Token, Swan Boat|XDMG|swan boat}, or {@item Quaal's Feather Token, Whip|XDMG|whip})",
-          "choose": {
-            "fromItems": [
-              "Quaal's Feather Token, Bird|XDMG",
-              "Quaal's Feather Token, Swan Boat|XDMG",
-              "Quaal's Feather Token, Whip|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 60,
-          "max": 61,
-          "item": "{@item Ring of Feather Falling|XDMG}"
-        },
-        {
-          "min": 62,
-          "max": 62,
-          "item": "{@item Ring of Spell Storing|XDMG}"
-        },
-        {
-          "min": 63,
-          "max": 63,
-          "item": "{@item Ring of X-ray Vision|XDMG}"
-        },
-        {
-          "min": 64,
-          "max": 65,
-          "item": "{@item Robe of Eyes|XDMG}"
-        },
-        {
-          "min": 66,
-          "max": 66,
-          "item": "{@item Rod of Rulership|XDMG}"
-        },
-        {
-          "min": 67,
-          "max": 68,
-          "item": "{@item +2 Rod of the Pact Keeper|XDMG|Rod of the Pact Keeper, +2}"
-        },
-        {
-          "min": 69,
-          "max": 70,
-          "item": "{@item Scroll of Protection|XDMG}"
-        },
-        {
-          "min": 71,
-          "max": 75,
-          "item": "{@item Spell Scroll|XDMG} ({@item Spell Scroll (Level 4)|XDMG|level 4} or {@item Spell Scroll (Level 5)|XDMG|level 5} spell)",
-          "choose": {
-            "fromItems": [
-              "Spell Scroll (Level 4)|XDMG",
-              "Spell Scroll (Level 5)|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 76,
-          "max": 77,
-          "item": "{@item Staff of Charming|XDMG}"
-        },
-        {
-          "min": 78,
-          "max": 79,
-          "item": "{@item Staff of Swarming Insects|XDMG}"
-        },
-        {
-          "min": 80,
-          "max": 81,
-          "item": "{@item Staff of Withering|XDMG}"
-        },
-        {
-          "min": 82,
-          "max": 82,
-          "item": "{@item Stone of Controlling Earth Elementals|XDMG}"
-        },
-        {
-          "min": 83,
-          "max": 84,
-          "item": "{@item Wand of Binding|XDMG}"
-        },
-        {
-          "min": 85,
-          "max": 86,
-          "item": "{@item Wand of Fear|XDMG}"
-        },
-        {
-          "min": 87,
-          "max": 90,
-          "item": "{@item Wand of Fireballs|XDMG}"
-        },
-        {
-          "min": 91,
-          "max": 94,
-          "item": "{@item Wand of Lightning Bolts|XDMG}"
-        },
-        {
-          "min": 95,
-          "max": 96,
-          "item": "{@item +2 Wand of the War Mage|XDMG|Wand of the War Mage, +2}"
-        },
-        {
-          "min": 97,
-          "max": 98,
-          "item": "{@item Wand of Wonder|XDMG}"
-        },
-        {
-          "min": 99,
-          "max": 100,
-          "item": "{@item Wings of Flying|XDMG}"
-        }
-      ]
-    },
-    {
       "name": "Arcana - Very Rare",
       "source": "XDMG",
       "page": 326,
@@ -1096,166 +1256,6 @@
       ]
     },
     {
-      "name": "Arcana - Legendary",
-      "source": "XDMG",
-      "page": 326,
-      "type": "arcana.legendary",
-      "table": [
-        {
-          "min": 1,
-          "max": 4,
-          "item": "{@item Apparatus of Kwalish|XDMG}"
-        },
-        {
-          "min": 5,
-          "max": 8,
-          "item": "{@item Cloak of Invisibility|XDMG}"
-        },
-        {
-          "min": 9,
-          "max": 12,
-          "item": "{@item Crystal Ball of Mind Reading|XDMG}"
-        },
-        {
-          "min": 13,
-          "max": 16,
-          "item": "{@item Crystal Ball of Telepathy|XDMG}"
-        },
-        {
-          "min": 17,
-          "max": 20,
-          "item": "{@item Crystal Ball of True Seeing|XDMG}"
-        },
-        {
-          "min": 21,
-          "max": 22,
-          "item": "{@item Cubic Gate|XDMG}"
-        },
-        {
-          "min": 23,
-          "max": 23,
-          "item": "{@item Deck of Many Things|XDMG}"
-        },
-        {
-          "min": 24,
-          "max": 27,
-          "item": "{@item Enspelled Staff|XDMG} (level 6, 7, or 8 spell)",
-          "choose": {
-            "fromItems": [
-              "Enspelled Staff (Level 6)|XDMG",
-              "Enspelled Staff (Level 7)|XDMG",
-              "Enspelled Staff (Level 8)|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 28,
-          "max": 31,
-          "item": "{@item Ioun Stone|XDMG} ({@item Ioun Stone, Greater Absorption|XDMG|greater absorption}, {@item Ioun Stone, Mastery|XDMG|mastery}, or {@item Ioun Stone, Regeneration|XDMG|regeneration})",
-          "choose": {
-            "fromItems": [
-              "Ioun Stone, Greater Absorption|XDMG",
-              "Ioun Stone, Mastery|XDMG",
-              "Ioun Stone, Regeneration|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 32,
-          "max": 33,
-          "item": "{@item Iron Flask|XDMG}"
-        },
-        {
-          "min": 34,
-          "max": 41,
-          "item": "{@item Potion of Storm Giant Strength|XDMG|Potion of Storm Giant Strength (storm)}"
-        },
-        {
-          "min": 42,
-          "max": 45,
-          "item": "{@item Ring of Djinni Summoning|XDMG}"
-        },
-        {
-          "min": 46,
-          "max": 49,
-          "item": "{@item Ring of Elemental Command|XDMG} ({@item Ring of Elemental Command (Air)|XDMG|air}, {@item Ring of Elemental Command (Earth)|XDMG|earth}, {@item Ring of Elemental Command (Fire)|XDMG|fire}, or {@item Ring of Elemental Command (Water)|XDMG|water})",
-          "choose": {
-            "fromItems": [
-              "Ring of Elemental Command (Air)|XDMG",
-              "Ring of Elemental Command (Earth)|XDMG",
-              "Ring of Elemental Command (Fire)|XDMG",
-              "Ring of Elemental Command (Water)|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 50,
-          "max": 53,
-          "item": "{@item Ring of Invisibility|XDMG}"
-        },
-        {
-          "min": 54,
-          "max": 57,
-          "item": "{@item Ring of Spell Turning|XDMG}"
-        },
-        {
-          "min": 58,
-          "max": 58,
-          "item": "{@item Ring of Three Wishes|XDMG}"
-        },
-        {
-          "min": 59,
-          "max": 59,
-          "item": "{@item Robe of the Archmagi|XDMG}"
-        },
-        {
-          "min": 60,
-          "max": 61,
-          "item": "{@item Scroll of Titan Summoning|XDMG}"
-        },
-        {
-          "min": 62,
-          "max": 65,
-          "item": "{@item Sovereign Glue|XDMG}"
-        },
-        {
-          "min": 66,
-          "max": 83,
-          "item": "{@item Spell Scroll (Level 9)|XDMG|Spell Scroll (level 9} spell)"
-        },
-        {
-          "min": 84,
-          "max": 84,
-          "item": "{@item Sphere of Annihilation|XDMG}"
-        },
-        {
-          "min": 85,
-          "max": 85,
-          "item": "{@item Staff of the Magi|XDMG}"
-        },
-        {
-          "min": 86,
-          "max": 88,
-          "item": "{@item Talisman of the Sphere|XDMG}"
-        },
-        {
-          "min": 89,
-          "max": 92,
-          "item": "{@item Tome of the Stilled Tongue|XDMG}"
-        },
-        {
-          "min": 93,
-          "max": 96,
-          "item": "{@item Universal Solvent|XDMG}"
-        },
-        {
-          "min": 97,
-          "max": 100,
-          "item": "{@item Well of Many Worlds|XDMG}"
-        }
-      ]
-    },
-    {
       "name": "Armaments - Common",
       "source": "XDMG",
       "page": 326,
@@ -1342,159 +1342,146 @@
       ]
     },
     {
-      "name": "Armaments - Uncommon",
+      "name": "Armaments - Legendary",
       "source": "XDMG",
       "page": 326,
-      "type": "armaments.uncommon",
+      "type": "armaments.legendary",
       "table": [
         {
           "min": 1,
-          "max": 4,
+          "max": 6,
           "choose": {
             "fromGeneric": [
-              "Adamantine Armor|XDMG"
+              "+3 Armor|XDMG"
             ]
           }
         },
         {
-          "min": 5,
-          "max": 8,
-          "choose": {
-            "fromGeneric": [
-              "Adamantine Weapon|XDMG"
-            ]
-          }
+          "min": 7,
+          "max": 12,
+          "item": "{@item Armor of Invulnerability|XDMG}"
         },
         {
-          "min": 9,
-          "max": 13,
-          "choose": {
-            "fromGeneric": [
-              "+1 Ammunition|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 14,
+          "min": 13,
           "max": 18,
-          "item": "{@item Bracers of Archery|XDMG}"
+          "item": "{@item Belt of Cloud Giant Strength|XDMG|Belt of Giant Strength (cloud)}"
         },
         {
           "min": 19,
-          "max": 23,
-          "item": "{@item Enspelled Armor|XDMG} (cantrip or level 1 spell)",
+          "max": 21,
+          "item": "{@item Belt of Storm Giant Strength|XDMG|Belt of Giant Strength (storm)}"
+        },
+        {
+          "min": 22,
+          "max": 27,
           "choose": {
             "fromGeneric": [
-              "Enspelled Armor (Cantrip)|XDMG",
-              "Enspelled Armor (Level 1)|XDMG"
+              "Defender|XDMG"
             ]
           }
         },
         {
-          "min": 24,
-          "max": 28,
-          "item": "{@item Enspelled Weapon|XDMG} (cantrip or level 1 spell)",
-          "choose": {
-            "fromGeneric": [
-              "Enspelled Weapon (Cantrip)|XDMG",
-              "Enspelled Weapon (Level 1)|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 29,
+          "min": 28,
           "max": 33,
-          "item": "{@item Gauntlets of Ogre Power|XDMG}"
+          "choose": {
+            "fromGeneric": [
+              "Efreeti Chain|XDMG"
+            ]
+          }
         },
         {
           "min": 34,
-          "max": 38,
-          "item": "{@item Javelin of Lightning|XDMG}"
-        },
-        {
-          "min": 39,
-          "max": 43,
+          "max": 39,
+          "item": "{@item Enspelled Armor|XDMG} (level 6, 7, or 8 spell)",
           "choose": {
             "fromGeneric": [
-              "Mariner's Armor|XDMG"
+              "Enspelled Armor (Level 6)|XDMG"
             ]
           }
         },
         {
-          "min": 44,
-          "max": 48,
+          "min": 40,
+          "max": 45,
+          "item": "{@item Enspelled Weapon|XDMG} (level 6, 7, or 8 spell)",
           "choose": {
             "fromGeneric": [
-              "Mithral Armor|XDMG"
+              "Enspelled Weapon (Level 6)|XDMG"
             ]
           }
         },
         {
-          "min": 49,
-          "max": 53,
-          "item": "{@item Potion of Hill Giant Strength|XDMG|Potion of Giant Strength (hill)}"
+          "min": 46,
+          "max": 51,
+          "choose": {
+            "fromGeneric": [
+              "Hammer of Thunderbolts|XDMG"
+            ]
+          }
         },
         {
-          "min": 54,
-          "max": 58,
-          "item": "{@item Potion of Pugilism|XDMG}"
+          "min": 52,
+          "max": 56,
+          "choose": {
+            "fromGeneric": [
+              "Holy Avenger|XDMG"
+            ]
+          }
         },
         {
-          "min": 59,
+          "min": 57,
           "max": 62,
-          "item": "{@item Quiver of Ehlonna|XDMG}"
+          "item": "{@item Horn of Valhalla, Iron|XDMG|Horn of Valhalla (iron)}"
         },
         {
           "min": 63,
-          "max": 66,
-          "item": "{@item Saddle of the Cavalier|XDMG}"
-        },
-        {
-          "min": 67,
-          "max": 71,
-          "item": "{@item Sentinel Shield|XDMG}"
-        },
-        {
-          "min": 72,
-          "max": 76,
-          "item": "{@item +1 Shield|XDMG|Shield, +1}"
-        },
-        {
-          "min": 77,
-          "max": 81,
+          "max": 68,
           "choose": {
             "fromGeneric": [
-              "Sword of Vengeance|XDMG"
+              "Luck Blade|XDMG"
             ]
           }
         },
         {
-          "min": 82,
-          "max": 85,
-          "item": "{@item Trident of Fish Command|XDMG}"
+          "min": 69,
+          "max": 72,
+          "choose": {
+            "fromGeneric": [
+              "Moonblade|XDMG"
+            ]
+          }
         },
         {
-          "min": 86,
+          "min": 73,
+          "max": 78,
+          "choose": {
+            "fromGeneric": [
+              "Plate Armor of Etherealness|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 79,
+          "max": 87,
+          "item": "{@item Potion of Storm Giant Strength|XDMG|Potion of Giant Strength (storm)}"
+        },
+        {
+          "min": 88,
           "max": 90,
-          "choose": {
-            "fromGeneric": [
-              "+1 Weapon|XDMG"
-            ]
-          }
+          "item": "{@item Rod of Lordly Might|XDMG}"
         },
         {
           "min": 91,
           "max": 95,
-          "choose": {
-            "fromGeneric": [
-              "Weapon of Warning|XDMG"
-            ]
-          }
+          "item": "{@item Sword of Answering|XDMG}"
         },
         {
           "min": 96,
           "max": 100,
-          "item": "{@item +1 Wraps of Unarmed Power|XDMG|Wraps of Unarmed Power, +1}"
+          "choose": {
+            "fromGeneric": [
+              "Vorpal Sword|XDMG"
+            ]
+          }
         }
       ]
     },
@@ -1766,6 +1753,163 @@
       ]
     },
     {
+      "name": "Armaments - Uncommon",
+      "source": "XDMG",
+      "page": 326,
+      "type": "armaments.uncommon",
+      "table": [
+        {
+          "min": 1,
+          "max": 4,
+          "choose": {
+            "fromGeneric": [
+              "Adamantine Armor|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 5,
+          "max": 8,
+          "choose": {
+            "fromGeneric": [
+              "Adamantine Weapon|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 9,
+          "max": 13,
+          "choose": {
+            "fromGeneric": [
+              "+1 Ammunition|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 14,
+          "max": 18,
+          "item": "{@item Bracers of Archery|XDMG}"
+        },
+        {
+          "min": 19,
+          "max": 23,
+          "item": "{@item Enspelled Armor|XDMG} (cantrip or level 1 spell)",
+          "choose": {
+            "fromGeneric": [
+              "Enspelled Armor (Cantrip)|XDMG",
+              "Enspelled Armor (Level 1)|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 24,
+          "max": 28,
+          "item": "{@item Enspelled Weapon|XDMG} (cantrip or level 1 spell)",
+          "choose": {
+            "fromGeneric": [
+              "Enspelled Weapon (Cantrip)|XDMG",
+              "Enspelled Weapon (Level 1)|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 29,
+          "max": 33,
+          "item": "{@item Gauntlets of Ogre Power|XDMG}"
+        },
+        {
+          "min": 34,
+          "max": 38,
+          "item": "{@item Javelin of Lightning|XDMG}"
+        },
+        {
+          "min": 39,
+          "max": 43,
+          "choose": {
+            "fromGeneric": [
+              "Mariner's Armor|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 44,
+          "max": 48,
+          "choose": {
+            "fromGeneric": [
+              "Mithral Armor|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 49,
+          "max": 53,
+          "item": "{@item Potion of Hill Giant Strength|XDMG|Potion of Giant Strength (hill)}"
+        },
+        {
+          "min": 54,
+          "max": 58,
+          "item": "{@item Potion of Pugilism|XDMG}"
+        },
+        {
+          "min": 59,
+          "max": 62,
+          "item": "{@item Quiver of Ehlonna|XDMG}"
+        },
+        {
+          "min": 63,
+          "max": 66,
+          "item": "{@item Saddle of the Cavalier|XDMG}"
+        },
+        {
+          "min": 67,
+          "max": 71,
+          "item": "{@item Sentinel Shield|XDMG}"
+        },
+        {
+          "min": 72,
+          "max": 76,
+          "item": "{@item +1 Shield|XDMG|Shield, +1}"
+        },
+        {
+          "min": 77,
+          "max": 81,
+          "choose": {
+            "fromGeneric": [
+              "Sword of Vengeance|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 82,
+          "max": 85,
+          "item": "{@item Trident of Fish Command|XDMG}"
+        },
+        {
+          "min": 86,
+          "max": 90,
+          "choose": {
+            "fromGeneric": [
+              "+1 Weapon|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 91,
+          "max": 95,
+          "choose": {
+            "fromGeneric": [
+              "Weapon of Warning|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 96,
+          "max": 100,
+          "item": "{@item +1 Wraps of Unarmed Power|XDMG|Wraps of Unarmed Power, +1}"
+        }
+      ]
+    },
+    {
       "name": "Armaments - Very Rare",
       "source": "XDMG",
       "page": 326,
@@ -2012,145 +2156,168 @@
       ]
     },
     {
-      "name": "Armaments - Legendary",
+      "name": "By Level - Levels 1-4",
       "source": "XDMG",
-      "page": 326,
-      "type": "armaments.legendary",
+      "page": 218,
+      "type": "byLevel.1-4",
       "table": [
         {
           "min": 1,
-          "max": 6,
+          "max": 54,
           "choose": {
-            "fromGeneric": [
-              "+3 Armor|XDMG"
-            ]
+            "fromMatching": {
+              "rarity": "common"
+            }
           }
         },
         {
-          "min": 7,
-          "max": 12,
-          "item": "{@item Armor of Invulnerability|XDMG}"
-        },
-        {
-          "min": 13,
-          "max": 18,
-          "item": "{@item Belt of Cloud Giant Strength|XDMG|Belt of Giant Strength (cloud)}"
-        },
-        {
-          "min": 19,
-          "max": 21,
-          "item": "{@item Belt of Storm Giant Strength|XDMG|Belt of Giant Strength (storm)}"
-        },
-        {
-          "min": 22,
-          "max": 27,
+          "min": 55,
+          "max": 91,
           "choose": {
-            "fromGeneric": [
-              "Defender|XDMG"
-            ]
+            "fromMatching": {
+              "rarity": "uncommon"
+            }
           }
         },
         {
-          "min": 28,
-          "max": 33,
-          "choose": {
-            "fromGeneric": [
-              "Efreeti Chain|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 34,
-          "max": 39,
-          "item": "{@item Enspelled Armor|XDMG} (level 6, 7, or 8 spell)",
-          "choose": {
-            "fromGeneric": [
-              "Enspelled Armor (Level 6)|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 40,
-          "max": 45,
-          "item": "{@item Enspelled Weapon|XDMG} (level 6, 7, or 8 spell)",
-          "choose": {
-            "fromGeneric": [
-              "Enspelled Weapon (Level 6)|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 46,
-          "max": 51,
-          "choose": {
-            "fromGeneric": [
-              "Hammer of Thunderbolts|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 52,
-          "max": 56,
-          "choose": {
-            "fromGeneric": [
-              "Holy Avenger|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 57,
-          "max": 62,
-          "item": "{@item Horn of Valhalla, Iron|XDMG|Horn of Valhalla (iron)}"
-        },
-        {
-          "min": 63,
-          "max": 68,
-          "choose": {
-            "fromGeneric": [
-              "Luck Blade|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 69,
-          "max": 72,
-          "choose": {
-            "fromGeneric": [
-              "Moonblade|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 73,
-          "max": 78,
-          "choose": {
-            "fromGeneric": [
-              "Plate Armor of Etherealness|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 79,
-          "max": 87,
-          "item": "{@item Potion of Storm Giant Strength|XDMG|Potion of Giant Strength (storm)}"
-        },
-        {
-          "min": 88,
-          "max": 90,
-          "item": "{@item Rod of Lordly Might|XDMG}"
-        },
-        {
-          "min": 91,
-          "max": 95,
-          "item": "{@item Sword of Answering|XDMG}"
-        },
-        {
-          "min": 96,
+          "min": 92,
           "max": 100,
           "choose": {
-            "fromGeneric": [
-              "Vorpal Sword|XDMG"
-            ]
+            "fromMatching": {
+              "rarity": "rare"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "By Level - Levels 11-16",
+      "source": "XDMG",
+      "page": 218,
+      "type": "byLevel.11-16",
+      "table": [
+        {
+          "min": 1,
+          "max": 11,
+          "choose": {
+            "fromMatching": {
+              "rarity": "common"
+            }
+          }
+        },
+        {
+          "min": 12,
+          "max": 34,
+          "choose": {
+            "fromMatching": {
+              "rarity": "uncommon"
+            }
+          }
+        },
+        {
+          "min": 35,
+          "max": 70,
+          "choose": {
+            "fromMatching": {
+              "rarity": "rare"
+            }
+          }
+        },
+        {
+          "min": 71,
+          "max": 93,
+          "choose": {
+            "fromMatching": {
+              "rarity": "very rare"
+            }
+          }
+        },
+        {
+          "min": 94,
+          "max": 100,
+          "choose": {
+            "fromMatching": {
+              "rarity": "legendary"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "By Level - Levels 17-20",
+      "source": "XDMG",
+      "page": 218,
+      "type": "byLevel.17-20",
+      "table": [
+        {
+          "min": 1,
+          "max": 20,
+          "choose": {
+            "fromMatching": {
+              "rarity": "rare"
+            }
+          }
+        },
+        {
+          "min": 21,
+          "max": 64,
+          "choose": {
+            "fromMatching": {
+              "rarity": "very rare"
+            }
+          }
+        },
+        {
+          "min": 65,
+          "max": 100,
+          "choose": {
+            "fromMatching": {
+              "rarity": "legendary"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "By Level - Levels 5-10",
+      "source": "XDMG",
+      "page": 218,
+      "type": "byLevel.5-10",
+      "table": [
+        {
+          "min": 1,
+          "max": 30,
+          "choose": {
+            "fromMatching": {
+              "rarity": "common"
+            }
+          }
+        },
+        {
+          "min": 31,
+          "max": 81,
+          "choose": {
+            "fromMatching": {
+              "rarity": "uncommon"
+            }
+          }
+        },
+        {
+          "min": 82,
+          "max": 98,
+          "choose": {
+            "fromMatching": {
+              "rarity": "rare"
+            }
+          }
+        },
+        {
+          "min": 99,
+          "max": 100,
+          "choose": {
+            "fromMatching": {
+              "rarity": "very rare"
+            }
           }
         }
       ]
@@ -2352,6 +2519,209 @@
           "min": 98,
           "max": 100,
           "item": "{@item Wand of Pyrotechnics|XDMG}"
+        }
+      ]
+    },
+    {
+      "name": "Implements - Legendary",
+      "source": "XDMG",
+      "page": 326,
+      "type": "implements.legendary",
+      "table": [
+        {
+          "min": 1,
+          "max": 17,
+          "item": "{@item Enspelled Weapon|XDMG} (level 6, 7, or 8 spell)",
+          "choose": {
+            "fromGeneric": [
+              "Enspelled Weapon (Level 6)|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 18,
+          "max": 34,
+          "item": "{@item Instrument of the Bards|XDMG} ({@item Instrument of the Bards, Ollamh Harp|XDMG|Ollamh harp})",
+          "choose": {
+            "fromItems": [
+              "Instrument of the Bards, Ollamh Harp|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 35,
+          "max": 54,
+          "item": "{@item Sovereign Glue|XDMG}"
+        },
+        {
+          "min": 55,
+          "max": 70,
+          "item": "{@item Sphere of Annihilation|XDMG}"
+        },
+        {
+          "min": 71,
+          "max": 83,
+          "item": "{@item Talisman of the Sphere|XDMG}"
+        },
+        {
+          "min": 84,
+          "max": 100,
+          "item": "{@item Universal Solvent|XDMG}"
+        }
+      ]
+    },
+    {
+      "name": "Implements - Rare",
+      "source": "XDMG",
+      "page": 326,
+      "type": "implements.rare",
+      "table": [
+        {
+          "min": 1,
+          "max": 4,
+          "choose": {
+            "fromGeneric": [
+              "+2 Ammunition|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 5,
+          "max": 8,
+          "item": "{@item Bag of Beans|XDMG}"
+        },
+        {
+          "min": 9,
+          "max": 12,
+          "item": "{@item Belt of Dwarvenkind|XDMG}"
+        },
+        {
+          "min": 13,
+          "max": 16,
+          "item": "{@item Boots of Levitation|XDMG}"
+        },
+        {
+          "min": 17,
+          "max": 20,
+          "item": "{@item Boots of Speed|XDMG}"
+        },
+        {
+          "min": 21,
+          "max": 24,
+          "item": "{@item Chime of Opening|XDMG}"
+        },
+        {
+          "min": 25,
+          "max": 28,
+          "item": "{@item Dimensional Shackles|XDMG}"
+        },
+        {
+          "min": 29,
+          "max": 32,
+          "item": "{@item Enspelled Weapon|XDMG} (level 2 or 3 spell)",
+          "choose": {
+            "fromGeneric": [
+              "Enspelled Weapon (Level 2)|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 33,
+          "max": 36,
+          "item": "{@item Folding Boat|XDMG}"
+        },
+        {
+          "min": 37,
+          "max": 40,
+          "item": "{@item Glamoured Studded Leather|XDMG}"
+        },
+        {
+          "min": 41,
+          "max": 44,
+          "item": "{@item Heward's Handy Haversack|XDMG}"
+        },
+        {
+          "min": 45,
+          "max": 48,
+          "item": "{@item Horseshoes of Speed|XDMG}"
+        },
+        {
+          "min": 49,
+          "max": 52,
+          "item": "{@item Instrument of the Bards|XDMG} ({@item Instrument of the Bards, Canaith Mandolin|XDMG|Canaith mandolin} or {@item Instrument of the Bards, Cli Lyre|XDMG|Cli lyre})",
+          "choose": {
+            "fromItems": [
+              "Instrument of the Bards, Canaith Mandolin|XDMG",
+              "Instrument of the Bards, Cli Lyre|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 53,
+          "max": 56,
+          "item": "{@item Ioun Stone|XDMG} ({@item Ioun Stone, Awareness|XDMG|awareness})",
+          "choose": {
+            "fromItems": [
+              "Ioun Stone, Awareness|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 57,
+          "max": 60,
+          "item": "{@item Portable Hole|XDMG}"
+        },
+        {
+          "min": 61,
+          "max": 64,
+          "item": "{@item Potion of Diminution|XDMG}"
+        },
+        {
+          "min": 65,
+          "max": 68,
+          "item": "{@item Potion of Gaseous Form|XDMG}"
+        },
+        {
+          "min": 69,
+          "max": 76,
+          "item": "{@item Potion of Superior Healing|XDMG|Potion of Healing (superior)}"
+        },
+        {
+          "min": 77,
+          "max": 80,
+          "item": "{@item Quaal's Feather Token|XDMG} ({@item Quaal's Feather Token, Bird|XDMG|bird}, {@item Quaal's Feather Token, Swan Boat|XDMG|swan boat}, or {@item Quaal's Feather Token, Whip|XDMG|whip})",
+          "choose": {
+            "fromItems": [
+              "Quaal's Feather Token, Bird|XDMG",
+              "Quaal's Feather Token, Swan Boat|XDMG",
+              "Quaal's Feather Token, Whip|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 81,
+          "max": 84,
+          "item": "{@item Ring of Evasion|XDMG}"
+        },
+        {
+          "min": 85,
+          "max": 88,
+          "item": "{@item Ring of Free Action|XDMG}"
+        },
+        {
+          "min": 89,
+          "max": 92,
+          "item": "{@item Rope of Entanglement|XDMG}"
+        },
+        {
+          "min": 93,
+          "max": 96,
+          "item": "{@item Staff of Healing|XDMG}"
+        },
+        {
+          "min": 97,
+          "max": 100,
+          "item": "{@item Wand of Enemy Detection|XDMG}"
         }
       ]
     },
@@ -2603,161 +2973,6 @@
       ]
     },
     {
-      "name": "Implements - Rare",
-      "source": "XDMG",
-      "page": 326,
-      "type": "implements.rare",
-      "table": [
-        {
-          "min": 1,
-          "max": 4,
-          "choose": {
-            "fromGeneric": [
-              "+2 Ammunition|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 5,
-          "max": 8,
-          "item": "{@item Bag of Beans|XDMG}"
-        },
-        {
-          "min": 9,
-          "max": 12,
-          "item": "{@item Belt of Dwarvenkind|XDMG}"
-        },
-        {
-          "min": 13,
-          "max": 16,
-          "item": "{@item Boots of Levitation|XDMG}"
-        },
-        {
-          "min": 17,
-          "max": 20,
-          "item": "{@item Boots of Speed|XDMG}"
-        },
-        {
-          "min": 21,
-          "max": 24,
-          "item": "{@item Chime of Opening|XDMG}"
-        },
-        {
-          "min": 25,
-          "max": 28,
-          "item": "{@item Dimensional Shackles|XDMG}"
-        },
-        {
-          "min": 29,
-          "max": 32,
-          "item": "{@item Enspelled Weapon|XDMG} (level 2 or 3 spell)",
-          "choose": {
-            "fromGeneric": [
-              "Enspelled Weapon (Level 2)|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 33,
-          "max": 36,
-          "item": "{@item Folding Boat|XDMG}"
-        },
-        {
-          "min": 37,
-          "max": 40,
-          "item": "{@item Glamoured Studded Leather|XDMG}"
-        },
-        {
-          "min": 41,
-          "max": 44,
-          "item": "{@item Heward's Handy Haversack|XDMG}"
-        },
-        {
-          "min": 45,
-          "max": 48,
-          "item": "{@item Horseshoes of Speed|XDMG}"
-        },
-        {
-          "min": 49,
-          "max": 52,
-          "item": "{@item Instrument of the Bards|XDMG} ({@item Instrument of the Bards, Canaith Mandolin|XDMG|Canaith mandolin} or {@item Instrument of the Bards, Cli Lyre|XDMG|Cli lyre})",
-          "choose": {
-            "fromItems": [
-              "Instrument of the Bards, Canaith Mandolin|XDMG",
-              "Instrument of the Bards, Cli Lyre|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 53,
-          "max": 56,
-          "item": "{@item Ioun Stone|XDMG} ({@item Ioun Stone, Awareness|XDMG|awareness})",
-          "choose": {
-            "fromItems": [
-              "Ioun Stone, Awareness|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 57,
-          "max": 60,
-          "item": "{@item Portable Hole|XDMG}"
-        },
-        {
-          "min": 61,
-          "max": 64,
-          "item": "{@item Potion of Diminution|XDMG}"
-        },
-        {
-          "min": 65,
-          "max": 68,
-          "item": "{@item Potion of Gaseous Form|XDMG}"
-        },
-        {
-          "min": 69,
-          "max": 76,
-          "item": "{@item Potion of Superior Healing|XDMG|Potion of Healing (superior)}"
-        },
-        {
-          "min": 77,
-          "max": 80,
-          "item": "{@item Quaal's Feather Token|XDMG} ({@item Quaal's Feather Token, Bird|XDMG|bird}, {@item Quaal's Feather Token, Swan Boat|XDMG|swan boat}, or {@item Quaal's Feather Token, Whip|XDMG|whip})",
-          "choose": {
-            "fromItems": [
-              "Quaal's Feather Token, Bird|XDMG",
-              "Quaal's Feather Token, Swan Boat|XDMG",
-              "Quaal's Feather Token, Whip|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 81,
-          "max": 84,
-          "item": "{@item Ring of Evasion|XDMG}"
-        },
-        {
-          "min": 85,
-          "max": 88,
-          "item": "{@item Ring of Free Action|XDMG}"
-        },
-        {
-          "min": 89,
-          "max": 92,
-          "item": "{@item Rope of Entanglement|XDMG}"
-        },
-        {
-          "min": 93,
-          "max": 96,
-          "item": "{@item Staff of Healing|XDMG}"
-        },
-        {
-          "min": 97,
-          "max": 100,
-          "item": "{@item Wand of Enemy Detection|XDMG}"
-        }
-      ]
-    },
-    {
       "name": "Implements - Very Rare",
       "source": "XDMG",
       "page": 326,
@@ -2850,54 +3065,6 @@
       ]
     },
     {
-      "name": "Implements - Legendary",
-      "source": "XDMG",
-      "page": 326,
-      "type": "implements.legendary",
-      "table": [
-        {
-          "min": 1,
-          "max": 17,
-          "item": "{@item Enspelled Weapon|XDMG} (level 6, 7, or 8 spell)",
-          "choose": {
-            "fromGeneric": [
-              "Enspelled Weapon (Level 6)|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 18,
-          "max": 34,
-          "item": "{@item Instrument of the Bards|XDMG} ({@item Instrument of the Bards, Ollamh Harp|XDMG|Ollamh harp})",
-          "choose": {
-            "fromItems": [
-              "Instrument of the Bards, Ollamh Harp|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 35,
-          "max": 54,
-          "item": "{@item Sovereign Glue|XDMG}"
-        },
-        {
-          "min": 55,
-          "max": 70,
-          "item": "{@item Sphere of Annihilation|XDMG}"
-        },
-        {
-          "min": 71,
-          "max": 83,
-          "item": "{@item Talisman of the Sphere|XDMG}"
-        },
-        {
-          "min": 84,
-          "max": 100,
-          "item": "{@item Universal Solvent|XDMG}"
-        }
-      ]
-    },
-    {
       "name": "Relics - Common",
       "source": "XDMG",
       "page": 326,
@@ -2961,111 +3128,80 @@
       ]
     },
     {
-      "name": "Relics - Uncommon",
+      "name": "Relics - Legendary",
       "source": "XDMG",
       "page": 326,
-      "type": "relics.uncommon",
+      "type": "relics.legendary",
       "table": [
         {
           "min": 1,
-          "max": 5,
-          "item": "{@item Enspelled Staff|XDMG} (cantrip or level 1 spell)",
-          "choose": {
-            "fromItems": [
-              "Enspelled Staff (Cantrip)|XDMG",
-              "Enspelled Staff (Level 1)|XDMG"
-            ]
-          }
+          "max": 8,
+          "item": "{@item Armor of Invulnerability|XDMG}"
         },
         {
-          "min": 6,
-          "max": 10,
-          "item": "{@item Keoghtom's Ointment|XDMG}"
-        },
-        {
-          "min": 11,
-          "max": 15,
+          "min": 9,
+          "max": 18,
           "choose": {
             "fromGeneric": [
-              "Mariner's Armor|XDMG"
+              "+3 Armor|XDMG"
             ]
           }
         },
         {
-          "min": 16,
-          "max": 20,
-          "item": "{@item Nature's Mantle|XDMG}"
-        },
-        {
-          "min": 21,
-          "max": 25,
-          "item": "{@item Pearl of Power|XDMG}"
-        },
-        {
-          "min": 26,
-          "max": 30,
-          "item": "{@item Periapt of Health|XDMG}"
-        },
-        {
-          "min": 31,
-          "max": 35,
-          "item": "{@item Periapt of Wound Closure|XDMG}"
-        },
-        {
-          "min": 36,
-          "max": 40,
-          "item": "{@item Potion of Animal Friendship|XDMG}"
-        },
-        {
-          "min": 41,
-          "max": 55,
-          "item": "{@item Potion of Greater Healing|XDMG|Potion of Healing (greater)}"
-        },
-        {
-          "min": 56,
-          "max": 60,
-          "item": "{@item Potion of Resistance|XDMG}"
-        },
-        {
-          "min": 61,
-          "max": 65,
-          "item": "{@item Ring of Water Walking|XDMG}"
-        },
-        {
-          "min": 66,
-          "max": 70,
-          "item": "{@item Sending Stones|XDMG}"
-        },
-        {
-          "min": 71,
-          "max": 80,
-          "item": "{@item Spell Scroll|XDMG} ({@item Spell Scroll (Level 2)|XDMG|level 2} or {@item Spell Scroll (Level 3)|XDMG|level 3} spell)",
+          "min": 19,
+          "max": 27,
+          "item": "{@item Enspelled Staff|XDMG} (level 6, 7, or 8 spell)",
           "choose": {
             "fromItems": [
-              "Spell Scroll (Level 2)|XDMG",
-              "Spell Scroll (Level 3)|XDMG"
+              "Enspelled Staff (Level 6)|XDMG",
+              "Enspelled Staff (Level 7)|XDMG",
+              "Enspelled Staff (Level 8)|XDMG"
             ]
           }
+        },
+        {
+          "min": 28,
+          "max": 36,
+          "choose": {
+            "fromGeneric": [
+              "Holy Avenger|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 37,
+          "max": 45,
+          "item": "{@item Horn of Valhalla, Iron|XDMG|Horn of Valhalla (iron)}"
+        },
+        {
+          "min": 46,
+          "max": 54,
+          "item": "{@item Rod of Resurrection|XDMG}"
+        },
+        {
+          "min": 55,
+          "max": 63,
+          "item": "{@item Scarab of Protection|XDMG}"
+        },
+        {
+          "min": 64,
+          "max": 72,
+          "item": "{@item Scroll of Titan Summoning|XDMG}"
+        },
+        {
+          "min": 73,
+          "max": 80,
+          "item": "{@item Spell Scroll (Level 9)|XDMG}"
         },
         {
           "min": 81,
-          "max": 85,
-          "item": "{@item Staff of the Adder|XDMG}"
-        },
-        {
-          "min": 86,
           "max": 90,
-          "item": "{@item Staff of the Python|XDMG}"
+          "item": "{@item Talisman of Pure Good|XDMG}"
         },
         {
           "min": 91,
-          "max": 95,
-          "item": "{@item Wand of Magic Detection|XDMG}"
-        },
-        {
-          "min": 96,
           "max": 100,
-          "item": "{@item +1 Wand of the War Mage|XDMG|Wand of the War Mage, +1}"
+          "item": "{@item Talisman of Ultimate Evil|XDMG}"
         }
       ]
     },
@@ -3256,6 +3392,115 @@
       ]
     },
     {
+      "name": "Relics - Uncommon",
+      "source": "XDMG",
+      "page": 326,
+      "type": "relics.uncommon",
+      "table": [
+        {
+          "min": 1,
+          "max": 5,
+          "item": "{@item Enspelled Staff|XDMG} (cantrip or level 1 spell)",
+          "choose": {
+            "fromItems": [
+              "Enspelled Staff (Cantrip)|XDMG",
+              "Enspelled Staff (Level 1)|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 6,
+          "max": 10,
+          "item": "{@item Keoghtom's Ointment|XDMG}"
+        },
+        {
+          "min": 11,
+          "max": 15,
+          "choose": {
+            "fromGeneric": [
+              "Mariner's Armor|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 16,
+          "max": 20,
+          "item": "{@item Nature's Mantle|XDMG}"
+        },
+        {
+          "min": 21,
+          "max": 25,
+          "item": "{@item Pearl of Power|XDMG}"
+        },
+        {
+          "min": 26,
+          "max": 30,
+          "item": "{@item Periapt of Health|XDMG}"
+        },
+        {
+          "min": 31,
+          "max": 35,
+          "item": "{@item Periapt of Wound Closure|XDMG}"
+        },
+        {
+          "min": 36,
+          "max": 40,
+          "item": "{@item Potion of Animal Friendship|XDMG}"
+        },
+        {
+          "min": 41,
+          "max": 55,
+          "item": "{@item Potion of Greater Healing|XDMG|Potion of Healing (greater)}"
+        },
+        {
+          "min": 56,
+          "max": 60,
+          "item": "{@item Potion of Resistance|XDMG}"
+        },
+        {
+          "min": 61,
+          "max": 65,
+          "item": "{@item Ring of Water Walking|XDMG}"
+        },
+        {
+          "min": 66,
+          "max": 70,
+          "item": "{@item Sending Stones|XDMG}"
+        },
+        {
+          "min": 71,
+          "max": 80,
+          "item": "{@item Spell Scroll|XDMG} ({@item Spell Scroll (Level 2)|XDMG|level 2} or {@item Spell Scroll (Level 3)|XDMG|level 3} spell)",
+          "choose": {
+            "fromItems": [
+              "Spell Scroll (Level 2)|XDMG",
+              "Spell Scroll (Level 3)|XDMG"
+            ]
+          }
+        },
+        {
+          "min": 81,
+          "max": 85,
+          "item": "{@item Staff of the Adder|XDMG}"
+        },
+        {
+          "min": 86,
+          "max": 90,
+          "item": "{@item Staff of the Python|XDMG}"
+        },
+        {
+          "min": 91,
+          "max": 95,
+          "item": "{@item Wand of Magic Detection|XDMG}"
+        },
+        {
+          "min": 96,
+          "max": 100,
+          "item": "{@item +1 Wand of the War Mage|XDMG|Wand of the War Mage, +1}"
+        }
+      ]
+    },
+    {
       "name": "Relics - Very Rare",
       "source": "XDMG",
       "page": 326,
@@ -3372,251 +3617,6 @@
           "min": 96,
           "max": 100,
           "item": "{@item +3 Wand of the War Mage|XDMG|Wand of the War Mage, +3}"
-        }
-      ]
-    },
-    {
-      "name": "Relics - Legendary",
-      "source": "XDMG",
-      "page": 326,
-      "type": "relics.legendary",
-      "table": [
-        {
-          "min": 1,
-          "max": 8,
-          "item": "{@item Armor of Invulnerability|XDMG}"
-        },
-        {
-          "min": 9,
-          "max": 18,
-          "choose": {
-            "fromGeneric": [
-              "+3 Armor|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 19,
-          "max": 27,
-          "item": "{@item Enspelled Staff|XDMG} (level 6, 7, or 8 spell)",
-          "choose": {
-            "fromItems": [
-              "Enspelled Staff (Level 6)|XDMG",
-              "Enspelled Staff (Level 7)|XDMG",
-              "Enspelled Staff (Level 8)|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 28,
-          "max": 36,
-          "choose": {
-            "fromGeneric": [
-              "Holy Avenger|XDMG"
-            ]
-          }
-        },
-        {
-          "min": 37,
-          "max": 45,
-          "item": "{@item Horn of Valhalla, Iron|XDMG|Horn of Valhalla (iron)}"
-        },
-        {
-          "min": 46,
-          "max": 54,
-          "item": "{@item Rod of Resurrection|XDMG}"
-        },
-        {
-          "min": 55,
-          "max": 63,
-          "item": "{@item Scarab of Protection|XDMG}"
-        },
-        {
-          "min": 64,
-          "max": 72,
-          "item": "{@item Scroll of Titan Summoning|XDMG}"
-        },
-        {
-          "min": 73,
-          "max": 80,
-          "item": "{@item Spell Scroll (Level 9)|XDMG}"
-        },
-        {
-          "min": 81,
-          "max": 90,
-          "item": "{@item Talisman of Pure Good|XDMG}"
-        },
-        {
-          "min": 91,
-          "max": 100,
-          "item": "{@item Talisman of Ultimate Evil|XDMG}"
-        }
-      ]
-    },
-    {
-      "name": "By Level - Levels 1-4",
-      "source": "XDMG",
-      "page": 218,
-      "type": "byLevel.1-4",
-      "table": [
-        {
-          "min": 1,
-          "max": 54,
-          "choose": {
-            "fromMatching": {
-              "rarity": "common"
-            }
-          }
-        },
-        {
-          "min": 55,
-          "max": 91,
-          "choose": {
-            "fromMatching": {
-              "rarity": "uncommon"
-            }
-          }
-        },
-        {
-          "min": 92,
-          "max": 100,
-          "choose": {
-            "fromMatching": {
-              "rarity": "rare"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "By Level - Levels 5-10",
-      "source": "XDMG",
-      "page": 218,
-      "type": "byLevel.5-10",
-      "table": [
-        {
-          "min": 1,
-          "max": 30,
-          "choose": {
-            "fromMatching": {
-              "rarity": "common"
-            }
-          }
-        },
-        {
-          "min": 31,
-          "max": 81,
-          "choose": {
-            "fromMatching": {
-              "rarity": "uncommon"
-            }
-          }
-        },
-        {
-          "min": 82,
-          "max": 98,
-          "choose": {
-            "fromMatching": {
-              "rarity": "rare"
-            }
-          }
-        },
-        {
-          "min": 99,
-          "max": 100,
-          "choose": {
-            "fromMatching": {
-              "rarity": "very rare"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "By Level - Levels 11-16",
-      "source": "XDMG",
-      "page": 218,
-      "type": "byLevel.11-16",
-      "table": [
-        {
-          "min": 1,
-          "max": 11,
-          "choose": {
-            "fromMatching": {
-              "rarity": "common"
-            }
-          }
-        },
-        {
-          "min": 12,
-          "max": 34,
-          "choose": {
-            "fromMatching": {
-              "rarity": "uncommon"
-            }
-          }
-        },
-        {
-          "min": 35,
-          "max": 70,
-          "choose": {
-            "fromMatching": {
-              "rarity": "rare"
-            }
-          }
-        },
-        {
-          "min": 71,
-          "max": 93,
-          "choose": {
-            "fromMatching": {
-              "rarity": "very rare"
-            }
-          }
-        },
-        {
-          "min": 94,
-          "max": 100,
-          "choose": {
-            "fromMatching": {
-              "rarity": "legendary"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "By Level - Levels 17-20",
-      "source": "XDMG",
-      "page": 218,
-      "type": "byLevel.17-20",
-      "table": [
-        {
-          "min": 1,
-          "max": 20,
-          "choose": {
-            "fromMatching": {
-              "rarity": "rare"
-            }
-          }
-        },
-        {
-          "min": 21,
-          "max": 64,
-          "choose": {
-            "fromMatching": {
-              "rarity": "very rare"
-            }
-          }
-        },
-        {
-          "min": 65,
-          "max": 100,
-          "choose": {
-            "fromMatching": {
-              "rarity": "legendary"
-            }
-          }
         }
       ]
     }

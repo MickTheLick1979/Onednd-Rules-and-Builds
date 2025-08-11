@@ -1,230 +1,228 @@
 {
   "subclassFluff": [
     {
-      "name": "Path of the Berserker",
-      "shortName": "Berserker",
+      "name": "Aberrant Sorcery",
+      "shortName": "Aberrant",
       "source": "XPHB",
-      "className": "Barbarian",
+      "className": "Sorcerer",
       "classSource": "XPHB",
       "images": [
         {
           "type": "image",
           "href": {
             "type": "internal",
-            "path": "classes/XPHB/Berserker Barbarian.webp"
+            "path": "classes/XPHB/Aberrant Sorcerer.webp"
+          },
+          "credit": "Ignatius Budi",
+          "width": 850,
+          "height": 2185
+        }
+      ]
+    },
+    {
+      "name": "Abjurer",
+      "shortName": "Abjurer",
+      "source": "XPHB",
+      "className": "Wizard",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Abjurer Wizard.webp"
+          },
+          "credit": "Caroline Gariba",
+          "width": 1071,
+          "height": 1440
+        }
+      ]
+    },
+    {
+      "name": "Arcane Archer",
+      "shortName": "Arcane Archer",
+      "source": "XGE",
+      "className": "Fighter",
+      "classSource": "PHB",
+      "entries": [
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "quote",
+              "entries": [
+                "Arrows are the worst. They go much farther than eye rays. That's why I stay indoors all the time. Besides, the sky is totally overrated."
+              ],
+              "by": "Xanathar"
+            },
+            {
+              "type": "quote",
+              "entries": [
+                "So there are different names for different sorts of people who swing swords? Why? Let me try: big sword swinger and tiny sword swinger. No, that sounds like it's the size of the sword that matters. How about: big meat bag with a sword and little meat bag with a sword!"
+              ],
+              "by": "Xanathar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Arcane Trickster",
+      "shortName": "Arcane Trickster",
+      "source": "XPHB",
+      "className": "Rogue",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Arcane Trickster Rogue.webp"
           },
           "credit": "Nathaniel Himawan",
           "width": 850,
-          "height": 2316
+          "height": 2022
         }
       ]
     },
     {
-      "name": "Path of the Wild Heart",
-      "shortName": "Wild Heart",
+      "name": "Archfey Patron",
+      "shortName": "Archfey",
       "source": "XPHB",
-      "className": "Barbarian",
+      "className": "Warlock",
       "classSource": "XPHB",
       "images": [
         {
           "type": "image",
           "href": {
             "type": "internal",
-            "path": "classes/XPHB/Wild Heart Barbarian.webp"
+            "path": "classes/XPHB/Archfey Warlock.webp"
+          },
+          "credit": "Erion Makuo",
+          "width": 850,
+          "height": 2300
+        }
+      ]
+    },
+    {
+      "name": "Assassin",
+      "shortName": "Assassin",
+      "source": "XPHB",
+      "className": "Rogue",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Assassin Rogue.webp"
+          },
+          "credit": "Ignatius Budi",
+          "width": 850,
+          "height": 2098
+        }
+      ]
+    },
+    {
+      "name": "Battle Master",
+      "shortName": "Battle Master",
+      "source": "XPHB",
+      "className": "Fighter",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Battle Master Fighter.webp"
+          },
+          "credit": "Ignarius Budi",
+          "width": 850,
+          "height": 2015
+        }
+      ]
+    },
+    {
+      "name": "Beast Master",
+      "shortName": "Beast Master",
+      "source": "XPHB",
+      "className": "Ranger",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Beast Master Ranger.webp"
           },
           "credit": "Alditha Siregar",
           "width": 850,
-          "height": 2108
+          "height": 1863
         }
       ]
     },
     {
-      "name": "Path of the World Tree",
-      "shortName": "World Tree",
+      "name": "Celestial Patron",
+      "shortName": "Celestial",
       "source": "XPHB",
-      "className": "Barbarian",
+      "className": "Warlock",
       "classSource": "XPHB",
       "images": [
         {
           "type": "image",
           "href": {
             "type": "internal",
-            "path": "classes/XPHB/World Tree Barbarian.webp"
+            "path": "classes/XPHB/Celestial Warlock.webp"
           },
-          "credit": "Marcela Medeiros",
+          "credit": "Ekaterina Burmak",
           "width": 850,
-          "height": 2013
+          "height": 2470
         }
       ]
     },
     {
-      "name": "Path of the Zealot",
-      "shortName": "Zealot",
+      "name": "Champion",
+      "shortName": "Champion",
       "source": "XPHB",
-      "className": "Barbarian",
+      "className": "Fighter",
       "classSource": "XPHB",
       "images": [
         {
           "type": "image",
           "href": {
             "type": "internal",
-            "path": "classes/XPHB/Zealot Barbarian.webp"
-          },
-          "credit": "Ignatius Budi",
-          "width": 850,
-          "height": 2141
-        }
-      ]
-    },
-    {
-      "name": "College of Dance",
-      "shortName": "Dance",
-      "source": "XPHB",
-      "className": "Bard",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Dance Bard.webp"
+            "path": "classes/XPHB/Champion Fighter.webp"
           },
           "credit": "Katerina Ladon",
           "width": 850,
-          "height": 2113
+          "height": 2000
         }
       ]
     },
     {
-      "name": "College of Glamour",
-      "shortName": "Glamour",
-      "source": "XPHB",
-      "className": "Bard",
-      "classSource": "XPHB",
+      "name": "Circle of Dreams",
+      "shortName": "Dreams",
+      "source": "XGE",
+      "className": "Druid",
+      "classSource": "PHB",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": [
+            "I don't dream because I don't sleep. I'm always awake so no one can ever sneak up on me. If I dreamed, they would be bigger dreams than yours, though, because my head is bigger."
+          ],
+          "by": "Xanathar"
+        }
+      ],
       "images": [
         {
           "type": "image",
           "href": {
             "type": "internal",
-            "path": "classes/XPHB/Glamour Bard.webp"
+            "path": "classes/XGE/Dreams Druid.webp"
           },
-          "credit": "Hocheol Ryu",
-          "width": 850,
-          "height": 1722
-        }
-      ]
-    },
-    {
-      "name": "College of Lore",
-      "shortName": "Lore",
-      "source": "XPHB",
-      "className": "Bard",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Lore Bard.webp"
-          },
-          "credit": "Mike Pape",
-          "width": 850,
-          "height": 2453
-        }
-      ]
-    },
-    {
-      "name": "College of Valor",
-      "shortName": "Valor",
-      "source": "XPHB",
-      "className": "Bard",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Valor Bard.webp"
-          },
-          "credit": "Ignatius Budi",
-          "width": 850,
-          "height": 2181
-        }
-      ]
-    },
-    {
-      "name": "Life Domain",
-      "shortName": "Life",
-      "source": "XPHB",
-      "className": "Cleric",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Life Cleric.webp"
-          },
-          "credit": "Tomas Duchek",
-          "width": 850,
-          "height": 1838
-        }
-      ]
-    },
-    {
-      "name": "Light Domain",
-      "shortName": "Light",
-      "source": "XPHB",
-      "className": "Cleric",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Light Cleric.webp"
-          },
-          "credit": "Jodie Muir",
-          "width": 850,
-          "height": 2410
-        }
-      ]
-    },
-    {
-      "name": "Trickery Domain",
-      "shortName": "Trickery",
-      "source": "XPHB",
-      "className": "Cleric",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Trickery Cleric.webp"
-          },
-          "credit": "Polar Engine",
-          "width": 850,
-          "height": 2045
-        }
-      ]
-    },
-    {
-      "name": "War Domain",
-      "shortName": "War",
-      "source": "XPHB",
-      "className": "Cleric",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/War Cleric.webp"
-          },
-          "credit": "Polar Engine",
-          "width": 905,
-          "height": 1440
+          "width": 640,
+          "height": 1000
         }
       ]
     },
@@ -286,6 +284,24 @@
       ]
     },
     {
+      "name": "Circle of the Shepherd",
+      "shortName": "Shepherd",
+      "source": "XGE",
+      "className": "Druid",
+      "classSource": "PHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XGE/Shepherd Druid.webp"
+          },
+          "width": 776,
+          "height": 1000
+        }
+      ]
+    },
+    {
       "name": "Circle of the Stars",
       "shortName": "Stars",
       "source": "XPHB",
@@ -305,40 +321,212 @@
       ]
     },
     {
-      "name": "Battle Master",
-      "shortName": "Battle Master",
+      "name": "Clockwork Sorcery",
+      "shortName": "Clockwork",
       "source": "XPHB",
-      "className": "Fighter",
+      "className": "Sorcerer",
       "classSource": "XPHB",
       "images": [
         {
           "type": "image",
           "href": {
             "type": "internal",
-            "path": "classes/XPHB/Battle Master Fighter.webp"
+            "path": "classes/XPHB/Clockwork Sorcerer.webp"
           },
-          "credit": "Ignarius Budi",
+          "credit": "Olivier Bernard",
           "width": 850,
-          "height": 2015
+          "height": 2175
         }
       ]
     },
     {
-      "name": "Champion",
-      "shortName": "Champion",
+      "name": "College of Dance",
+      "shortName": "Dance",
       "source": "XPHB",
-      "className": "Fighter",
+      "className": "Bard",
       "classSource": "XPHB",
       "images": [
         {
           "type": "image",
           "href": {
             "type": "internal",
-            "path": "classes/XPHB/Champion Fighter.webp"
+            "path": "classes/XPHB/Dance Bard.webp"
           },
           "credit": "Katerina Ladon",
           "width": 850,
-          "height": 2000
+          "height": 2113
+        }
+      ]
+    },
+    {
+      "name": "College of Glamour",
+      "shortName": "Glamour",
+      "source": "XGE",
+      "className": "Bard",
+      "classSource": "PHB",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": [
+            "Illusions? How quaint. Before I destroy you, make one that looks like a really big goldfish—like as big as me! Hmm. That's too big. Goodbye!"
+          ],
+          "by": "Xanathar"
+        }
+      ]
+    },
+    {
+      "name": "College of Glamour",
+      "shortName": "Glamour",
+      "source": "XPHB",
+      "className": "Bard",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Glamour Bard.webp"
+          },
+          "credit": "Hocheol Ryu",
+          "width": 850,
+          "height": 1722
+        }
+      ]
+    },
+    {
+      "name": "College of Lore",
+      "shortName": "Lore",
+      "source": "XPHB",
+      "className": "Bard",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Lore Bard.webp"
+          },
+          "credit": "Mike Pape",
+          "width": 850,
+          "height": 2453
+        }
+      ]
+    },
+    {
+      "name": "College of Swords",
+      "shortName": "Swords",
+      "source": "XGE",
+      "className": "Bard",
+      "classSource": "PHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XGE/Swords Bard.webp"
+          },
+          "width": 732,
+          "height": 1000
+        }
+      ]
+    },
+    {
+      "name": "College of Valor",
+      "shortName": "Valor",
+      "source": "XPHB",
+      "className": "Bard",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Valor Bard.webp"
+          },
+          "credit": "Ignatius Budi",
+          "width": 850,
+          "height": 2181
+        }
+      ]
+    },
+    {
+      "name": "College of Whispers",
+      "shortName": "Whispers",
+      "source": "XGE",
+      "className": "Bard",
+      "classSource": "PHB",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": [
+            "Speak up! It's really hard to hear you over the screaming. Nope. It's no use. I'll have to stop the screaming. Disintegrations all around, then."
+          ],
+          "by": "Xanathar"
+        }
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XGE/Whispers Bard.webp"
+          },
+          "width": 1000,
+          "height": 578
+        }
+      ]
+    },
+    {
+      "name": "Divine Soul",
+      "shortName": "Divine Soul",
+      "source": "XGE",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": [
+            "Why do so many celestial things have bird wings and infernal things have bat wings? It seems arbitrary. There should be a bat angel!"
+          ],
+          "by": "Xanathar"
+        }
+      ]
+    },
+    {
+      "name": "Diviner",
+      "shortName": "Diviner",
+      "source": "XPHB",
+      "className": "Wizard",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Diviner Wizard.webp"
+          },
+          "credit": "Jodie Muir",
+          "width": 850,
+          "height": 1725
+        }
+      ]
+    },
+    {
+      "name": "Draconic Sorcery",
+      "shortName": "Draconic",
+      "source": "XPHB",
+      "className": "Sorcerer",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Draconic Sorcerer.webp"
+          },
+          "credit": "Lauren Walsh",
+          "width": 850,
+          "height": 2146
         }
       ]
     },
@@ -362,6 +550,530 @@
       ]
     },
     {
+      "name": "Evoker",
+      "shortName": "Evoker",
+      "source": "XPHB",
+      "className": "Wizard",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Evoker Wizard.webp"
+          },
+          "credit": "Caroline Gariba",
+          "width": 803,
+          "height": 1440
+        }
+      ]
+    },
+    {
+      "name": "Fey Wanderer",
+      "shortName": "Fey Wanderer",
+      "source": "XPHB",
+      "className": "Ranger",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Fey Wanderer Ranger.webp"
+          },
+          "credit": "John Grello",
+          "width": 850,
+          "height": 2199
+        }
+      ]
+    },
+    {
+      "name": "Fiend Patron",
+      "shortName": "Fiend",
+      "source": "XPHB",
+      "className": "Warlock",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Fiend Warlock.webp"
+          },
+          "credit": "Jodie Muir",
+          "width": 850,
+          "height": 2486
+        }
+      ]
+    },
+    {
+      "name": "Forge Domain",
+      "shortName": "Forge",
+      "source": "XGE",
+      "className": "Cleric",
+      "classSource": "PHB",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": [
+            "I've got a minion that forges things. An ink-stained little twerp with excellent penmanship. So how do the hammers and fire help the process? Wouldn't the paper get burned? Oh, the fire must be for the wax seals!"
+          ],
+          "by": "Xanathar"
+        }
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XGE/Forge Cleric.webp"
+          },
+          "width": 853,
+          "height": 1000
+        }
+      ]
+    },
+    {
+      "name": "Gloom Stalker",
+      "shortName": "Gloom Stalker",
+      "source": "XGE",
+      "className": "Ranger",
+      "classSource": "PHB",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": [
+            "So you sneak around in the dark? You know most everything but humans can see in the dark, right? We all see you. Tiptoeing doesn't turn you {@condition invisible}."
+          ],
+          "by": "Xanathar"
+        }
+      ]
+    },
+    {
+      "name": "Gloom Stalker",
+      "shortName": "Gloom Stalker",
+      "source": "XPHB",
+      "className": "Ranger",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Gloom Stalker Ranger.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 850,
+          "height": 2146
+        }
+      ]
+    },
+    {
+      "name": "Grave Domain",
+      "shortName": "Grave",
+      "source": "XGE",
+      "className": "Cleric",
+      "classSource": "PHB",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": [
+            "I guess if you can't disintegrate them or eat them, burying dead bodies makes as much sense as anything else."
+          ],
+          "by": "Xanathar"
+        }
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XGE/Grave Cleric.webp"
+          },
+          "width": 734,
+          "height": 1000
+        }
+      ]
+    },
+    {
+      "name": "Great Old One Patron",
+      "shortName": "Great Old One",
+      "source": "XPHB",
+      "className": "Warlock",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Great Old One Warlock.webp"
+          },
+          "credit": "Magali Villeneuve",
+          "width": 850,
+          "height": 1995
+        }
+      ]
+    },
+    {
+      "name": "Horizon Walker",
+      "shortName": "Horizon Walker",
+      "source": "XGE",
+      "className": "Ranger",
+      "classSource": "PHB",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": [
+            "You can't walk to the horizon, because it keeps on getting farther away. Boom! Did I just blow your mind? I did, didn't I?"
+          ],
+          "by": "Xanathar"
+        }
+      ]
+    },
+    {
+      "name": "Hunter",
+      "shortName": "Hunter",
+      "source": "XPHB",
+      "className": "Ranger",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Hunter Ranger.webp"
+          },
+          "credit": "Katerina Ladon",
+          "width": 850,
+          "height": 1752
+        }
+      ]
+    },
+    {
+      "name": "Illusionist",
+      "shortName": "Illusionist",
+      "source": "XPHB",
+      "className": "Wizard",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Illusionist Wizard.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 850,
+          "height": 2211
+        }
+      ]
+    },
+    {
+      "name": "Life Domain",
+      "shortName": "Life",
+      "source": "XPHB",
+      "className": "Cleric",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Life Cleric.webp"
+          },
+          "credit": "Tomas Duchek",
+          "width": 850,
+          "height": 1838
+        }
+      ]
+    },
+    {
+      "name": "Light Domain",
+      "shortName": "Light",
+      "source": "XPHB",
+      "className": "Cleric",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Light Cleric.webp"
+          },
+          "credit": "Jodie Muir",
+          "width": 850,
+          "height": 2410
+        }
+      ]
+    },
+    {
+      "name": "Mastermind",
+      "shortName": "Mastermind",
+      "source": "XGE",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": [
+            "Oh, please. If anyone is a mastermind around here, it's me. You're like a master doofus or a master dummy. No, you are!"
+          ],
+          "by": "Xanathar"
+        }
+      ]
+    },
+    {
+      "name": "Oath of Conquest",
+      "shortName": "Conquest",
+      "source": "XGE",
+      "className": "Paladin",
+      "classSource": "PHB",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": [
+            "Conquest sounds cool. Do you have to leave your house for that? Because I've got a fish named Sylgar, and I can't be away for too long or he gets sad."
+          ],
+          "by": "Xanathar"
+        }
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XGE/Conquest Paladin.webp"
+          },
+          "width": 714,
+          "height": 1000
+        }
+      ]
+    },
+    {
+      "name": "Oath of Devotion",
+      "shortName": "Devotion",
+      "source": "XPHB",
+      "className": "Paladin",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Devotion Paladin.webp"
+          },
+          "credit": "Katerina Ladon",
+          "width": 850,
+          "height": 1501
+        }
+      ]
+    },
+    {
+      "name": "Oath of Glory",
+      "shortName": "Glory",
+      "source": "XPHB",
+      "className": "Paladin",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Glory Paladin.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 850,
+          "height": 2293
+        }
+      ]
+    },
+    {
+      "name": "Oath of Redemption",
+      "shortName": "Redemption",
+      "source": "XGE",
+      "className": "Paladin",
+      "classSource": "PHB",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": [
+            "Redemption. So you feel bad about having done something, and then you have to do something to feel better? Why don't you just kill and eat someone? That always makes me feel better."
+          ],
+          "by": "Xanathar"
+        }
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XGE/Redemption Paladin.webp"
+          },
+          "width": 769,
+          "height": 1000
+        }
+      ]
+    },
+    {
+      "name": "Oath of the Ancients",
+      "shortName": "Ancients",
+      "source": "XPHB",
+      "className": "Paladin",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Ancients Paladin.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 850,
+          "height": 2374
+        }
+      ]
+    },
+    {
+      "name": "Oath of Vengeance",
+      "shortName": "Vengeance",
+      "source": "XPHB",
+      "className": "Paladin",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Vengeance Paladin.webp"
+          },
+          "credit": "Ignatius Budi",
+          "width": 850,
+          "height": 2372
+        }
+      ]
+    },
+    {
+      "name": "Path of the Ancestral Guardian",
+      "shortName": "Ancestral Guardian",
+      "source": "XGE",
+      "className": "Barbarian",
+      "classSource": "PHB",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": [
+            "So ancestors are people who did the procreation thing to make more people before you were born? Like how many people?",
+            "That's a lot of the procreation thing.",
+            "Ew. You're disgusting."
+          ],
+          "by": "Xanathar"
+        }
+      ]
+    },
+    {
+      "name": "Path of the Berserker",
+      "shortName": "Berserker",
+      "source": "XPHB",
+      "className": "Barbarian",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Berserker Barbarian.webp"
+          },
+          "credit": "Nathaniel Himawan",
+          "width": 850,
+          "height": 2316
+        }
+      ]
+    },
+    {
+      "name": "Path of the Storm Herald",
+      "shortName": "Storm Herald",
+      "source": "XGE",
+      "className": "Barbarian",
+      "classSource": "PHB",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": [
+            "You know one of the great benefits of living underground? No weather. Don't mess this up for me."
+          ],
+          "by": "Xanathar"
+        }
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XGE/Storm Herald Barbarian.webp"
+          },
+          "width": 1000,
+          "height": 491
+        }
+      ]
+    },
+    {
+      "name": "Path of the Wild Heart",
+      "shortName": "Wild Heart",
+      "source": "XPHB",
+      "className": "Barbarian",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Wild Heart Barbarian.webp"
+          },
+          "credit": "Alditha Siregar",
+          "width": 850,
+          "height": 2108
+        }
+      ]
+    },
+    {
+      "name": "Path of the World Tree",
+      "shortName": "World Tree",
+      "source": "XPHB",
+      "className": "Barbarian",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/World Tree Barbarian.webp"
+          },
+          "credit": "Marcela Medeiros",
+          "width": 850,
+          "height": 2013
+        }
+      ]
+    },
+    {
+      "name": "Path of the Zealot",
+      "shortName": "Zealot",
+      "source": "XPHB",
+      "className": "Barbarian",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Zealot Barbarian.webp"
+          },
+          "credit": "Ignatius Budi",
+          "width": 850,
+          "height": 2141
+        }
+      ]
+    },
+    {
       "name": "Psi Warrior",
       "shortName": "Psi Warrior",
       "source": "XPHB",
@@ -377,6 +1089,203 @@
           "credit": "Javier Charro",
           "width": 850,
           "height": 2204
+        }
+      ]
+    },
+    {
+      "name": "Shadow Magic",
+      "shortName": "Shadow",
+      "source": "XGE",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": [
+            "Sometimes I disintegrate my shadow when I see it, because I think it's a different beholder."
+          ],
+          "by": "Xanathar"
+        }
+      ]
+    },
+    {
+      "name": "Soulknife",
+      "shortName": "Soulknife",
+      "source": "XPHB",
+      "className": "Rogue",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Soulknife Rogue.webp"
+          },
+          "credit": "Yuhong Ding",
+          "width": 850,
+          "height": 1939
+        }
+      ]
+    },
+    {
+      "name": "Storm Sorcery",
+      "shortName": "Storm",
+      "source": "XGE",
+      "className": "Sorcerer",
+      "classSource": "PHB",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": [
+            "What is it with people and the weather?",
+            "It's just the sky weeping and shouting because it's so far away from me."
+          ],
+          "by": "Xanathar"
+        }
+      ]
+    },
+    {
+      "name": "Swashbuckler",
+      "shortName": "Swashbuckler",
+      "source": "XGE",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": [
+            "What's a swashbuckler? Do you swash buckles or buckle swashes? You can't tell me you don't think that word is funny."
+          ],
+          "by": "Xanathar"
+        }
+      ]
+    },
+    {
+      "name": "The Celestial",
+      "shortName": "Celestial",
+      "source": "XGE",
+      "className": "Warlock",
+      "classSource": "PHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XGE/Celestial Warlock.webp"
+          },
+          "width": 658,
+          "height": 1000
+        }
+      ]
+    },
+    {
+      "name": "The Hexblade",
+      "shortName": "Hexblade",
+      "source": "XGE",
+      "className": "Warlock",
+      "classSource": "PHB",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": [
+            "Hexblade. What a cool name! So is your sword evil or cursed or something? But you're evil, right?... Okay, now I don't like the name. Names aren't cool if they don't make sense. Like mine: The Xanathar. See? It's cool, and it makes sense!"
+          ],
+          "by": "Xanathar"
+        }
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XGE/Hexblade Warlock.webp"
+          },
+          "width": 743,
+          "height": 1000
+        }
+      ]
+    },
+    {
+      "name": "Thief",
+      "shortName": "Thief",
+      "source": "XPHB",
+      "className": "Rogue",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Thief Rogue.webp"
+          },
+          "credit": "Jodie Muir",
+          "width": 850,
+          "height": 2360
+        }
+      ]
+    },
+    {
+      "name": "Trickery Domain",
+      "shortName": "Trickery",
+      "source": "XPHB",
+      "className": "Cleric",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/Trickery Cleric.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 850,
+          "height": 2045
+        }
+      ]
+    },
+    {
+      "name": "War Domain",
+      "shortName": "War",
+      "source": "XPHB",
+      "className": "Cleric",
+      "classSource": "XPHB",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XPHB/War Cleric.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 905,
+          "height": 1440
+        }
+      ]
+    },
+    {
+      "name": "War Magic",
+      "shortName": "War",
+      "source": "XGE",
+      "className": "Wizard",
+      "classSource": "PHB",
+      "entries": [
+        {
+          "type": "quote",
+          "entries": [
+            "War magic? Does that make you a War Wizard? I've heard about them. They dress in purple, I think. But you're not dressed in purple. That's disappointing. Go change."
+          ],
+          "by": "Xanathar"
+        }
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "classes/XGE/War Wizard.webp"
+          },
+          "width": 858,
+          "height": 1000
         }
       ]
     },
@@ -457,287 +1366,34 @@
       ]
     },
     {
-      "name": "Oath of Devotion",
-      "shortName": "Devotion",
-      "source": "XPHB",
-      "className": "Paladin",
-      "classSource": "XPHB",
-      "images": [
+      "name": "Way of the Kensei",
+      "shortName": "Kensei",
+      "source": "XGE",
+      "className": "Monk",
+      "classSource": "PHB",
+      "entries": [
         {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Devotion Paladin.webp"
-          },
-          "credit": "Katerina Ladon",
-          "width": 850,
-          "height": 1501
+          "type": "quote",
+          "entries": [
+            "Why did the samurai cross the road?... Now you say \"Why?\"... Okay, here's the joke part: I kensei. Get it? What? Why aren't you laughing? The joke is solid gold, and my delivery was perfect. Maybe you didn't get it because you're stupid."
+          ],
+          "by": "Xanathar"
         }
       ]
     },
     {
-      "name": "Oath of Glory",
-      "shortName": "Glory",
-      "source": "XPHB",
-      "className": "Paladin",
-      "classSource": "XPHB",
-      "images": [
+      "name": "Way of the Sun Soul",
+      "shortName": "Sun Soul",
+      "source": "XGE",
+      "className": "Monk",
+      "classSource": "PHB",
+      "entries": [
         {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Glory Paladin.webp"
-          },
-          "credit": "Polar Engine",
-          "width": 850,
-          "height": 2293
-        }
-      ]
-    },
-    {
-      "name": "Oath of the Ancients",
-      "shortName": "Ancients",
-      "source": "XPHB",
-      "className": "Paladin",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Ancients Paladin.webp"
-          },
-          "credit": "Polar Engine",
-          "width": 850,
-          "height": 2374
-        }
-      ]
-    },
-    {
-      "name": "Oath of Vengeance",
-      "shortName": "Vengeance",
-      "source": "XPHB",
-      "className": "Paladin",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Vengeance Paladin.webp"
-          },
-          "credit": "Ignatius Budi",
-          "width": 850,
-          "height": 2372
-        }
-      ]
-    },
-    {
-      "name": "Beast Master",
-      "shortName": "Beast Master",
-      "source": "XPHB",
-      "className": "Ranger",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Beast Master Ranger.webp"
-          },
-          "credit": "Alditha Siregar",
-          "width": 850,
-          "height": 1863
-        }
-      ]
-    },
-    {
-      "name": "Fey Wanderer",
-      "shortName": "Fey Wanderer",
-      "source": "XPHB",
-      "className": "Ranger",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Fey Wanderer Ranger.webp"
-          },
-          "credit": "John Grello",
-          "width": 850,
-          "height": 2199
-        }
-      ]
-    },
-    {
-      "name": "Gloom Stalker",
-      "shortName": "Gloom Stalker",
-      "source": "XPHB",
-      "className": "Ranger",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Gloom Stalker Ranger.webp"
-          },
-          "credit": "Polar Engine",
-          "width": 850,
-          "height": 2146
-        }
-      ]
-    },
-    {
-      "name": "Hunter",
-      "shortName": "Hunter",
-      "source": "XPHB",
-      "className": "Ranger",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Hunter Ranger.webp"
-          },
-          "credit": "Katerina Ladon",
-          "width": 850,
-          "height": 1752
-        }
-      ]
-    },
-    {
-      "name": "Arcane Trickster",
-      "shortName": "Arcane Trickster",
-      "source": "XPHB",
-      "className": "Rogue",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Arcane Trickster Rogue.webp"
-          },
-          "credit": "Nathaniel Himawan",
-          "width": 850,
-          "height": 2022
-        }
-      ]
-    },
-    {
-      "name": "Assassin",
-      "shortName": "Assassin",
-      "source": "XPHB",
-      "className": "Rogue",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Assassin Rogue.webp"
-          },
-          "credit": "Ignatius Budi",
-          "width": 850,
-          "height": 2098
-        }
-      ]
-    },
-    {
-      "name": "Soulknife",
-      "shortName": "Soulknife",
-      "source": "XPHB",
-      "className": "Rogue",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Soulknife Rogue.webp"
-          },
-          "credit": "Yuhong Ding",
-          "width": 850,
-          "height": 1939
-        }
-      ]
-    },
-    {
-      "name": "Thief",
-      "shortName": "Thief",
-      "source": "XPHB",
-      "className": "Rogue",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Thief Rogue.webp"
-          },
-          "credit": "Jodie Muir",
-          "width": 850,
-          "height": 2360
-        }
-      ]
-    },
-    {
-      "name": "Aberrant Sorcery",
-      "shortName": "Aberrant",
-      "source": "XPHB",
-      "className": "Sorcerer",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Aberrant Sorcerer.webp"
-          },
-          "credit": "Ignatius Budi",
-          "width": 850,
-          "height": 2185
-        }
-      ]
-    },
-    {
-      "name": "Clockwork Sorcery",
-      "shortName": "Clockwork",
-      "source": "XPHB",
-      "className": "Sorcerer",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Clockwork Sorcerer.webp"
-          },
-          "credit": "Olivier Bernard",
-          "width": 850,
-          "height": 2175
-        }
-      ]
-    },
-    {
-      "name": "Draconic Sorcery",
-      "shortName": "Draconic",
-      "source": "XPHB",
-      "className": "Sorcerer",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Draconic Sorcerer.webp"
-          },
-          "credit": "Lauren Walsh",
-          "width": 850,
-          "height": 2146
+          "type": "quote",
+          "entries": [
+            "So you have this soul, but you can't see it or touch it. And when you die, this invisible thing leaves your body and goes to a place you can't see. And you people think I'm crazy?"
+          ],
+          "by": "Xanathar"
         }
       ]
     },
@@ -757,158 +1413,6 @@
           "credit": "Ekaterina Burmark",
           "width": 850,
           "height": 1891
-        }
-      ]
-    },
-    {
-      "name": "Archfey Patron",
-      "shortName": "Archfey",
-      "source": "XPHB",
-      "className": "Warlock",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Archfey Warlock.webp"
-          },
-          "credit": "Erion Makuo",
-          "width": 850,
-          "height": 2300
-        }
-      ]
-    },
-    {
-      "name": "Celestial Patron",
-      "shortName": "Celestial",
-      "source": "XPHB",
-      "className": "Warlock",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Celestial Warlock.webp"
-          },
-          "credit": "Ekaterina Burmak",
-          "width": 850,
-          "height": 2470
-        }
-      ]
-    },
-    {
-      "name": "Fiend Patron",
-      "shortName": "Fiend",
-      "source": "XPHB",
-      "className": "Warlock",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Fiend Warlock.webp"
-          },
-          "credit": "Jodie Muir",
-          "width": 850,
-          "height": 2486
-        }
-      ]
-    },
-    {
-      "name": "Great Old One Patron",
-      "shortName": "Great Old One",
-      "source": "XPHB",
-      "className": "Warlock",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Great Old One Warlock.webp"
-          },
-          "credit": "Magali Villeneuve",
-          "width": 850,
-          "height": 1995
-        }
-      ]
-    },
-    {
-      "name": "Abjurer",
-      "shortName": "Abjurer",
-      "source": "XPHB",
-      "className": "Wizard",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Abjurer Wizard.webp"
-          },
-          "credit": "Caroline Gariba",
-          "width": 1071,
-          "height": 1440
-        }
-      ]
-    },
-    {
-      "name": "Diviner",
-      "shortName": "Diviner",
-      "source": "XPHB",
-      "className": "Wizard",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Diviner Wizard.webp"
-          },
-          "credit": "Jodie Muir",
-          "width": 850,
-          "height": 1725
-        }
-      ]
-    },
-    {
-      "name": "Evoker",
-      "shortName": "Evoker",
-      "source": "XPHB",
-      "className": "Wizard",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Evoker Wizard.webp"
-          },
-          "credit": "Caroline Gariba",
-          "width": 803,
-          "height": 1440
-        }
-      ]
-    },
-    {
-      "name": "Illusionist",
-      "shortName": "Illusionist",
-      "source": "XPHB",
-      "className": "Wizard",
-      "classSource": "XPHB",
-      "images": [
-        {
-          "type": "image",
-          "href": {
-            "type": "internal",
-            "path": "classes/XPHB/Illusionist Wizard.webp"
-          },
-          "credit": "Polar Engine",
-          "width": 850,
-          "height": 2211
         }
       ]
     }

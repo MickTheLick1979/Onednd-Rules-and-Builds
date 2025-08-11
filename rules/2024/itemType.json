@@ -1,37 +1,8 @@
 {
   "itemType": [
     {
-      "name": "Treasure (Art Object)",
-      "abbreviation": "$A",
-      "source": "XDMG",
-      "page": 215,
-      "entries": [
-        "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more."
-      ]
-    },
-    {
-      "name": "Treasure (Coinage)",
-      "abbreviation": "$C",
-      "source": "XPHB",
-      "page": 213,
-      "basicRules2024": true,
-      "entries": [
-        "Characters often find coins on their adventures and can spend those coins in shops, inns, and other businesses. Coins come in different denominations based on the relative worth of their material. The Coin Values table lists coins and how much they're worth relative to the Gold Piece, which is the game's main coin. For example, 100 Copper Pieces are worth 1 Gold Piece.",
-        "A coin weighs about a third of an ounce, so fifty coins weigh a pound."
-      ]
-    },
-    {
-      "name": "Treasure (Gemstone)",
-      "abbreviation": "$G",
-      "source": "XDMG",
-      "page": 214,
-      "entries": [
-        "Gemstones are small, lightweight, and easily secured compared to their same value in coins."
-      ]
-    },
-    {
-      "name": "Ammunition",
-      "abbreviation": "A",
+      "name": "Adventuring Gear",
+      "abbreviation": "G",
       "source": "XPHB",
       "page": 222,
       "basicRules2024": true
@@ -43,15 +14,11 @@
       "page": 72
     },
     {
-      "name": "Vehicle (Air)",
-      "abbreviation": "AIR",
+      "name": "Ammunition",
+      "abbreviation": "A",
       "source": "XPHB",
-      "page": 230,
-      "basicRules2024": true,
-      "_copy": {
-        "abbreviation": "SHP",
-        "source": "XPHB"
-      }
+      "page": 222,
+      "basicRules2024": true
     },
     {
       "name": "Artisan's Tools",
@@ -75,13 +42,6 @@
       "abbreviation": "FD",
       "source": "XPHB",
       "page": 231,
-      "basicRules2024": true
-    },
-    {
-      "name": "Adventuring Gear",
-      "abbreviation": "G",
-      "source": "XPHB",
-      "page": 222,
       "basicRules2024": true
     },
     {
@@ -119,17 +79,17 @@
       "basicRules2024": true
     },
     {
-      "name": "Melee Weapon",
-      "abbreviation": "M",
-      "source": "XPHB",
-      "page": 213,
-      "basicRules2024": true
-    },
-    {
       "name": "Medium Armor",
       "abbreviation": "MA",
       "source": "XPHB",
       "page": 219,
+      "basicRules2024": true
+    },
+    {
+      "name": "Melee Weapon",
+      "abbreviation": "M",
+      "source": "XPHB",
+      "page": 213,
       "basicRules2024": true
     },
     {
@@ -163,13 +123,6 @@
       ]
     },
     {
-      "name": "Shield",
-      "abbreviation": "S",
-      "source": "XPHB",
-      "page": 219,
-      "basicRules2024": true
-    },
-    {
       "name": "Scroll",
       "abbreviation": "SC",
       "source": "XPHB",
@@ -177,10 +130,99 @@
       "basicRules2024": true
     },
     {
+      "name": "Shield",
+      "abbreviation": "S",
+      "source": "XPHB",
+      "page": 219,
+      "basicRules2024": true
+    },
+    {
       "name": "Spellcasting Focus",
       "abbreviation": "SCF",
       "source": "XPHB",
       "page": 222,
+      "basicRules2024": true
+    },
+    {
+      "name": "Tack and Harness",
+      "abbreviation": "TAH",
+      "source": "XPHB",
+      "page": 230,
+      "basicRules2024": true
+    },
+    {
+      "name": "Tool",
+      "abbreviation": "T",
+      "source": "XPHB",
+      "page": 220,
+      "basicRules2024": true,
+      "entries": [
+        "If you have proficiency with a tool, add your {@variantrule Proficiency|XPHB|Proficiency Bonus} to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have {@variantrule Advantage|XPHB} on the check too."
+      ]
+    },
+    {
+      "name": "Trade Bar",
+      "abbreviation": "TB",
+      "source": "XDMG",
+      "page": 213,
+      "entries": [
+        "Because large numbers of coins can be difficult to transport and account for, many merchants prefer to use trade bars—ingots of precious metals and alloys (usually silver). These bars are valued by weight."
+      ]
+    },
+    {
+      "name": "Trade Good",
+      "abbreviation": "TG",
+      "source": "XDMG",
+      "page": 213,
+      "entries": [
+        "Merchants commonly exchange trade goods without using currency."
+      ]
+    },
+    {
+      "name": "Treasure (Art Object)",
+      "abbreviation": "$A",
+      "source": "XDMG",
+      "page": 215,
+      "entries": [
+        "Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more."
+      ]
+    },
+    {
+      "name": "Treasure (Coinage)",
+      "abbreviation": "$C",
+      "source": "XPHB",
+      "page": 213,
+      "basicRules2024": true,
+      "entries": [
+        "Characters often find coins on their adventures and can spend those coins in shops, inns, and other businesses. Coins come in different denominations based on the relative worth of their material. The Coin Values table lists coins and how much they're worth relative to the Gold Piece, which is the game's main coin. For example, 100 Copper Pieces are worth 1 Gold Piece.",
+        "A coin weighs about a third of an ounce, so fifty coins weigh a pound."
+      ]
+    },
+    {
+      "name": "Treasure (Gemstone)",
+      "abbreviation": "$G",
+      "source": "XDMG",
+      "page": 214,
+      "entries": [
+        "Gemstones are small, lightweight, and easily secured compared to their same value in coins."
+      ]
+    },
+    {
+      "name": "Vehicle (Air)",
+      "abbreviation": "AIR",
+      "source": "XPHB",
+      "page": 230,
+      "basicRules2024": true,
+      "_copy": {
+        "abbreviation": "SHP",
+        "source": "XPHB"
+      }
+    },
+    {
+      "name": "Vehicle (Land)",
+      "abbreviation": "VEH",
+      "source": "XPHB",
+      "page": 230,
       "basicRules2024": true
     },
     {
@@ -226,48 +268,6 @@
           ]
         }
       ]
-    },
-    {
-      "name": "Tool",
-      "abbreviation": "T",
-      "source": "XPHB",
-      "page": 220,
-      "basicRules2024": true,
-      "entries": [
-        "If you have proficiency with a tool, add your {@variantrule Proficiency|XPHB|Proficiency Bonus} to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have {@variantrule Advantage|XPHB} on the check too."
-      ]
-    },
-    {
-      "name": "Tack and Harness",
-      "abbreviation": "TAH",
-      "source": "XPHB",
-      "page": 230,
-      "basicRules2024": true
-    },
-    {
-      "name": "Trade Bar",
-      "abbreviation": "TB",
-      "source": "XDMG",
-      "page": 213,
-      "entries": [
-        "Because large numbers of coins can be difficult to transport and account for, many merchants prefer to use trade bars—ingots of precious metals and alloys (usually silver). These bars are valued by weight."
-      ]
-    },
-    {
-      "name": "Trade Good",
-      "abbreviation": "TG",
-      "source": "XDMG",
-      "page": 213,
-      "entries": [
-        "Merchants commonly exchange trade goods without using currency."
-      ]
-    },
-    {
-      "name": "Vehicle (Land)",
-      "abbreviation": "VEH",
-      "source": "XPHB",
-      "page": 230,
-      "basicRules2024": true
     }
   ]
 }
