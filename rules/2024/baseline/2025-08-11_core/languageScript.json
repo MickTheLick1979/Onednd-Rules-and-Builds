@@ -1,0 +1,11 @@
+{
+  "languageScript": [
+    {
+      "name": "Draconic",
+      "source": "XPHB",
+      "fonts": [
+        "fonts/languages/XPHB/Draconic/Iokharik-v2.woff2"
+      ]
+    }
+  ]
+}
