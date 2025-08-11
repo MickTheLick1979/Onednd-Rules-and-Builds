@@ -26,6 +26,8 @@ ALLOW_CATEGORIES: Set[str] = {
     "class", "classFeature", "classFluff",
     "subclass", "subclassFeature", "subclassFluff",
     "race", "raceFeature", "raceFluff",
+    "optionalfeature",
+
 
     # Spells
     "spell", "spellFluff",
