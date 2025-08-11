@@ -1,0 +1,44 @@
+{
+  "classVariant": [
+    {
+      "name": "Ranger",
+      "source": "XPHB",
+      "definedInSource": "FTD"
+    },
+    {
+      "name": "Sorcerer",
+      "source": "XPHB",
+      "definedInSource": "FTD"
+    },
+    {
+      "name": "Wizard",
+      "source": "XPHB",
+      "definedInSource": "FTD"
+    },
+    {
+      "name": "Druid",
+      "source": "XPHB",
+      "definedInSource": "FTD"
+    },
+    {
+      "name": "Bard",
+      "source": "XPHB",
+      "definedInSource": "FTD"
+    },
+    {
+      "name": "Warlock",
+      "source": "XPHB",
+      "definedInSource": "FTD"
+    },
+    {
+      "name": "Cleric",
+      "source": "XPHB",
+      "definedInSource": "TCE"
+    },
+    {
+      "name": "Paladin",
+      "source": "XPHB",
+      "definedInSource": "TCE"
+    }
+  ]
+}

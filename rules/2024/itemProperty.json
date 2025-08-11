@@ -1,0 +1,193 @@
+{
+  "itemProperty": [
+    {
+      "abbreviation": "2H",
+      "source": "XPHB",
+      "page": 214,
+      "basicRules2024": true,
+      "template": "{{prop_name}}",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Two-Handed",
+          "entries": [
+            "A Two-Handed weapon requires two hands when you attack with it."
+          ]
+        }
+      ]
+    },
+    {
+      "abbreviation": "A",
+      "source": "XPHB",
+      "page": 213,
+      "basicRules2024": true,
+      "template": "{{prop_name}} (Range {{item.range}} ft.; {{item.ammoType}})",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Ammunition",
+          "entries": [
+            "You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. The type of ammunition required is specified with the weapon's range. Each attack expends one piece of ammunition. Drawing the ammunition is part of the attack (you need a free hand to load a one-handed weapon). After a fight, you can spend 1 minute to recover half the ammunition (round down) you used in the fight; the rest is lost."
+          ]
+        }
+      ]
+    },
+    {
+      "abbreviation": "AF",
+      "source": "XDMG",
+      "page": 72,
+      "template": "{{prop_name}} ({{item.range}} ft.; {{item.ammoType}})",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Ammunition",
+          "entries": [
+            "Firearm Bullets are destroyed upon use in a modern firearm. Futuristic firearms use Energy Cells that become depleted but could possibly be recharged with the proper equipment, at the GM's discretion."
+          ]
+        }
+      ]
+    },
+    {
+      "abbreviation": "BF",
+      "source": "XDMG",
+      "page": 72,
+      "template": "{{prop_name}}",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Burst Fire",
+          "entries": [
+            "As an action, you can expend 10 pieces of a Burst Fire weapon's ammunition to spray shots in a 10-foot {@variantrule Cube [Area of Effect]|XPHB|Cube} within the weapon's normal range. Each creature in that area must succeed on a {@dc 15} Dexterity saving throw or take damage. Roll the weapon's damage once, and apply it to each creature that failed the save."
+          ]
+        }
+      ]
+    },
+    {
+      "abbreviation": "F",
+      "source": "XPHB",
+      "page": 213,
+      "basicRules2024": true,
+      "template": "{{prop_name}}",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Finesse",
+          "entries": [
+            "When making an attack with a Finesse weapon, use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls."
+          ]
+        }
+      ]
+    },
+    {
+      "abbreviation": "H",
+      "source": "XPHB",
+      "page": 213,
+      "basicRules2024": true,
+      "template": "{{prop_name}}",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Heavy",
+          "entries": [
+            "You have {@variantrule Disadvantage|XPHB} on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13."
+          ]
+        }
+      ]
+    },
+    {
+      "abbreviation": "L",
+      "source": "XPHB",
+      "page": 213,
+      "basicRules2024": true,
+      "template": "{{prop_name}}",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Light",
+          "entries": [
+            "When you take the {@action Attack|XPHB} action on your turn and attack with a Light weapon, you can make one extra attack as a {@variantrule Bonus Action|XPHB} later on the same turn. That extra attack must be made with a different Light weapon, and you don't add your ability modifier to the extra attack's damage unless that modifier is negative. For example, you can attack with a {@item Shortsword|XPHB} in one hand and a {@item Dagger|XPHB} in the other using the {@action Attack|XPHB} action and a {@variantrule Bonus Action|XPHB}, but you don't add your Strength or Dexterity modifier to the damage roll of the {@variantrule Bonus Action|XPHB} unless that modifier is negative."
+          ]
+        }
+      ]
+    },
+    {
+      "abbreviation": "LD",
+      "source": "XPHB",
+      "page": 214,
+      "basicRules2024": true,
+      "template": "{{prop_name}}",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Loading",
+          "entries": [
+            "You can fire only one piece of ammunition from a Loading weapon when you use an action, a {@variantrule Bonus Action|XPHB}, or a {@variantrule Reaction|XPHB} to fire it, regardless of the number of attacks you can normally make."
+          ]
+        }
+      ]
+    },
+    {
+      "abbreviation": "R",
+      "source": "XPHB",
+      "page": 214,
+      "basicRules2024": true,
+      "template": "{{prop_name}}",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Reach",
+          "entries": [
+            "A Reach weapon adds 5 feet to your reach when you attack with it, as well as when determining your reach for {@action Opportunity Attack|XPHB|Opportunity Attacks} with it."
+          ]
+        }
+      ]
+    },
+    {
+      "abbreviation": "RLD",
+      "source": "XDMG",
+      "page": 72,
+      "template": "{{prop_name}} ({{item.reload}} shots)",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Reload",
+          "entries": [
+            "You can make a limited number of shots with a Reload weapon. You must then reload the weapon as an action or a {@variantrule Bonus Action|XPHB}."
+          ]
+        }
+      ]
+    },
+    {
+      "abbreviation": "T",
+      "source": "XPHB",
+      "page": 214,
+      "basicRules2024": true,
+      "template": "{{prop_name}} ({{item.range}} ft.)",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Thrown",
+          "entries": [
+            "If a weapon has the Thrown property, you can throw the weapon to make a ranged attack, and you can draw that weapon as part of the attack. If the weapon is a Melee weapon, use the same ability modifier for the attack and damage rolls that you use for a melee attack with that weapon."
+          ]
+        }
+      ]
+    },
+    {
+      "abbreviation": "V",
+      "source": "XPHB",
+      "page": 214,
+      "basicRules2024": true,
+      "template": "{{prop_name}} ({{item.dmg2}})",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Versatile",
+          "entries": [
+            "A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack."
+          ]
+        }
+      ]
+    }
+  ]
+}

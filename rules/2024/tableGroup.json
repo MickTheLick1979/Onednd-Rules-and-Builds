@@ -1,0 +1,2848 @@
+{
+  "tableGroup": [
+    {
+      "type": "tableGroup",
+      "name": "Random Magic Items - Arcana",
+      "source": "XDMG",
+      "page": 326,
+      "tables": [
+        {
+          "type": "table",
+          "caption": "Arcana - Common",
+          "colLabels": [
+            "1d100",
+            "Item"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "01–02",
+              "{@item Bead of Nourishment|XDMG}"
+            ],
+            [
+              "03–04",
+              "{@item Bead of Refreshment|XDMG}"
+            ],
+            [
+              "05–07",
+              "{@item Candle of the Deep|XDMG}"
+            ],
+            [
+              "08–10",
+              "{@item Cloak of Billowing|XDMG}"
+            ],
+            [
+              "11–13",
+              "{@item Cloak of Many Fashions|XDMG}"
+            ],
+            [
+              "14–15",
+              "{@item Clothes of Mending|XDMG}"
+            ],
+            [
+              "16–17",
+              "{@item Dark Shard Amulet|XDMG}"
+            ],
+            [
+              "18–19",
+              "{@item Enduring Spellbook|XDMG}"
+            ],
+            [
+              "20–21",
+              "{@item Ersatz Eye|XDMG}"
+            ],
+            [
+              "22–24",
+              "{@item Hat of Vermin|XDMG}"
+            ],
+            [
+              "25–27",
+              "{@item Hat of Wizardry|XDMG}"
+            ],
+            [
+              "28–29",
+              "{@item Heward's Handy Spice Pouch|XDMG}"
+            ],
+            [
+              "30–31",
+              "{@item Horn of Silent Alarm|XDMG}"
+            ],
+            [
+              "32–33",
+              "{@item Instrument of Illusions|XDMG}"
+            ],
+            [
+              "34–35",
+              "{@item Instrument of Scribing|XDMG}"
+            ],
+            [
+              "36–37",
+              "{@item Lock of Trickery|XDMG}"
+            ],
+            [
+              "38–40",
+              "{@item Mystery Key|XDMG}"
+            ],
+            [
+              "41–42",
+              "{@item Orb of Direction|XDMG}"
+            ],
+            [
+              "43–44",
+              "{@item Orb of Time|XDMG}"
+            ],
+            [
+              "45–46",
+              "{@item Perfume of Bewitching|XDMG}"
+            ],
+            [
+              "47–49",
+              "{@item Pipe of Smoke Monsters|XDMG}"
+            ],
+            [
+              "50–52",
+              "{@item Potion of Climbing|XDMG}"
+            ],
+            [
+              "53–55",
+              "{@item Potion of Comprehension|XDMG}"
+            ],
+            [
+              "56–58",
+              "{@item Pot of Awakening|XDMG}"
+            ],
+            [
+              "59–60",
+              "{@item Prosthetic Limb|XDMG}"
+            ],
+            [
+              "61–64",
+              "{@item Rival Coin|XDMG}"
+            ],
+            [
+              "65–66",
+              "{@item Rope of Mending|XDMG}"
+            ],
+            [
+              "67–68",
+              "{@item Ruby of the War Mage|XDMG}"
+            ],
+            [
+              "69–82",
+              "{@item Spell Scroll|XDMG} ({@item Spell Scroll (Cantrip)|XDMG|cantrip} or {@item Spell Scroll (Level 1)|XDMG|level 1} spell)"
+            ],
+            [
+              "83–84",
+              "{@item Staff of Adornment|XDMG}"
+            ],
+            [
+              "85–86",
+              "{@item Staff of Birdcalls|XDMG}"
+            ],
+            [
+              "87–89",
+              "{@item Staff of Flowers|XDMG}"
+            ],
+            [
+              "90–92",
+              "{@item Talking Doll|XDMG}"
+            ],
+            [
+              "93–94",
+              "{@item Tankard of Sobriety|XDMG}"
+            ],
+            [
+              "95–97",
+              "{@item Wand of Conducting|XDMG}"
+            ],
+            [
+              "98–00",
+              "{@item Wand of Pyrotechnics|XDMG}"
+            ]
+          ],
+          "path": [
+            {
+              "name": "Chapter 7: Treasure",
+              "page": 213
+            },
+            {
+              "name": "Random Magic Items",
+              "page": 326
+            },
+            {
+              "name": "Arcana Tables",
+              "page": 326
+            }
+          ],
+          "section": "Arcana Tables",
+          "sectionIndex": 1
+        },
+        {
+          "type": "table",
+          "caption": "Arcana - Uncommon",
+          "colLabels": [
+            "1d100",
+            "Item"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "01",
+              "{@item Amulet of Proof against Detection and Location|XDMG}"
+            ],
+            [
+              "02",
+              "{@item Baba Yaga's Dancing Broom|XDMG}"
+            ],
+            [
+              "03–05",
+              "{@item Bag of Holding|XDMG}"
+            ],
+            [
+              "06–07",
+              "{@item Bag of Tricks|XDMG}"
+            ],
+            [
+              "08",
+              "{@item Brooch of Shielding|XDMG}"
+            ],
+            [
+              "09",
+              "{@item Broom of Flying|XDMG}"
+            ],
+            [
+              "10",
+              "{@item Cap of Water Breathing|XDMG}"
+            ],
+            [
+              "11",
+              "{@item Circlet of Blasting|XDMG}"
+            ],
+            [
+              "12–13",
+              "{@item Cloak of Protection|XDMG}"
+            ],
+            [
+              "14",
+              "{@item Cloak of the Manta Ray|XDMG}"
+            ],
+            [
+              "15",
+              "{@item Decanter of Endless Water|XDMG}"
+            ],
+            [
+              "16",
+              "{@item Deck of Illusions|XDMG}"
+            ],
+            [
+              "17–18",
+              "{@item Driftglobe|XDMG}"
+            ],
+            [
+              "19–20",
+              "{@item Dust of Disappearance|XDMG}"
+            ],
+            [
+              "21",
+              "{@item Dust of Dryness|XDMG}"
+            ],
+            [
+              "22",
+              "{@item Dust of Sneezing and Choking|XDMG}"
+            ],
+            [
+              "23–24",
+              "{@item Elemental Gem|XDMG}"
+            ],
+            [
+              "25",
+              "{@item Enspelled Staff|XDMG} (cantrip or level 1 spell)"
+            ],
+            [
+              "26",
+              "{@item Eversmoking Bottle|XDMG}"
+            ],
+            [
+              "27",
+              "{@item Eyes of Charming|XDMG}"
+            ],
+            [
+              "28",
+              "{@item Eyes of Minute Seeing|XDMG}"
+            ],
+            [
+              "29–30",
+              "{@item Figurine of Wondrous Power, Silver Raven|XDMG|Figurine of Wondrous Power (silver raven)}"
+            ],
+            [
+              "31",
+              "{@item Gem of Brightness|XDMG}"
+            ],
+            [
+              "32",
+              "{@item Hag Eye|XDMG}"
+            ],
+            [
+              "33",
+              "{@item Hat of Disguise|XDMG}"
+            ],
+            [
+              "34",
+              "{@item Headband of Intellect|XDMG}"
+            ],
+            [
+              "35",
+              "{@item Helm of Comprehending Languages|XDMG}"
+            ],
+            [
+              "36",
+              "{@item Helm of Telepathy|XDMG}"
+            ],
+            [
+              "37",
+              "{@item Immovable Rod|XDMG}"
+            ],
+            [
+              "38",
+              "{@item Lantern of Revealing|XDMG}"
+            ],
+            [
+              "39",
+              "{@item Medallion of Thoughts|XDMG}"
+            ],
+            [
+              "40",
+              "{@item Mithral Armor|XDMG}"
+            ],
+            [
+              "41–42",
+              "{@item Necklace of Adaptation|XDMG}"
+            ],
+            [
+              "43",
+              "{@item Oil of Slipperiness|XDMG}"
+            ],
+            [
+              "44",
+              "{@item Pearl of Power|XDMG}"
+            ],
+            [
+              "45",
+              "{@item Periapt of Health|XDMG}"
+            ],
+            [
+              "46–47",
+              "{@item Philter of Love|XDMG}"
+            ],
+            [
+              "48–49",
+              "{@item Potion of Animal Friendship|XDMG}"
+            ],
+            [
+              "50–51",
+              "{@item Potion of Fire Breath|XDMG}"
+            ],
+            [
+              "52–53",
+              "{@item Potion of Hill Giant Strength|XDMG|Potion of Giant Strength (hill)}"
+            ],
+            [
+              "54–55",
+              "{@item Potion of Growth|XDMG}"
+            ],
+            [
+              "56–57",
+              "{@item Potion of Poison|XDMG}"
+            ],
+            [
+              "58–59",
+              "{@item Potion of Resistance|XDMG}"
+            ],
+            [
+              "60–61",
+              "{@item Potion of Water Breathing|XDMG}"
+            ],
+            [
+              "62",
+              "{@item Quaal's Feather Token|XDMG} ({@item Quaal's Feather Token, Anchor|XDMG|anchor}, {@item Quaal's Feather Token, Fan|XDMG|fan}, or {@item Quaal's Feather Token, Tree|XDMG|tree})"
+            ],
+            [
+              "63",
+              "{@item Ring of Mind Shielding|XDMG}"
+            ],
+            [
+              "64–65",
+              "{@item Robe of Useful Items|XDMG}"
+            ],
+            [
+              "66–67",
+              "{@item Rod of the Pact Keeper|XDMG}"
+            ],
+            [
+              "68–69",
+              "{@item Rope of Climbing|XDMG}"
+            ],
+            [
+              "70",
+              "{@item Saddle of the Cavalier|XDMG}"
+            ],
+            [
+              "71–72",
+              "{@item Sending Stones|XDMG}"
+            ],
+            [
+              "73–74",
+              "{@item Slippers of Spider Climbing|XDMG}"
+            ],
+            [
+              "75–82",
+              "{@item Spell Scroll|XDMG} ({@item Spell Scroll (Level 2)|XDMG|level 2} or {@item Spell Scroll (Level 3)|XDMG|level 3} spell)"
+            ],
+            [
+              "83",
+              "{@item Staff of the Adder|XDMG}"
+            ],
+            [
+              "84",
+              "{@item Staff of the Python|XDMG}"
+            ],
+            [
+              "85–88",
+              "{@item Wand of Magic Detection|XDMG}"
+            ],
+            [
+              "89–91",
+              "{@item Wand of Magic Missiles|XDMG}"
+            ],
+            [
+              "92–93",
+              "{@item Wand of Secrets|XDMG}"
+            ],
+            [
+              "94–95",
+              "{@item +1 Wand of the War Mage|XDMG|Wand of the War Mage, +1}"
+            ],
+            [
+              "96–97",
+              "{@item Wand of Web|XDMG}"
+            ],
+            [
+              "98–99",
+              "{@item Wind Fan|XDMG}"
+            ],
+            [
+              "00",
+              "{@item Winged Boots|XDMG}"
+            ]
+          ],
+          "path": [
+            {
+              "name": "Chapter 7: Treasure",
+              "page": 213
+            },
+            {
+              "name": "Random Magic Items",
+              "page": 326
+            },
+            {
+              "name": "Arcana Tables",
+              "page": 326
+            }
+          ],
+          "section": "Arcana Tables",
+          "sectionIndex": 2
+        },
+        {
+          "type": "table",
+          "caption": "Arcana - Rare",
+          "colLabels": [
+            "1d100",
+            "Item"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "01",
+              "{@item Bag of Beans|XDMG}"
+            ],
+            [
+              "02–03",
+              "{@item Bead of Force|XDMG}"
+            ],
+            [
+              "04",
+              "{@item Bowl of Commanding Water Elementals|XDMG}"
+            ],
+            [
+              "05–06",
+              "{@item Bracers of Defense|XDMG}"
+            ],
+            [
+              "07",
+              "{@item Brazier of Commanding Fire Elementals|XDMG}"
+            ],
+            [
+              "08–09",
+              "{@item Cape of the Mountebank|XDMG}"
+            ],
+            [
+              "10",
+              "{@item Censer of Controlling Air Elementals|XDMG}"
+            ],
+            [
+              "11–12",
+              "{@item Chime of Opening|XDMG}"
+            ],
+            [
+              "13–14",
+              "{@item Cloak of Displacement|XDMG}"
+            ],
+            [
+              "15–16",
+              "{@item Cloak of the Bat|XDMG}"
+            ],
+            [
+              "17",
+              "{@item Cube of Force|XDMG}"
+            ],
+            [
+              "18",
+              "{@item Cube of Summoning|XDMG}"
+            ],
+            [
+              "19",
+              "{@item Daern's Instant Fortress|XDMG}"
+            ],
+            [
+              "20–21",
+              "{@item Enspelled Staff|XDMG} (level 2 or 3 spell)"
+            ],
+            [
+              "22–23",
+              "{@item Figurine of Wondrous Power|XDMG} ({@item Figurine of Wondrous Power, Bronze Griffon|XDMG|bronze griffon}, {@item Figurine of Wondrous Power, Ebony Fly|XDMG|ebony fly}, {@item Figurine of Wondrous Power, Golden Lions|XDMG|golden lions}, {@item Figurine of Wondrous Power, Ivory Goats|XDMG|ivory goats}, {@item Figurine of Wondrous Power, Marble Elephant|XDMG|marble elephant}, {@item Figurine of Wondrous Power, Onyx Dog|XDMG|onyx dog}, or {@item Figurine of Wondrous Power, Serpentine Owl|XDMG|serpentine owl})"
+            ],
+            [
+              "24–25",
+              "{@item Folding Boat|XDMG}"
+            ],
+            [
+              "26–27",
+              "{@item Gem of Seeing|XDMG}"
+            ],
+            [
+              "28",
+              "{@item Helm of Teleportation|XDMG}"
+            ],
+            [
+              "29–30",
+              "{@item Heward's Handy Haversack|XDMG}"
+            ],
+            [
+              "31–32",
+              "{@item Horseshoes of Speed|XDMG}"
+            ],
+            [
+              "33–34",
+              "{@item Ioun Stone, Reserve|XDMG|Ioun Stone (reserve)}"
+            ],
+            [
+              "35",
+              "{@item Iron Bands of Bilarro|XDMG}"
+            ],
+            [
+              "36",
+              "{@item Mantle of Spell Resistance|XDMG}"
+            ],
+            [
+              "37–38",
+              "{@item Necklace of Fireballs|XDMG}"
+            ],
+            [
+              "39",
+              "{@item Oil of Etherealness|XDMG}"
+            ],
+            [
+              "40",
+              "{@item Portable Hole|XDMG}"
+            ],
+            [
+              "41–42",
+              "{@item Potion of Clairvoyance|XDMG}"
+            ],
+            [
+              "43–44",
+              "{@item Potion of Diminution|XDMG}"
+            ],
+            [
+              "45–46",
+              "{@item Potion of Gaseous Form|XDMG}"
+            ],
+            [
+              "47",
+              "{@item Potion of Fire Giant Strength|XDMG|Potion of Giant Strength (fire)}"
+            ],
+            [
+              "48–49",
+              "{@item Potion of Giant Strength|XDMG} ({@item Potion of Frost Giant Strength|XDMG|frost} or {@item Potion of Stone Giant Strength|XDMG|stone})"
+            ],
+            [
+              "50–51",
+              "{@item Potion of Heroism|XDMG}"
+            ],
+            [
+              "52–53",
+              "{@item Potion of Invisibility|XDMG}"
+            ],
+            [
+              "54–55",
+              "{@item Potion of Invulnerability|XDMG}"
+            ],
+            [
+              "56–57",
+              "{@item Potion of Mind Reading|XDMG}"
+            ],
+            [
+              "58–59",
+              "{@item Quaal's Feather Token|XDMG} ({@item Quaal's Feather Token, Bird|XDMG|bird}, {@item Quaal's Feather Token, Swan Boat|XDMG|swan boat}, or {@item Quaal's Feather Token, Whip|XDMG|whip})"
+            ],
+            [
+              "60–61",
+              "{@item Ring of Feather Falling|XDMG}"
+            ],
+            [
+              "62",
+              "{@item Ring of Spell Storing|XDMG}"
+            ],
+            [
+              "63",
+              "{@item Ring of X-ray Vision|XDMG}"
+            ],
+            [
+              "64–65",
+              "{@item Robe of Eyes|XDMG}"
+            ],
+            [
+              "66",
+              "{@item Rod of Rulership|XDMG}"
+            ],
+            [
+              "67–68",
+              "{@item +2 Rod of the Pact Keeper|XDMG|Rod of the Pact Keeper, +2}"
+            ],
+            [
+              "69–70",
+              "{@item Scroll of Protection|XDMG}"
+            ],
+            [
+              "71–75",
+              "{@item Spell Scroll|XDMG} ({@item Spell Scroll (Level 4)|XDMG|level 4} or {@item Spell Scroll (Level 5)|XDMG|level 5} spell)"
+            ],
+            [
+              "76–77",
+              "{@item Staff of Charming|XDMG}"
+            ],
+            [
+              "78–79",
+              "{@item Staff of Swarming Insects|XDMG}"
+            ],
+            [
+              "80–81",
+              "{@item Staff of Withering|XDMG}"
+            ],
+            [
+              "82",
+              "{@item Stone of Controlling Earth Elementals|XDMG}"
+            ],
+            [
+              "83–84",
+              "{@item Wand of Binding|XDMG}"
+            ],
+            [
+              "85–86",
+              "{@item Wand of Fear|XDMG}"
+            ],
+            [
+              "87–90",
+              "{@item Wand of Fireballs|XDMG}"
+            ],
+            [
+              "91–94",
+              "{@item Wand of Lightning Bolts|XDMG}"
+            ],
+            [
+              "95–96",
+              "{@item +2 Wand of the War Mage|XDMG|Wand of the War Mage, +2}"
+            ],
+            [
+              "97–98",
+              "{@item Wand of Wonder|XDMG}"
+            ],
+            [
+              "99–00",
+              "{@item Wings of Flying|XDMG}"
+            ]
+          ],
+          "path": [
+            {
+              "name": "Chapter 7: Treasure",
+              "page": 213
+            },
+            {
+              "name": "Random Magic Items",
+              "page": 326
+            },
+            {
+              "name": "Arcana Tables",
+              "page": 326
+            }
+          ],
+          "section": "Arcana Tables",
+          "sectionIndex": 3
+        },
+        {
+          "type": "table",
+          "caption": "Arcana - Very Rare",
+          "colLabels": [
+            "1d100",
+            "Item"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "01–02",
+              "{@item Amulet of the Planes|XDMG}"
+            ],
+            [
+              "03–04",
+              "{@item Bag of Devouring|XDMG}"
+            ],
+            [
+              "05–06",
+              "{@item Carpet of Flying|XDMG}"
+            ],
+            [
+              "07–08",
+              "{@item Cauldron of Rebirth|XDMG}"
+            ],
+            [
+              "09–10",
+              "{@item Cloak of Arachnida|XDMG}"
+            ],
+            [
+              "11–12",
+              "{@item Crystal Ball|XDMG}"
+            ],
+            [
+              "13",
+              "{@item Dancing Sword|XDMG}"
+            ],
+            [
+              "14",
+              "{@item Efreeti Bottle|XDMG}"
+            ],
+            [
+              "15–16",
+              "{@item Enspelled Staff|XDMG} (level 4 or 5 spell)"
+            ],
+            [
+              "17–18",
+              "{@item Figurine of Wondrous Power, Obsidian Steed|XDMG|Figurine of Wondrous Power (obsidian steed)}"
+            ],
+            [
+              "19–20",
+              "{@item Hat of Many Spells|XDMG}"
+            ],
+            [
+              "21–22",
+              "{@item Helm of Brilliance|XDMG}"
+            ],
+            [
+              "23–24",
+              "{@item Horseshoes of a Zephyr|XDMG}"
+            ],
+            [
+              "25–26",
+              "{@item Ioun Stone|XDMG} ({@item Ioun Stone, Absorption|XDMG|absorption}, {@item Ioun Stone, Fortitude|XDMG|fortitude}, {@item Ioun Stone, Intellect|XDMG|intellect}, or {@item Ioun Stone, Leadership|XDMG|leadership})"
+            ],
+            [
+              "27–28",
+              "{@item Manual of Golems|XDMG} ({@item Manual of Clay Golems|XDMG|clay}, {@item Manual of Flesh Golems|XDMG|flesh}, {@item Manual of Iron Golems|XDMG|iron}, or {@item Manual of Stone Golems|XDMG|stone})"
+            ],
+            [
+              "29",
+              "{@item Mirror of Life Trapping|XDMG}"
+            ],
+            [
+              "30–31",
+              "{@item Nolzur's Marvelous Pigments|XDMG}"
+            ],
+            [
+              "32–34",
+              "{@item Oil of Sharpness|XDMG}"
+            ],
+            [
+              "35–38",
+              "{@item Potion of Flying|XDMG}"
+            ],
+            [
+              "39–42",
+              "{@item Potion of Cloud Giant Strength|XDMG|Potion of Giant Strength (cloud)}"
+            ],
+            [
+              "43–46",
+              "{@item Potion of Greater Invisibility|XDMG}"
+            ],
+            [
+              "47–49",
+              "{@item Potion of Longevity|XDMG}"
+            ],
+            [
+              "50–53",
+              "{@item Potion of Speed|XDMG}"
+            ],
+            [
+              "54–57",
+              "{@item Potion of Vitality|XDMG}"
+            ],
+            [
+              "58–59",
+              "{@item Ring of Regeneration|XDMG}"
+            ],
+            [
+              "60–61",
+              "{@item Ring of Shooting Stars|XDMG}"
+            ],
+            [
+              "62–63",
+              "{@item Ring of Telekinesis|XDMG}"
+            ],
+            [
+              "64–65",
+              "{@item Robe of Scintillating Colors|XDMG}"
+            ],
+            [
+              "66–67",
+              "{@item Robe of Stars|XDMG}"
+            ],
+            [
+              "68–69",
+              "{@item Rod of Absorption|XDMG}"
+            ],
+            [
+              "70–71",
+              "{@item Rod of Security|XDMG}"
+            ],
+            [
+              "72–73",
+              "{@item +3 Rod of the Pact Keeper|XDMG|Rod of the Pact Keeper, +3}"
+            ],
+            [
+              "74–85",
+              "{@item Spell Scroll|XDMG} ({@item Spell Scroll (Level 6)|XDMG|level 6}, {@item Spell Scroll (Level 7)|XDMG|level 7}, or {@item Spell Scroll (Level 8)|XDMG|level 8} spell)"
+            ],
+            [
+              "86–87",
+              "{@item Staff of Fire|XDMG}"
+            ],
+            [
+              "88–89",
+              "{@item Staff of Frost|XDMG}"
+            ],
+            [
+              "90",
+              "{@item Staff of Power|XDMG}"
+            ],
+            [
+              "91–92",
+              "{@item Staff of Thunder and Lightning|XDMG}"
+            ],
+            [
+              "93–94",
+              "{@item Tome of Clear Thought|XDMG}"
+            ],
+            [
+              "95–97",
+              "{@item Wand of Polymorph|XDMG}"
+            ],
+            [
+              "98–00",
+              "{@item +3 Wand of the War Mage|XDMG|Wand of the War Mage, +3}"
+            ]
+          ],
+          "path": [
+            {
+              "name": "Chapter 7: Treasure",
+              "page": 213
+            },
+            {
+              "name": "Random Magic Items",
+              "page": 326
+            },
+            {
+              "name": "Arcana Tables",
+              "page": 326
+            }
+          ],
+          "section": "Arcana Tables",
+          "sectionIndex": 4
+        },
+        {
+          "type": "table",
+          "caption": "Arcana - Legendary",
+          "colLabels": [
+            "1d100",
+            "Item"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "01–04",
+              "{@item Apparatus of Kwalish|XDMG}"
+            ],
+            [
+              "05–08",
+              "{@item Cloak of Invisibility|XDMG}"
+            ],
+            [
+              "09–12",
+              "{@item Crystal Ball of Mind Reading|XDMG}"
+            ],
+            [
+              "13–16",
+              "{@item Crystal Ball of Telepathy|XDMG}"
+            ],
+            [
+              "17–20",
+              "{@item Crystal Ball of True Seeing|XDMG}"
+            ],
+            [
+              "21–22",
+              "{@item Cubic Gate|XDMG}"
+            ],
+            [
+              "23",
+              "{@item Deck of Many Things|XDMG}"
+            ],
+            [
+              "24–27",
+              "{@item Enspelled Staff|XDMG} (level 6, 7, or 8 spell)"
+            ],
+            [
+              "28–31",
+              "{@item Ioun Stone|XDMG} ({@item Ioun Stone, Greater Absorption|XDMG|greater absorption}, {@item Ioun Stone, Mastery|XDMG|mastery}, or {@item Ioun Stone, Regeneration|XDMG|regeneration})"
+            ],
+            [
+              "32–33",
+              "{@item Iron Flask|XDMG}"
+            ],
+            [
+              "34–41",
+              "{@item Potion of Storm Giant Strength|XDMG|Potion of Storm Giant Strength (storm)}"
+            ],
+            [
+              "42–45",
+              "{@item Ring of Djinni Summoning|XDMG}"
+            ],
+            [
+              "46–49",
+              "{@item Ring of Elemental Command|XDMG} ({@item Ring of Elemental Command (Air)|XDMG|air}, {@item Ring of Elemental Command (Earth)|XDMG|earth}, {@item Ring of Elemental Command (Fire)|XDMG|fire}, or {@item Ring of Elemental Command (Water)|XDMG|water})"
+            ],
+            [
+              "50–53",
+              "{@item Ring of Invisibility|XDMG}"
+            ],
+            [
+              "54–57",
+              "{@item Ring of Spell Turning|XDMG}"
+            ],
+            [
+              "58",
+              "{@item Ring of Three Wishes|XDMG}"
+            ],
+            [
+              "59",
+              "{@item Robe of the Archmagi|XDMG}"
+            ],
+            [
+              "60–61",
+              "{@item Scroll of Titan Summoning|XDMG}"
+            ],
+            [
+              "62–65",
+              "{@item Sovereign Glue|XDMG}"
+            ],
+            [
+              "66–83",
+              "{@item Spell Scroll (Level 9)|XDMG|Spell Scroll (level 9} spell)"
+            ],
+            [
+              "84",
+              "{@item Sphere of Annihilation|XDMG}"
+            ],
+            [
+              "85",
+              "{@item Staff of the Magi|XDMG}"
+            ],
+            [
+              "86–88",
+              "{@item Talisman of the Sphere|XDMG}"
+            ],
+            [
+              "89–92",
+              "{@item Tome of the Stilled Tongue|XDMG}"
+            ],
+            [
+              "93–96",
+              "{@item Universal Solvent|XDMG}"
+            ],
+            [
+              "97–00",
+              "{@item Well of Many Worlds|XDMG}"
+            ]
+          ],
+          "path": [
+            {
+              "name": "Chapter 7: Treasure",
+              "page": 213
+            },
+            {
+              "name": "Random Magic Items",
+              "page": 326
+            },
+            {
+              "name": "Arcana Tables",
+              "page": 326
+            }
+          ],
+          "section": "Arcana Tables",
+          "sectionIndex": 5
+        }
+      ],
+      "chapter": {
+        "name": "Treasure",
+        "ordinal": {
+          "type": "chapter",
+          "identifier": 7
+        },
+        "index": 6
+      }
+    },
+    {
+      "type": "tableGroup",
+      "name": "Random Magic Items - Armaments",
+      "source": "XDMG",
+      "page": 328,
+      "tables": [
+        {
+          "type": "table",
+          "caption": "Armaments - Common",
+          "colLabels": [
+            "1d100",
+            "Item"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "01–10",
+              "{@item Armor of Gleaming|XDMG}"
+            ],
+            [
+              "11–20",
+              "{@item Cast-Off Armor|XDMG}"
+            ],
+            [
+              "21–30",
+              "{@item Dread Helm|XDMG}"
+            ],
+            [
+              "31–40",
+              "{@item Moon-Touched Sword|XDMG}"
+            ],
+            [
+              "41–50",
+              "{@item Shield of Expression|XDMG}"
+            ],
+            [
+              "51–60",
+              "{@item Silvered Weapon|XDMG}"
+            ],
+            [
+              "61–70",
+              "{@item Smoldering Armor|XDMG}"
+            ],
+            [
+              "71–80",
+              "{@item Sylvan Talon|XDMG}"
+            ],
+            [
+              "81–90",
+              "{@item Veteran's Cane|XDMG}"
+            ],
+            [
+              "91–00",
+              "{@item Walloping Ammunition|XDMG}"
+            ]
+          ],
+          "path": [
+            {
+              "name": "Chapter 7: Treasure",
+              "page": 213
+            },
+            {
+              "name": "Random Magic Items",
+              "page": 326
+            },
+            {
+              "name": "Armaments Tables",
+              "page": 328
+            }
+          ],
+          "section": "Armaments Tables",
+          "sectionIndex": 1
+        },
+        {
+          "type": "table",
+          "caption": "Armaments - Uncommon",
+          "colLabels": [
+            "1d100",
+            "Item"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "01–04",
+              "{@item Adamantine Armor|XDMG}"
+            ],
+            [
+              "05–08",
+              "{@item Adamantine Weapon|XDMG}"
+            ],
+            [
+              "09–13",
+              "{@item +1 Ammunition|XDMG|Ammunition, +1}"
+            ],
+            [
+              "14–18",
+              "{@item Bracers of Archery|XDMG}"
+            ],
+            [
+              "19–23",
+              "{@item Enspelled Armor|XDMG} (cantrip or level 1 spell)"
+            ],
+            [
+              "24–28",
+              "{@item Enspelled Weapon|XDMG} (cantrip or level 1 spell)"
+            ],
+            [
+              "29–33",
+              "{@item Gauntlets of Ogre Power|XDMG}"
+            ],
+            [
+              "34–38",
+              "{@item Javelin of Lightning|XDMG}"
+            ],
+            [
+              "39–43",
+              "{@item Mariner's Armor|XDMG}"
+            ],
+            [
+              "44–48",
+              "{@item Mithral Armor|XDMG}"
+            ],
+            [
+              "49–53",
+              "{@item Potion of Hill Giant Strength|XDMG|Potion of Giant Strength (hill)}"
+            ],
+            [
+              "54–58",
+              "{@item Potion of Pugilism|XDMG}"
+            ],
+            [
+              "59–62",
+              "{@item Quiver of Ehlonna|XDMG}"
+            ],
+            [
+              "63–66",
+              "{@item Saddle of the Cavalier|XDMG}"
+            ],
+            [
+              "67–71",
+              "{@item Sentinel Shield|XDMG}"
+            ],
+            [
+              "72–76",
+              "{@item +1 Shield|XDMG|Shield, +1}"
+            ],
+            [
+              "77–81",
+              "{@item Sword of Vengeance|XDMG}"
+            ],
+            [
+              "82–85",
+              "{@item Trident of Fish Command|XDMG}"
+            ],
+            [
+              "86–90",
+              "{@item +1 Weapon|XDMG|Weapon, +1}"
+            ],
+            [
+              "91–95",
+              "{@item Weapon of Warning|XDMG}"
+            ],
+            [
+              "96–00",
+              "{@item +1 Wraps of Unarmed Power|XDMG|Wraps of Unarmed Power, +1}"
+            ]
+          ],
+          "path": [
+            {
+              "name": "Chapter 7: Treasure",
+              "page": 213
+            },
+            {
+              "name": "Random Magic Items",
+              "page": 326
+            },
+            {
+              "name": "Armaments Tables",
+              "page": 328
+            }
+          ],
+          "section": "Armaments Tables",
+          "sectionIndex": 2
+        },
+        {
+          "type": "table",
+          "caption": "Armaments - Rare",
+          "colLabels": [
+            "1d100",
+            "Item"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "01–03",
+              "{@item +2 Ammunition|XDMG|Ammunition, +2}"
+            ],
+            [
+              "04–07",
+              "{@item +1 Armor|XDMG|Armor, +1}"
+            ],
+            [
+              "08–10",
+              "{@item Armor of Resistance|XDMG}"
+            ],
+            [
+              "11–13",
+              "{@item Armor of Vulnerability|XDMG}"
+            ],
+            [
+              "14–15",
+              "{@item Arrow-Catching Shield|XDMG}"
+            ],
+            [
+              "16–18",
+              "{@item Belt of Hill Giant Strength|XDMG|Belt of Giant Strength (hill)}"
+            ],
+            [
+              "19–20",
+              "{@item Berserker Axe|XDMG}"
+            ],
+            [
+              "21–22",
+              "{@item Daern's Instant Fortress|XDMG}"
+            ],
+            [
+              "23–25",
+              "{@item Dagger of Venom|XDMG}"
+            ],
+            [
+              "26–28",
+              "{@item Dragon Slayer|XDMG}"
+            ],
+            [
+              "29–31",
+              "{@item Elven Chain|XDMG}"
+            ],
+            [
+              "32–34",
+              "{@item Enspelled Armor|XDMG} (level 2 or 3 spell)"
+            ],
+            [
+              "35–37",
+              "{@item Enspelled Weapon|XDMG} (level 2 or 3 spell)"
+            ],
+            [
+              "38–40",
+              "{@item Flame Tongue|XDMG}"
+            ],
+            [
+              "41–43",
+              "{@item Giant Slayer|XDMG}"
+            ],
+            [
+              "44–46",
+              "{@item Horn of Blasting|XDMG}"
+            ],
+            [
+              "47–48",
+              "{@item Horn of Valhalla|XDMG} ({@item Horn of Valhalla, Brass|XDMG|brass} or {@item Horn of Valhalla, Silver|XDMG|silver})"
+            ],
+            [
+              "49–51",
+              "{@item Ioun Stone|XDMG} ({@item Ioun Stone, Protection|XDMG|protection})"
+            ],
+            [
+              "52–54",
+              "{@item Mace of Disruption|XDMG}"
+            ],
+            [
+              "55–57",
+              "{@item Mace of Smiting|XDMG}"
+            ],
+            [
+              "58–60",
+              "{@item Mace of Terror|XDMG}"
+            ],
+            [
+              "61–63",
+              "{@item Potion of Fire Giant Strength|XDMG|Potion of Giant Strength (fire)}"
+            ],
+            [
+              "64–66",
+              "{@item Potion of Giant Strength|XDMG} ({@item Potion of Frost Giant Strength|XDMG|frost} or {@item Potion of Stone Giant Strength|XDMG|stone})"
+            ],
+            [
+              "67–69",
+              "{@item Potion of Heroism|XDMG}"
+            ],
+            [
+              "70–72",
+              "{@item Potion of Invulnerability|XDMG}"
+            ],
+            [
+              "73–75",
+              "{@item Ring of Protection|XDMG}"
+            ],
+            [
+              "76–78",
+              "{@item Ring of the Ram|XDMG}"
+            ],
+            [
+              "79–81",
+              "{@item +2 Shield|XDMG|Shield, +2}"
+            ],
+            [
+              "82–84",
+              "{@item Shield of Missile Attraction|XDMG}"
+            ],
+            [
+              "85–86",
+              "{@item Sun Blade|XDMG}"
+            ],
+            [
+              "87–88",
+              "{@item Sword of Life Stealing|XDMG}"
+            ],
+            [
+              "89–90",
+              "{@item Sword of Wounding|XDMG}"
+            ],
+            [
+              "91–92",
+              "{@item Tentacle Rod|XDMG}"
+            ],
+            [
+              "93–94",
+              "{@item Vicious Weapon|XDMG}"
+            ],
+            [
+              "95–97",
+              "{@item +2 Weapon|XDMG|Weapon, +2}"
+            ],
+            [
+              "98–00",
+              "{@item +2 Wraps of Unarmed Power|XDMG|Wraps of Unarmed Power, +2}"
+            ]
+          ],
+          "path": [
+            {
+              "name": "Chapter 7: Treasure",
+              "page": 213
+            },
+            {
+              "name": "Random Magic Items",
+              "page": 326
+            },
+            {
+              "name": "Armaments Tables",
+              "page": 328
+            }
+          ],
+          "section": "Armaments Tables",
+          "sectionIndex": 3
+        },
+        {
+          "type": "table",
+          "caption": "Armaments - Very Rare",
+          "colLabels": [
+            "1d100",
+            "Item"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "01–03",
+              "{@item +3 Ammunition|XDMG|Ammunition, +3}"
+            ],
+            [
+              "04–06",
+              "{@item Ammunition of Slaying|XDMG}"
+            ],
+            [
+              "07–09",
+              "{@item Animated Shield|XDMG}"
+            ],
+            [
+              "10–12",
+              "{@item +2 Armor|XDMG|Armor, +2}"
+            ],
+            [
+              "13–14",
+              "{@item Belt of Fire Giant Strength|XDMG|Belt of Giant Strength (fire)}"
+            ],
+            [
+              "15–17",
+              "{@item Belt of Giant Strength|XDMG} ({@item Belt of Frost Giant Strength|XDMG|frost} or {@item Belt of Stone Giant Strength|XDMG|stone})"
+            ],
+            [
+              "18–19",
+              "{@item Dancing Sword|XDMG}"
+            ],
+            [
+              "20–22",
+              "{@item Demon Armor|XDMG}"
+            ],
+            [
+              "23–25",
+              "{@item Dragon Scale Mail|XDMG}"
+            ],
+            [
+              "26–28",
+              "{@item Dwarven Plate|XDMG}"
+            ],
+            [
+              "29–31",
+              "{@item Dwarven Thrower|XDMG}"
+            ],
+            [
+              "32–34",
+              "{@item Energy Bow|XDMG}"
+            ],
+            [
+              "35–37",
+              "{@item Enspelled Armor|XDMG} (level 4 or 5 spell)"
+            ],
+            [
+              "38–40",
+              "{@item Enspelled Weapon|XDMG} (level 4 or 5 spell)"
+            ],
+            [
+              "41–43",
+              "{@item Executioner's Axe|XDMG}"
+            ],
+            [
+              "44–46",
+              "{@item Frost Brand|XDMG}"
+            ],
+            [
+              "47–49",
+              "{@item Horn of Valhalla, Bronze|XDMG|Horn of Valhalla (bronze)}"
+            ],
+            [
+              "50–52",
+              "{@item Ioun Stone|XDMG} ({@item Ioun Stone, Strength|XDMG|strength})"
+            ],
+            [
+              "53–55",
+              "{@item Lute of Thunderous Thumping|XDMG}"
+            ],
+            [
+              "56–58",
+              "{@item Manual of Gainful Exercise|XDMG}"
+            ],
+            [
+              "59–61",
+              "{@item Nine Lives Stealer|XDMG}"
+            ],
+            [
+              "62–64",
+              "{@item Oathbow|XDMG}"
+            ],
+            [
+              "65–68",
+              "{@item Oil of Sharpness|XDMG}"
+            ],
+            [
+              "69–72",
+              "{@item Potion of Cloud Giant Strength|XDMG|Potion of Giant Strength (cloud)}"
+            ],
+            [
+              "73–75",
+              "{@item Quarterstaff of the Acrobat|XDMG}"
+            ],
+            [
+              "76–78",
+              "{@item Scimitar of Speed|XDMG}"
+            ],
+            [
+              "79–82",
+              "{@item +3 Shield|XDMG|Shield, +3}"
+            ],
+            [
+              "83–85",
+              "{@item Shield of the Cavalier|XDMG}"
+            ],
+            [
+              "86–88",
+              "{@item Spellguard Shield|XDMG}"
+            ],
+            [
+              "89–91",
+              "{@item Sword of Sharpness|XDMG}"
+            ],
+            [
+              "92–94",
+              "{@item Thunderous Greatclub|XDMG}"
+            ],
+            [
+              "95–97",
+              "{@item +3 Weapon|XDMG|Weapon, +3}"
+            ],
+            [
+              "98–00",
+              "{@item +3 Wraps of Unarmed Power|XDMG|Wraps of Unarmed Power, +3}"
+            ]
+          ],
+          "path": [
+            {
+              "name": "Chapter 7: Treasure",
+              "page": 213
+            },
+            {
+              "name": "Random Magic Items",
+              "page": 326
+            },
+            {
+              "name": "Armaments Tables",
+              "page": 328
+            }
+          ],
+          "section": "Armaments Tables",
+          "sectionIndex": 4
+        },
+        {
+          "type": "table",
+          "caption": "Armaments - Legendary",
+          "colLabels": [
+            "1d100",
+            "Item"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "01–06",
+              "{@item +3 Armor|XDMG|Armor, +3}"
+            ],
+            [
+              "07–12",
+              "{@item Armor of Invulnerability|XDMG}"
+            ],
+            [
+              "13–18",
+              "{@item Belt of Cloud Giant Strength|XDMG|Belt of Giant Strength (cloud)}"
+            ],
+            [
+              "19–21",
+              "{@item Belt of Storm Giant Strength|XDMG|Belt of Giant Strength (storm)}"
+            ],
+            [
+              "22–27",
+              "{@item Defender|XDMG}"
+            ],
+            [
+              "28–33",
+              "{@item Efreeti Chain|XDMG}"
+            ],
+            [
+              "34–39",
+              "{@item Enspelled Armor|XDMG} (level 6, 7, or 8 spell)"
+            ],
+            [
+              "40–45",
+              "{@item Enspelled Weapon|XDMG} (level 6, 7, or 8 spell)"
+            ],
+            [
+              "46–51",
+              "{@item Hammer of Thunderbolts|XDMG}"
+            ],
+            [
+              "52–56",
+              "{@item Holy Avenger|XDMG}"
+            ],
+            [
+              "57–62",
+              "{@item Horn of Valhalla, Iron|XDMG|Horn of Valhalla (iron)}"
+            ],
+            [
+              "63–68",
+              "{@item Luck Blade|XDMG}"
+            ],
+            [
+              "69–72",
+              "{@item Moonblade|XDMG}"
+            ],
+            [
+              "73–78",
+              "{@item Plate Armor of Etherealness|XDMG}"
+            ],
+            [
+              "79–87",
+              "{@item Potion of Storm Giant Strength|XDMG|Potion of Giant Strength (storm)}"
+            ],
+            [
+              "88–90",
+              "{@item Rod of Lordly Might|XDMG}"
+            ],
+            [
+              "91–95",
+              "{@item Sword of Answering|XDMG}"
+            ],
+            [
+              "96–00",
+              "{@item Vorpal Sword|XDMG}"
+            ]
+          ],
+          "path": [
+            {
+              "name": "Chapter 7: Treasure",
+              "page": 213
+            },
+            {
+              "name": "Random Magic Items",
+              "page": 326
+            },
+            {
+              "name": "Armaments Tables",
+              "page": 328
+            }
+          ],
+          "section": "Armaments Tables",
+          "sectionIndex": 5
+        }
+      ],
+      "chapter": {
+        "name": "Treasure",
+        "ordinal": {
+          "type": "chapter",
+          "identifier": 7
+        },
+        "index": 6
+      }
+    },
+    {
+      "type": "tableGroup",
+      "name": "Random Magic Items - Implements",
+      "source": "XDMG",
+      "page": 329,
+      "tables": [
+        {
+          "type": "table",
+          "caption": "Implements - Common",
+          "colLabels": [
+            "1d100",
+            "Item"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "01–02",
+              "{@item Bead of Nourishment|XDMG}"
+            ],
+            [
+              "03–04",
+              "{@item Bead of Refreshment|XDMG}"
+            ],
+            [
+              "05–06",
+              "{@item Boots of False Tracks|XDMG}"
+            ],
+            [
+              "07–08",
+              "{@item Candle of the Deep|XDMG}"
+            ],
+            [
+              "09–10",
+              "{@item Charlatan's Die|XDMG}"
+            ],
+            [
+              "11–13",
+              "{@item Cloak of Many Fashions|XDMG}"
+            ],
+            [
+              "14–15",
+              "{@item Clockwork Amulet|XDMG}"
+            ],
+            [
+              "16–17",
+              "{@item Ear Horn of Hearing|XDMG}"
+            ],
+            [
+              "18–19",
+              "{@item Ersatz Eye|XDMG}"
+            ],
+            [
+              "20–21",
+              "{@item Heward's Handy Spice Pouch|XDMG}"
+            ],
+            [
+              "22–23",
+              "{@item Horn of Silent Alarm|XDMG}"
+            ],
+            [
+              "24–25",
+              "{@item Instrument of Illusions|XDMG}"
+            ],
+            [
+              "26–27",
+              "{@item Instrument of Scribing|XDMG}"
+            ],
+            [
+              "28–29",
+              "{@item Lock of Trickery|XDMG}"
+            ],
+            [
+              "30–32",
+              "{@item Moon-Touched Sword|XDMG}"
+            ],
+            [
+              "33–34",
+              "{@item Mystery Key|XDMG}"
+            ],
+            [
+              "35–36",
+              "{@item Orb of Direction|XDMG}"
+            ],
+            [
+              "37–38",
+              "{@item Orb of Time|XDMG}"
+            ],
+            [
+              "39–40",
+              "{@item Perfume of Bewitching|XDMG}"
+            ],
+            [
+              "41–42",
+              "{@item Pipe of Smoke Monsters|XDMG}"
+            ],
+            [
+              "43–44",
+              "{@item Pole of Angling|XDMG}"
+            ],
+            [
+              "45–46",
+              "{@item Pole of Collapsing|XDMG}"
+            ],
+            [
+              "47–52",
+              "{@item Potion of Climbing|XDMG}"
+            ],
+            [
+              "53–58",
+              "{@item Potion of Comprehension|XDMG}"
+            ],
+            [
+              "59–74",
+              "{@item Potion of Healing|XDMG}"
+            ],
+            [
+              "75–76",
+              "{@item Prosthetic Limb|XDMG}"
+            ],
+            [
+              "77–78",
+              "{@item Rope of Mending|XDMG}"
+            ],
+            [
+              "79–80",
+              "{@item Staff of Birdcalls|XDMG}"
+            ],
+            [
+              "81–82",
+              "{@item Sylvan Talon|XDMG}"
+            ],
+            [
+              "83–84",
+              "{@item Talking Doll|XDMG}"
+            ],
+            [
+              "85–86",
+              "{@item Tankard of Sobriety|XDMG}"
+            ],
+            [
+              "87–90",
+              "{@item Veteran's Cane|XDMG}"
+            ],
+            [
+              "91–92",
+              "{@item Walloping Ammunition|XDMG}"
+            ],
+            [
+              "93–94",
+              "{@item Wand of Conducting|XDMG}"
+            ],
+            [
+              "95–97",
+              "{@item Wand of Enemy Detection|XDMG}"
+            ],
+            [
+              "98–00",
+              "{@item Wand of Pyrotechnics|XDMG}"
+            ]
+          ],
+          "path": [
+            {
+              "name": "Chapter 7: Treasure",
+              "page": 213
+            },
+            {
+              "name": "Random Magic Items",
+              "page": 326
+            },
+            {
+              "name": "Implements Tables",
+              "page": 329
+            }
+          ],
+          "section": "Implements Tables",
+          "sectionIndex": 1
+        },
+        {
+          "type": "table",
+          "caption": "Implements - Uncommon",
+          "colLabels": [
+            "1d100",
+            "Item"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "01–02",
+              "{@item Alchemy Jug|XDMG}"
+            ],
+            [
+              "03–06",
+              "{@item +1 Ammunition|XDMG|Ammunition, +1}"
+            ],
+            [
+              "07–10",
+              "{@item Bag of Holding|XDMG}"
+            ],
+            [
+              "11–12",
+              "{@item Boots of Elvenkind|XDMG}"
+            ],
+            [
+              "13–14",
+              "{@item Boots of Striding and Springing|XDMG}"
+            ],
+            [
+              "15–16",
+              "{@item Boots of the Winterlands|XDMG}"
+            ],
+            [
+              "17–18",
+              "{@item Broom of Flying|XDMG}"
+            ],
+            [
+              "19–20",
+              "{@item Cap of Water Breathing|XDMG}"
+            ],
+            [
+              "21–22",
+              "{@item Cloak of Elvenkind|XDMG}"
+            ],
+            [
+              "23–24",
+              "{@item Cloak of Protection|XDMG}"
+            ],
+            [
+              "25–26",
+              "{@item Cloak of the Manta Ray|XDMG}"
+            ],
+            [
+              "27",
+              "{@item Decanter of Endless Water|XDMG}"
+            ],
+            [
+              "28–30",
+              "{@item Driftglobe|XDMG}"
+            ],
+            [
+              "31–32",
+              "{@item Dust of Disappearance|XDMG}"
+            ],
+            [
+              "33–34",
+              "{@item Dust of Dryness|XDMG}"
+            ],
+            [
+              "35–36",
+              "{@item Dust of Sneezing and Choking|XDMG}"
+            ],
+            [
+              "37–38",
+              "{@item Enspelled Weapon|XDMG} (cantrip or level 1 spell)"
+            ],
+            [
+              "39–40",
+              "{@item Eyes of Minute Seeing|XDMG}"
+            ],
+            [
+              "41–42",
+              "{@item Eyes of the Eagle|XDMG}"
+            ],
+            [
+              "43–44",
+              "{@item Gloves of Missile Snaring|XDMG}"
+            ],
+            [
+              "45–46",
+              "{@item Gloves of Swimming and Climbing|XDMG}"
+            ],
+            [
+              "47–48",
+              "{@item Gloves of Thievery|XDMG}"
+            ],
+            [
+              "49–50",
+              "{@item Goggles of Night|XDMG}"
+            ],
+            [
+              "51",
+              "{@item Hag Eye|XDMG}"
+            ],
+            [
+              "52–54",
+              "{@item Helm of Comprehending Languages|XDMG}"
+            ],
+            [
+              "55",
+              "{@item Immovable Rod|XDMG}"
+            ],
+            [
+              "56–57",
+              "{@item Instrument of the Bards|XDMG} ({@item Instrument of the Bards, Doss Lute|XDMG|Doss lute}, {@item Instrument of the Bards, Fochlucan Bandore|XDMG|Fochlucan bandore}, or {@item Instrument of the Bards, Mac-Fuirmidh Cittern|XDMG|Mac-Fuirmidh cittern})"
+            ],
+            [
+              "58–59",
+              "{@item Lantern of Revealing|XDMG}"
+            ],
+            [
+              "60–61",
+              "{@item Nature's Mantle|XDMG}"
+            ],
+            [
+              "62–63",
+              "{@item Oil of Slipperiness|XDMG}"
+            ],
+            [
+              "64–65",
+              "{@item Pipes of Haunting|XDMG}"
+            ],
+            [
+              "66–67",
+              "{@item Pipes of the Sewers|XDMG}"
+            ],
+            [
+              "68–71",
+              "{@item Potion of Growth|XDMG}"
+            ],
+            [
+              "72–80",
+              "{@item Potion of Greater Healing|XDMG|Potion of Healing (greater)}"
+            ],
+            [
+              "81–84",
+              "{@item Potion of Water Breathing|XDMG}"
+            ],
+            [
+              "85–86",
+              "{@item Quaal's Feather Token|XDMG} ({@item Quaal's Feather Token, Anchor|XDMG|anchor}, {@item Quaal's Feather Token, Fan|XDMG|fan}, or {@item Quaal's Feather Token, Tree|XDMG|tree})"
+            ],
+            [
+              "87–88",
+              "{@item Ring of Jumping|XDMG}"
+            ],
+            [
+              "89–90",
+              "{@item Ring of Swimming|XDMG}"
+            ],
+            [
+              "91–92",
+              "{@item Ring of Warmth|XDMG}"
+            ],
+            [
+              "93–94",
+              "{@item Robe of Useful Items|XDMG}"
+            ],
+            [
+              "95–96",
+              "{@item Rope of Climbing|XDMG}"
+            ],
+            [
+              "97–98",
+              "{@item Stone of Good Luck|XDMG}"
+            ],
+            [
+              "99–00",
+              "{@item Wand of Secrets|XDMG}"
+            ]
+          ],
+          "path": [
+            {
+              "name": "Chapter 7: Treasure",
+              "page": 213
+            },
+            {
+              "name": "Random Magic Items",
+              "page": 326
+            },
+            {
+              "name": "Implements Tables",
+              "page": 329
+            }
+          ],
+          "section": "Implements Tables",
+          "sectionIndex": 2
+        },
+        {
+          "type": "table",
+          "caption": "Implements - Rare",
+          "colLabels": [
+            "1d100",
+            "Item"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "01–04",
+              "{@item +2 Ammunition|XDMG|Ammunition, +2}"
+            ],
+            [
+              "05–08",
+              "{@item Bag of Beans|XDMG}"
+            ],
+            [
+              "09–12",
+              "{@item Belt of Dwarvenkind|XDMG}"
+            ],
+            [
+              "13–16",
+              "{@item Boots of Levitation|XDMG}"
+            ],
+            [
+              "17–20",
+              "{@item Boots of Speed|XDMG}"
+            ],
+            [
+              "21–24",
+              "{@item Chime of Opening|XDMG}"
+            ],
+            [
+              "25–28",
+              "{@item Dimensional Shackles|XDMG}"
+            ],
+            [
+              "29–32",
+              "{@item Enspelled Weapon|XDMG} (level 2 or 3 spell)"
+            ],
+            [
+              "33–36",
+              "{@item Folding Boat|XDMG}"
+            ],
+            [
+              "37–40",
+              "{@item Glamoured Studded Leather|XDMG}"
+            ],
+            [
+              "41–44",
+              "{@item Heward's Handy Haversack|XDMG}"
+            ],
+            [
+              "45–48",
+              "{@item Horseshoes of Speed|XDMG}"
+            ],
+            [
+              "49–52",
+              "{@item Instrument of the Bards|XDMG} ({@item Instrument of the Bards, Canaith Mandolin|XDMG|Canaith mandolin} or {@item Instrument of the Bards, Cli Lyre|XDMG|Cli lyre})"
+            ],
+            [
+              "53–56",
+              "{@item Ioun Stone|XDMG} ({@item Ioun Stone, Awareness|XDMG|awareness})"
+            ],
+            [
+              "57–60",
+              "{@item Portable Hole|XDMG}"
+            ],
+            [
+              "61–64",
+              "{@item Potion of Diminution|XDMG}"
+            ],
+            [
+              "65–68",
+              "{@item Potion of Gaseous Form|XDMG}"
+            ],
+            [
+              "69–76",
+              "{@item Potion of Superior Healing|XDMG|Potion of Healing (superior)}"
+            ],
+            [
+              "77–80",
+              "{@item Quaal's Feather Token|XDMG} ({@item Quaal's Feather Token, Bird|XDMG|bird}, {@item Quaal's Feather Token, Swan Boat|XDMG|swan boat}, or {@item Quaal's Feather Token, Whip|XDMG|whip})"
+            ],
+            [
+              "81–84",
+              "{@item Ring of Evasion|XDMG}"
+            ],
+            [
+              "85–88",
+              "{@item Ring of Free Action|XDMG}"
+            ],
+            [
+              "89–92",
+              "{@item Rope of Entanglement|XDMG}"
+            ],
+            [
+              "93–96",
+              "{@item Staff of Healing|XDMG}"
+            ],
+            [
+              "97–00",
+              "{@item Wand of Enemy Detection|XDMG}"
+            ]
+          ],
+          "path": [
+            {
+              "name": "Chapter 7: Treasure",
+              "page": 213
+            },
+            {
+              "name": "Random Magic Items",
+              "page": 326
+            },
+            {
+              "name": "Implements Tables",
+              "page": 329
+            }
+          ],
+          "section": "Implements Tables",
+          "sectionIndex": 3
+        },
+        {
+          "type": "table",
+          "caption": "Implements - Very Rare",
+          "colLabels": [
+            "1d100",
+            "Item"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "01–07",
+              "{@item +3 Ammunition|XDMG|Ammunition, +3}"
+            ],
+            [
+              "08–14",
+              "{@item Bag of Devouring|XDMG}"
+            ],
+            [
+              "15–21",
+              "{@item Carpet of Flying|XDMG}"
+            ],
+            [
+              "22–28",
+              "{@item Enspelled Weapon|XDMG} (level 4 or 5 spell)"
+            ],
+            [
+              "29–35",
+              "{@item Horseshoes of a Zephyr|XDMG}"
+            ],
+            [
+              "36–42",
+              "{@item Instrument of the Bards, Anstruth Harp|XDMG|Instrument of the Bards (Anstruth harp)}"
+            ],
+            [
+              "43–49",
+              "{@item Ioun Stone|XDMG} ({@item Ioun Stone, Agility|XDMG|agility})"
+            ],
+            [
+              "50–56",
+              "{@item Lute of Thunderous Thumping|XDMG}"
+            ],
+            [
+              "57–63",
+              "{@item Manual of Quickness of Action|XDMG}"
+            ],
+            [
+              "64–70",
+              "{@item Nolzur's Marvelous Pigments|XDMG}"
+            ],
+            [
+              "71–77",
+              "{@item Potion of Flying|XDMG}"
+            ],
+            [
+              "78–86",
+              "{@item Potion of Supreme Healing|XDMG|Potion of Healing (supreme)}"
+            ],
+            [
+              "87–93",
+              "{@item Potion of Speed|XDMG}"
+            ],
+            [
+              "94–00",
+              "{@item Tome of Leadership and Influence|XDMG}"
+            ]
+          ],
+          "path": [
+            {
+              "name": "Chapter 7: Treasure",
+              "page": 213
+            },
+            {
+              "name": "Random Magic Items",
+              "page": 326
+            },
+            {
+              "name": "Implements Tables",
+              "page": 329
+            }
+          ],
+          "section": "Implements Tables",
+          "sectionIndex": 4
+        },
+        {
+          "type": "table",
+          "caption": "Implements - Legendary",
+          "colLabels": [
+            "1d100",
+            "Item"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "01–17",
+              "{@item Enspelled Weapon|XDMG} (level 6, 7, or 8 spell)"
+            ],
+            [
+              "18–34",
+              "{@item Instrument of the Bards|XDMG} ({@item Instrument of the Bards, Ollamh Harp|XDMG|Ollamh harp})"
+            ],
+            [
+              "35–54",
+              "{@item Sovereign Glue|XDMG}"
+            ],
+            [
+              "55–70",
+              "{@item Sphere of Annihilation|XDMG}"
+            ],
+            [
+              "71–83",
+              "{@item Talisman of the Sphere|XDMG}"
+            ],
+            [
+              "84–00",
+              "{@item Universal Solvent|XDMG}"
+            ]
+          ],
+          "path": [
+            {
+              "name": "Chapter 7: Treasure",
+              "page": 213
+            },
+            {
+              "name": "Random Magic Items",
+              "page": 326
+            },
+            {
+              "name": "Implements Tables",
+              "page": 329
+            }
+          ],
+          "section": "Implements Tables",
+          "sectionIndex": 5
+        }
+      ],
+      "chapter": {
+        "name": "Treasure",
+        "ordinal": {
+          "type": "chapter",
+          "identifier": 7
+        },
+        "index": 6
+      }
+    },
+    {
+      "type": "tableGroup",
+      "name": "Random Magic Items - Relics",
+      "source": "XDMG",
+      "page": 330,
+      "tables": [
+        {
+          "type": "table",
+          "caption": "Relics - Common",
+          "colLabels": [
+            "1d100",
+            "Item"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "01–08",
+              "{@item Ear Horn of Hearing|XDMG}"
+            ],
+            [
+              "09–28",
+              "{@item Potion of Healing|XDMG}"
+            ],
+            [
+              "29–36",
+              "{@item Pot of Awakening|XDMG}"
+            ],
+            [
+              "37–44",
+              "{@item Ruby of the War Mage|XDMG}"
+            ],
+            [
+              "45–52",
+              "{@item Shield of Expression|XDMG}"
+            ],
+            [
+              "53–60",
+              "{@item Smoldering Armor|XDMG}"
+            ],
+            [
+              "61–80",
+              "{@item Spell Scroll|XDMG} ({@item Spell Scroll (Cantrip)|XDMG|cantrip} or {@item Spell Scroll (Level 1)|XDMG|level 1} spell)"
+            ],
+            [
+              "81–90",
+              "{@item Staff of Adornment|XDMG}"
+            ],
+            [
+              "91–00",
+              "{@item Staff of Flowers|XDMG}"
+            ]
+          ],
+          "path": [
+            {
+              "name": "Chapter 7: Treasure",
+              "page": 213
+            },
+            {
+              "name": "Random Magic Items",
+              "page": 326
+            },
+            {
+              "name": "Relics Tables",
+              "page": 330
+            }
+          ],
+          "section": "Relics Tables",
+          "sectionIndex": 1
+        },
+        {
+          "type": "table",
+          "caption": "Relics - Uncommon",
+          "colLabels": [
+            "1d100",
+            "Item"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "01–05",
+              "{@item Enspelled Staff|XDMG} (cantrip or level 1 spell)"
+            ],
+            [
+              "06–10",
+              "{@item Keoghtom's Ointment|XDMG}"
+            ],
+            [
+              "11–15",
+              "{@item Mariner's Armor|XDMG}"
+            ],
+            [
+              "16–20",
+              "{@item Nature's Mantle|XDMG}"
+            ],
+            [
+              "21–25",
+              "{@item Pearl of Power|XDMG}"
+            ],
+            [
+              "26–30",
+              "{@item Periapt of Health|XDMG}"
+            ],
+            [
+              "31–35",
+              "{@item Periapt of Wound Closure|XDMG}"
+            ],
+            [
+              "36–40",
+              "{@item Potion of Animal Friendship|XDMG}"
+            ],
+            [
+              "41–55",
+              "{@item Potion of Greater Healing|XDMG|Potion of Healing (greater)}"
+            ],
+            [
+              "56–60",
+              "{@item Potion of Resistance|XDMG}"
+            ],
+            [
+              "61–65",
+              "{@item Ring of Water Walking|XDMG}"
+            ],
+            [
+              "66–70",
+              "{@item Sending Stones|XDMG}"
+            ],
+            [
+              "71–80",
+              "{@item Spell Scroll|XDMG} ({@item Spell Scroll (Level 2)|XDMG|level 2} or {@item Spell Scroll (Level 3)|XDMG|level 3} spell)"
+            ],
+            [
+              "81–85",
+              "{@item Staff of the Adder|XDMG}"
+            ],
+            [
+              "86–90",
+              "{@item Staff of the Python|XDMG}"
+            ],
+            [
+              "91–95",
+              "{@item Wand of Magic Detection|XDMG}"
+            ],
+            [
+              "96–00",
+              "{@item +1 Wand of the War Mage|XDMG|Wand of the War Mage, +1}"
+            ]
+          ],
+          "path": [
+            {
+              "name": "Chapter 7: Treasure",
+              "page": 213
+            },
+            {
+              "name": "Random Magic Items",
+              "page": 326
+            },
+            {
+              "name": "Relics Tables",
+              "page": 330
+            }
+          ],
+          "section": "Relics Tables",
+          "sectionIndex": 2
+        },
+        {
+          "type": "table",
+          "caption": "Relics - Rare",
+          "colLabels": [
+            "1d100",
+            "Item"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "01–03",
+              "{@item Amulet of Health|XDMG}"
+            ],
+            [
+              "04–07",
+              "{@item +1 Armor|XDMG|Armor, +1}"
+            ],
+            [
+              "08–09",
+              "{@item Bowl of Commanding Water Elementals|XDMG}"
+            ],
+            [
+              "10–11",
+              "{@item Brazier of Commanding Fire Elementals|XDMG}"
+            ],
+            [
+              "12–13",
+              "{@item Censer of Controlling Air Elementals|XDMG}"
+            ],
+            [
+              "14–16",
+              "{@item Elixir of Health|XDMG}"
+            ],
+            [
+              "17–19",
+              "{@item Enspelled Staff|XDMG} (level 2 or 3 spell)"
+            ],
+            [
+              "20–22",
+              "{@item Horn of Blasting|XDMG}"
+            ],
+            [
+              "23–25",
+              "{@item Horn of Valhalla|XDMG} ({@item Horn of Valhalla, Brass|XDMG|brass} or {@item Horn of Valhalla, Silver|XDMG|silver})"
+            ],
+            [
+              "26–28",
+              "{@item Ioun Stone|XDMG} ({@item Ioun Stone, Reserve|XDMG|reserve} or {@item Ioun Stone, Sustenance|XDMG|sustenance})"
+            ],
+            [
+              "29–31",
+              "{@item Mace of Disruption|XDMG}"
+            ],
+            [
+              "32–34",
+              "{@item Mace of Smiting|XDMG}"
+            ],
+            [
+              "35–37",
+              "{@item Mace of Terror|XDMG}"
+            ],
+            [
+              "38–40",
+              "{@item Necklace of Prayer Beads|XDMG}"
+            ],
+            [
+              "41–43",
+              "{@item Periapt of Proof against Poison|XDMG}"
+            ],
+            [
+              "44–51",
+              "{@item Potion of Superior Healing|XDMG|Potion of Healing (superior)}"
+            ],
+            [
+              "52–54",
+              "{@item Ring of Animal Influence|XDMG}"
+            ],
+            [
+              "55–58",
+              "{@item Ring of Resistance|XDMG}"
+            ],
+            [
+              "59–61",
+              "{@item Ring of Spell Storing|XDMG}"
+            ],
+            [
+              "62–65",
+              "{@item Scroll of Protection|XDMG}"
+            ],
+            [
+              "66–73",
+              "{@item Spell Scroll|XDMG} ({@item Spell Scroll (Level 4)|XDMG|level 4} or {@item Spell Scroll (Level 5)|XDMG|level 5} spell)"
+            ],
+            [
+              "74–76",
+              "{@item Staff of Charming|XDMG}"
+            ],
+            [
+              "77–79",
+              "{@item Staff of Healing|XDMG}"
+            ],
+            [
+              "80–82",
+              "{@item Staff of Swarming Insects|XDMG}"
+            ],
+            [
+              "83–85",
+              "{@item Staff of the Woodlands|XDMG}"
+            ],
+            [
+              "86–88",
+              "{@item Staff of Withering|XDMG}"
+            ],
+            [
+              "89–90",
+              "{@item Stone of Controlling Earth Elementals|XDMG}"
+            ],
+            [
+              "91–93",
+              "{@item Tentacle Rod|XDMG}"
+            ],
+            [
+              "94–96",
+              "{@item Wand of Paralysis|XDMG}"
+            ],
+            [
+              "97–00",
+              "{@item +2 Wand of the War Mage|XDMG|Wand of the War Mage, +2}"
+            ]
+          ],
+          "path": [
+            {
+              "name": "Chapter 7: Treasure",
+              "page": 213
+            },
+            {
+              "name": "Random Magic Items",
+              "page": 326
+            },
+            {
+              "name": "Relics Tables",
+              "page": 330
+            }
+          ],
+          "section": "Relics Tables",
+          "sectionIndex": 3
+        },
+        {
+          "type": "table",
+          "caption": "Relics - Very Rare",
+          "colLabels": [
+            "1d100",
+            "Item"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "01–05",
+              "{@item +2 Armor|XDMG|Armor, +2}"
+            ],
+            [
+              "06–10",
+              "{@item Candle of Invocation|XDMG}"
+            ],
+            [
+              "11–15",
+              "{@item Cauldron of Rebirth|XDMG}"
+            ],
+            [
+              "16–20",
+              "{@item Enspelled Staff|XDMG} (level 4 or 5 spell)"
+            ],
+            [
+              "21–25",
+              "{@item Horn of Valhalla, Bronze|XDMG|Horn of Valhalla (bronze)}"
+            ],
+            [
+              "26–30",
+              "{@item Ioun Stone|XDMG} ({@item Ioun Stone, Insight|XDMG|insight})"
+            ],
+            [
+              "31–35",
+              "{@item Manual of Bodily Health|XDMG}"
+            ],
+            [
+              "36–43",
+              "{@item Potion of Supreme Healing|XDMG|Potion of Healing (supreme)}"
+            ],
+            [
+              "44–50",
+              "{@item Potion of Vitality|XDMG}"
+            ],
+            [
+              "51–55",
+              "{@item Rod of Alertness|XDMG}"
+            ],
+            [
+              "56–65",
+              "{@item Spell Scroll|XDMG} ({@item Spell Scroll (Level 6)|XDMG|level 6}, {@item Spell Scroll (Level 7)|XDMG|level 7}, or {@item Spell Scroll (Level 8)|XDMG|level 8} spell)"
+            ],
+            [
+              "66–70",
+              "{@item Spirit Board|XDMG}"
+            ],
+            [
+              "71–75",
+              "{@item Staff of Fire|XDMG}"
+            ],
+            [
+              "76–80",
+              "{@item Staff of Frost|XDMG}"
+            ],
+            [
+              "81–85",
+              "{@item Staff of Striking|XDMG}"
+            ],
+            [
+              "86–90",
+              "{@item Staff of Thunder and Lightning|XDMG}"
+            ],
+            [
+              "91–95",
+              "{@item Tome of Understanding|XDMG}"
+            ],
+            [
+              "96–00",
+              "{@item +3 Wand of the War Mage|XDMG|Wand of the War Mage, +3}"
+            ]
+          ],
+          "path": [
+            {
+              "name": "Chapter 7: Treasure",
+              "page": 213
+            },
+            {
+              "name": "Random Magic Items",
+              "page": 326
+            },
+            {
+              "name": "Relics Tables",
+              "page": 330
+            }
+          ],
+          "section": "Relics Tables",
+          "sectionIndex": 4
+        },
+        {
+          "type": "table",
+          "caption": "Relics - Legendary",
+          "colLabels": [
+            "1d100",
+            "Item"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "01–08",
+              "{@item Armor of Invulnerability|XDMG}"
+            ],
+            [
+              "09–18",
+              "{@item +3 Armor|XDMG|Armor, +3}"
+            ],
+            [
+              "19–27",
+              "{@item Enspelled Staff|XDMG} (level 6, 7, or 8 spell)"
+            ],
+            [
+              "28–36",
+              "{@item Holy Avenger|XDMG}"
+            ],
+            [
+              "37–45",
+              "{@item Horn of Valhalla, Iron|XDMG|Horn of Valhalla (iron)}"
+            ],
+            [
+              "46–54",
+              "{@item Rod of Resurrection|XDMG}"
+            ],
+            [
+              "55–63",
+              "{@item Scarab of Protection|XDMG}"
+            ],
+            [
+              "64–72",
+              "{@item Scroll of Titan Summoning|XDMG}"
+            ],
+            [
+              "73–80",
+              "{@item Spell Scroll|XDMG} ({@item Spell Scroll (Level 9)|XDMG|level 9} spell)"
+            ],
+            [
+              "81–90",
+              "{@item Talisman of Pure Good|XDMG}"
+            ],
+            [
+              "91–00",
+              "{@item Talisman of Ultimate Evil|XDMG}"
+            ]
+          ],
+          "path": [
+            {
+              "name": "Chapter 7: Treasure",
+              "page": 213
+            },
+            {
+              "name": "Random Magic Items",
+              "page": 326
+            },
+            {
+              "name": "Relics Tables",
+              "page": 330
+            }
+          ],
+          "section": "Relics Tables",
+          "sectionIndex": 5
+        }
+      ],
+      "chapter": {
+        "name": "Treasure",
+        "ordinal": {
+          "type": "chapter",
+          "identifier": 7
+        },
+        "index": 6
+      }
+    }
+  ]
+}

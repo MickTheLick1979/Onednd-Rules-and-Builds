@@ -1,0 +1,1985 @@
+{
+  "_versions": [
+    {
+      "name": "Animal Lord; Forager",
+      "source": "XMM",
+      "_mod": {
+        "trait": {
+          "mode": "replaceArr",
+          "replace": "Lordly Presence",
+          "items": {
+            "name": "Lordly Presence",
+            "entries": [
+              "{@actSave wis} {@dc 20}, any enemy that starts its turn in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the animal lord. {@actSaveFail} The target has the {@condition Charmed|XPHB} condition until the end of its next turn. While {@condition Charmed|XPHB}, the target has the {@condition Incapacitated|XPHB} condition."
+            ]
+          }
+        },
+        "action": {
+          "mode": "replaceArr",
+          "replace": "Animal Spirit",
+          "items": {
+            "name": "Animal Spirit",
+            "entries": [
+              "The animal lord conjures an animal spirit that strikes at a creature and then disappears. {@actSave dex} {@dc 20}, one creature the animal lord can see within 120 feet. {@actSaveFail} 28 ({@damage 4d10 + 6}) Radiant damage. {@actSaveSuccess} Half damage. {@actSaveSuccessOrFail} The animal lord gains 20 {@variantrule Temporary Hit Points|XPHB}."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "Animal Lord; Hunter",
+      "source": "XMM",
+      "_mod": {
+        "trait": {
+          "mode": "replaceArr",
+          "replace": "Lordly Presence",
+          "items": {
+            "name": "Lordly Presence",
+            "entries": [
+              "{@actSave wis} {@dc 20}, any enemy that starts its turn in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the animal lord. {@actSaveFail} The target has the {@condition Frightened|XPHB} condition until the end of its next turn."
+            ]
+          }
+        },
+        "action": {
+          "mode": "replaceArr",
+          "replace": "Animal Spirit",
+          "items": {
+            "name": "Animal Spirit",
+            "entries": [
+              "The animal lord conjures an animal spirit that strikes at a creature and then disappears. {@actSave dex} {@dc 20}, one creature the animal lord can see within 120 feet. {@actSaveFail} 28 ({@damage 4d10 + 6}) Radiant damage. {@actSaveSuccess} Half damage. {@actSaveSuccessOrFail} The animal lord has {@variantrule Advantage|XPHB} on attack rolls against the target until the start of the animal lord's next turn."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "Animal Lord; Sage",
+      "source": "XMM",
+      "_mod": {
+        "trait": {
+          "mode": "replaceArr",
+          "replace": "Lordly Presence",
+          "items": {
+            "name": "Lordly Presence",
+            "entries": [
+              "{@actSave wis} {@dc 20}, any enemy that starts its turn in a 30-foot {@variantrule Emanation [Area of Effect]|XPHB|Emanation} originating from the animal lord. {@actSaveFail} The target takes 10 ({@damage 3d6}) Psychic damage, and the target is magically bewildered until the end of its next turn. While bewildered, the target subtracts {@dice 1d4} from its saving throws."
+            ]
+          }
+        },
+        "action": {
+          "mode": "replaceArr",
+          "replace": "Animal Spirit",
+          "items": {
+            "name": "Animal Spirit",
+            "entries": [
+              "The animal lord conjures an animal spirit that strikes at a creature and then disappears. {@actSave dex} {@dc 20}, one creature the animal lord can see within 120 feet. {@actSaveFail} 28 ({@damage 4d10 + 6}) Radiant damage. {@actSaveSuccess} Half damage. {@actSaveSuccessOrFail} The target has {@variantrule Disadvantage|XPHB} on attack rolls and ability checks until the end of its next turn."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "Aberrant Spirit (Beholderkin)",
+      "source": "XPHB",
+      "_mod": {
+        "action": [
+          {
+            "mode": "removeArr",
+            "names": [
+              "Claw (Slaad Only)",
+              "Psychic Slam (Mind Flayer Only)"
+            ]
+          },
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Eye Ray (Beholderkin Only)",
+              "with": "Eye Ray"
+            }
+          }
+        ]
+      },
+      "speed": {
+        "walk": 30,
+        "fly": {
+          "number": 30,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "trait": null,
+      "traitTags": null,
+      "damageTags": [
+        "Y"
+      ],
+      "miscTags": [
+        "RA"
+      ]
+    },
+    {
+      "name": "Aberrant Spirit (Slaad)",
+      "source": "XPHB",
+      "_mod": {
+        "trait": [
+          {
+            "mode": "removeArr",
+            "names": [
+              "Whispering Aura (Mind Flayer Only)"
+            ]
+          },
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Regeneration (Slaad Only)",
+              "with": "Regeneration"
+            }
+          }
+        ],
+        "action": [
+          {
+            "mode": "removeArr",
+            "names": [
+              "Eye Ray (Beholderkin Only)",
+              "Psychic Slam (Mind Flayer Only)"
+            ]
+          },
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Claw (Slaad Only)",
+              "with": "Claw"
+            }
+          }
+        ]
+      },
+      "speed": {
+        "walk": 30
+      },
+      "traitTags": [
+        "Regeneration"
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "miscTags": [
+        "MA"
+      ]
+    },
+    {
+      "name": "Aberrant Spirit (Star Spawn)",
+      "source": "XPHB",
+      "_mod": {
+        "trait": [
+          {
+            "mode": "removeArr",
+            "names": [
+              "Regeneration (Slaad Only)"
+            ]
+          },
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Whispering Aura (Mind Flayer Only)",
+              "with": "Whispering Aura"
+            }
+          }
+        ],
+        "action": [
+          {
+            "mode": "removeArr",
+            "names": [
+              "Eye Ray (Beholderkin Only)",
+              "Claw (Slaad Only)"
+            ]
+          },
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Psychic Slam (Mind Flayer Only)",
+              "with": "Psychic Slam"
+            }
+          }
+        ]
+      },
+      "speed": {
+        "walk": 30
+      },
+      "traitTags": [
+        "Regeneration"
+      ],
+      "damageTags": [
+        "Y"
+      ],
+      "miscTags": [
+        "RA"
+      ]
+    },
+    {
+      "name": "Animated Object (Huge)",
+      "source": "XPHB",
+      "hp": {
+        "special": "40"
+      },
+      "action": [
+        {
+          "name": "Slam",
+          "entries": [
+            "{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}Force damage equal to {@damage (summonSpellLevel - 3)d12 + 3|2d12 + 3} + your spellcasting ability modifier."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Animated Object (Large)",
+      "source": "XPHB",
+      "hp": {
+        "special": "20"
+      },
+      "action": [
+        {
+          "name": "Slam",
+          "entries": [
+            "{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}Force damage equal to {@damage (summonSpellLevel - 3)d6 + 3|2d6 + 3} + your spellcasting ability modifier."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Animated Object (Medium or Smaller)",
+      "source": "XPHB",
+      "hp": {
+        "special": "10"
+      },
+      "action": [
+        {
+          "name": "Slam",
+          "entries": [
+            "{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}Force damage equal to {@damage (summonSpellLevel - 4)d4 + 3|1d4 + 3} + your spellcasting ability modifier."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bestial Spirit (Air)",
+      "source": "XPHB",
+      "_mod": {
+        "trait": [
+          {
+            "mode": "removeArr",
+            "names": [
+              "Water Breathing (Water Only)",
+              "Pack Tactics (Land and Water Only)"
+            ]
+          },
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Flyby (Air Only)",
+              "with": "Flyby"
+            }
+          }
+        ]
+      },
+      "hp": {
+        "special": "20 + 5 for each spell level above 2"
+      },
+      "speed": {
+        "walk": 30,
+        "fly": 60
+      },
+      "traitTags": [
+        "Flyby"
+      ]
+    },
+    {
+      "name": "Bestial Spirit (Land)",
+      "source": "XPHB",
+      "_mod": {
+        "trait": [
+          {
+            "mode": "removeArr",
+            "names": [
+              "Water Breathing (Water Only)",
+              "Flyby (Air Only)"
+            ]
+          },
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Pack Tactics (Land and Water Only)",
+              "with": "Pack Tactics"
+            }
+          }
+        ]
+      },
+      "hp": {
+        "special": "30 + 5 for each spell level above 2"
+      },
+      "speed": {
+        "walk": 30,
+        "climb": 30
+      },
+      "traitTags": [
+        "Pack Tactics"
+      ]
+    },
+    {
+      "name": "Bestial Spirit (Water)",
+      "source": "XPHB",
+      "_mod": {
+        "trait": [
+          {
+            "mode": "removeArr",
+            "names": [
+              "Flyby (Air Only)"
+            ]
+          },
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Pack Tactics (Land and Water Only)",
+              "with": "Pack Tactics"
+            }
+          }
+        ]
+      },
+      "hp": {
+        "special": "30 + 5 for each spell level above 2"
+      },
+      "speed": {
+        "walk": 30,
+        "swim": 30
+      },
+      "traitTags": [
+        "Pack Tactics",
+        "Water Breathing"
+      ]
+    },
+    {
+      "name": "Celestial Spirit (Avenger)",
+      "source": "XPHB",
+      "_mod": {
+        "action": [
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Radiant Bow (Avenger Only)",
+              "with": "Radiant Bow"
+            }
+          },
+          {
+            "mode": "removeArr",
+            "names": "Radiant Mace (Defender Only)"
+          }
+        ]
+      },
+      "ac": [
+        {
+          "special": "11 + the spell's level"
+        }
+      ],
+      "miscTags": [
+        "RA",
+        "RW"
+      ]
+    },
+    {
+      "name": "Celestial Spirit (Defender)",
+      "source": "XPHB",
+      "_mod": {
+        "action": [
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Radiant Mace (Defender Only)",
+              "with": "Radiant Mace"
+            }
+          },
+          {
+            "mode": "removeArr",
+            "names": "Radiant Bow (Avenger Only)"
+          }
+        ]
+      },
+      "ac": [
+        {
+          "special": "13 + the spell's level"
+        }
+      ],
+      "miscTags": [
+        "MA",
+        "MLW"
+      ]
+    },
+    {
+      "name": "Construct Spirit (Clay)",
+      "source": "XPHB",
+      "_mod": {
+        "reaction": [
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Berserk Lashing (Clay Only)",
+              "with": "Berserk Lashing"
+            }
+          }
+        ]
+      },
+      "trait": null,
+      "damageTags": [
+        "B"
+      ]
+    },
+    {
+      "name": "Construct Spirit (Metal)",
+      "source": "XPHB",
+      "_mod": {
+        "trait": [
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Heated Body (Metal Only)",
+              "with": "Heated Body"
+            }
+          },
+          {
+            "mode": "removeArr",
+            "names": "Stony Lethargy (Stone Only)"
+          }
+        ]
+      },
+      "reaction": null
+    },
+    {
+      "name": "Construct Spirit (Stone)",
+      "source": "XPHB",
+      "_mod": {
+        "trait": [
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Stony Lethargy (Stone Only)",
+              "with": "Stony Lethargy"
+            }
+          },
+          {
+            "mode": "removeArr",
+            "names": "Heated Body (Metal Only)"
+          }
+        ]
+      },
+      "reaction": null,
+      "damageTags": [
+        "B"
+      ]
+    },
+    {
+      "name": "Elemental Spirit (Air)",
+      "source": "XPHB",
+      "_mod": {
+        "trait": [
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Amorphous Form (Air, Fire, and Water Only)",
+              "with": "Amorphous Form"
+            }
+          }
+        ],
+        "action": {
+          "mode": "replaceArr",
+          "replace": "Slam",
+          "items": {
+            "name": "Slam",
+            "entries": [
+              "{@atk m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft.. {@h}{@damage 1d10 + 4 + summonSpellLevel} Bludgeoning damage."
+            ]
+          }
+        }
+      },
+      "speed": {
+        "walk": 40,
+        "fly": {
+          "number": 40,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "resist": [
+        "lightning",
+        "thunder"
+      ],
+      "immune": [
+        "poison"
+      ],
+      "damageTags": [
+        "B"
+      ]
+    },
+    {
+      "name": "Elemental Spirit (Earth)",
+      "source": "XPHB",
+      "_mod": {
+        "action": {
+          "mode": "replaceArr",
+          "replace": "Slam",
+          "items": {
+            "name": "Slam",
+            "entries": [
+              "{@atk m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft.. {@h}{@damage 1d10 + 4 + summonSpellLevel} Bludgeoning damage."
+            ]
+          }
+        }
+      },
+      "speed": {
+        "walk": 40,
+        "burrow": 40
+      },
+      "resist": [
+        "piercing",
+        "slashing"
+      ],
+      "immune": [
+        "poison"
+      ],
+      "trait": null,
+      "damageTags": [
+        "B"
+      ]
+    },
+    {
+      "name": "Elemental Spirit (Fire)",
+      "source": "XPHB",
+      "_mod": {
+        "trait": [
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Amorphous Form (Air, Fire, and Water Only)",
+              "with": "Amorphous Form"
+            }
+          }
+        ],
+        "action": {
+          "mode": "replaceArr",
+          "replace": "Slam",
+          "items": {
+            "name": "Slam",
+            "entries": [
+              "{@atk m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft.. {@h}{@damage 1d10 + 4 + summonSpellLevel} Fire damage."
+            ]
+          }
+        }
+      },
+      "speed": {
+        "walk": 40
+      },
+      "immune": [
+        "poison",
+        "fire"
+      ],
+      "damageTags": [
+        "F"
+      ]
+    },
+    {
+      "name": "Elemental Spirit (Water)",
+      "source": "XPHB",
+      "_mod": {
+        "trait": [
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Amorphous Form (Air, Fire, and Water Only)",
+              "with": "Amorphous Form"
+            }
+          }
+        ],
+        "action": {
+          "mode": "replaceArr",
+          "replace": "Slam",
+          "items": {
+            "name": "Slam",
+            "entries": [
+              "{@atk m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft.. {@h}{@damage 1d10 + 4 + summonSpellLevel} Bludgeoning damage."
+            ]
+          }
+        }
+      },
+      "speed": {
+        "walk": 40,
+        "swim": 40
+      },
+      "resist": [
+        "acid"
+      ],
+      "immune": [
+        "poison"
+      ],
+      "damageTags": [
+        "B"
+      ]
+    },
+    {
+      "name": "Fey Spirit (Fuming)",
+      "source": "XPHB",
+      "bonus": [
+        {
+          "name": "Fey Step",
+          "entries": [
+            "The spirit magically teleports up to 30 feet to an unoccupied space it can see. The spirit has Advantage on the next attack roll it makes before the end of this turn."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fey Spirit (Mirthful)",
+      "source": "XPHB",
+      "bonus": [
+        {
+          "name": "Fey Step",
+          "entries": [
+            "The spirit magically teleports up to 30 feet to an unoccupied space it can see. {@actSave wis} DC equals your spell save DC, one creature the spirit can see within 10 feet of itself. {@actSaveFail} The target is {@condition Charmed|XPHB} by you and the spirit for 1 minute or until the target takes any damage."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fey Spirit (Tricksy)",
+      "source": "XPHB",
+      "bonus": [
+        {
+          "name": "Fey Step",
+          "entries": [
+            "The spirit magically teleports up to 30 feet to an unoccupied space it can see. The spirit fills a 10-foot Cube within 5 feet of it with magical Darkness, which lasts until the end of its next turn."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fiendish Spirit (Demon)",
+      "source": "XPHB",
+      "_mod": {
+        "trait": [
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Death Throes (Demon Only)",
+              "with": "Death Throes"
+            }
+          },
+          {
+            "mode": "removeArr",
+            "names": "Devil's Sight (Devil Only)"
+          }
+        ],
+        "action": [
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Bite (Demon Only)",
+              "with": "Bite"
+            }
+          },
+          {
+            "mode": "removeArr",
+            "names": [
+              "Claws (Yugoloth Only)",
+              "Fiery Strike (Devil Only)"
+            ]
+          }
+        ]
+      },
+      "hp": {
+        "special": "50 + 15 for each spell level above 6"
+      },
+      "speed": {
+        "walk": 40,
+        "climb": 40
+      },
+      "traitTags": [
+        "Death Burst",
+        "Magic Resistance"
+      ],
+      "damageTags": [
+        "F"
+      ]
+    },
+    {
+      "name": "Fiendish Spirit (Devil)",
+      "source": "XPHB",
+      "_mod": {
+        "trait": [
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Devil's Sight (Devil Only)",
+              "with": "Devil's Sight"
+            }
+          },
+          {
+            "mode": "removeArr",
+            "names": "Death Throes (Demon Only)"
+          }
+        ],
+        "action": [
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Fiery Strike (Devil Only)",
+              "with": "Fiery Strike"
+            }
+          },
+          {
+            "mode": "removeArr",
+            "names": [
+              "Bite (Demon Only)",
+              "Claws (Yugoloth Only)"
+            ]
+          }
+        ]
+      },
+      "hp": {
+        "special": "40 + 15 for each spell level above 6"
+      },
+      "speed": {
+        "walk": 40,
+        "fly": 60
+      },
+      "traitTags": [
+        "Devil's Sight",
+        "Magic Resistance"
+      ],
+      "damageTags": [
+        "N"
+      ]
+    },
+    {
+      "name": "Fiendish Spirit (Yugoloth)",
+      "source": "XPHB",
+      "_mod": {
+        "trait": [
+          {
+            "mode": "removeArr",
+            "names": [
+              "Death Throes (Demon Only)",
+              "Devil's Sight (Devil Only)"
+            ]
+          }
+        ],
+        "action": [
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Claws (Yugoloth Only)",
+              "with": "Claws"
+            }
+          },
+          {
+            "mode": "removeArr",
+            "names": [
+              "Bite (Demon Only)",
+              "Fiery Strike (Devil Only)"
+            ]
+          }
+        ]
+      },
+      "hp": {
+        "special": "60 + 15 for each spell level above 6"
+      },
+      "speed": {
+        "walk": 40
+      },
+      "traitTags": [
+        "Magic Resistance"
+      ],
+      "damageTags": [
+        "F"
+      ]
+    },
+    {
+      "name": "Giant Insect (Centipede)",
+      "source": "XPHB",
+      "_mod": {
+        "action": [
+          {
+            "mode": "removeArr",
+            "names": [
+              "Web Bolt (Spider Only)"
+            ]
+          }
+        ]
+      },
+      "speed": {
+        "walk": 40,
+        "climb": 40
+      }
+    },
+    {
+      "name": "Giant Insect (Spider)",
+      "source": "XPHB",
+      "_mod": {
+        "action": [
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Web Bolt (Spider Only)",
+              "with": "Web Bolt"
+            }
+          }
+        ]
+      },
+      "speed": {
+        "walk": 40,
+        "climb": 40
+      },
+      "bonus": null
+    },
+    {
+      "name": "Giant Insect (Wasp)",
+      "source": "XPHB",
+      "_mod": {
+        "action": [
+          {
+            "mode": "removeArr",
+            "names": [
+              "Web Bolt (Spider Only)"
+            ]
+          }
+        ]
+      },
+      "speed": {
+        "walk": 40,
+        "climb": 40,
+        "fly": 40
+      },
+      "bonus": null
+    },
+    {
+      "name": "Otherworldly Steed (Celestial)",
+      "source": "XPHB",
+      "_mod": {
+        "bonus": [
+          {
+            "mode": "removeArr",
+            "names": [
+              "Fell Glare (Fiend Only; Recharges after a Long Rest)",
+              "Fey Step (Fey Only; Recharges after a Long Rest)"
+            ]
+          },
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Healing Touch (Celestial Only; Recharges after a Long Rest)",
+              "with": "Healing Touch (Recharges after a Long Rest)"
+            }
+          }
+        ]
+      },
+      "type": "celestial",
+      "action": [
+        {
+          "name": "Otherworldly Slam",
+          "entries": [
+            "{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}{@damage 1d8 + summonSpellLevel} Radiant damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "R"
+      ],
+      "conditionInflict": null,
+      "savingThrowForced": null
+    },
+    {
+      "name": "Otherworldly Steed (Fey)",
+      "source": "XPHB",
+      "_mod": {
+        "bonus": [
+          {
+            "mode": "removeArr",
+            "names": [
+              "Fell Glare (Fiend Only; Recharges after a Long Rest)",
+              "Healing Touch (Celestial Only; Recharges after a Long Rest)"
+            ]
+          },
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Fey Step (Fey Only; Recharges after a Long Rest)",
+              "with": "Fey Step (Recharges after a Long Rest)"
+            }
+          }
+        ]
+      },
+      "type": "fey",
+      "action": [
+        {
+          "name": "Otherworldly Slam",
+          "entries": [
+            "{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}{@damage 1d8 + summonSpellLevel} Psychic damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "Y"
+      ],
+      "conditionInflict": null,
+      "savingThrowForced": null
+    },
+    {
+      "name": "Otherworldly Steed (Fiend)",
+      "source": "XPHB",
+      "_mod": {
+        "bonus": [
+          {
+            "mode": "removeArr",
+            "names": [
+              "Fey Step (Fey Only; Recharges after a Long Rest)",
+              "Healing Touch (Celestial Only; Recharges after a Long Rest)"
+            ]
+          },
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Fell Glare (Fiend Only; Recharges after a Long Rest)",
+              "with": "Fell Glare (Recharges after a Long Rest)"
+            }
+          }
+        ]
+      },
+      "type": "fiend",
+      "action": [
+        {
+          "name": "Otherworldly Slam",
+          "entries": [
+            "{@atkr m} {@hitYourSpellAttack Bonus equals your spell attack modifier}, reach 5 ft. {@h}{@damage 1d8 + summonSpellLevel} Necrotic damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "N"
+      ]
+    },
+    {
+      "name": "Undead Spirit (Ghostly)",
+      "source": "XPHB",
+      "_mod": {
+        "trait": [
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Incorporeal Passage (Ghostly Only)",
+              "with": "Incorporeal Passage"
+            }
+          },
+          {
+            "mode": "removeArr",
+            "names": "Festering Aura (Putrid Only)"
+          }
+        ],
+        "action": [
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Deathly Touch (Ghostly Only)",
+              "with": "Deathly Touch"
+            }
+          },
+          {
+            "mode": "removeArr",
+            "names": [
+              "Grave Bolt (Skeletal Only)",
+              "Rotting Claw (Putrid Only)"
+            ]
+          }
+        ]
+      },
+      "hp": {
+        "special": "30 + 10 for each spell level above 3"
+      },
+      "speed": {
+        "walk": 30,
+        "fly": {
+          "number": 40,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "damageTags": [
+        "N"
+      ],
+      "conditionInflict": [
+        "frightened"
+      ]
+    },
+    {
+      "name": "Undead Spirit (Putrid)",
+      "source": "XPHB",
+      "_mod": {
+        "trait": [
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Festering Aura (Putrid Only)",
+              "with": "Festering Aura"
+            }
+          },
+          {
+            "mode": "removeArr",
+            "names": "Incorporeal Passage (Ghostly Only)"
+          }
+        ],
+        "action": [
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Rotting Claw (Putrid Only)",
+              "with": "Rotting Claw"
+            }
+          },
+          {
+            "mode": "removeArr",
+            "names": [
+              "Deathly Touch (Ghostly Only)",
+              "Grave Bolt (Skeletal Only)"
+            ]
+          }
+        ]
+      },
+      "hp": {
+        "special": "30 + 10 for each spell level above 3"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "traitTags": null,
+      "damageTags": [
+        "O",
+        "S"
+      ],
+      "conditionInflict": [
+        "paralyzed",
+        "poisoned"
+      ]
+    },
+    {
+      "name": "Undead Spirit (Skeletal)",
+      "source": "XPHB",
+      "_mod": {
+        "action": [
+          {
+            "mode": "renameArr",
+            "renames": {
+              "rename": "Grave Bolt (Skeletal Only)",
+              "with": "Grave Bolt"
+            }
+          },
+          {
+            "mode": "removeArr",
+            "names": [
+              "Deathly Touch (Ghostly Only)",
+              "Rotting Claw (Putrid Only)"
+            ]
+          }
+        ]
+      },
+      "hp": {
+        "special": "20 + 10 for each spell level above 3"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "trait": null,
+      "traitTags": null,
+      "damageTags": [
+        "N"
+      ],
+      "conditionInflict": null
+    },
+    {
+      "name": "Magic Initiate; Cleric",
+      "source": "XPHB",
+      "_mod": {
+        "entries": [
+          {
+            "mode": "replaceArr",
+            "replace": "Two Cantrips",
+            "items": {
+              "name": "Two Cantrips",
+              "entries": [
+                "You learn two cantrips of your choice from the {@filter Cleric|spells|level=0;1|class=Cleric} spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat)."
+              ]
+            }
+          },
+          {
+            "mode": "replaceArr",
+            "replace": "Level 1 Spell",
+            "items": {
+              "name": "Level 1 Spell",
+              "entries": [
+                "Choose a level 1 spell from the {@filter Cleric|spells|level=0;1|class=Cleric} spell list. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have."
+              ]
+            }
+          }
+        ]
+      },
+      "additionalSpells": [
+        {
+          "ability": {
+            "choose": [
+              "int",
+              "wis",
+              "cha"
+            ]
+          },
+          "innate": {
+            "_": {
+              "daily": {
+                "1": [
+                  {
+                    "choose": "level=1|class=Cleric"
+                  }
+                ]
+              }
+            }
+          },
+          "known": {
+            "_": [
+              {
+                "choose": "level=0|class=Cleric",
+                "count": 2
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Magic Initiate; Druid",
+      "source": "XPHB",
+      "_mod": {
+        "entries": [
+          {
+            "mode": "replaceArr",
+            "replace": "Two Cantrips",
+            "items": {
+              "name": "Two Cantrips",
+              "entries": [
+                "You learn two cantrips of your choice from the {@filter Druid|spells|level=0;1|class=Druid} spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat)."
+              ]
+            }
+          },
+          {
+            "mode": "replaceArr",
+            "replace": "Level 1 Spell",
+            "items": {
+              "name": "Level 1 Spell",
+              "entries": [
+                "Choose a level 1 spell from the {@filter Druid|spells|level=0;1|class=Druid} spell list. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have."
+              ]
+            }
+          }
+        ]
+      },
+      "additionalSpells": [
+        {
+          "ability": {
+            "choose": [
+              "int",
+              "wis",
+              "cha"
+            ]
+          },
+          "innate": {
+            "_": {
+              "daily": {
+                "1": [
+                  {
+                    "choose": "level=1|class=Druid"
+                  }
+                ]
+              }
+            }
+          },
+          "known": {
+            "_": [
+              {
+                "choose": "level=0|class=Druid",
+                "count": 2
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Magic Initiate; Wizard",
+      "source": "XPHB",
+      "_mod": {
+        "entries": [
+          {
+            "mode": "replaceArr",
+            "replace": "Two Cantrips",
+            "items": {
+              "name": "Two Cantrips",
+              "entries": [
+                "You learn two cantrips of your choice from the {@filter Wizard|spells|level=0;1|class=Wizard} spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat)."
+              ]
+            }
+          },
+          {
+            "mode": "replaceArr",
+            "replace": "Level 1 Spell",
+            "items": {
+              "name": "Level 1 Spell",
+              "entries": [
+                "Choose a level 1 spell from the {@filter Wizard|spells|level=0;1|class=Wizard} spell list. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have."
+              ]
+            }
+          }
+        ]
+      },
+      "additionalSpells": [
+        {
+          "ability": {
+            "choose": [
+              "int",
+              "wis",
+              "cha"
+            ]
+          },
+          "innate": {
+            "_": {
+              "daily": {
+                "1": [
+                  {
+                    "choose": "level=1|class=Wizard"
+                  }
+                ]
+              }
+            }
+          },
+          "known": {
+            "_": [
+              {
+                "choose": "level=0|class=Wizard",
+                "count": 2
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "_abstract": {
+        "name": "Dragonborn ({{color}})",
+        "source": "XPHB",
+        "_mod": {
+          "entries": [
+            {
+              "mode": "removeArr",
+              "names": "Draconic Ancestry"
+            },
+            {
+              "mode": "replaceArr",
+              "replace": "Breath Weapon",
+              "items": {
+                "type": "entries",
+                "name": "Breath Weapon",
+                "entries": [
+                  "When you take the {@action Attack|XPHB} action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot {@variantrule Cone [Area of Effect]|XPHB|Cone} or a 30-foot {@variantrule Line [Area of Effect]|XPHB|Line} that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw ({@dc 8} plus your Constitution modifier and {@variantrule Proficiency|XPHB|Proficiency Bonus}). On a failed save, a creature takes {@damage 1d10} {{damageType}} damage. On a successful save, a creature takes half as much damage. This damage increases by {@damage 1d10} when you reach character levels 5 ({@damage 2d10}), 11 ({@damage 3d10}), and 17 ({@damage 4d10}).",
+                  "You can use this Breath Weapon a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}."
+                ]
+              }
+            },
+            {
+              "mode": "replaceArr",
+              "replace": "Damage Resistance",
+              "items": {
+                "type": "entries",
+                "name": "Damage Resistance",
+                "entries": [
+                  "You have {@variantrule Resistance|XPHB} to {{damageType}} damage."
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "_implementations": [
+        {
+          "_variables": {
+            "color": "Black",
+            "damageType": "Acid"
+          },
+          "resist": [
+            "acid"
+          ]
+        },
+        {
+          "_variables": {
+            "color": "Blue",
+            "damageType": "Lightning"
+          },
+          "resist": [
+            "lightning"
+          ]
+        },
+        {
+          "_variables": {
+            "color": "Brass",
+            "damageType": "Fire"
+          },
+          "resist": [
+            "fire"
+          ]
+        },
+        {
+          "_variables": {
+            "color": "Bronze",
+            "damageType": "Lightning"
+          },
+          "resist": [
+            "lightning"
+          ]
+        },
+        {
+          "_variables": {
+            "color": "Copper",
+            "damageType": "Acid"
+          },
+          "resist": [
+            "acid"
+          ]
+        },
+        {
+          "_variables": {
+            "color": "Gold",
+            "damageType": "Fire"
+          },
+          "resist": [
+            "fire"
+          ]
+        },
+        {
+          "_variables": {
+            "color": "Green",
+            "damageType": "Poison"
+          },
+          "resist": [
+            "poison"
+          ]
+        },
+        {
+          "_variables": {
+            "color": "Red",
+            "damageType": "Fire"
+          },
+          "resist": [
+            "fire"
+          ]
+        },
+        {
+          "_variables": {
+            "color": "Silver",
+            "damageType": "Cold"
+          },
+          "resist": [
+            "cold"
+          ]
+        },
+        {
+          "_variables": {
+            "color": "White",
+            "damageType": "Cold"
+          },
+          "resist": [
+            "cold"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Elf; Drow Lineage",
+      "source": "XPHB",
+      "_mod": {
+        "entries": {
+          "mode": "replaceArr",
+          "replace": "Elven Lineage",
+          "items": {
+            "name": "Elven Lineage (Drow)",
+            "type": "entries",
+            "entries": [
+              "You are part of a lineage that grants you supernatural abilities. The range of your Darkvision increases to 120 feet. You also know the {@spell Dancing Lights|XPHB} cantrip.",
+              "When you reach character level 3, you learn the {@spell Faerie Fire|XPHB} spell. When you reach character level 5, you also learn the {@spell Darkness|XPHB} spell. You always have these spells prepared, and you can cast each spell once without a spell slot. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level.",
+              "Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage)."
+            ]
+          }
+        }
+      },
+      "darkvision": 120,
+      "additionalSpells": [
+        {
+          "innate": {
+            "3": {
+              "daily": {
+                "1": [
+                  "faerie fire|xphb"
+                ]
+              }
+            },
+            "5": {
+              "daily": {
+                "1": [
+                  "darkness|xphb"
+                ]
+              }
+            }
+          },
+          "ability": {
+            "choose": [
+              "int",
+              "wis",
+              "cha"
+            ]
+          },
+          "known": {
+            "1": [
+              "dancing lights|xphb#c"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Elf; High Elf Lineage",
+      "source": "XPHB",
+      "_mod": {
+        "entries": {
+          "mode": "replaceArr",
+          "replace": "Elven Lineage",
+          "items": {
+            "name": "Elven Lineage (High Elf)",
+            "type": "entries",
+            "entries": [
+              "You are part of a lineage that grants you supernatural abilities. You know the {@spell Prestidigitation|XPHB} cantrip. Whenever you finish a Long Rest, you can replace that cantrip with a different {@filter cantrip from the Wizard spell list|spells|level=0|class=Wizard}.",
+              "When you reach character level 3, you learn the {@spell Detect Magic|XPHB} spell. When you reach character level 5, you also learn the {@spell Misty Step|XPHB} spell. You always have these spells prepared, and you can cast each spell once without a spell slot. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level.",
+              "Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage)."
+            ]
+          }
+        }
+      },
+      "additionalSpells": [
+        {
+          "innate": {
+            "3": {
+              "daily": {
+                "1": [
+                  "detect magic|xphb"
+                ]
+              }
+            },
+            "5": {
+              "daily": {
+                "1": [
+                  "misty step|xphb"
+                ]
+              }
+            }
+          },
+          "ability": {
+            "choose": [
+              "int",
+              "wis",
+              "cha"
+            ]
+          },
+          "known": {
+            "1": {
+              "_": [
+                {
+                  "choose": "level=0|class=Wizard"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Elf; Wood Elf Lineage",
+      "source": "XPHB",
+      "_mod": {
+        "entries": {
+          "mode": "replaceArr",
+          "replace": "Elven Lineage",
+          "items": {
+            "name": "Elven Lineage (Wood Elf)",
+            "type": "entries",
+            "entries": [
+              "You are part of a lineage that grants you supernatural abilities. Your Speed increases to 35 feet. You also know the {@spell Druidcraft|XPHB} cantrip.",
+              "When you reach character level 3, you learn the {@spell Longstrider|XPHB} spell. When you reach character level 5, you also learn the {@spell Pass without Trace|XPHB} spell. You always have these spells prepared, and you can cast each spell once without a spell slot. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level.",
+              "Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the lineage)."
+            ]
+          }
+        }
+      },
+      "speed": 35,
+      "additionalSpells": [
+        {
+          "innate": {
+            "3": {
+              "daily": {
+                "1": [
+                  "longstrider|xphb"
+                ]
+              }
+            },
+            "5": {
+              "daily": {
+                "1": [
+                  "pass without trace|xphb"
+                ]
+              }
+            }
+          },
+          "ability": {
+            "choose": [
+              "int",
+              "wis",
+              "cha"
+            ]
+          },
+          "known": {
+            "1": [
+              "druidcraft|xphb#c"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Gnome; Forest Gnome Lineage",
+      "source": "XPHB",
+      "_mod": {
+        "entries": {
+          "mode": "replaceArr",
+          "replace": "Gnomish Lineage",
+          "items": {
+            "name": "Gnomish Lineage (Forest Gnome)",
+            "type": "entries",
+            "entries": [
+              "You know the {@spell Minor Illusion|XPHB} cantrip. You also always have the {@spell Speak with Animals|XPHB} spell prepared. You can cast it without a spell slot a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}. You can also use any spell slots you have to cast the spell."
+            ]
+          }
+        }
+      },
+      "additionalSpells": [
+        {
+          "innate": {
+            "3": {
+              "daily": {
+                "pb": [
+                  "speak with animals|xphb"
+                ]
+              }
+            }
+          },
+          "ability": {
+            "choose": [
+              "int",
+              "wis",
+              "cha"
+            ]
+          },
+          "known": {
+            "1": [
+              "minor illusion|xphb#c"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Gnome; Rock Gnome Lineage",
+      "source": "XPHB",
+      "_mod": {
+        "entries": {
+          "mode": "replaceArr",
+          "replace": "Gnomish Lineage",
+          "items": {
+            "name": "Gnomish Lineage (Rock Gnome)",
+            "type": "entries",
+            "entries": [
+              "You know the {@spell Mending|XPHB} and {@spell Prestidigitation|XPHB} cantrips. In addition, you can spend 10 minutes casting {@spell Prestidigitation|XPHB} to create a Tiny clockwork device (AC 5, 1 HP), such as a toy, fire starter, or music box. When you create the device, you determine its function by choosing one effect from {@spell Prestidigitation|XPHB}; the device produces that effect whenever you or another creature takes a {@variantrule Bonus Action|XPHB} to activate it with a touch. If the chosen effect has options within it, you choose one of those options for the device when you create it. For example, if you choose the spell's ignite-extinguish effect, you determine whether the device ignites or extinguishes fire; the device doesn't do both. You can have three such devices in existence at a time, and each falls apart 8 hours after its creation or when you dismantle it with a touch as a {@action Utilize|XPHB} action."
+            ]
+          }
+        }
+      },
+      "additionalSpells": [
+        {
+          "ability": {
+            "choose": [
+              "int",
+              "wis",
+              "cha"
+            ]
+          },
+          "known": {
+            "1": [
+              "mending|xphb#c",
+              "prestidigitation|xphb#c"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Goliath; Cloud Giant Ancestry",
+      "source": "XPHB",
+      "_mod": {
+        "entries": {
+          "mode": "replaceArr",
+          "replace": "Giant Ancestry",
+          "items": {
+            "name": "Giant Ancestry (Cloud)",
+            "type": "entries",
+            "entries": [
+              "You are descended from Giants, granting you a supernatural boon; you can use this boon a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}:",
+              {
+                "type": "list",
+                "style": "list-hang-notitle",
+                "items": [
+                  {
+                    "type": "item",
+                    "name": "Cloud's Jaunt",
+                    "entries": [
+                      "As a {@variantrule Bonus Action|XPHB}, you magically teleport up to 30 feet to an unoccupied space you can see."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "Goliath; Fire Giant Ancestry",
+      "source": "XPHB",
+      "_mod": {
+        "entries": {
+          "mode": "replaceArr",
+          "replace": "Giant Ancestry",
+          "items": {
+            "name": "Giant Ancestry (Fire)",
+            "type": "entries",
+            "entries": [
+              "You are descended from Giants, granting you a supernatural boon; you can use this boon a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}:",
+              {
+                "type": "list",
+                "style": "list-hang-notitle",
+                "items": [
+                  {
+                    "type": "item",
+                    "name": "Fire's Burn",
+                    "entries": [
+                      "When you hit a target with an attack roll and deal damage to it, you can also deal {@damage 1d10} Fire damage to that target."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "Goliath; Frost Giant Ancestry",
+      "source": "XPHB",
+      "_mod": {
+        "entries": {
+          "mode": "replaceArr",
+          "replace": "Giant Ancestry",
+          "items": {
+            "name": "Giant Ancestry (Frost)",
+            "type": "entries",
+            "entries": [
+              "You are descended from Giants, granting you a supernatural boon; you can use this boon a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}:",
+              {
+                "type": "list",
+                "style": "list-hang-notitle",
+                "items": [
+                  {
+                    "type": "item",
+                    "name": "Frost's Chill",
+                    "entries": [
+                      "When you hit a target with an attack roll and deal damage to it, you can also deal {@damage 1d6} Cold damage to that target and reduce its {@variantrule Speed|XPHB} by 10 feet until the start of your next turn."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "Goliath; Hill Giant Ancestry",
+      "source": "XPHB",
+      "_mod": {
+        "entries": {
+          "mode": "replaceArr",
+          "replace": "Giant Ancestry",
+          "items": {
+            "name": "Giant Ancestry (Hill)",
+            "type": "entries",
+            "entries": [
+              "You are descended from Giants, granting you a supernatural boon; you can use this boon a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}:",
+              {
+                "type": "list",
+                "style": "list-hang-notitle",
+                "items": [
+                  {
+                    "type": "item",
+                    "name": "Hill's Tumble",
+                    "entries": [
+                      "When you hit a Large or smaller creature with an attack roll and deal damage to it, you can give that target the {@condition Prone|XPHB} condition."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "Goliath; Stone Giant Ancestry",
+      "source": "XPHB",
+      "_mod": {
+        "entries": {
+          "mode": "replaceArr",
+          "replace": "Giant Ancestry",
+          "items": {
+            "name": "Giant Ancestry (Stone)",
+            "type": "entries",
+            "entries": [
+              "You are descended from Giants, granting you a supernatural boon; you can use this boon a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}:",
+              {
+                "type": "list",
+                "style": "list-hang-notitle",
+                "items": [
+                  {
+                    "type": "item",
+                    "name": "Stone's Endurance",
+                    "entries": [
+                      "When you take damage, you can take a {@variantrule Reaction|XPHB} to roll {@dice 1d12}. Add your Constitution modifier to the number rolled and reduce the damage by that total."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "Goliath; Storm Giant Ancestry",
+      "source": "XPHB",
+      "_mod": {
+        "entries": {
+          "mode": "replaceArr",
+          "replace": "Giant Ancestry",
+          "items": {
+            "name": "Giant Ancestry (Storm)",
+            "type": "entries",
+            "entries": [
+              "You are descended from Giants, granting you a supernatural boon; you can use this boon a number of times equal to your {@variantrule Proficiency|XPHB|Proficiency Bonus}, and you regain all expended uses when you finish a {@variantrule Long Rest|XPHB}:",
+              {
+                "type": "list",
+                "style": "list-hang-notitle",
+                "items": [
+                  {
+                    "type": "item",
+                    "name": "Storm's Thunder",
+                    "entries": [
+                      "When you take damage from a creature within 60 feet of you, you can take a {@variantrule Reaction|XPHB} to deal {@damage 1d8} Thunder damage to that creature."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "Tiefling; Abyssal Legacy",
+      "source": "XPHB",
+      "_mod": {
+        "entries": {
+          "mode": "replaceArr",
+          "replace": "Fiendish Legacy",
+          "items": {
+            "name": "Fiendish Legacy (Abyssal)",
+            "type": "entries",
+            "entries": [
+              "You are the recipient of a legacy that grants you supernatural abilities. You have {@variantrule Resistance|XPHB} to Poison damage. You also know the {@spell Poison Spray|XPHB} cantrip.",
+              "When you reach character level 3, you learn the {@spell Ray of Sickness|XPHB} spell. When you reach character level 5, you also learn the {@spell Hold Person|XPHB} spell. You always have these spells prepared, and you can cast each spell once without a spell slot. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level.",
+              "Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy)."
+            ]
+          }
+        }
+      },
+      "darkvision": 120,
+      "resist": [
+        "poison"
+      ],
+      "additionalSpells": [
+        {
+          "innate": {
+            "3": {
+              "daily": {
+                "1": [
+                  "ray of sickness|xphb"
+                ]
+              }
+            },
+            "5": {
+              "daily": {
+                "1": [
+                  "hold person|xphb"
+                ]
+              }
+            }
+          },
+          "ability": {
+            "choose": [
+              "int",
+              "wis",
+              "cha"
+            ]
+          },
+          "known": {
+            "1": [
+              "thaumaturgy|xphb#c",
+              "poison spray|xphb#c"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tiefling; Chthonic Legacy",
+      "source": "XPHB",
+      "_mod": {
+        "entries": {
+          "mode": "replaceArr",
+          "replace": "Fiendish Legacy",
+          "items": {
+            "name": "Fiendish Legacy (Chthonic)",
+            "type": "entries",
+            "entries": [
+              "You are the recipient of a legacy that grants you supernatural abilities. You have {@variantrule Resistance|XPHB} to Necrotic damage. You also know the {@spell Chill Touch|XPHB} cantrip.",
+              "When you reach character level 3, you learn the {@spell False Life|XPHB} spell. When you reach character level 5, you also learn the {@spell Ray of Enfeeblement|XPHB} spell. You always have these spells prepared, and you can cast each spell once without a spell slot. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level.",
+              "Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy)."
+            ]
+          }
+        }
+      },
+      "resist": [
+        "necrotic"
+      ],
+      "additionalSpells": [
+        {
+          "innate": {
+            "3": {
+              "daily": {
+                "1": [
+                  "false life|xphb"
+                ]
+              }
+            },
+            "5": {
+              "daily": {
+                "1": [
+                  "ray of enfeeblement|xphb"
+                ]
+              }
+            }
+          },
+          "ability": {
+            "choose": [
+              "int",
+              "wis",
+              "cha"
+            ]
+          },
+          "known": {
+            "1": [
+              "thaumaturgy|xphb#c",
+              "chill touch|xphb#c"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tiefling; Infernal Legacy",
+      "source": "XPHB",
+      "_mod": {
+        "entries": {
+          "mode": "replaceArr",
+          "replace": "Fiendish Legacy",
+          "items": {
+            "name": "Fiendish Legacy (Infernal)",
+            "type": "entries",
+            "entries": [
+              "You are the recipient of a legacy that grants you supernatural abilities. You have {@variantrule Resistance|XPHB} to Fire damage. You also know the {@spell Fire Bolt|XPHB} cantrip.",
+              "When you reach character level 3, you learn the {@spell Hellish Rebuke|XPHB} spell. When you reach character level 5, you also learn the {@spell Darkness|XPHB} spell. You always have these spells prepared, and you can cast each spell once without a spell slot. Once you cast either of these spells with this trait, you can't cast that spell with it again until you finish a {@variantrule Long Rest|XPHB}. You can also cast the spell using any spell slots you have of the appropriate level.",
+              "Intelligence, Wisdom, or Charisma is your spellcasting ability for the spells you cast with this trait (choose the ability when you select the legacy)."
+            ]
+          }
+        }
+      },
+      "resist": [
+        "fire"
+      ],
+      "additionalSpells": [
+        {
+          "innate": {
+            "3": {
+              "daily": {
+                "1": [
+                  "hellish rebuke|xphb"
+                ]
+              }
+            },
+            "5": {
+              "daily": {
+                "1": [
+                  "darkness|xphb"
+                ]
+              }
+            }
+          },
+          "ability": {
+            "choose": [
+              "int",
+              "wis",
+              "cha"
+            ]
+          },
+          "known": {
+            "1": [
+              "thaumaturgy|xphb#c",
+              "fire bolt|xphb#c"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

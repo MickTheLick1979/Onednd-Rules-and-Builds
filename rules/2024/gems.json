@@ -1,0 +1,104 @@
+{
+  "gems": [
+    {
+      "name": "10 GP Gemstones",
+      "source": "XDMG",
+      "page": 214,
+      "type": 10,
+      "table": [
+        "{@item Azurite|XDMG} (mottled deep blue)",
+        "{@item Banded agate|XDMG} (striped brown, blue, white, or red)",
+        "{@item Blue quartz|XDMG} (pale blue)",
+        "{@item Eye agate|XDMG} (circles of gray, white, brown, blue, or green)",
+        "{@item Hematite|XDMG} (gray black)",
+        "{@item Lapis lazuli|XDMG} (light and dark blue with yellow flecks)",
+        "{@item Malachite|XDMG} (striated light and dark green)",
+        "{@item Moss agate|XDMG} (pink or yellow white with mossy gray or green markings)",
+        "{@item Obsidian|XDMG} (black)",
+        "{@item Rhodochrosite|XDMG} (light pink)",
+        "{@item Tiger eye|XDMG} (brown with golden center)",
+        "{@item Turquoise|XDMG} (light blue green)"
+      ]
+    },
+    {
+      "name": "50 GP Gemstones",
+      "source": "XDMG",
+      "page": 214,
+      "type": 50,
+      "table": [
+        "{@item Bloodstone|XDMG} (dark gray with red flecks)",
+        "{@item Carnelian|XDMG} (orange to red brown)",
+        "{@item Chalcedony|XDMG} (white)",
+        "{@item Chrysoprase|XDMG} (green)",
+        "{@item Citrine|XDMG} (pale yellow brown)",
+        "{@item Jasper|XDMG} (blue, black, or brown)",
+        "{@item Moonstone|XDMG} (white with pale-blue glow)",
+        "{@item Onyx|XDMG} (bands of black and white, or pure black or white)",
+        "{@item Quartz|XDMG} (white, smoky gray, or yellow)",
+        "{@item Sardonyx|XDMG} (bands of red and white)",
+        "{@item Star rose quartz|XDMG} (rosy stone with white star-shaped center)",
+        "{@item Zircon|XDMG} (pale blue green)"
+      ]
+    },
+    {
+      "name": "100 GP Gemstones",
+      "source": "XDMG",
+      "page": 214,
+      "type": 100,
+      "table": [
+        "{@item Amber|XDMG} (watery gold to rich gold)",
+        "{@item Amethyst|XDMG} (deep purple)",
+        "{@item Chrysoberyl|XDMG} (yellow green to pale green)",
+        "{@item Coral|XDMG} (crimson)",
+        "{@item Garnet|XDMG} (red, brown green, or violet)",
+        "{@item Jade|XDMG} (light green, deep green, or white)",
+        "{@item Jet|XDMG} (deep black)",
+        "{@item Pearl|XDMG} (lustrous white, yellow, or pink)",
+        "{@item Spinel|XDMG} (red, red brown, or deep green)",
+        "{@item Tourmaline|XDMG} (pale green, blue, brown, or red)"
+      ]
+    },
+    {
+      "name": "500 GP Gemstones",
+      "source": "XDMG",
+      "page": 214,
+      "type": 500,
+      "table": [
+        "{@item Alexandrite|XDMG} (dark green)",
+        "{@item Aquamarine|XDMG} (pale blue green)",
+        "{@item Black pearl|XDMG} (pure black)",
+        "{@item Blue spinel|XDMG} (deep blue)",
+        "{@item Peridot|XDMG} (rich olive green)",
+        "{@item Topaz|XDMG} (golden yellow)"
+      ]
+    },
+    {
+      "name": "1,000 GP Gemstones",
+      "source": "XDMG",
+      "page": 214,
+      "type": 1000,
+      "table": [
+        "{@item Black opal|XDMG} (dark green with black mottling and golden flecks)",
+        "{@item Blue sapphire|XDMG} (medium blue)",
+        "{@item Emerald|XDMG} (deep bright green)",
+        "{@item Fire opal|XDMG} (fiery red)",
+        "{@item Opal|XDMG} (pale blue with green and golden mottling)",
+        "{@item Star ruby|XDMG} (ruby with white star-shaped center)",
+        "{@item Star sapphire|XDMG} (blue sapphire with white star-shaped center)",
+        "{@item Yellow sapphire|XDMG} (fiery yellow or yellow green)"
+      ]
+    },
+    {
+      "name": "5,000 GP Gemstones",
+      "source": "XDMG",
+      "page": 214,
+      "type": 5000,
+      "table": [
+        "{@item Black sapphire|XDMG} (lustrous black with glowing highlights)",
+        "{@item Diamond|XDMG} (blue white, canary, pink, brown, or blue)",
+        "{@item Jacinth|XDMG} (fiery orange)",
+        "{@item Ruby|XDMG} (clear red to deep crimson)"
+      ]
+    }
+  ]
+}

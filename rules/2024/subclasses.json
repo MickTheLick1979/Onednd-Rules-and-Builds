@@ -1,0 +1,20 @@
+{
+  "subclasses": [
+    {
+      "name": "Eldritch Knight",
+      "source": "XPHB"
+    },
+    {
+      "name": "Psi Warrior",
+      "source": "XPHB"
+    },
+    {
+      "name": "Arcane Trickster",
+      "source": "XPHB"
+    },
+    {
+      "name": "Soulknife",
+      "source": "XPHB"
+    }
+  ]
+}
