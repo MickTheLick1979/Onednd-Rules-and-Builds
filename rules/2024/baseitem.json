@@ -1,33 +1,6 @@
 {
   "baseitem": [
     {
-      "name": "Antimatter Rifle",
-      "source": "XDMG",
-      "page": 73,
-      "edition": "one",
-      "type": "R|XPHB",
-      "rarity": "none",
-      "weight": 10,
-      "valueRarity": "very rare",
-      "weaponCategory": "martial",
-      "age": "futuristic",
-      "property": [
-        "AF|XDMG",
-        "RLD|XDMG",
-        "2H|XPHB"
-      ],
-      "mastery": [
-        "Sap|XPHB"
-      ],
-      "range": "120/360",
-      "reload": 2,
-      "dmg1": "6d8",
-      "dmgType": "N",
-      "firearm": true,
-      "weapon": true,
-      "ammoType": "energy cell|xdmg"
-    },
-    {
       "name": "Arrow",
       "source": "XPHB",
       "page": 222,
@@ -64,34 +37,6 @@
           "quantity": 20
         }
       ]
-    },
-    {
-      "name": "Automatic Rifle",
-      "source": "XDMG",
-      "page": 73,
-      "edition": "one",
-      "type": "R|XPHB",
-      "rarity": "none",
-      "weight": 8,
-      "valueRarity": "rare",
-      "weaponCategory": "martial",
-      "age": "modern",
-      "property": [
-        "AF|XDMG",
-        "BF|XDMG",
-        "RLD|XDMG",
-        "2H|XPHB"
-      ],
-      "mastery": [
-        "Slow|XPHB"
-      ],
-      "range": "80/240",
-      "reload": 30,
-      "dmg1": "2d8",
-      "dmgType": "P",
-      "firearm": true,
-      "weapon": true,
-      "ammoType": "firearm bullet|xphb"
     },
     {
       "name": "Bagpipes",
@@ -420,20 +365,6 @@
             }
           ]
         }
-      ]
-    },
-    {
-      "name": "Energy Cell",
-      "source": "XDMG",
-      "page": 72,
-      "edition": "one",
-      "type": "AF|XDMG",
-      "rarity": "none",
-      "weight": 0.5,
-      "age": "futuristic",
-      "cellEnergy": true,
-      "miscTags": [
-        "CNS"
       ]
     },
     {
@@ -807,33 +738,6 @@
       ]
     },
     {
-      "name": "Hunting Rifle",
-      "source": "XDMG",
-      "page": 73,
-      "edition": "one",
-      "type": "R|XPHB",
-      "rarity": "none",
-      "weight": 8,
-      "valueRarity": "rare",
-      "weaponCategory": "martial",
-      "age": "modern",
-      "property": [
-        "AF|XDMG",
-        "RLD|XDMG",
-        "2H|XPHB"
-      ],
-      "mastery": [
-        "Slow|XPHB"
-      ],
-      "range": "80/240",
-      "reload": 5,
-      "dmg1": "2d10",
-      "dmgType": "P",
-      "firearm": true,
-      "weapon": true,
-      "ammoType": "firearm bullet|xphb"
-    },
-    {
       "name": "Javelin",
       "source": "XPHB",
       "page": 215,
@@ -889,59 +793,6 @@
         "A Lance requires two hands to wield when you aren't mounted."
       ],
       "hasFluffImages": true
-    },
-    {
-      "name": "Laser Pistol",
-      "source": "XDMG",
-      "page": 73,
-      "edition": "one",
-      "type": "R|XPHB",
-      "rarity": "none",
-      "weight": 2,
-      "valueRarity": "very rare",
-      "weaponCategory": "martial",
-      "age": "futuristic",
-      "property": [
-        "AF|XDMG",
-        "RLD|XDMG"
-      ],
-      "mastery": [
-        "Vex|XPHB"
-      ],
-      "range": "40/120",
-      "reload": 50,
-      "dmg1": "3d6",
-      "dmgType": "R",
-      "firearm": true,
-      "weapon": true,
-      "ammoType": "energy cell|xdmg"
-    },
-    {
-      "name": "Laser Rifle",
-      "source": "XDMG",
-      "page": 73,
-      "edition": "one",
-      "type": "R|XPHB",
-      "rarity": "none",
-      "weight": 7,
-      "valueRarity": "very rare",
-      "weaponCategory": "martial",
-      "age": "futuristic",
-      "property": [
-        "AF|XDMG",
-        "RLD|XDMG",
-        "2H|XPHB"
-      ],
-      "mastery": [
-        "Slow|XPHB"
-      ],
-      "range": "100/300",
-      "reload": 30,
-      "dmg1": "3d8",
-      "dmgType": "R",
-      "firearm": true,
-      "weapon": true,
-      "ammoType": "energy cell|xdmg"
     },
     {
       "name": "Leather Armor",
@@ -1450,32 +1301,6 @@
       "hasFluffImages": true
     },
     {
-      "name": "Revolver",
-      "source": "XDMG",
-      "page": 73,
-      "edition": "one",
-      "type": "R|XPHB",
-      "rarity": "none",
-      "weight": 3,
-      "valueRarity": "rare",
-      "weaponCategory": "martial",
-      "age": "modern",
-      "property": [
-        "AF|XDMG",
-        "RLD|XDMG"
-      ],
-      "mastery": [
-        "Sap|XPHB"
-      ],
-      "range": "40/120",
-      "reload": 6,
-      "dmg1": "2d8",
-      "dmgType": "P",
-      "firearm": true,
-      "weapon": true,
-      "ammoType": "firearm bullet|xphb"
-    },
-    {
       "name": "Ring Mail",
       "source": "XPHB",
       "page": 219,
@@ -1546,32 +1371,6 @@
       "sword": true,
       "weapon": true,
       "hasFluffImages": true
-    },
-    {
-      "name": "Semiautomatic Pistol",
-      "source": "XDMG",
-      "page": 73,
-      "edition": "one",
-      "type": "R|XPHB",
-      "rarity": "none",
-      "weight": 3,
-      "valueRarity": "rare",
-      "weaponCategory": "martial",
-      "age": "modern",
-      "property": [
-        "AF|XDMG",
-        "RLD|XDMG"
-      ],
-      "mastery": [
-        "Vex|XPHB"
-      ],
-      "range": "50/150",
-      "reload": 15,
-      "dmg1": "2d6",
-      "dmgType": "P",
-      "firearm": true,
-      "weapon": true,
-      "ammoType": "firearm bullet|xphb"
     },
     {
       "name": "Shawm",
@@ -1672,33 +1471,6 @@
       "sword": true,
       "weapon": true,
       "hasFluffImages": true
-    },
-    {
-      "name": "Shotgun",
-      "source": "XDMG",
-      "page": 73,
-      "edition": "one",
-      "type": "R|XPHB",
-      "rarity": "none",
-      "weight": 7,
-      "valueRarity": "rare",
-      "weaponCategory": "martial",
-      "age": "modern",
-      "property": [
-        "AF|XDMG",
-        "RLD|XDMG",
-        "2H|XPHB"
-      ],
-      "mastery": [
-        "Push|XPHB"
-      ],
-      "range": "30/90",
-      "reload": 2,
-      "dmg1": "2d8",
-      "dmgType": "P",
-      "firearm": true,
-      "weapon": true,
-      "ammoType": "firearm bullet|xphb"
     },
     {
       "name": "Sickle",

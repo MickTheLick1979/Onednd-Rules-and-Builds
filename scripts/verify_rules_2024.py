@@ -26,8 +26,14 @@ KNOWN_TOP_KEYS = {
 
 # Categories we intentionally exclude from the 2024 character-build scope
 INTENTIONALLY_EXCLUDED = {
-    "adventure", "artObjects", "deck", "encounter", "entries",
-    "facility", "facilityFluff", "name",
+    "adventure","artObjects","deck","encounter","entries",
+    "facility","facilityFluff","name",
+    # Always excluded per project scope
+    "magicItems","magicvariant",
+    "trap","trapFluff",
+    "vehicle","vehicleFluff",
+    "deity","disease",
+    "gems","hoard","individual","card",
 }
 
 def is_2024_entry(entry: dict) -> bool:
