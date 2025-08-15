@@ -89,20 +89,25 @@ def keep_entry(
 ) -> bool:
     """
     Keep only if the entry's OWN source should be included.
-    - For build-critical categories we restrict to XPHB only.
-    - For everything else, we use the existing policy:
-      keep if source is in --sources OR (accept-xprefix and source starts with 'X').
+
+    For build-critical categories we want 2024 PHB content only,
+    but some 2024 data is flagged via basicRules2024/srd52 instead of source==XPHB.
+    So we accept:
+      - source in {"XPHB"}  OR
+      - entry has basicRules2024==True OR srd52==True
+
+    For everything else, keep original behaviour:
+      - source in --sources OR (accept_xprefix and source startswith 'X')
     """
     if not isinstance(entry, dict):
         return False
 
     src = source_string_from(entry).upper()
+    is_flagged_2024 = bool(entry.get("basicRules2024")) or bool(entry.get("srd52"))
 
-    # Strict PHB-only for build-critical categories
     if category in CRITICAL_CATEGORIES:
-        return src in WANTED_SOURCES_CRITICAL
+        return (src in WANTED_SOURCES_CRITICAL) or is_flagged_2024
 
-    # Original behavior for non-critical categories
     if src in allowed_sources:
         return True
     if accept_xprefix and src.startswith("X"):
