@@ -114,57 +114,6 @@
       "hasFluffImages": true
     },
     {
-      "name": "Arcane Archer",
-      "shortName": "Arcane Archer",
-      "source": "XGE",
-      "className": "Fighter",
-      "classSource": "PHB",
-      "page": 28,
-      "edition": "classic",
-      "additionalSpells": [
-        {
-          "known": {
-            "3": [
-              "prestidigitation#c"
-            ]
-          }
-        },
-        {
-          "known": {
-            "3": [
-              "druidcraft#c"
-            ]
-          }
-        }
-      ],
-      "optionalfeatureProgression": [
-        {
-          "name": "Arcane Shots",
-          "featureType": [
-            "AS"
-          ],
-          "progression": {
-            "3": 2,
-            "7": 3,
-            "10": 4,
-            "15": 5,
-            "18": 6
-          }
-        }
-      ],
-      "subclassFeatures": [
-        "Arcane Archer|Fighter||Arcane Archer|XGE|3",
-        "Magic Arrow|Fighter||Arcane Archer|XGE|7",
-        "Curving Shot|Fighter||Arcane Archer|XGE|7",
-        "Additional Arcane Shot Option|Fighter||Arcane Archer|XGE|7",
-        "Additional Arcane Shot Option|Fighter||Arcane Archer|XGE|10",
-        "Ever-Ready Shot|Fighter||Arcane Archer|XGE|15",
-        "Additional Arcane Shot Option|Fighter||Arcane Archer|XGE|15",
-        "Additional Arcane Shot Option|Fighter||Arcane Archer|XGE|18"
-      ],
-      "hasFluff": true
-    },
-    {
       "name": "Arcane Trickster",
       "shortName": "Arcane Trickster",
       "source": "XPHB",
@@ -587,22 +536,6 @@
       "hasFluffImages": true
     },
     {
-      "name": "Cavalier",
-      "shortName": "Cavalier",
-      "source": "XGE",
-      "className": "Fighter",
-      "classSource": "PHB",
-      "page": 30,
-      "edition": "classic",
-      "subclassFeatures": [
-        "Cavalier|Fighter||Cavalier|XGE|3",
-        "Warding Maneuver|Fighter||Cavalier|XGE|7",
-        "Hold the Line|Fighter||Cavalier|XGE|10",
-        "Ferocious Charger|Fighter||Cavalier|XGE|15",
-        "Vigilant Defender|Fighter||Cavalier|XGE|18"
-      ]
-    },
-    {
       "name": "Celestial Patron",
       "shortName": "Celestial",
       "source": "XPHB",
@@ -676,23 +609,6 @@
         "Superior Critical|Fighter|XPHB|Champion|XPHB|15",
         "Survivor|Fighter|XPHB|Champion|XPHB|18"
       ],
-      "hasFluffImages": true
-    },
-    {
-      "name": "Circle of Dreams",
-      "shortName": "Dreams",
-      "source": "XGE",
-      "className": "Druid",
-      "classSource": "PHB",
-      "page": 22,
-      "edition": "classic",
-      "subclassFeatures": [
-        "Circle of Dreams|Druid||Dreams|XGE|2",
-        "Hearth of Moonlight and Shadow|Druid||Dreams|XGE|6",
-        "Hidden Paths|Druid||Dreams|XGE|10",
-        "Walker in Dreams|Druid||Dreams|XGE|14"
-      ],
-      "hasFluff": true,
       "hasFluffImages": true
     },
     {
@@ -869,22 +785,6 @@
       "hasFluffImages": true
     },
     {
-      "name": "Circle of the Shepherd",
-      "shortName": "Shepherd",
-      "source": "XGE",
-      "className": "Druid",
-      "classSource": "PHB",
-      "page": 23,
-      "edition": "classic",
-      "subclassFeatures": [
-        "Circle of the Shepherd|Druid||Shepherd|XGE|2",
-        "Mighty Summoner|Druid||Shepherd|XGE|6",
-        "Guardian Spirit|Druid||Shepherd|XGE|10",
-        "Faithful Summons|Druid||Shepherd|XGE|14"
-      ],
-      "hasFluffImages": true
-    },
-    {
       "name": "Circle of the Stars",
       "shortName": "Stars",
       "source": "XPHB",
@@ -973,33 +873,6 @@
     {
       "name": "College of Glamour",
       "shortName": "Glamour",
-      "source": "XGE",
-      "className": "Bard",
-      "classSource": "PHB",
-      "page": 14,
-      "reprintedAs": [
-        "Glamour|Bard|XPHB|XPHB"
-      ],
-      "edition": "classic",
-      "additionalSpells": [
-        {
-          "innate": {
-            "6": [
-              "command"
-            ]
-          }
-        }
-      ],
-      "subclassFeatures": [
-        "College of Glamour|Bard||Glamour|XGE|3",
-        "Mantle of Majesty|Bard||Glamour|XGE|6",
-        "Unbreakable Majesty|Bard||Glamour|XGE|14"
-      ],
-      "hasFluff": true
-    },
-    {
-      "name": "College of Glamour",
-      "shortName": "Glamour",
       "source": "XPHB",
       "className": "Bard",
       "classSource": "XPHB",
@@ -1062,32 +935,6 @@
       "hasFluffImages": true
     },
     {
-      "name": "College of Swords",
-      "shortName": "Swords",
-      "source": "XGE",
-      "className": "Bard",
-      "classSource": "PHB",
-      "page": 15,
-      "edition": "classic",
-      "optionalfeatureProgression": [
-        {
-          "name": "Fighting Style",
-          "featureType": [
-            "FS:B"
-          ],
-          "progression": {
-            "3": 1
-          }
-        }
-      ],
-      "subclassFeatures": [
-        "College of Swords|Bard||Swords|XGE|3",
-        "Extra Attack|Bard||Swords|XGE|6",
-        "Master's Flourish|Bard||Swords|XGE|14"
-      ],
-      "hasFluffImages": true
-    },
-    {
       "name": "College of Valor",
       "shortName": "Valor",
       "source": "XPHB",
@@ -1101,330 +948,6 @@
         "Battle Magic|Bard|XPHB|Valor|XPHB|14"
       ],
       "hasFluffImages": true
-    },
-    {
-      "name": "College of Whispers",
-      "shortName": "Whispers",
-      "source": "XGE",
-      "className": "Bard",
-      "classSource": "PHB",
-      "page": 16,
-      "edition": "classic",
-      "subclassFeatures": [
-        "College of Whispers|Bard||Whispers|XGE|3",
-        "Mantle of Whispers|Bard||Whispers|XGE|6",
-        "Shadow Lore|Bard||Whispers|XGE|14"
-      ],
-      "hasFluff": true,
-      "hasFluffImages": true
-    },
-    {
-      "name": "Divine Soul",
-      "shortName": "Divine Soul",
-      "source": "XGE",
-      "className": "Sorcerer",
-      "classSource": "PHB",
-      "page": 50,
-      "edition": "classic",
-      "additionalSpells": [
-        {
-          "name": "Good",
-          "known": {
-            "1": [
-              "cure wounds"
-            ]
-          },
-          "expanded": {
-            "1": [
-              {
-                "all": "level=0|class=Cleric"
-              },
-              {
-                "all": "level=1|class=Cleric"
-              }
-            ],
-            "3": [
-              {
-                "all": "level=2|class=Cleric"
-              }
-            ],
-            "5": [
-              {
-                "all": "level=3|class=Cleric"
-              }
-            ],
-            "7": [
-              {
-                "all": "level=4|class=Cleric"
-              }
-            ],
-            "9": [
-              {
-                "all": "level=5|class=Cleric"
-              }
-            ],
-            "11": [
-              {
-                "all": "level=6|class=Cleric"
-              }
-            ],
-            "13": [
-              {
-                "all": "level=7|class=Cleric"
-              }
-            ],
-            "15": [
-              {
-                "all": "level=8|class=Cleric"
-              }
-            ],
-            "17": [
-              {
-                "all": "level=9|class=Cleric"
-              }
-            ]
-          }
-        },
-        {
-          "name": "Evil",
-          "known": {
-            "1": [
-              "inflict wounds"
-            ]
-          },
-          "expanded": {
-            "1": [
-              {
-                "all": "level=0|class=Cleric"
-              },
-              {
-                "all": "level=1|class=Cleric"
-              }
-            ],
-            "3": [
-              {
-                "all": "level=2|class=Cleric"
-              }
-            ],
-            "5": [
-              {
-                "all": "level=3|class=Cleric"
-              }
-            ],
-            "7": [
-              {
-                "all": "level=4|class=Cleric"
-              }
-            ],
-            "9": [
-              {
-                "all": "level=5|class=Cleric"
-              }
-            ],
-            "11": [
-              {
-                "all": "level=6|class=Cleric"
-              }
-            ],
-            "13": [
-              {
-                "all": "level=7|class=Cleric"
-              }
-            ],
-            "15": [
-              {
-                "all": "level=8|class=Cleric"
-              }
-            ],
-            "17": [
-              {
-                "all": "level=9|class=Cleric"
-              }
-            ]
-          }
-        },
-        {
-          "name": "Law",
-          "known": {
-            "1": [
-              "bless"
-            ]
-          },
-          "expanded": {
-            "1": [
-              {
-                "all": "level=0|class=Cleric"
-              },
-              {
-                "all": "level=1|class=Cleric"
-              }
-            ],
-            "3": [
-              {
-                "all": "level=2|class=Cleric"
-              }
-            ],
-            "5": [
-              {
-                "all": "level=3|class=Cleric"
-              }
-            ],
-            "7": [
-              {
-                "all": "level=4|class=Cleric"
-              }
-            ],
-            "9": [
-              {
-                "all": "level=5|class=Cleric"
-              }
-            ],
-            "11": [
-              {
-                "all": "level=6|class=Cleric"
-              }
-            ],
-            "13": [
-              {
-                "all": "level=7|class=Cleric"
-              }
-            ],
-            "15": [
-              {
-                "all": "level=8|class=Cleric"
-              }
-            ],
-            "17": [
-              {
-                "all": "level=9|class=Cleric"
-              }
-            ]
-          }
-        },
-        {
-          "name": "Chaos",
-          "known": {
-            "1": [
-              "bane"
-            ]
-          },
-          "expanded": {
-            "1": [
-              {
-                "all": "level=0|class=Cleric"
-              },
-              {
-                "all": "level=1|class=Cleric"
-              }
-            ],
-            "3": [
-              {
-                "all": "level=2|class=Cleric"
-              }
-            ],
-            "5": [
-              {
-                "all": "level=3|class=Cleric"
-              }
-            ],
-            "7": [
-              {
-                "all": "level=4|class=Cleric"
-              }
-            ],
-            "9": [
-              {
-                "all": "level=5|class=Cleric"
-              }
-            ],
-            "11": [
-              {
-                "all": "level=6|class=Cleric"
-              }
-            ],
-            "13": [
-              {
-                "all": "level=7|class=Cleric"
-              }
-            ],
-            "15": [
-              {
-                "all": "level=8|class=Cleric"
-              }
-            ],
-            "17": [
-              {
-                "all": "level=9|class=Cleric"
-              }
-            ]
-          }
-        },
-        {
-          "name": "Neutrality",
-          "known": {
-            "1": [
-              "protection from evil and good"
-            ]
-          },
-          "expanded": {
-            "1": [
-              {
-                "all": "level=0|class=Cleric"
-              },
-              {
-                "all": "level=1|class=Cleric"
-              }
-            ],
-            "3": [
-              {
-                "all": "level=2|class=Cleric"
-              }
-            ],
-            "5": [
-              {
-                "all": "level=3|class=Cleric"
-              }
-            ],
-            "7": [
-              {
-                "all": "level=4|class=Cleric"
-              }
-            ],
-            "9": [
-              {
-                "all": "level=5|class=Cleric"
-              }
-            ],
-            "11": [
-              {
-                "all": "level=6|class=Cleric"
-              }
-            ],
-            "13": [
-              {
-                "all": "level=7|class=Cleric"
-              }
-            ],
-            "15": [
-              {
-                "all": "level=8|class=Cleric"
-              }
-            ],
-            "17": [
-              {
-                "all": "level=9|class=Cleric"
-              }
-            ]
-          }
-        }
-      ],
-      "subclassFeatures": [
-        "Divine Soul|Sorcerer||Divine Soul|XGE|1",
-        "Empowered Healing|Sorcerer||Divine Soul|XGE|6",
-        "Otherworldly Wings|Sorcerer||Divine Soul|XGE|14",
-        "Unearthly Recovery|Sorcerer||Divine Soul|XGE|18"
-      ],
-      "hasFluff": true
     },
     {
       "name": "Diviner",
@@ -1990,91 +1513,6 @@
       "hasFluffImages": true
     },
     {
-      "name": "Forge Domain",
-      "shortName": "Forge",
-      "source": "XGE",
-      "className": "Cleric",
-      "classSource": "PHB",
-      "page": 18,
-      "edition": "classic",
-      "additionalSpells": [
-        {
-          "prepared": {
-            "1": [
-              "identify",
-              "searing smite"
-            ],
-            "3": [
-              "heat metal",
-              "magic weapon"
-            ],
-            "5": [
-              "elemental weapon",
-              "protection from energy"
-            ],
-            "7": [
-              "fabricate",
-              "wall of fire"
-            ],
-            "9": [
-              "animate objects",
-              "creation"
-            ]
-          }
-        }
-      ],
-      "subclassFeatures": [
-        "Forge Domain|Cleric||Forge|XGE|1",
-        "Channel Divinity: Artisan's Blessing|Cleric||Forge|XGE|2",
-        "Soul of the Forge|Cleric||Forge|XGE|6",
-        "Divine Strike|Cleric||Forge|XGE|8",
-        "Blessed Strikes|Cleric||Forge|XGE|8|TCE",
-        "Saint of Forge and Fire|Cleric||Forge|XGE|17"
-      ],
-      "hasFluff": true,
-      "hasFluffImages": true
-    },
-    {
-      "name": "Gloom Stalker",
-      "shortName": "Gloom Stalker",
-      "source": "XGE",
-      "className": "Ranger",
-      "classSource": "PHB",
-      "page": 41,
-      "reprintedAs": [
-        "Gloom Stalker|Ranger|XPHB|XPHB"
-      ],
-      "edition": "classic",
-      "additionalSpells": [
-        {
-          "known": {
-            "3": [
-              "disguise self"
-            ],
-            "5": [
-              "rope trick"
-            ],
-            "9": [
-              "fear"
-            ],
-            "13": [
-              "greater invisibility"
-            ],
-            "17": [
-              "seeming"
-            ]
-          }
-        }
-      ],
-      "subclassFeatures": [
-        "Gloom Stalker|Ranger||Gloom Stalker|XGE|3",
-        "Iron Mind|Ranger||Gloom Stalker|XGE|7",
-        "Stalker's Flurry|Ranger||Gloom Stalker|XGE|11",
-        "Shadowy Dodge|Ranger||Gloom Stalker|XGE|15"
-      ],
-      "hasFluff": true
-    },
-    {
       "name": "Gloom Stalker",
       "shortName": "Gloom Stalker",
       "source": "XPHB",
@@ -2109,56 +1547,6 @@
         "Stalker's Flurry|Ranger|XPHB|Gloom Stalker|XPHB|11",
         "Shadowy Dodge|Ranger|XPHB|Gloom Stalker|XPHB|15"
       ],
-      "hasFluffImages": true
-    },
-    {
-      "name": "Grave Domain",
-      "shortName": "Grave",
-      "source": "XGE",
-      "className": "Cleric",
-      "classSource": "PHB",
-      "page": 19,
-      "edition": "classic",
-      "additionalSpells": [
-        {
-          "prepared": {
-            "1": [
-              "bane",
-              "false life"
-            ],
-            "3": [
-              "gentle repose",
-              "ray of enfeeblement"
-            ],
-            "5": [
-              "revivify",
-              "vampiric touch"
-            ],
-            "7": [
-              "blight",
-              "death ward"
-            ],
-            "9": [
-              "antilife shell",
-              "raise dead"
-            ]
-          },
-          "known": {
-            "1": [
-              "spare the dying#c"
-            ]
-          }
-        }
-      ],
-      "subclassFeatures": [
-        "Grave Domain|Cleric||Grave|XGE|1",
-        "Channel Divinity: Path to the Grave|Cleric||Grave|XGE|2",
-        "Sentinel at Death's Door|Cleric||Grave|XGE|6",
-        "Potent Spellcasting|Cleric||Grave|XGE|8",
-        "Blessed Strikes|Cleric||Grave|XGE|8|TCE",
-        "Keeper of Souls|Cleric||Grave|XGE|17"
-      ],
-      "hasFluff": true,
       "hasFluffImages": true
     },
     {
@@ -2206,43 +1594,6 @@
         "Create Thrall|Warlock|XPHB|Great Old One|XPHB|14"
       ],
       "hasFluffImages": true
-    },
-    {
-      "name": "Horizon Walker",
-      "shortName": "Horizon Walker",
-      "source": "XGE",
-      "className": "Ranger",
-      "classSource": "PHB",
-      "page": 42,
-      "edition": "classic",
-      "additionalSpells": [
-        {
-          "known": {
-            "3": [
-              "protection from evil and good"
-            ],
-            "5": [
-              "misty step"
-            ],
-            "9": [
-              "haste"
-            ],
-            "13": [
-              "banishment"
-            ],
-            "17": [
-              "teleportation circle"
-            ]
-          }
-        }
-      ],
-      "subclassFeatures": [
-        "Horizon Walker|Ranger||Horizon Walker|XGE|3",
-        "Ethereal Step|Ranger||Horizon Walker|XGE|7",
-        "Distant Strike|Ranger||Horizon Walker|XGE|11",
-        "Spectral Defense|Ranger||Horizon Walker|XGE|15"
-      ],
-      "hasFluff": true
     },
     {
       "name": "Hunter",
@@ -2335,21 +1686,6 @@
       "hasFluffImages": true
     },
     {
-      "name": "Inquisitive",
-      "shortName": "Inquisitive",
-      "source": "XGE",
-      "className": "Rogue",
-      "classSource": "PHB",
-      "page": 45,
-      "edition": "classic",
-      "subclassFeatures": [
-        "Inquisitive|Rogue||Inquisitive|XGE|3",
-        "Steady Eye|Rogue||Inquisitive|XGE|9",
-        "Unerring Eye|Rogue||Inquisitive|XGE|13",
-        "Eye for Weakness|Rogue||Inquisitive|XGE|17"
-      ]
-    },
-    {
       "name": "Life Domain",
       "shortName": "Life",
       "source": "XPHB",
@@ -2427,107 +1763,6 @@
         "Improved Warding Flare|Cleric|XPHB|Light|XPHB|6",
         "Corona of Light|Cleric|XPHB|Light|XPHB|17"
       ],
-      "hasFluffImages": true
-    },
-    {
-      "name": "Mastermind",
-      "shortName": "Mastermind",
-      "source": "XGE",
-      "className": "Rogue",
-      "classSource": "PHB",
-      "page": 46,
-      "otherSources": [
-        {
-          "source": "SCAG",
-          "page": 135
-        }
-      ],
-      "edition": "classic",
-      "subclassFeatures": [
-        "Mastermind|Rogue||Mastermind|XGE|3",
-        "Insightful Manipulator|Rogue||Mastermind|XGE|9",
-        "Misdirection|Rogue||Mastermind|XGE|13",
-        "Soul of Deceit|Rogue||Mastermind|XGE|17"
-      ],
-      "hasFluff": true
-    },
-    {
-      "name": "Monster Slayer",
-      "shortName": "Monster Slayer",
-      "source": "XGE",
-      "className": "Ranger",
-      "classSource": "PHB",
-      "page": 43,
-      "edition": "classic",
-      "additionalSpells": [
-        {
-          "known": {
-            "3": [
-              "protection from evil and good"
-            ],
-            "5": [
-              "zone of truth"
-            ],
-            "9": [
-              "magic circle"
-            ],
-            "13": [
-              "banishment"
-            ],
-            "17": [
-              "hold monster"
-            ]
-          }
-        }
-      ],
-      "subclassFeatures": [
-        "Monster Slayer|Ranger||Monster Slayer|XGE|3",
-        "Supernatural Defense|Ranger||Monster Slayer|XGE|7",
-        "Magic-User's Nemesis|Ranger||Monster Slayer|XGE|11",
-        "Slayer's Counter|Ranger||Monster Slayer|XGE|15"
-      ]
-    },
-    {
-      "name": "Oath of Conquest",
-      "shortName": "Conquest",
-      "source": "XGE",
-      "className": "Paladin",
-      "classSource": "PHB",
-      "page": 37,
-      "edition": "classic",
-      "additionalSpells": [
-        {
-          "prepared": {
-            "3": [
-              "armor of Agathys",
-              "command"
-            ],
-            "5": [
-              "hold person",
-              "spiritual weapon"
-            ],
-            "9": [
-              "bestow curse",
-              "fear"
-            ],
-            "13": [
-              "dominate beast",
-              "stoneskin"
-            ],
-            "17": [
-              "cloudkill",
-              "dominate person"
-            ]
-          }
-        }
-      ],
-      "subclassFeatures": [
-        "Oath of Conquest|Paladin||Conquest|XGE|3",
-        "Aura of Conquest|Paladin||Conquest|XGE|7",
-        "Scornful Rebuke|Paladin||Conquest|XGE|15",
-        "Invincible Conqueror|Paladin||Conquest|XGE|20"
-      ],
-      "hasFluff": true,
       "hasFluffImages": true
     },
     {
@@ -2617,49 +1852,6 @@
       "hasFluffImages": true
     },
     {
-      "name": "Oath of Redemption",
-      "shortName": "Redemption",
-      "source": "XGE",
-      "className": "Paladin",
-      "classSource": "PHB",
-      "page": 38,
-      "edition": "classic",
-      "additionalSpells": [
-        {
-          "prepared": {
-            "3": [
-              "sanctuary",
-              "sleep"
-            ],
-            "5": [
-              "calm emotions",
-              "hold person"
-            ],
-            "9": [
-              "counterspell",
-              "hypnotic pattern"
-            ],
-            "13": [
-              "Otiluke's resilient sphere",
-              "stoneskin"
-            ],
-            "17": [
-              "hold monster",
-              "wall of force"
-            ]
-          }
-        }
-      ],
-      "subclassFeatures": [
-        "Oath of Redemption|Paladin||Redemption|XGE|3",
-        "Aura of the Guardian|Paladin||Redemption|XGE|7",
-        "Protective Spirit|Paladin||Redemption|XGE|15",
-        "Emissary of Redemption|Paladin||Redemption|XGE|20"
-      ],
-      "hasFluff": true,
-      "hasFluffImages": true
-    },
-    {
       "name": "Oath of the Ancients",
       "shortName": "Ancients",
       "source": "XPHB",
@@ -2744,33 +1936,6 @@
       "hasFluffImages": true
     },
     {
-      "name": "Path of the Ancestral Guardian",
-      "shortName": "Ancestral Guardian",
-      "source": "XGE",
-      "className": "Barbarian",
-      "classSource": "PHB",
-      "page": 9,
-      "edition": "classic",
-      "spellcastingAbility": "wis",
-      "additionalSpells": [
-        {
-          "innate": {
-            "10": [
-              "augury",
-              "clairvoyance"
-            ]
-          }
-        }
-      ],
-      "subclassFeatures": [
-        "Path of the Ancestral Guardian|Barbarian||Ancestral Guardian|XGE|3",
-        "Spirit Shield|Barbarian||Ancestral Guardian|XGE|6",
-        "Consult the Spirits|Barbarian||Ancestral Guardian|XGE|10",
-        "Vengeful Ancestors|Barbarian||Ancestral Guardian|XGE|14"
-      ],
-      "hasFluff": true
-    },
-    {
       "name": "Path of the Berserker",
       "shortName": "Berserker",
       "source": "XPHB",
@@ -2785,23 +1950,6 @@
         "Retaliation|Barbarian|XPHB|Berserker|XPHB|10",
         "Intimidating Presence|Barbarian|XPHB|Berserker|XPHB|14"
       ],
-      "hasFluffImages": true
-    },
-    {
-      "name": "Path of the Storm Herald",
-      "shortName": "Storm Herald",
-      "source": "XGE",
-      "className": "Barbarian",
-      "classSource": "PHB",
-      "page": 10,
-      "edition": "classic",
-      "subclassFeatures": [
-        "Path of the Storm Herald|Barbarian||Storm Herald|XGE|3",
-        "Storm Soul|Barbarian||Storm Herald|XGE|6",
-        "Shielding Storm|Barbarian||Storm Herald|XGE|10",
-        "Raging Storm|Barbarian||Storm Herald|XGE|14"
-      ],
-      "hasFluff": true,
       "hasFluffImages": true
     },
     {
@@ -2852,24 +2000,6 @@
         "Travel Along the Tree|Barbarian|XPHB|World Tree|XPHB|14"
       ],
       "hasFluffImages": true
-    },
-    {
-      "name": "Path of the Zealot",
-      "shortName": "Zealot",
-      "source": "XGE",
-      "className": "Barbarian",
-      "classSource": "PHB",
-      "page": 11,
-      "reprintedAs": [
-        "Zealot|Barbarian|XPHB|XPHB"
-      ],
-      "edition": "classic",
-      "subclassFeatures": [
-        "Path of the Zealot|Barbarian||Zealot|XGE|3",
-        "Fanatical Focus|Barbarian||Zealot|XGE|6",
-        "Zealous Presence|Barbarian||Zealot|XGE|10",
-        "Rage beyond Death|Barbarian||Zealot|XGE|14"
-      ]
     },
     {
       "name": "Path of the Zealot",
@@ -3014,62 +2144,6 @@
       "hasFluffImages": true
     },
     {
-      "name": "Samurai",
-      "shortName": "Samurai",
-      "source": "XGE",
-      "className": "Fighter",
-      "classSource": "PHB",
-      "page": 31,
-      "edition": "classic",
-      "subclassFeatures": [
-        "Samurai|Fighter||Samurai|XGE|3",
-        "Elegant Courtier|Fighter||Samurai|XGE|7",
-        "Tireless Spirit|Fighter||Samurai|XGE|10",
-        "Rapid Strike|Fighter||Samurai|XGE|15",
-        "Strength before Death|Fighter||Samurai|XGE|18"
-      ]
-    },
-    {
-      "name": "Scout",
-      "shortName": "Scout",
-      "source": "XGE",
-      "className": "Rogue",
-      "classSource": "PHB",
-      "page": 47,
-      "edition": "classic",
-      "subclassFeatures": [
-        "Scout|Rogue||Scout|XGE|3",
-        "Superior Mobility|Rogue||Scout|XGE|9",
-        "Ambush Master|Rogue||Scout|XGE|13",
-        "Sudden Strike|Rogue||Scout|XGE|17"
-      ]
-    },
-    {
-      "name": "Shadow Magic",
-      "shortName": "Shadow",
-      "source": "XGE",
-      "className": "Sorcerer",
-      "classSource": "PHB",
-      "page": 50,
-      "edition": "classic",
-      "additionalSpells": [
-        {
-          "known": {
-            "3": [
-              "darkness"
-            ]
-          }
-        }
-      ],
-      "subclassFeatures": [
-        "Shadow Magic|Sorcerer||Shadow|XGE|1",
-        "Hound of Ill Omen|Sorcerer||Shadow|XGE|6",
-        "Shadow Walk|Sorcerer||Shadow|XGE|14",
-        "Umbral Form|Sorcerer||Shadow|XGE|18"
-      ],
-      "hasFluff": true
-    },
-    {
       "name": "Soulknife",
       "shortName": "Soulknife",
       "source": "XPHB",
@@ -3182,145 +2256,6 @@
       "hasFluffImages": true
     },
     {
-      "name": "Storm Sorcery",
-      "shortName": "Storm",
-      "source": "XGE",
-      "className": "Sorcerer",
-      "classSource": "PHB",
-      "page": 51,
-      "otherSources": [
-        {
-          "source": "SCAG",
-          "page": 137
-        }
-      ],
-      "edition": "classic",
-      "subclassFeatures": [
-        "Storm Sorcery|Sorcerer||Storm|XGE|1",
-        "Heart of the Storm|Sorcerer||Storm|XGE|6",
-        "Storm Guide|Sorcerer||Storm|XGE|6",
-        "Storm's Fury|Sorcerer||Storm|XGE|14",
-        "Wind Soul|Sorcerer||Storm|XGE|18"
-      ],
-      "hasFluff": true
-    },
-    {
-      "name": "Swashbuckler",
-      "shortName": "Swashbuckler",
-      "source": "XGE",
-      "className": "Rogue",
-      "classSource": "PHB",
-      "page": 48,
-      "otherSources": [
-        {
-          "source": "SCAG",
-          "page": 135
-        }
-      ],
-      "edition": "classic",
-      "subclassFeatures": [
-        "Swashbuckler|Rogue||Swashbuckler|XGE|3",
-        "Panache|Rogue||Swashbuckler|XGE|9",
-        "Elegant Maneuver|Rogue||Swashbuckler|XGE|13",
-        "Master Duelist|Rogue||Swashbuckler|XGE|17"
-      ],
-      "hasFluff": true
-    },
-    {
-      "name": "The Celestial",
-      "shortName": "Celestial",
-      "source": "XGE",
-      "className": "Warlock",
-      "classSource": "PHB",
-      "page": 54,
-      "reprintedAs": [
-        "Celestial|Warlock|XPHB|XPHB"
-      ],
-      "edition": "classic",
-      "additionalSpells": [
-        {
-          "known": {
-            "1": [
-              "sacred flame#c",
-              "light#c"
-            ]
-          },
-          "expanded": {
-            "s1": [
-              "cure wounds",
-              "guiding bolt"
-            ],
-            "s2": [
-              "flaming sphere",
-              "lesser restoration"
-            ],
-            "s3": [
-              "daylight",
-              "revivify"
-            ],
-            "s4": [
-              "guardian of faith",
-              "wall of fire"
-            ],
-            "s5": [
-              "flame strike",
-              "greater restoration"
-            ]
-          }
-        }
-      ],
-      "subclassFeatures": [
-        "The Celestial|Warlock||Celestial|XGE|1",
-        "Radiant Soul|Warlock||Celestial|XGE|6",
-        "Celestial Resilience|Warlock||Celestial|XGE|10",
-        "Searing Vengeance|Warlock||Celestial|XGE|14"
-      ],
-      "hasFluffImages": true
-    },
-    {
-      "name": "The Hexblade",
-      "shortName": "Hexblade",
-      "source": "XGE",
-      "className": "Warlock",
-      "classSource": "PHB",
-      "page": 55,
-      "edition": "classic",
-      "additionalSpells": [
-        {
-          "expanded": {
-            "s1": [
-              "shield",
-              "wrathful smite"
-            ],
-            "s2": [
-              "blur",
-              "branding smite"
-            ],
-            "s3": [
-              "blink",
-              "elemental weapon"
-            ],
-            "s4": [
-              "phantasmal killer",
-              "staggering smite"
-            ],
-            "s5": [
-              "banishing smite",
-              "cone of cold"
-            ]
-          }
-        }
-      ],
-      "subclassFeatures": [
-        "The Hexblade|Warlock||Hexblade|XGE|1",
-        "Accursed Specter|Warlock||Hexblade|XGE|6",
-        "Armor of Hexes|Warlock||Hexblade|XGE|10",
-        "Master of Hexes|Warlock||Hexblade|XGE|14"
-      ],
-      "hasFluff": true,
-      "hasFluffImages": true
-    },
-    {
       "name": "Thief",
       "shortName": "Thief",
       "source": "XPHB",
@@ -3414,23 +2349,6 @@
         "War God's Blessing|Cleric|XPHB|War|XPHB|6",
         "Avatar of Battle|Cleric|XPHB|War|XPHB|17"
       ],
-      "hasFluffImages": true
-    },
-    {
-      "name": "War Magic",
-      "shortName": "War",
-      "source": "XGE",
-      "className": "Wizard",
-      "classSource": "PHB",
-      "page": 59,
-      "edition": "classic",
-      "subclassFeatures": [
-        "War Magic|Wizard||War|XGE|2",
-        "Power Surge|Wizard||War|XGE|6",
-        "Durable Magic|Wizard||War|XGE|10",
-        "Deflecting Shroud|Wizard||War|XGE|14"
-      ],
-      "hasFluff": true,
       "hasFluffImages": true
     },
     {
@@ -3528,74 +2446,6 @@
         "Quivering Palm|Monk|XPHB|Open Hand|XPHB|17"
       ],
       "hasFluffImages": true
-    },
-    {
-      "name": "Way of the Drunken Master",
-      "shortName": "Drunken Master",
-      "source": "XGE",
-      "className": "Monk",
-      "classSource": "PHB",
-      "page": 33,
-      "edition": "classic",
-      "subclassFeatures": [
-        "Way of the Drunken Master|Monk||Drunken Master|XGE|3",
-        "Tipsy Sway|Monk||Drunken Master|XGE|6",
-        "Drunkard's Luck|Monk||Drunken Master|XGE|11",
-        "Intoxicated Frenzy|Monk||Drunken Master|XGE|17"
-      ]
-    },
-    {
-      "name": "Way of the Kensei",
-      "shortName": "Kensei",
-      "source": "XGE",
-      "className": "Monk",
-      "classSource": "PHB",
-      "page": 34,
-      "edition": "classic",
-      "subclassFeatures": [
-        "Way of the Kensei|Monk||Kensei|XGE|3",
-        "One with the Blade|Monk||Kensei|XGE|6",
-        "Sharpen the Blade|Monk||Kensei|XGE|11",
-        "Unerring Accuracy|Monk||Kensei|XGE|17"
-      ],
-      "hasFluff": true
-    },
-    {
-      "name": "Way of the Sun Soul",
-      "shortName": "Sun Soul",
-      "source": "XGE",
-      "className": "Monk",
-      "classSource": "PHB",
-      "page": 35,
-      "otherSources": [
-        {
-          "source": "SCAG",
-          "page": 131
-        }
-      ],
-      "edition": "classic",
-      "additionalSpells": [
-        {
-          "innate": {
-            "6": {
-              "resource": {
-                "2": [
-                  "burning hands"
-                ]
-              }
-            }
-          },
-          "resourceName": "Ki",
-          "ability": "wis"
-        }
-      ],
-      "subclassFeatures": [
-        "Way of the Sun Soul|Monk||Sun Soul|XGE|3",
-        "Searing Arc Strike|Monk||Sun Soul|XGE|6",
-        "Searing Sunburst|Monk||Sun Soul|XGE|11",
-        "Sun Shield|Monk||Sun Soul|XGE|17"
-      ],
-      "hasFluff": true
     },
     {
       "name": "Wild Magic Sorcery",

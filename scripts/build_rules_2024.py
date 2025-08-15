@@ -28,7 +28,6 @@ ALLOW_CATEGORIES: Set[str] = {
     "race", "raceFeature", "raceFluff",
     "optionalfeature",
 
-
     # Spells
     "spell", "spellFluff",
 
@@ -54,6 +53,13 @@ BLOCKLIST: Set[str] = {
     "subclass-features", "optional-features", "subclasses", "entries",
 }
 
+# --- New: strict PHB-only policy for build-critical categories ---
+CRITICAL_CATEGORIES: Set[str] = {
+    "class", "classFeature", "subclass", "subclassFeature", "feat", "spell"
+}
+WANTED_SOURCES_CRITICAL: Set[str] = {"XPHB"}  # Player's Handbook 2024 only
+
+
 # ----------------------------
 # Helpers
 # ----------------------------
@@ -75,32 +81,34 @@ def source_string_from(entry: Dict[str, Any]) -> str:
             return v.strip()
     return ""
 
-def is_x_source(entry: Dict[str, Any]) -> bool:
-    """True if the entry's own source starts with 'X' (XPHB/XDMG/XMM or future X*)."""
-    src = source_string_from(entry).upper()
-    return bool(src) and src.startswith("X")
-
-def is_allowed_source(entry: Dict[str, Any], allowed_sources: Set[str]) -> bool:
-    """True if the entry's source is explicitly in the allowed set (e.g., XPHB/XDMG/XMM)."""
-    if not allowed_sources:
-        return False
-    return source_string_from(entry).upper() in allowed_sources
-
-def keep_entry(entry: Any, allowed_sources: Set[str], accept_xprefix: bool) -> bool:
+def keep_entry(
+    entry: Any,
+    category: str,
+    allowed_sources: Set[str],
+    accept_xprefix: bool,
+) -> bool:
     """
-    Keep only if the entry's OWN source is allowed (or starts with 'X' when enabled).
-    Prevents over-pulling via nested child dicts (fixes magicvariant overcount).
+    Keep only if the entry's OWN source should be included.
+    - For build-critical categories we restrict to XPHB only.
+    - For everything else, we use the existing policy:
+      keep if source is in --sources OR (accept-xprefix and source starts with 'X').
     """
     if not isinstance(entry, dict):
         return False
 
     src = source_string_from(entry).upper()
+
+    # Strict PHB-only for build-critical categories
+    if category in CRITICAL_CATEGORIES:
+        return src in WANTED_SOURCES_CRITICAL
+
+    # Original behavior for non-critical categories
     if src in allowed_sources:
         return True
     if accept_xprefix and src.startswith("X"):
         return True
-
     return False
+
 
 # ----------------------------
 # Collection
@@ -125,7 +133,7 @@ def process_list(
     for item in lst:
         if not isinstance(item, dict):
             continue
-        if keep_entry(item, allowed_sources, accept_xprefix):
+        if keep_entry(item, category, allowed_sources, accept_xprefix):
             kept.append(item)
 
     if not kept:
@@ -174,6 +182,7 @@ def recursive_collect(
             recursive_collect(x, allowed_sources, accept_xprefix, accum, dedup)
     # Non-dict/list nodes are ignored
 
+
 # ----------------------------
 # Output
 # ----------------------------
@@ -215,6 +224,7 @@ def write_outputs(
 
     print(f"\nDone. Total entries written: {total_written}")
 
+
 # ----------------------------
 # Main
 # ----------------------------
@@ -241,8 +251,10 @@ def main():
     )
     parser.add_argument(
         "--sources", default=",".join(sorted(DEFAULT_ALLOWED_SOURCES)),
-        help="Comma-separated explicit source codes, e.g. XPHB,XMM,XDMG. "
-             "Leave as default and/or combine with --accept-xprefix for future X* books.",
+        help=(
+            "Comma-separated explicit source codes, e.g. XPHB,XMM,XDMG. "
+            "Leave as default and/or combine with --accept-xprefix for future X* books."
+        ),
     )
     parser.add_argument(
         "--accept-xprefix", action="store_true", default=True,
