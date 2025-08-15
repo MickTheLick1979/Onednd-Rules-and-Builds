@@ -24,6 +24,12 @@ KNOWN_TOP_KEYS = {
     "species","speciesFeature","speciesFluff",
 }
 
+# Categories we intentionally exclude from the 2024 character-build scope
+INTENTIONALLY_EXCLUDED = {
+    "adventure", "artObjects", "deck", "encounter", "entries",
+    "facility", "facilityFluff", "name",
+}
+
 def is_2024_entry(entry: dict) -> bool:
     """Heuristic: treat as 2024 if source starts with 'X', or 2024 flags are set, or _version says >=2024."""
     if not isinstance(entry, dict):
@@ -102,6 +108,7 @@ def count_output_by_key(out_root: Path):
     return counts
 
 def main():
+    import argparse
     ap = argparse.ArgumentParser(description="Verify 2024/X* categories present in output.")
     ap.add_argument("--src", required=True, help="Path to 5etools src data folder (e.g., ...\\5etools-src-main\\data)")
     ap.add_argument("--out", required=True, help="Path to output folder (e.g., ...\\rules\\2024)")
@@ -130,18 +137,23 @@ def main():
     for key in keys:
         s = src_counts.get(key, 0)
         o = out_counts.get(key, 0)
-        status = ""
-        if s > 0 and o == 0:
-            status = "MISSING in output"
-            issues.append((key, s, o, status))
-        elif o > s and s == 0:
-            status = "Output has entries but none detected in src (check filter)"
-            issues.append((key, s, o, status))
-        elif s != o:
-            status = "Count mismatch (could be expected if you filter)"
-            issues.append((key, s, o, status))
+
+        if key in INTENTIONALLY_EXCLUDED:
+            status = "INTENTIONALLY EXCLUDED"
+            # Do not record as an issue
         else:
-            status = "OK"
+            if s > 0 and o == 0:
+                status = "MISSING in output"
+                issues.append((key, s, o, status))
+            elif o > s and s == 0:
+                status = "Output has entries but none detected in src (check filter)"
+                issues.append((key, s, o, status))
+            elif s != o:
+                status = "Count mismatch (could be expected if you filter)"
+                issues.append((key, s, o, status))
+            else:
+                status = "OK"
+
         print(f"{key:<20} {s:>10} {o:>10} {status}")
 
     if not issues:
