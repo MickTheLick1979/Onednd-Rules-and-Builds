@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "properties": {
+    "profiles": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "allow_sources": { "type": "array", "items": { "type": "string" } },
+          "deny_sources":  { "type": "array", "items": { "type": "string" } },
+          "allow_categories": { "type": "array", "items": { "type": "string" } },
+          "deny_categories":  { "type": "array", "items": { "type": "string" } }
+        },
+        "additionalProperties": false
+      }
+    },
+    "default_profile": { "type": "string" }
+  },
+  "required": ["profiles", "default_profile"],
+  "additionalProperties": false
+}
