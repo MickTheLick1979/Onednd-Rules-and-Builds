@@ -1,0 +1,1026 @@
+{
+  "magicvariant": [
+    {
+      "name": "Ammunition of Slaying",
+      "source": "XDMG",
+      "activities": [
+        {
+          "name": "Slaying Save",
+          "type": "save",
+          "activation": {
+            "type": "",
+            "condition": "when the specified creature type is damaged by this ammunition"
+          },
+          "target": {
+            "affects": {
+              "count": "1",
+              "type": "creature",
+              "special": "specific creature type"
+            }
+          },
+          "range": {
+            "units": "any"
+          },
+          "damage": {
+            "parts": [
+              {
+                "number": 6,
+                "denomination": 10,
+                "types": [
+                  "force"
+                ]
+              }
+            ],
+            "onSave": "half"
+          },
+          "save": {
+            "ability": [
+              "con"
+            ],
+            "dc": {
+              "formula": "17"
+            }
+          }
+        }
+      ],
+      "migrationVersion": 3
+    },
+    {
+      "name": "Berserker Axe",
+      "source": "XDMG",
+      "effects": [
+        {
+          "foundryId": "berserkerAxe1",
+          "name": "Berserker HP Increase",
+          "transfer": true,
+          "changes": [
+            {
+              "key": "system.attributes.hp.bonuses.level",
+              "mode": "ADD",
+              "value": 1
+            }
+          ],
+          "description": "While you are attuned to this weapon, your Hit Point maximum increases by 1 for each level you have attained."
+        }
+      ],
+      "migrationVersion": 3
+    },
+    {
+      "name": "Defender",
+      "source": "XDMG",
+      "effects": [
+        {
+          "name": "Transferred AC Bonus: 1",
+          "disabled": true,
+          "transfer": true,
+          "duration": {
+            "rounds": 1
+          },
+          "changes": [
+            {
+              "key": "system.attributes.ac.bonus",
+              "mode": "ADD",
+              "value": 1
+            },
+            {
+              "key": "system.bonuses.mwak.damage",
+              "mode": "ADD",
+              "value": -1
+            },
+            {
+              "key": "system.bonuses.mwak.attack",
+              "mode": "ADD",
+              "value": -1
+            }
+          ],
+          "description": "The adjusted bonuses remain in effect until the start of your next turn, although you must hold the weapon to gain a bonus to AC from it."
+        },
+        {
+          "name": "Transferred AC Bonus: 2",
+          "disabled": true,
+          "transfer": true,
+          "duration": {
+            "rounds": 1
+          },
+          "changes": [
+            {
+              "key": "system.attributes.ac.bonus",
+              "mode": "ADD",
+              "value": 2
+            },
+            {
+              "key": "system.bonuses.mwak.damage",
+              "mode": "ADD",
+              "value": -2
+            },
+            {
+              "key": "system.bonuses.mwak.attack",
+              "mode": "ADD",
+              "value": -2
+            }
+          ],
+          "description": "The adjusted bonuses remain in effect until the start of your next turn, although you must hold the weapon to gain a bonus to AC from it."
+        },
+        {
+          "name": "Transferred AC Bonus: 3",
+          "disabled": true,
+          "transfer": true,
+          "duration": {
+            "rounds": 1
+          },
+          "changes": [
+            {
+              "key": "system.attributes.ac.bonus",
+              "mode": "ADD",
+              "value": 3
+            },
+            {
+              "key": "system.bonuses.mwak.damage",
+              "mode": "ADD",
+              "value": -3
+            },
+            {
+              "key": "system.bonuses.mwak.attack",
+              "mode": "ADD",
+              "value": -3
+            }
+          ],
+          "description": "The adjusted bonuses remain in effect until the start of your next turn, although you must hold the weapon to gain a bonus to AC from it."
+        }
+      ],
+      "migrationVersion": 3
+    },
+    {
+      "name": "Demon Armor",
+      "source": "XDMG",
+      "effects": [
+        {
+          "name": "Abyssal Language",
+          "transfer": true,
+          "changes": [
+            {
+              "key": "system.traits.languages.value",
+              "mode": "ADD",
+              "value": "abyssal"
+            }
+          ]
+        }
+      ],
+      "migrationVersion": 3
+    },
+    {
+      "name": "Dwarven Plate",
+      "source": "XDMG",
+      "activities": [
+        {
+          "foundryId": "dwarvenPlate",
+          "name": "Reduce Unwilling Movement",
+          "type": "utility",
+          "descriptionEntries": [
+            "Distance moved reduced by up to 10 feet"
+          ],
+          "activation": {
+            "type": "reaction",
+            "condition": "an effect moves you against your will along the ground"
+          }
+        }
+      ],
+      "migrationVersion": 3
+    },
+    {
+      "name": "Efreeti Chain",
+      "source": "XDMG",
+      "effects": [
+        {
+          "name": "Efreeti Bonuses: Resistance, Primordial, Movement",
+          "transfer": true,
+          "changes": [
+            {
+              "key": "system.traits.di.value",
+              "mode": "ADD",
+              "value": "fire"
+            },
+            {
+              "key": "system.traits.languages.value",
+              "mode": "ADD",
+              "value": "primordial"
+            }
+          ],
+          "description": "You have Immunity to Fire damage, and you know Primordial. In addition, you can stand on and move across molten rock as if it were solid ground."
+        }
+      ],
+      "migrationVersion": 3
+    },
+    {
+      "name": "Energy Bow",
+      "source": "XDMG",
+      "activities": [
+        {
+          "type": "attack",
+          "activation": {
+            "type": "action"
+          },
+          "damage": {
+            "includeBase": true
+          }
+        },
+        {
+          "foundryId": "energyBow",
+          "name": "Arrow of Transport",
+          "type": "utility",
+          "img": "systems/dnd5e/icons/svg/trait-damage-immunities.svg",
+          "descriptionEntries": [
+            "Willing target teleported to within 10 feet of you"
+          ],
+          "activation": {
+            "type": "action"
+          },
+          "target": {
+            "affects": {
+              "count": "1",
+              "type": "creatureOrObject",
+              "special": "Medium or smaller willing creature or object"
+            }
+          },
+          "range": {
+            "units": "ft",
+            "value": "60"
+          }
+        },
+        {
+          "foundryId": "energyBow2",
+          "name": "Energy Ladder",
+          "type": "utility",
+          "img": "systems/dnd5e/icons/svg/size.svg",
+          "descriptionEntries": [
+            "Creates a magical ladder 60 feet high"
+          ],
+          "activation": {
+            "type": "action"
+          },
+          "duration": {
+            "units": "minute",
+            "value": "1"
+          },
+          "target": {
+            "template": {
+              "units": "ft",
+              "type": "wall",
+              "size": "3",
+              "width": "2",
+              "height": "60"
+            },
+            "affects": {
+              "type": "object",
+              "special": "a wall"
+            }
+          },
+          "range": {
+            "units": "ft",
+            "value": "60"
+          }
+        },
+        {
+          "foundryId": "energyBow1",
+          "name": "Arrow of Restraint",
+          "type": "save",
+          "descriptionEntries": [
+            "Save Fail: &Reference[restrained] Escape: [[/check ability=str skill=ath dc=20]]"
+          ],
+          "activation": {
+            "type": "special",
+            "condition": "instead of dealing damage"
+          },
+          "target": {
+            "affects": {
+              "count": "1",
+              "type": "creature"
+            }
+          },
+          "damage": {
+            "onSave": "none"
+          },
+          "save": {
+            "ability": [
+              "str"
+            ],
+            "dc": {
+              "formula": "15"
+            }
+          },
+          "effects": [
+            {
+              "foundryId": "energyBow1"
+            }
+          ]
+        }
+      ],
+      "effects": [
+        {
+          "foundryId": "energyBow1",
+          "name": "Restrained (Arrow of Restraint)",
+          "duration": {
+            "seconds": 60
+          },
+          "statuses": [
+            "restrained"
+          ],
+          "description": "The target has the &Reference[Restrained apply=false] condition for 1 minute. As an action, a creature Restrained by an arrow can make a [[/check ability=str skill=ath dc=20 format=long]] to try to break the restraint, ending the effect on itself on a successful check."
+        }
+      ],
+      "migrationVersion": 3
+    },
+    {
+      "name": "Flame Tongue",
+      "source": "XDMG",
+      "activities": [
+        {
+          "foundryId": "flameTongue",
+          "name": "Engulf in Flames",
+          "type": "enchant",
+          "activation": {
+            "type": "bonus"
+          },
+          "duration": {
+            "units": "disp"
+          },
+          "target": {
+            "affects": {
+              "count": "1",
+              "type": "object"
+            }
+          },
+          "restrictions": {
+            "allowMagical": true,
+            "categories": [
+              "simpleM",
+              "martialM"
+            ],
+            "type": "weapon"
+          },
+          "effects": [
+            {
+              "foundryId": "flameTongue1"
+            }
+          ]
+        }
+      ],
+      "effects": [
+        {
+          "foundryId": "flameTongue1",
+          "name": "Ablaze",
+          "type": "enchantment",
+          "disabled": true,
+          "transfer": true,
+          "changes": [
+            {
+              "key": "system.damage.parts",
+              "mode": "ADD",
+              "value": [
+                [
+                  "2d6",
+                  "fire"
+                ]
+              ]
+            },
+            {
+              "key": "name",
+              "mode": "OVERRIDE",
+              "value": "{} (Ablaze)"
+            }
+          ]
+        }
+      ],
+      "migrationVersion": 3
+    },
+    {
+      "name": "Frost Brand",
+      "source": "XDMG",
+      "effects": [
+        {
+          "foundryId": "frostBrand1",
+          "name": "Fire Resistance",
+          "transfer": true,
+          "changes": [
+            {
+              "key": "system.traits.dr.value",
+              "mode": "ADD",
+              "value": "fire"
+            }
+          ]
+        }
+      ],
+      "migrationVersion": 3
+    },
+    {
+      "name": "Hammer of Thunderbolts",
+      "source": "XDMG",
+      "activities": [
+        {
+          "foundryId": "hammerOfThunderb",
+          "name": "Hurl Hammer",
+          "type": "attack",
+          "descriptionEntries": [
+            "On Hit: [[/save ability=con dc=17]] vs Stunned"
+          ],
+          "activation": {
+            "type": "action"
+          },
+          "consumption": {
+            "targets": [
+              {
+                "type": "activityUses",
+                "value": "1"
+              }
+            ]
+          },
+          "uses": {
+            "recovery": [
+              {
+                "period": "dawn",
+                "type": "formula",
+                "formula": "1d4 + 1"
+              }
+            ],
+            "max": "5"
+          },
+          "target": {
+            "template": {
+              "units": "ft",
+              "type": "radius",
+              "size": "30"
+            },
+            "affects": {
+              "type": "creatureOrObject",
+              "special": "Excluding self"
+            }
+          },
+          "range": {
+            "units": "ft",
+            "special": "long range of 60 feet",
+            "value": "20"
+          },
+          "attack": {
+            "type": {
+              "value": "ranged"
+            }
+          },
+          "effects": [
+            {
+              "foundryId": "hammerOfThunder3"
+            }
+          ]
+        },
+        {
+          "foundryId": "hammerOfThunder1",
+          "name": "Giants' Bane (On Crit)",
+          "type": "save",
+          "descriptionEntries": [
+            "Save failure: Death"
+          ],
+          "activation": {
+            "type": "action"
+          },
+          "damage": {
+            "parts": [
+              {
+                "bonus": "1000"
+              }
+            ],
+            "onSave": "none"
+          },
+          "save": {
+            "ability": [
+              "con"
+            ],
+            "dc": {
+              "formula": "17"
+            }
+          }
+        }
+      ],
+      "effects": [
+        {
+          "foundryId": "hammerOfThunder3",
+          "name": "Stunned",
+          "duration": {
+            "rounds": 1,
+            "turns": 1
+          },
+          "statuses": [
+            "stunned"
+          ],
+          "description": "The target has the &Reference[Stunned apply=false] condition until the end of your next turn."
+        },
+        {
+          "foundryId": "hammerOfThunder2",
+          "name": "Might of Giants",
+          "disabled": true,
+          "transfer": true,
+          "changes": [
+            {
+              "key": "system.abilities.str.value",
+              "mode": "ADD",
+              "value": 4
+            },
+            {
+              "key": "system.abilities.str.value",
+              "mode": "DOWNGRADE",
+              "value": 30
+            }
+          ],
+          "descriptionEntries": [
+            "The Strength score bestowed by your {@i Belt of Giant Strength} or {@i Gauntlets of Ogre Power} increases by 4, to a maximum of 30."
+          ]
+        }
+      ],
+      "migrationVersion": 3
+    },
+    {
+      "name": "Luck Blade",
+      "source": "XDMG",
+      "activities": [
+        {
+          "foundryId": "luckBlade",
+          "name": "Luck",
+          "type": "utility",
+          "img": "systems/dnd5e/icons/svg/scale-value.svg",
+          "activation": {
+            "type": "",
+            "condition": "failed D20 Test"
+          },
+          "consumption": {
+            "targets": [
+              {
+                "type": "activityUses",
+                "value": "1"
+              }
+            ]
+          },
+          "uses": {
+            "recovery": [
+              {
+                "period": "dawn",
+                "type": "recoverAll"
+              }
+            ],
+            "max": "1"
+          },
+          "target": {
+            "affects": {
+              "type": "self"
+            }
+          },
+          "roll": {
+            "name": "Roll D20",
+            "formula": "1d20"
+          }
+        },
+        {
+          "foundryId": "luckBlade1",
+          "type": "cast",
+          "activation": {
+            "type": "action"
+          },
+          "consumption": {
+            "targets": [
+              {
+                "type": "itemUses",
+                "value": "1"
+              },
+              {
+                "type": "activityUses",
+                "value": "1"
+              }
+            ]
+          },
+          "uses": {
+            "recovery": [
+              {
+                "period": "dawn",
+                "type": "recoverAll"
+              }
+            ],
+            "max": "1"
+          },
+          "spell": {
+            "uuid": "@spell[wish|xphb]",
+            "level": 9,
+            "properties": [
+              "vocal",
+              "somatic",
+              "material"
+            ],
+            "spellbook": true
+          }
+        }
+      ],
+      "effects": [
+        {
+          "foundryId": "luckBlade1",
+          "name": "Saving Throw Bonus",
+          "transfer": true,
+          "changes": [
+            {
+              "key": "system.bonuses.abilities.save",
+              "mode": "ADD",
+              "value": 1
+            }
+          ],
+          "description": "While the weapon is on your person, you also gain a +1 bonus to saving throws."
+        }
+      ],
+      "migrationVersion": 3
+    },
+    {
+      "name": "Mariner's Armor",
+      "source": "XDMG",
+      "activities": [
+        {
+          "foundryId": "marinersArmor",
+          "name": "Underwater Recovery",
+          "type": "heal",
+          "activation": {
+            "type": "",
+            "condition": "you start your turn underwater with 0 Hit Points"
+          },
+          "consumption": {
+            "targets": [
+              {
+                "type": "activityUses",
+                "value": "1"
+              }
+            ]
+          },
+          "uses": {
+            "recovery": [
+              {
+                "period": "dawn",
+                "type": "recoverAll"
+              }
+            ],
+            "max": "1"
+          },
+          "target": {
+            "affects": {
+              "type": "self"
+            }
+          },
+          "healing": {
+            "number": 1,
+            "denomination": 4,
+            "types": [
+              "healing"
+            ],
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      ],
+      "effects": [
+        {
+          "foundryId": "marinersArmor1",
+          "name": "Movement: Swim Speed",
+          "transfer": true,
+          "changes": [
+            {
+              "key": "system.attributes.movement.swim",
+              "mode": "ADD",
+              "value": 1
+            }
+          ],
+          "description": "While wearing this armor, you have a Swim Speed equal to your Speed."
+        }
+      ],
+      "migrationVersion": 3
+    },
+    {
+      "name": "Moonblade",
+      "source": "XDMG",
+      "activities": [
+        {
+          "foundryId": "moonblade",
+          "name": "Conjure Spectral Entity",
+          "type": "summon",
+          "activation": {
+            "type": "action"
+          },
+          "duration": {
+            "units": "spec",
+            "special": "It remains until it drops to 0 Hit Points or you dismiss it as a Magic action."
+          },
+          "profiles": [
+            {
+              "uuid": "@creature[shadow|xmm]"
+            }
+          ],
+          "creatureTypes": [
+            "fey"
+          ]
+        },
+        {
+          "foundryId": "moonblade1",
+          "name": "Blinding Flash",
+          "type": "save",
+          "activation": {
+            "type": "bonus"
+          },
+          "duration": {
+            "units": "minute",
+            "value": "1"
+          },
+          "consumption": {
+            "targets": [
+              {
+                "type": "activityUses",
+                "value": "1"
+              }
+            ]
+          },
+          "uses": {
+            "recovery": [
+              {
+                "period": "sr",
+                "type": "recoverAll"
+              },
+              {
+                "period": "lr",
+                "type": "recoverAll"
+              }
+            ],
+            "max": "1"
+          },
+          "target": {
+            "template": {
+              "units": "ft",
+              "type": "radius",
+              "size": "30"
+            },
+            "affects": {
+              "type": "creature"
+            }
+          },
+          "damage": {
+            "onSave": "none"
+          },
+          "save": {
+            "ability": [
+              "con"
+            ],
+            "dc": {
+              "formula": "15"
+            }
+          },
+          "effects": [
+            {
+              "foundryId": "moonblade8"
+            }
+          ]
+        },
+        {
+          "foundryId": "moonblade2",
+          "name": "Cast Stored Spell",
+          "type": "cast",
+          "activation": {
+            "type": "action"
+          },
+          "spell": {
+            "properties": [
+              "vocal",
+              "somatic",
+              "material"
+            ],
+            "spellbook": true
+          }
+        }
+      ],
+      "effects": [
+        {
+          "foundryId": "moonblade8",
+          "name": "Blinded",
+          "duration": {
+            "seconds": 60
+          },
+          "statuses": [
+            "blinded"
+          ],
+          "description": "A creature repeats the [[/save ability=con dc=15]]{save} at the end of each of its turns, ending the effect on itself on a success."
+        }
+      ],
+      "migrationVersion": 3
+    },
+    {
+      "name": "Nine Lives Stealer",
+      "source": "XDMG",
+      "activities": [
+        {
+          "foundryId": "nineLivesStealer",
+          "name": "Life Stealing",
+          "type": "save",
+          "activation": {
+            "type": "action",
+            "condition": "when you roll a 20 on an attack against a creature with fewer than 100 Hit Points"
+          },
+          "consumption": {
+            "targets": [
+              {
+                "type": "activityUses",
+                "value": "1"
+              }
+            ]
+          },
+          "uses": {
+            "max": "5"
+          },
+          "damage": {
+            "onSave": "none"
+          },
+          "save": {
+            "ability": [
+              "con"
+            ],
+            "dc": {
+              "formula": "15"
+            }
+          }
+        }
+      ],
+      "migrationVersion": 3
+    },
+    {
+      "name": "Oathbow",
+      "source": "XDMG",
+      "activities": [
+        {
+          "foundryId": "oathbow",
+          "name": "Attack Sworn Enemy",
+          "type": "attack",
+          "descriptionEntries": [
+            "Advantage on Attack"
+          ],
+          "activation": {
+            "type": "action"
+          },
+          "attack": {
+            "type": {
+              "value": "ranged"
+            }
+          },
+          "damage": {
+            "includeBase": true,
+            "parts": [
+              {
+                "number": 3,
+                "denomination": 6,
+                "types": [
+                  "piercing"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "foundryId": "oathbow1",
+          "name": "Swear Oath",
+          "type": "utility",
+          "img": "systems/dnd5e/icons/svg/trait-languages.svg",
+          "activation": {
+            "type": "special",
+            "condition": "when you make a ranged attack with this weapon"
+          },
+          "effects": [
+            {
+              "foundryId": "oathbow1"
+            }
+          ]
+        }
+      ],
+      "effects": [
+        {
+          "foundryId": "oathbow1",
+          "name": "Sworn Enemy",
+          "statuses": [
+            "marked"
+          ],
+          "description": "When you make a ranged attack roll with this weapon against your sworn enemy, you have Advantage on the roll. In addition, your target gains no benefit from Half Cover or Three-Quarters Cover, and you suffer no Disadvantage due to long range. If the attack hits, your sworn enemy takes an extra 3d6 Piercing damage. While your sworn enemy lives, you have Disadvantage on attack rolls with all other weapons."
+        }
+      ],
+      "migrationVersion": 3
+    },
+    {
+      "name": "Sword of Vengeance",
+      "source": "XDMG",
+      "activities": [
+        {
+          "foundryId": "swordOfVengeance",
+          "name": "Call to Vengeance",
+          "type": "save",
+          "activation": {
+            "type": ""
+          },
+          "damage": {
+            "onSave": "half"
+          },
+          "save": {
+            "ability": [
+              "wis"
+            ],
+            "dc": {
+              "formula": "15"
+            }
+          }
+        }
+      ],
+      "migrationVersion": 3
+    },
+    {
+      "name": "Sword of Wounding",
+      "source": "XDMG",
+      "activities": [
+        {
+          "foundryId": "swordOfWounding",
+          "name": "Sword of Wounding Save",
+          "type": "save",
+          "activation": {
+            "type": ""
+          },
+          "duration": {
+            "units": "hour",
+            "value": "1"
+          },
+          "target": {
+            "affects": {
+              "count": "1",
+              "type": "creature"
+            }
+          },
+          "damage": {
+            "onSave": "half"
+          },
+          "save": {
+            "ability": [
+              "con"
+            ],
+            "dc": {
+              "formula": "15"
+            }
+          },
+          "effects": [
+            {
+              "foundryId": "swordOfWounding1"
+            }
+          ]
+        }
+      ],
+      "effects": [
+        {
+          "foundryId": "swordOfWounding1",
+          "name": "Wounded and Cannot Heal",
+          "duration": {
+            "seconds": 3600
+          }
+        }
+      ],
+      "migrationVersion": 3
+    },
+    {
+      "name": "Walloping Ammunition",
+      "source": "XDMG",
+      "activities": [
+        {
+          "name": "Walloping Save",
+          "type": "save",
+          "descriptionEntries": [
+            "Target creature is &Reference[prone] on a failed saving throw."
+          ],
+          "activation": {
+            "type": "",
+            "condition": "on hit with this ammunition"
+          },
+          "target": {
+            "affects": {
+              "count": "1",
+              "type": "creature"
+            }
+          },
+          "range": {
+            "units": "any"
+          },
+          "damage": {
+            "onSave": "none"
+          },
+          "save": {
+            "ability": [
+              "str"
+            ],
+            "dc": {
+              "formula": "10"
+            }
+          }
+        }
+      ],
+      "migrationVersion": 3
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "./schemas/sources.toggle.schema.json",
+  "profiles": {
+    "core-only": {
+      "allow_categories": ["official-core"],
+      "deny_categories": [
+        "official-supplement",
+        "official-setting",
+        "ua",
+        "third-party"
+      ]
+    }
+  },
+  "default_profile": "core-only"
+}

@@ -1,0 +1,349 @@
+﻿{
+    "snapshot_name":  "2025-08-11_core",
+    "created_utc":  "2025-08-11T22:43:22Z",
+    "source_path":  "C:\\5eTools\\5etools-src-main\\data",
+    "total_files":  55,
+    "total_hashed_files":  51,
+    "excluded_from_hashes":  [
+                                 "baseline_manifest.json",
+                                 "checksums_sha256.csv",
+                                 "checksums_sha256.txt",
+                                 "README.md"
+                             ],
+    "verify_report":  "verify_report.txt",
+    "checksums_csv":  "checksums_sha256.csv",
+    "checksums_txt":  "checksums_sha256.txt",
+    "notes":  "Immutable 2024 core rules baseline. Do not edit; create a new dated baseline for errata.",
+    "files":  [
+                  {
+                      "file":  "action.json",
+                      "size_bytes":  21139,
+                      "sha256":  "1934FC42396DB1EFC7259A871BA3DA6E6F3B53C617D6CD116E279BB0C52F4FAE",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "background.json",
+                      "size_bytes":  46210,
+                      "sha256":  "1295394642094D19570443A4537598600DCEFAB4E6C43690597C8EABCC4C8C0D",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "backgroundFluff.json",
+                      "size_bytes":  11843,
+                      "sha256":  "A460D9C34DA9DE48C250AE920DBE7547F0F78FD4B07C3015C3365766E56007B7",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "baseitem.json",
+                      "size_bytes":  48697,
+                      "sha256":  "12F4D77F923FFE76DB03FF068727DD2FA1DD1770CEA0C2F60C415AFAC38EF7E3",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "baseline_manifest.json",
+                      "size_bytes":  13195,
+                      "sha256":  null,
+                      "excluded_from_hashes":  true
+                  },
+                  {
+                      "file":  "book.json",
+                      "size_bytes":  43617,
+                      "sha256":  "02E928526D68FEE09A309E08C6DDBC4F5890585FB40146EF794C5EC8547C7CEE",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "checksums_sha256.csv",
+                      "size_bytes":  4366,
+                      "sha256":  null,
+                      "excluded_from_hashes":  true
+                  },
+                  {
+                      "file":  "checksums_sha256.txt",
+                      "size_bytes":  5152,
+                      "sha256":  null,
+                      "excluded_from_hashes":  true
+                  },
+                  {
+                      "file":  "class.json",
+                      "size_bytes":  127405,
+                      "sha256":  "F086B497EB179A578D2E2255A6CBD4F7B2C91E82816C28CBEEC41B585294AC86",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "classFeature.json",
+                      "size_bytes":  128501,
+                      "sha256":  "2E8D91F80BF4387AD2C06C240F5180E33157C8F1FB5FEC92AFDD8B06C37F5AAB",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "classFluff.json",
+                      "size_bytes":  22918,
+                      "sha256":  "65A54D28212F9D9BD47ACF7753656E0866D17401EE7AC532FA0199DE527A7C3B",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "condition.json",
+                      "size_bytes":  18425,
+                      "sha256":  "77BB1F457A296E51EE1F6EA2072B562F0AA26899CE6094B9A0D1FDF73445ED37",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "feat.json",
+                      "size_bytes":  113136,
+                      "sha256":  "4F722B7BE0A451F2509D98037C9A2269642A45314A3B2D6DB6FFCED439A1A545",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "featFluff.json",
+                      "size_bytes":  2472,
+                      "sha256":  "0282980CC35332F9E43A1955571AA31471EE65CF97F4D7CD49DF2F7BAF76D4C4",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "hazard.json",
+                      "size_bytes":  34191,
+                      "sha256":  "CF907711192C23B679AFAA1B36FF3A1AB7B6B48B5E07216A9D7ECDFA55FCAD25",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "hazardFluff.json",
+                      "size_bytes":  808,
+                      "sha256":  "837CC5B71CF98BBE5FCE16A50DCAB795FC03E8FE5358418FA5F8ED90F5AA7E8F",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "item.json",
+                      "size_bytes":  806487,
+                      "sha256":  "8593DC961CCF42F440529F78A9DCB38851B5CE8E988BBCFFE6F2BCCBA83019D9",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "itemEntry.json",
+                      "size_bytes":  4026,
+                      "sha256":  "31B53719D6A2728BD702694434579FEE7AEA05252C646A36856CECD4F0F788B5",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "itemFluff.json",
+                      "size_bytes":  101938,
+                      "sha256":  "A78BC4F3753071D273BBE39ED9243F23F9B8611B411493BB36885C1C6F3ECA58",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "itemGroup.json",
+                      "size_bytes":  52530,
+                      "sha256":  "61E473D8BC9FCB64242EDB72970A2FB4124EF00918459EDDF091D7BEA0F910EC",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "itemMastery.json",
+                      "size_bytes":  3398,
+                      "sha256":  "34C0082AB6947B85C5294828B5E5A91AD3DBBFC86F6F3518991B0A4D2F3C0188",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "itemProperty.json",
+                      "size_bytes":  7092,
+                      "sha256":  "D3AE69AF1C7C3BE9F4E85E2AC6A09590EFE84A8C952C11497A7E93622B06E918",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "itemType.json",
+                      "size_bytes":  9323,
+                      "sha256":  "F08502B9673CC090D9E36094D26B22EA9224C0E1281AED8D4C550CD25D2BB4A6",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "itemTypeAdditionalEntries.json",
+                      "size_bytes":  3661,
+                      "sha256":  "993E91690A4FD655AEBE03167EB8D401235FBDF46F306021A1E4706828C59ED8",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "language.json",
+                      "size_bytes":  4432,
+                      "sha256":  "6ADE425BBF579F12E01DBE0EBCF18F2A9D9ECF9529DB1451A01CD0243195775E",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "languageScript.json",
+                      "size_bytes":  184,
+                      "sha256":  "DCD8C077CF156E4698ACEB42E0CF65399797B1E4F2285A1AA5170128E0873773",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "legendaryGroup.json",
+                      "size_bytes":  29304,
+                      "sha256":  "2434F80259CA2B7F74E67FEC8EFD7044B7573B645A8422F54113C43FB4FA3F1D",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "magicItems.json",
+                      "size_bytes":  91748,
+                      "sha256":  "7AC73A3594B4B8BA30CACCA563781236BBF66482474CA90EBB8FE038CE221AC6",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "magicvariant.json",
+                      "size_bytes":  26720,
+                      "sha256":  "CC49816AD6B065362A5B58D88BBC40CB9678A792D4D366BC82EDE6091677A6B2",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "monster.json",
+                      "size_bytes":  1633185,
+                      "sha256":  "5C5927EC48F8A6280FDDE5D9CC14AD7384B8244CA1DCC9346E77450E95C4FF5A",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "monsterFluff.json",
+                      "size_bytes":  903422,
+                      "sha256":  "248868E4098608BC9ABC993BECEE6ADF0D21724D9247622F0A00CED32AF9C511",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "object.json",
+                      "size_bytes":  9337,
+                      "sha256":  "3170D6AB0273E6B4AEF3317BF3ED839EF30E01CEA1ED8B8E1EA7E74BD12967DC",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "objectFluff.json",
+                      "size_bytes":  630,
+                      "sha256":  "81DEC2B87CC728E6752FD425F264FDC742165C899BA05734C6A24A3F34D28F20",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "optionalfeature.json",
+                      "size_bytes":  101977,
+                      "sha256":  "21839FE0A82FCDECC3D5E53976AE6DE8BDFF82208D0D7F4A56D76B31C98E904A",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "race.json",
+                      "size_bytes":  62969,
+                      "sha256":  "518DFAEFB7607E6725244A31EDE20B5670DCE62C85726EA535F700F1EA81EBFB",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "raceFeature.json",
+                      "size_bytes":  14428,
+                      "sha256":  "AA4A246DCC99A54308775183B4CD30F97D141957D314FC457369C7564CB96892",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "raceFluff.json",
+                      "size_bytes":  18092,
+                      "sha256":  "EC06E37DBC720E51FE0D7C2F84EF89766A31C496B5CF63C419183D416C0DD848",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "README.md",
+                      "size_bytes":  313,
+                      "sha256":  null,
+                      "excluded_from_hashes":  true
+                  },
+                  {
+                      "file":  "reward.json",
+                      "size_bytes":  9281,
+                      "sha256":  "559041B3FCF1764300D6292E888186D3782B559AA72523789DA1521AF6F9C558",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "sense.json",
+                      "size_bytes":  3237,
+                      "sha256":  "07CC6A355C81A520DA14F377B5EA8200687404EB2D692573FF88C2819958C481",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "skill.json",
+                      "size_bytes":  4266,
+                      "sha256":  "D9581A0A7B2896F24569AA9F8C5D6516E0F5883168AB36533B001F60E8E69F82",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "spell.json",
+                      "size_bytes":  801392,
+                      "sha256":  "E0B74927D1EA755E2B7CE74CA1C5F6B73A1BFA0312B4A1008CDE45D45D3D53F0",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "spellFluff.json",
+                      "size_bytes":  18646,
+                      "sha256":  "390CE335069F8E0E00D2CBBA40019A4992C525F42B5C0C1DD06FD2DF25ACFF4F",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "status.json",
+                      "size_bytes":  2120,
+                      "sha256":  "5F61B680CC5017E4E51D33CE2106533FE1D7F3008418D91576C70EB4C130719F",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "subclass.json",
+                      "size_bytes":  91459,
+                      "sha256":  "300D19B2D29F0C3DC35540B9AC209C43BED41C03DFB8FE0C71514387289F12BF",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "subclassFeature.json",
+                      "size_bytes":  481317,
+                      "sha256":  "2BE05073F6A7D305C4F792B953F1959D1AFF507CE7C25DA98A93975B4C89E919",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "subclassFluff.json",
+                      "size_bytes":  36200,
+                      "sha256":  "277D161B47ADF3E351E35B23B877D3397913A9AD8D35F14C7B391B265EACCF6A",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "table.json",
+                      "size_bytes":  994555,
+                      "sha256":  "BB9B8FAA5F4D47BA0D52CEF57BCFC4F075D4CB981496A16D3EECEED0972E533E",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "tableGroup.json",
+                      "size_bytes":  114889,
+                      "sha256":  "955325B8BB730FC253E7B2FC86DF6C448B72E100A098A5E3D4C37627B8986C1A",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "trap.json",
+                      "size_bytes":  51314,
+                      "sha256":  "60550EFFAFEF2E7A021237D10C5D50A17CD17BB3FB189D21B74D59C20258F70F",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "trapFluff.json",
+                      "size_bytes":  417,
+                      "sha256":  "3B94F090AA5ECB52CD4D520B19BA15B52E15E296541766FE2560DEA81D308B75",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "variantrule.json",
+                      "size_bytes":  330073,
+                      "sha256":  "45000B71CDBD3A6A5AAD9C0B6E9F7899B6D3C628DBE67A490C742DEAEC5096B5",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "vehicle.json",
+                      "size_bytes":  4448,
+                      "sha256":  "F68833B091E86EF0DA56E39240865ADA7ED2C107B6DABD59B6F00B1B3AEB2C72",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "vehicleFluff.json",
+                      "size_bytes":  351,
+                      "sha256":  "A810F59176F40BF0B8FC0CC09F8A1041CEC35EA7DD6A7F313ABF4F27F22D017B",
+                      "excluded_from_hashes":  false
+                  },
+                  {
+                      "file":  "verify_report.txt",
+                      "size_bytes":  12054,
+                      "sha256":  "2FB5B14DAFE38F0C021CAE5808FE88C6EBDE873C6160CA43BA24C56D61A2763A",
+                      "excluded_from_hashes":  false
+                  }
+              ]
+}

@@ -1,0 +1,1 @@
+"# v0 Schemas (soft)\n\nGenerated 2025-08-18 from the Phase 3 observed contract.\n\n- Intent: **reporting/warn-only**. These schemas are permissive.\n- `additionalProperties: true` everywhere.\n- A key is **required** only if it appeared in 100% of entries in `observed-contract.md`.\n- No strict enums/patterns yet.\n\n> Tightening happens later in v1 (Phase 7/8)."
