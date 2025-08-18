@@ -1,7 +1,6 @@
-
-/build/
-*.pyc
-__pycache__/
-
-
-build/
+﻿# reports & snapshots (keep PR logs if you want)
+reports/
+snapshot_*.txt
+_write_check.txt
+*.lnk
+indexes/2024/_build.json
