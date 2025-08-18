@@ -1,0 +1,28 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "indexes.spells_by_class_level.schema.v1.json",
+  "title": "Indexes: Spells by Class+Level (v1 pilot)",
+  "type": "object",
+  "description": "Top-level keys are class names; each value maps levels '0'..'9' to arrays of spell names.",
+  "additionalProperties": {
+    "$ref": "#/$defs/classLevelMap"
+  },
+  "propertyNames": {
+    "type": "string",
+    "enum": ["Bard","Cleric","Druid","Paladin","Ranger","Sorcerer","Warlock","Wizard"]
+  },
+  "$defs": {
+    "classLevelMap": {
+      "type": "object",
+      "description": "Keys are '0'..'9'. No other keys allowed.",
+      "patternProperties": {
+        "^[0-9]$": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
