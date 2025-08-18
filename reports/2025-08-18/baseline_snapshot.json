@@ -1,0 +1,422 @@
+{
+  "rules/2024/action.json": {
+    "size": 13533,
+    "hash": "ea26d740cf4e"
+  },
+  "rules/2024/background.json": {
+    "size": 20134,
+    "hash": "6bb0e7b06a01"
+  },
+  "rules/2024/backgroundFluff.json": {
+    "size": 11843,
+    "hash": "a460d9c34da9"
+  },
+  "rules/2024/baseitem.json": {
+    "size": 26513,
+    "hash": "122b1c02d70c"
+  },
+  "rules/2024/book.json": {
+    "size": 3175,
+    "hash": "a2d36e563ca6"
+  },
+  "rules/2024/class.json": {
+    "size": 48606,
+    "hash": "4be0a6af5d34"
+  },
+  "rules/2024/classFeature.json": {
+    "size": 202828,
+    "hash": "d5346e057b96"
+  },
+  "rules/2024/classFluff.json": {
+    "size": 22918,
+    "hash": "65a54d28212f"
+  },
+  "rules/2024/condition.json": {
+    "size": 10861,
+    "hash": "589bc8bb90c5"
+  },
+  "rules/2024/feat.json": {
+    "size": 77967,
+    "hash": "b182c48a2013"
+  },
+  "rules/2024/featFluff.json": {
+    "size": 2472,
+    "hash": "0282980cc353"
+  },
+  "rules/2024/hazard.json": {
+    "size": 3130,
+    "hash": "b98901fbba48"
+  },
+  "rules/2024/hazardFluff.json": {
+    "size": 19,
+    "hash": "e643ab676a8f"
+  },
+  "rules/2024/item.json": {
+    "size": 398553,
+    "hash": "cb041a6e583f"
+  },
+  "rules/2024/itemEntry.json": {
+    "size": 17,
+    "hash": "1e789b5fb7c4"
+  },
+  "rules/2024/itemFluff.json": {
+    "size": 8211,
+    "hash": "422e3cbe068c"
+  },
+  "rules/2024/itemGroup.json": {
+    "size": 17716,
+    "hash": "d9c788bd07e1"
+  },
+  "rules/2024/itemMastery.json": {
+    "size": 2716,
+    "hash": "30156712cf76"
+  },
+  "rules/2024/itemProperty.json": {
+    "size": 4013,
+    "hash": "5a0f80f49bad"
+  },
+  "rules/2024/itemType.json": {
+    "size": 5921,
+    "hash": "475a0a09e42d"
+  },
+  "rules/2024/itemTypeAdditionalEntries.json": {
+    "size": 33,
+    "hash": "47859b6db661"
+  },
+  "rules/2024/language.json": {
+    "size": 2589,
+    "hash": "c02a04c1e611"
+  },
+  "rules/2024/languageScript.json": {
+    "size": 117,
+    "hash": "6d1116da7b62"
+  },
+  "rules/2024/legendaryGroup.json": {
+    "size": 20602,
+    "hash": "232662690cd3"
+  },
+  "rules/2024/monster.json": {
+    "size": 932323,
+    "hash": "90669654476b"
+  },
+  "rules/2024/monsterFluff.json": {
+    "size": 529711,
+    "hash": "8d059589fe35"
+  },
+  "rules/2024/object.json": {
+    "size": 14,
+    "hash": "926d4bdf283f"
+  },
+  "rules/2024/objectFluff.json": {
+    "size": 19,
+    "hash": "26d3b4ecacb0"
+  },
+  "rules/2024/optionalfeature.json": {
+    "size": 64167,
+    "hash": "31a79b8fc90f"
+  },
+  "rules/2024/race.json": {
+    "size": 37697,
+    "hash": "10d78719ef3d"
+  },
+  "rules/2024/raceFeature.json": {
+    "size": 6128,
+    "hash": "7185882009c7"
+  },
+  "rules/2024/raceFluff.json": {
+    "size": 13457,
+    "hash": "a0e940ca4660"
+  },
+  "rules/2024/reward.json": {
+    "size": 14,
+    "hash": "0520c7fd0630"
+  },
+  "rules/2024/sense.json": {
+    "size": 2281,
+    "hash": "9a7ea25102d6"
+  },
+  "rules/2024/skill.json": {
+    "size": 2744,
+    "hash": "8a668737f2cb"
+  },
+  "rules/2024/species.json": {
+    "size": 15,
+    "hash": "5e328d566354"
+  },
+  "rules/2024/speciesFeature.json": {
+    "size": 22,
+    "hash": "fa2579a0652a"
+  },
+  "rules/2024/speciesFluff.json": {
+    "size": 20,
+    "hash": "c576987bb9fa"
+  },
+  "rules/2024/spell.json": {
+    "size": 326919,
+    "hash": "65c900ccd8a5"
+  },
+  "rules/2024/spellFluff.json": {
+    "size": 18646,
+    "hash": "390ce335069f"
+  },
+  "rules/2024/status.json": {
+    "size": 1545,
+    "hash": "7ccdf7ced469"
+  },
+  "rules/2024/subclass.json": {
+    "size": 35174,
+    "hash": "128e12e92555"
+  },
+  "rules/2024/subclassFeature.json": {
+    "size": 355856,
+    "hash": "75ee6090d19b"
+  },
+  "rules/2024/subclassFluff.json": {
+    "size": 36200,
+    "hash": "277d161b47ad"
+  },
+  "rules/2024/table.json": {
+    "size": 70877,
+    "hash": "14032bf26077"
+  },
+  "rules/2024/tableGroup.json": {
+    "size": 18,
+    "hash": "ba1e8a802472"
+  },
+  "rules/2024/variantrule.json": {
+    "size": 73433,
+    "hash": "9feb6b71099e"
+  },
+  "rules/2024/mappings/spell_levels_xphb.json": {
+    "size": 6991,
+    "hash": "b2a8dd086a07"
+  },
+  "rules/2024/mappings/spell_to_classes_xphb.json": {
+    "size": 15901,
+    "hash": "23022ebdf63b"
+  },
+  "rules/2024/sources/registry.json": {
+    "size": 219,
+    "hash": "8474d6fed4bf"
+  },
+  "rules/2024/baseline/2025-08-11_core/action.json": {
+    "size": 21139,
+    "hash": "1934fc42396d"
+  },
+  "rules/2024/baseline/2025-08-11_core/background.json": {
+    "size": 46210,
+    "hash": "129539464209"
+  },
+  "rules/2024/baseline/2025-08-11_core/backgroundFluff.json": {
+    "size": 11843,
+    "hash": "a460d9c34da9"
+  },
+  "rules/2024/baseline/2025-08-11_core/baseitem.json": {
+    "size": 48697,
+    "hash": "12f4d77f923f"
+  },
+  "rules/2024/baseline/2025-08-11_core/baseline_manifest.json": {
+    "size": 16711,
+    "hash": "73da330f5173"
+  },
+  "rules/2024/baseline/2025-08-11_core/book.json": {
+    "size": 43617,
+    "hash": "02e928526d68"
+  },
+  "rules/2024/baseline/2025-08-11_core/class.json": {
+    "size": 127405,
+    "hash": "f086b497eb17"
+  },
+  "rules/2024/baseline/2025-08-11_core/classFeature.json": {
+    "size": 128501,
+    "hash": "2e8d91f80bf4"
+  },
+  "rules/2024/baseline/2025-08-11_core/classFluff.json": {
+    "size": 22918,
+    "hash": "65a54d28212f"
+  },
+  "rules/2024/baseline/2025-08-11_core/condition.json": {
+    "size": 18425,
+    "hash": "77bb1f457a29"
+  },
+  "rules/2024/baseline/2025-08-11_core/feat.json": {
+    "size": 113136,
+    "hash": "4f722b7be0a4"
+  },
+  "rules/2024/baseline/2025-08-11_core/featFluff.json": {
+    "size": 2472,
+    "hash": "0282980cc353"
+  },
+  "rules/2024/baseline/2025-08-11_core/hazard.json": {
+    "size": 34191,
+    "hash": "cf907711192c"
+  },
+  "rules/2024/baseline/2025-08-11_core/hazardFluff.json": {
+    "size": 808,
+    "hash": "837cc5b71cf9"
+  },
+  "rules/2024/baseline/2025-08-11_core/item.json": {
+    "size": 806487,
+    "hash": "8593dc961ccf"
+  },
+  "rules/2024/baseline/2025-08-11_core/itemEntry.json": {
+    "size": 4026,
+    "hash": "31b53719d6a2"
+  },
+  "rules/2024/baseline/2025-08-11_core/itemFluff.json": {
+    "size": 101938,
+    "hash": "a78bc4f37530"
+  },
+  "rules/2024/baseline/2025-08-11_core/itemGroup.json": {
+    "size": 52530,
+    "hash": "61e473d8bc9f"
+  },
+  "rules/2024/baseline/2025-08-11_core/itemMastery.json": {
+    "size": 3398,
+    "hash": "34c0082ab694"
+  },
+  "rules/2024/baseline/2025-08-11_core/itemProperty.json": {
+    "size": 7092,
+    "hash": "d3ae69af1c7c"
+  },
+  "rules/2024/baseline/2025-08-11_core/itemType.json": {
+    "size": 9323,
+    "hash": "f08502b9673c"
+  },
+  "rules/2024/baseline/2025-08-11_core/itemTypeAdditionalEntries.json": {
+    "size": 3661,
+    "hash": "993e91690a4f"
+  },
+  "rules/2024/baseline/2025-08-11_core/language.json": {
+    "size": 4432,
+    "hash": "6ade425bbf57"
+  },
+  "rules/2024/baseline/2025-08-11_core/languageScript.json": {
+    "size": 184,
+    "hash": "dcd8c077cf15"
+  },
+  "rules/2024/baseline/2025-08-11_core/legendaryGroup.json": {
+    "size": 29304,
+    "hash": "2434f80259ca"
+  },
+  "rules/2024/baseline/2025-08-11_core/magicItems.json": {
+    "size": 91748,
+    "hash": "7ac73a3594b4"
+  },
+  "rules/2024/baseline/2025-08-11_core/magicvariant.json": {
+    "size": 26720,
+    "hash": "cc49816ad6b0"
+  },
+  "rules/2024/baseline/2025-08-11_core/monster.json": {
+    "size": 1633185,
+    "hash": "5c5927ec48f8"
+  },
+  "rules/2024/baseline/2025-08-11_core/monsterFluff.json": {
+    "size": 903422,
+    "hash": "248868e40986"
+  },
+  "rules/2024/baseline/2025-08-11_core/object.json": {
+    "size": 9337,
+    "hash": "3170d6ab0273"
+  },
+  "rules/2024/baseline/2025-08-11_core/objectFluff.json": {
+    "size": 630,
+    "hash": "81dec2b87cc7"
+  },
+  "rules/2024/baseline/2025-08-11_core/optionalfeature.json": {
+    "size": 101977,
+    "hash": "21839fe0a82f"
+  },
+  "rules/2024/baseline/2025-08-11_core/race.json": {
+    "size": 62969,
+    "hash": "518dfaefb760"
+  },
+  "rules/2024/baseline/2025-08-11_core/raceFeature.json": {
+    "size": 14428,
+    "hash": "aa4a246dcc99"
+  },
+  "rules/2024/baseline/2025-08-11_core/raceFluff.json": {
+    "size": 18092,
+    "hash": "ec06e37dbc72"
+  },
+  "rules/2024/baseline/2025-08-11_core/reward.json": {
+    "size": 9281,
+    "hash": "559041b3fcf1"
+  },
+  "rules/2024/baseline/2025-08-11_core/sense.json": {
+    "size": 3237,
+    "hash": "07cc6a355c81"
+  },
+  "rules/2024/baseline/2025-08-11_core/skill.json": {
+    "size": 4266,
+    "hash": "d9581a0a7b28"
+  },
+  "rules/2024/baseline/2025-08-11_core/spell.json": {
+    "size": 801392,
+    "hash": "e0b74927d1ea"
+  },
+  "rules/2024/baseline/2025-08-11_core/spellFluff.json": {
+    "size": 18646,
+    "hash": "390ce335069f"
+  },
+  "rules/2024/baseline/2025-08-11_core/status.json": {
+    "size": 2120,
+    "hash": "5f61b680cc50"
+  },
+  "rules/2024/baseline/2025-08-11_core/subclass.json": {
+    "size": 91459,
+    "hash": "300d19b2d29f"
+  },
+  "rules/2024/baseline/2025-08-11_core/subclassFeature.json": {
+    "size": 481317,
+    "hash": "2be05073f6a7"
+  },
+  "rules/2024/baseline/2025-08-11_core/subclassFluff.json": {
+    "size": 36200,
+    "hash": "277d161b47ad"
+  },
+  "rules/2024/baseline/2025-08-11_core/table.json": {
+    "size": 994555,
+    "hash": "bb9b8faa5f4d"
+  },
+  "rules/2024/baseline/2025-08-11_core/tableGroup.json": {
+    "size": 114889,
+    "hash": "955325b8bb73"
+  },
+  "rules/2024/baseline/2025-08-11_core/trap.json": {
+    "size": 51314,
+    "hash": "60550effafef"
+  },
+  "rules/2024/baseline/2025-08-11_core/trapFluff.json": {
+    "size": 417,
+    "hash": "3b94f090aa5e"
+  },
+  "rules/2024/baseline/2025-08-11_core/variantrule.json": {
+    "size": 330073,
+    "hash": "45000b71cdbd"
+  },
+  "rules/2024/baseline/2025-08-11_core/vehicle.json": {
+    "size": 4448,
+    "hash": "f68833b091e8"
+  },
+  "rules/2024/baseline/2025-08-11_core/vehicleFluff.json": {
+    "size": 351,
+    "hash": "a810f59176f4"
+  },
+  "indexes/2024/feats_by_prereq.json": {
+    "size": 1395,
+    "hash": "464b8688e1f7"
+  },
+  "indexes/2024/spells_by_class_level.json": {
+    "size": 15943,
+    "hash": "13cbf919f6d5"
+  },
+  "indexes/2024/subclass_features_by_level.json": {
+    "size": 7958,
+    "hash": "972e3fca263a"
+  },
+  "indexes/2024/_build.json": {
+    "size": 425,
+    "hash": "f565982806aa"
+  }
+}
