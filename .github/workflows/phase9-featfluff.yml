@@ -1,0 +1,40 @@
+name: Phase 9 - Feat Fluff (strict)
+
+on:
+  push:
+    paths:
+      - 'schema/2024/v1/rules.featfluff.schema.json'
+      - 'scripts/validate_phase9_featfluff.py'
+      - 'scripts/_validation_common.py'
+      - 'scripts/__init__.py'
+      - 'rules/2024/featFluff.json'
+      - 'rules/2024/FeatFluff.json'
+      - '.github/workflows/phase9-featfluff.yml'
+      - 'rules/2024/*featfluff*.json'
+  pull_request:
+    paths:
+      - 'schema/2024/v1/rules.featfluff.schema.json'
+      - 'scripts/validate_phase9_featfluff.py'
+      - 'scripts/_validation_common.py'
+      - 'scripts/__init__.py'
+      - 'rules/2024/featFluff.json'
+      - 'rules/2024/FeatFluff.json'
+      - '.github/workflows/phase9-featfluff.yml'
+      - 'rules/2024/*featfluff*.json'
+
+jobs:
+  validate-featfluff:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip jsonschema
+      - name: Validate Feat Fluff (Phase 9 strict)
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: |
+          python -m scripts.validate_phase9_featfluff
