@@ -1,0 +1,25 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schema/2024/v1/rules.background.schema.json",
+  "title": "One D&D 2024 — Background (v1, conservative)",
+  "description": "Minimal v1 schema for 2024 backgrounds. Require only identifiers; keep other fields permissive to avoid over-specifying.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": true,
+    "required": ["name", "source"],
+    "properties": {
+      "name":   { "type": "string", "minLength": 1 },
+      "source": { "type": "string", "pattern": "^X[A-Z]+$" },
+      "page":   { "type": ["integer", "string"] },
+
+      "entries":            { "type": ["string", "array", "object"] },
+      "skillProficiencies": { "type": ["string", "array", "object"] },
+      "toolProficiencies":  { "type": ["string", "array", "object"] },
+      "languages":          { "type": ["string", "array", "object"] },
+      "feat":               { "type": ["string", "array", "object"] },
+      "startingEquipment":  { "type": ["string", "array", "object"] },
+      "features":           { "type": ["string", "array", "object"] }
+    }
+  }
+}
