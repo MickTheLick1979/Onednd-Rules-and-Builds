@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "One D&D 2024 — Background Fluff (v1)",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": true,
+    "required": ["name", "source"],
+    "properties": {
+      "name":   { "type": "string", "minLength": 1 },
+      "source": { "type": "string", "pattern": "^X[A-Z]+$" },
+      "page":   { "type": ["integer", "string", "null"] },
+      "entries":        { "type": ["string", "array", "object"] },
+      "prerequisite":   { "type": ["string", "array", "object"] },
+      "tags":           { "type": ["string", "array"] },
+      "otherSources":   { "type": ["array", "object", "string"] },
+      "fluff":          { "type": ["array", "object", "string"] }
+    }
+  }
+}
