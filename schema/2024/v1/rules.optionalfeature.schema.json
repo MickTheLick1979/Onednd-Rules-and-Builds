@@ -1,0 +1,30 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "One D&D 2024 — Optional Feature (v1)",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": true,
+    "required": ["name", "source"],
+    "properties": {
+      "name":   { "type": "string", "minLength": 1 },
+      "source": { "type": "string", "pattern": "^X[A-Z]+$" },
+      "page":   { "type": ["integer", "string", "null"] },
+
+      "type":            { "type": ["string", "array"] },
+      "featureType":     { "type": ["string", "array"] },
+      "className":       { "type": "string" },
+      "classSource":     { "type": "string" },
+      "subclassShortName": { "type": "string" },
+      "subclassSource":  { "type": "string" },
+
+      "entries":         { "type": ["string", "array", "object"] },
+      "effects":         { "type": ["string", "array", "object"] },
+      "prerequisite":    { "type": ["string", "array", "object"] },
+      "level":           { "type": ["integer", "string"] },
+      "otherSources":    { "type": ["array", "object", "string"] },
+      "tags":            { "type": ["string", "array"] },
+      "fluff":           { "type": ["array", "object", "string"] }
+    }
+  }
+}
