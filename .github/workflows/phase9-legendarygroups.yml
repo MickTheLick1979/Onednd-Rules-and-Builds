@@ -8,6 +8,7 @@ on:
       - "scripts/validate_phase9_legendarygroups.py"
       - "scripts/_validation_common.py"
       - "scripts/__init__.py"
+      - "rules/2024/legendaryGroup.json"
       - "rules/2024/legendarygroup.json"
       - ".github/workflows/phase9-legendarygroups.yml"
   push:
@@ -17,6 +18,7 @@ on:
       - "scripts/validate_phase9_legendarygroups.py"
       - "scripts/_validation_common.py"
       - "scripts/__init__.py"
+      - "rules/2024/legendaryGroup.json"
       - "rules/2024/legendarygroup.json"
       - ".github/workflows/phase9-legendarygroups.yml"
   workflow_dispatch:
