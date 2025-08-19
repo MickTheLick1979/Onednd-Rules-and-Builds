@@ -1,0 +1,36 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "One D&D 2024 — Class (v1)",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": true,
+    "required": ["name", "source"],
+    "properties": {
+      "name": { "type": "string", "minLength": 1 },
+      "source": { "type": "string", "pattern": "^X[A-Z]+$" },
+      "page": { "type": ["integer", "string", "null"] },
+
+      "shortName": { "type": "string" },
+      "hd": { "type": ["integer", "string", "object"] },
+      "classFeatures": { "type": ["array", "object", "string"] },
+      "subclassTitle": { "type": "string" },
+
+      "startingProficiencies": { "type": ["array", "object", "string"] },
+      "armorProficiencies": { "type": ["array", "object", "string"] },
+      "weaponProficiencies": { "type": ["array", "object", "string"] },
+      "toolProficiencies": { "type": ["array", "object", "string"] },
+      "savingThrows": { "type": ["array", "object", "string"] },
+      "skills": { "type": ["array", "object", "string"] },
+      "equipment": { "type": ["array", "object", "string"] },
+
+      "multiclassing": { "type": ["array", "object", "string"] },
+      "spellcasting": { "type": ["array", "object", "string"] },
+
+      "entries": { "type": ["string", "array", "object"] },
+      "prerequisite": { "type": ["string", "array", "object"] },
+      "level": { "type": ["integer", "string"] },
+      "otherSources": { "type": ["array", "object", "string"] }
+    }
+  }
+}
