@@ -1,0 +1,18 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "One D&D 2024 — Skill (v1, conservative)",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": true,
+    "required": ["name", "source"],
+    "properties": {
+      "name":   { "type": "string", "minLength": 1 },
+      "source": { "type": "string", "pattern": "^X[A-Z]+$" },
+      "page":   { "type": ["integer", "string", "null"] },
+
+      "ability": { "type": ["string", "null"] },
+      "entries": { "type": ["string", "array", "object"] }
+    }
+  }
+}
