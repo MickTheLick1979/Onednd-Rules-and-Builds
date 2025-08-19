@@ -1,0 +1,33 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schema/2024/v1/rules.monster.schema.json",
+  "title": "One D&D 2024 — Monster (v1, conservative)",
+  "description": "Minimal v1 schema for 2024 monsters. Enforce only key identifiers; be permissive on shape to avoid over-specifying. Keep other categories warn-only.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": true,
+    "required": ["name", "source"],
+    "properties": {
+      "name":   { "type": "string", "minLength": 1 },
+      "source": { "type": "string", "pattern": "^X[A-Z]+$" },
+      "page":   { "type": ["integer", "string"] },
+
+      "cr":     { "type": ["number", "string", "object"] },
+      "type":   { "type": ["string", "object"] },
+      "size":   { "type": ["string", "array"] },
+      "alignment": { "type": ["string", "array", "object"] },
+
+      "ac":     { "type": ["integer", "string", "array", "object"] },
+      "hp":     { "type": ["integer", "string", "object"] },
+      "speed":  { "type": ["string", "object"] },
+
+      "entries": { "type": ["string", "array", "object"] },
+      "actions": { "type": ["string", "array", "object"] },
+      "reactions": { "type": ["string", "array", "object"] },
+      "legendary": { "type": ["string", "array", "object"] },
+
+      "traits": { "type": ["string", "array", "object"] }
+    }
+  }
+}
