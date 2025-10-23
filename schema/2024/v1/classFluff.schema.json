@@ -1,0 +1,41 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "classFluff (v1)",
+  "description": "Conservative v1 schema for 2024 class fluff entries.",
+  "anyOf": [
+    { "type": "array", "items": { "$ref": "#/$defs/item" } },
+    {
+      "type": "object",
+      "properties": {
+        "classFluff": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/item" }
+        }
+      },
+      "required": ["classFluff"],
+      "additionalProperties": true
+    }
+  ],
+  "$defs": {
+    "item": {
+      "type": "object",
+      "properties": {
+        "name":        { "type": "string", "minLength": 1 },
+        "source":      { "type": "string" },
+
+        "entries": {
+          "type": ["array","null"],
+          "items": { "type": ["string","object","array","number","boolean","null"] }
+        },
+        "images": {
+          "type": ["array","null"],
+          "items": { "type": ["string","object","array","number","boolean","null"] }
+        },
+
+        "_copy":       { "type": ["object","null"] }
+      },
+      "required": ["name"],
+      "additionalProperties": true
+    }
+  }
+}
