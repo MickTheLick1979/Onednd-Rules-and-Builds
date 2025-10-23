@@ -27,6 +27,7 @@ def main():
         cls_map = load(MAP_CLASSES)
 
     def classes_from_spell(sp):
+        # fallback only; most 2024 spells will not have classes inline
         cls_field = sp.get("classes")
         out = set()
         if isinstance(cls_field, dict):
