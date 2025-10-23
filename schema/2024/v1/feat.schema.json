@@ -1,0 +1,44 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "feat (v1)",
+  "description": "Conservative v1 schema for 2024 feats.",
+  "anyOf": [
+    { "type": "array", "items": { "$ref": "#/$defs/featItem" } },
+    {
+      "type": "object",
+      "properties": {
+        "feat": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/featItem" }
+        }
+      },
+      "required": ["feat"],
+      "additionalProperties": true
+    }
+  ],
+  "$defs": {
+    "featItem": {
+      "type": "object",
+      "properties": {
+        "name":        { "type": "string", "minLength": 1 },
+        "source":      { "type": "string" },
+
+        "level":       { "type": ["number","string","null"] },
+        "repeatable":  { "type": ["boolean","string","null"] },
+
+        "prerequisite": { "type": ["string","array","object","null"] },
+        "requirements": { "type": ["string","array","object","null"] },
+
+        "entries":     {
+          "type": ["array","null"],
+          "items": { "type": ["string","object","array","number","boolean","null"] }
+        },
+
+        "tags":        { "type": ["array","null"], "items": { "type": "string" } },
+        "_copy":       { "type": ["object","null"] }
+      },
+      "required": ["name"],
+      "additionalProperties": true
+    }
+  }
+}
