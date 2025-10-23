@@ -1,0 +1,42 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "itemProperty (v1)",
+  "description": "Conservative v1 schema for 2024 itemProperty (allows name or abbreviation).",
+  "anyOf": [
+    { "type": "array", "items": { "$ref": "#/$defs/item" } },
+    {
+      "type": "object",
+      "properties": {
+        "itemProperty": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/item" }
+        }
+      },
+      "required": ["itemProperty"],
+      "additionalProperties": true
+    }
+  ],
+  "$defs": {
+    "item": {
+      "type": "object",
+      "properties": {
+        "name":   { "type": "string", "minLength": 1 },
+        "abbreviation": { "type": "string", "minLength": 1 },
+        "source": { "type": "string" },
+        "page":   { "type": ["integer","null"] },
+        "template": { "type": ["string","null"] },
+        "basicRules2024": { "type": ["boolean","null"] },
+        "entries": {
+          "type": ["array","null"],
+          "items": { "type": ["string","object","array","number","boolean","null"] }
+        },
+        "_copy": { "type": ["object","null"] }
+      },
+      "anyOf": [
+        { "required": ["name"] },
+        { "required": ["abbreviation"] }
+      ],
+      "additionalProperties": true
+    }
+  }
+}
