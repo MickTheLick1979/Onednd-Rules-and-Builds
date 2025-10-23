@@ -1,29 +1,39 @@
-{
-  "": "https://json-schema.org/draft/2020-12/schema",
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "language (v1)",
   "description": "Conservative v1 schema for 2024 language.",
   "anyOf": [
-    { "type": "array", "items": { "": "#//item" } },
+    { "type": "array", "items": { "$ref": "#/$defs/item" } },
     {
       "type": "object",
       "properties": {
-        "language": { "type": "array", "items": { "": "#//item" } }
+        "language": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/item" }
+        }
       },
-      "required": [ "language" ],
+      "required": ["language"],
       "additionalProperties": true
     }
   ],
-  "": {
+  "$defs": {
     "item": {
       "type": "object",
       "properties": {
         "name":   { "type": "string", "minLength": 1 },
         "source": { "type": "string" },
         "entries": {
-          "type": ["array","null"],
+          "type": ["array","object","string","number","boolean","null"],
           "items": { "type": ["string","object","array","number","boolean","null"] }
         },
-        "_copy": { "type": ["object","null"] }
+        "script":          { "type": ["string","array","null"] },
+        "typicalSpeakers": { "type": ["array","null"], "items": { "type": "string" } },
+        "dialects":        { "type": ["array","null"], "items": { "type": "string" } },
+        "aliases":         { "type": ["array","null"], "items": { "type": "string" } },
+        "page":            { "type": ["integer","string","null"] },
+        "hasFluff":        { "type": ["boolean","null"] },
+        "hasFluffImages":  { "type": ["boolean","null"] },
+        "_copy":           { "type": ["object","null"] }
       },
       "required": ["name"],
       "additionalProperties": true
