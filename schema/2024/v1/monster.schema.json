@@ -1,0 +1,69 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "monster (v1)",
+  "description": "Conservative v1 schema for 2024 monster.",
+  "anyOf": [
+    { "type": "array", "items": { "$ref": "#/$defs/item" } },
+    {
+      "type": "object",
+      "properties": {
+        "monster": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/item" }
+        }
+      },
+      "required": ["monster"],
+      "additionalProperties": true
+    }
+  ],
+  "$defs": {
+    "entry": { "type": ["string","object","array","number","boolean","null"] },
+    "item": {
+      "type": "object",
+      "properties": {
+        "name":        { "type": "string", "minLength": 1 },
+        "source":      { "type": "string" },
+
+        "size":        { "type": ["string","array","null"] },
+        "type":        { "type": ["string","object","null"] },
+        "alignment":   { "type": ["string","array","null"] },
+        "ac":          { "type": ["number","integer","array","object","string","null"] },
+        "hp":          { "type": ["object","number","string","null"] },
+        "speed":       { "type": ["object","string","null"] },
+
+        "str":         { "type": ["number","integer","null"] },
+        "dex":         { "type": ["number","integer","null"] },
+        "con":         { "type": ["number","integer","null"] },
+        "int":         { "type": ["number","integer","null"] },
+        "wis":         { "type": ["number","integer","null"] },
+        "cha":         { "type": ["number","integer","null"] },
+
+        "saves":       { "type": ["object","null"] },
+        "skills":      { "type": ["object","null"] },
+        "senses":      { "type": ["string","array","null"] },
+        "languages":   { "type": ["string","array","null"] },
+        "cr":          { "type": ["string","number","object","null"] },
+        "environment": { "type": ["string","array","null"] },
+
+        "entries":     { "type": ["array","null"], "items": { "$ref": "#/$defs/entry" } },
+
+        "trait":       { "type": ["array","null"], "items": { "type": "object", "properties": { "name": { "type": "string" }, "entries": { "type": ["array","string","object","number","boolean","null"] } }, "additionalProperties": true } },
+        "action":      { "type": ["array","null"], "items": { "type": "object", "properties": { "name": { "type": "string" }, "entries": { "type": ["array","string","object","number","boolean","null"] } }, "additionalProperties": true } },
+        "bonusActions":{ "type": ["array","null"], "items": { "$ref": "#/$defs/entry" } },
+        "reaction":    { "type": ["array","null"], "items": { "$ref": "#/$defs/entry" } },
+        "legendary":   { "type": ["array","null"], "items": { "$ref": "#/$defs/entry" } },
+        "mythic":      { "type": ["array","null"], "items": { "$ref": "#/$defs/entry" } },
+        "lairActions": { "type": ["array","object","string","null"], "items": { "$ref": "#/$defs/entry" } },
+        "regionalEffects": { "type": ["array","object","string","null"], "items": { "$ref": "#/$defs/entry" } },
+
+        "spellcasting":{ "type": ["object","array","null"] },
+        "image":       { "type": ["string","null"] },
+        "token":       { "type": ["string","null"] },
+
+        "_copy":       { "type": ["object","null"] }
+      },
+      "required": ["name"],
+      "additionalProperties": true
+    }
+  }
+}
