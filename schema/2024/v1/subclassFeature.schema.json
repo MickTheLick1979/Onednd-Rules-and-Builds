@@ -1,0 +1,48 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "subclassFeature (v1)",
+  "description": "Conservative v1 schema for 2024 subclassFeature.",
+  "anyOf": [
+    { "type": "array", "items": { "$ref": "#/$defs/item" } },
+    {
+      "type": "object",
+      "properties": {
+        "subclassFeature": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/item" }
+        }
+      },
+      "required": ["subclassFeature"],
+      "additionalProperties": true
+    }
+  ],
+  "$defs": {
+    "entry": { "type": ["string","object","array","number","boolean","null"] },
+    "prereqItem": { "type": ["string","object","array","null"] },
+    "item": {
+      "type": "object",
+      "properties": {
+        "name":             { "type": "string", "minLength": 1 },
+        "source":           { "type": "string" },
+
+        "className":        { "type": ["string","null"] },
+        "classSource":      { "type": ["string","null"] },
+        "subclassName":     { "type": ["string","null"] },
+        "subclassShortName":{ "type": ["string","null"] },
+        "subclassSource":   { "type": ["string","null"] },
+        "level":            { "type": ["integer","number","string","null"] },
+
+        "entries":          { "type": ["array","null"], "items": { "$ref": "#/$defs/entry" } },
+        "prerequisite":     { "type": ["array","object","string","null"], "items": { "$ref": "#/$defs/prereqItem" } },
+
+        "additionalSources":{ "type": ["array","null"], "items": { "type": ["string","object","null"] } },
+        "otherSources":     { "type": ["array","null"], "items": { "type": ["string","object","null"] } },
+        "srd":              { "type": ["boolean","string","null"] },
+
+        "_copy":            { "type": ["object","null"] }
+      },
+      "required": ["name"],
+      "additionalProperties": true
+    }
+  }
+}
