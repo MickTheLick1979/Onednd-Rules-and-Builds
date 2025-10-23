@@ -1,0 +1,40 @@
+﻿name: Phase 9 - sense (strict)
+
+on:
+  push:
+    paths:
+      - "schema/2024/v1/rules.sense.schema.json"
+      - "scripts/validate_phase9_sense.py"
+      - "scripts/_validation_common.py"
+      - "scripts/__init__.py"
+      - "rules/2024/sense.json"
+      - "rules/2024/Sense.json"
+      - "rules/2024/*sense*.json"
+      - ".github/workflows/phase9-sense.yml"
+  pull_request:
+    paths:
+      - "schema/2024/v1/rules.sense.schema.json"
+      - "scripts/validate_phase9_sense.py"
+      - "scripts/_validation_common.py"
+      - "scripts/__init__.py"
+      - "rules/2024/sense.json"
+      - "rules/2024/Sense.json"
+      - "rules/2024/*sense*.json"
+      - ".github/workflows/phase9-sense.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip jsonschema
+      - name: Run strict validator (module mode)
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: |
+          python -m scripts.validate_phase9_sense
