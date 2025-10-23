@@ -1,44 +1,30 @@
-﻿name: Phase 9 - Optional Feature (strict)
-
+﻿name: phase9-optionalfeature
 on:
-  push:
-    paths:
-      - "schema/2024/v1/rules.optionalfeature.schema.json"
-      - "scripts/validate_phase9_optionalfeature.py"
-      - "scripts/_validation_common.py"
-      - "scripts/__init__.py"
-      - "rules/2024/optionalfeature.json"
-      - "rules/2024/OptionalFeature.json"
-      - "rules/2024/optionalFeature.json"
-      - "rules/2024/optionalfeatures.json"
-      - "rules/2024/*optional*feature*.json"
-      - ".github/workflows/phase9-optionalfeature.yml"
   pull_request:
     paths:
-      - "schema/2024/v1/rules.optionalfeature.schema.json"
-      - "scripts/validate_phase9_optionalfeature.py"
-      - "scripts/_validation_common.py"
-      - "scripts/__init__.py"
       - "rules/2024/optionalfeature.json"
-      - "rules/2024/OptionalFeature.json"
-      - "rules/2024/optionalFeature.json"
-      - "rules/2024/optionalfeatures.json"
-      - "rules/2024/*optional*feature*.json"
+      - "schema/2024/v1/optionalfeature.schema.json"
+      - "scripts/phase9/validate_optionalfeature.py"
       - ".github/workflows/phase9-optionalfeature.yml"
-
+  push:
+    branches: [ master ]
+    paths:
+      - "rules/2024/optionalfeature.json"
+      - "schema/2024/v1/optionalfeature.schema.json"
+      - "scripts/phase9/validate_optionalfeature.py"
+      - ".github/workflows/phase9-optionalfeature.yml"
 jobs:
-  validate-optionalfeature:
+  validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
-      - name: Install dependencies
+          python-version: "3.12"
+      - name: Install deps
         run: |
-          python -m pip install --upgrade pip jsonschema
-      - name: Validate Optional Feature (Phase 9 strict)
-        env:
-          PYTHONPATH: ${{ github.workspace }}
+          python -m pip install --upgrade pip
+          pip install jsonschema
+      - name: Validate optionalfeature.json
         run: |
-          python -m scripts.validate_phase9_optionalfeature
+          python scripts/phase9/validate_optionalfeature.py
