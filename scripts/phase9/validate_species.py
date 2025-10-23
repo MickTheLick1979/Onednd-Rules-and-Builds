@@ -2,8 +2,8 @@ import json, os, sys
 from jsonschema import Draft202012Validator
 
 REPO   = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-DATA   = os.path.join(REPO, "rules", "2024", "language.json")
-SCHEMA = os.path.join(REPO, "schema", "2024", "v1", "language.schema.json")
+DATA   = os.path.join(REPO, "rules", "2024", "species.json")
+SCHEMA = os.path.join(REPO, "schema", "2024", "v1", "species.schema.json")
 
 def ascii(s:str)->str:
     try: return s.encode("ascii","ignore").decode("ascii")
@@ -23,12 +23,12 @@ def main():
     validator = Draft202012Validator(schema)
     errors = sorted(validator.iter_errors(data), key=lambda e: e.path)
     if errors:
-        sys.stderr.write(ascii(f"[FAIL] language.json has {len(errors)} validation error(s):\n"))
+        sys.stderr.write(ascii(f"[FAIL] species.json has {len(errors)} validation error(s):\n"))
         for i, err in enumerate(errors, 1):
             loc = "$" + "".join(f"[{repr(p)}]" if isinstance(p,int) else f".{p}" for p in err.path)
             sys.stderr.write(ascii(f"  {i}. {loc}: {err.message}\n"))
         sys.exit(1)
-    sys.stdout.write(ascii("[OK] language.json passed schema validation.\n"))
+    sys.stdout.write(ascii("[OK] species.json passed schema validation.\n"))
     sys.exit(0)
 
 if __name__ == "__main__": main()
