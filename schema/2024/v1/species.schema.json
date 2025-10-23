@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "species (v1)",
+  "description": "Conservative v1 schema for 2024 species baseline. Accepts an array of items or an object with a 'species' array.",
+  "anyOf": [
+    { "type": "array", "items": { "$ref": "#/$defs/item" } },
+    {
+      "type": "object",
+      "properties": {
+        "species": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/item" }
+        }
+      },
+      "required": ["species"],
+      "additionalProperties": true
+    }
+  ],
+  "$defs": {
+    "entry": { "type": ["string","object","array","number","boolean","null"] },
+    "item": {
+      "type": "object",
+      "properties": {
+        "name":        { "type": "string", "minLength": 1 },
+        "source":      { "type": "string", "minLength": 1 },
+
+        "page":        { "type": ["integer","null"] },
+        "entries":     { "type": ["array","string","object","null"] },
+        "additionalSources": { "type": ["array","null"], "items": { "type": ["string","object","null"] } },
+        "otherSources":      { "type": ["array","null"], "items": { "type": ["string","object","null"] } },
+        "_copy":       { "type": ["object","null"] },
+        "traitTags":   { "type": ["array","null"], "items": { "type": "string" } }
+      },
+      "required": ["name", "source"],
+      "additionalProperties": true
+    }
+  }
+}
