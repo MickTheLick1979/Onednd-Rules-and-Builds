@@ -1,0 +1,39 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "book (v1)",
+  "description": "Conservative v1 schema for 2024 book content/metadata.",
+  "anyOf": [
+    { "type": "array", "items": { "$ref": "#/$defs/bookItem" } },
+    {
+      "type": "object",
+      "properties": {
+        "book": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/bookItem" }
+        }
+      },
+      "required": ["book"],
+      "additionalProperties": true
+    }
+  ],
+  "$defs": {
+    "bookItem": {
+      "type": "object",
+      "properties": {
+        "name":        { "type": "string", "minLength": 1 },
+        "source":      { "type": "string" },
+        "id":          { "type": ["string","number"] },
+        "published":   { "type": ["string","number","boolean","null"] },
+        "author":      { "type": ["string","null"] },
+        "authors":     { "type": ["array","null"], "items": { "type": "string" } },
+        "group":       { "type": ["string","null"] },
+        "coverUrl":    { "type": ["string","null"] },
+        "introBlocks": { "type": ["array","null"], "items": { "type": ["string","object","array","number","boolean","null"] } },
+        "entries":     { "type": ["array","null"], "items": { "type": ["string","object","array","number","boolean","null"] } },
+        "_copy":       { "type": ["object","null"] }
+      },
+      "required": ["name"],
+      "additionalProperties": true
+    }
+  }
+}
