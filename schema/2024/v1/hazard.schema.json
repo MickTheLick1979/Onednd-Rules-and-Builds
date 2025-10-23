@@ -1,0 +1,52 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "hazard (v1)",
+  "description": "Conservative v1 schema for 2024 hazards/traps. Do not widen without explicit instruction.",
+  "anyOf": [
+    { "type": "array", "items": { "$ref": "#/$defs/item" } },
+    {
+      "type": "object",
+      "properties": {
+        "hazard": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/item" }
+        }
+      },
+      "required": ["hazard"],
+      "additionalProperties": true
+    }
+  ],
+  "$defs": {
+    "item": {
+      "type": "object",
+      "properties": {
+        "name":        { "type": "string", "minLength": 1 },
+        "source":      { "type": "string" },
+
+        "type":        { "type": ["string","null"] },   /* e.g., Trap, Environment */
+        "severity":    { "type": ["string","number","null"] },
+        "level":       { "type": ["number","string","null"] },
+
+        "entries":     {
+          "type": ["array","null"],
+          "items": { "type": ["string","object","array","number","boolean","null"] }
+        },
+
+        "activation":  { "type": ["string","object","array","null"] },
+        "trigger":     { "type": ["string","object","array","null"] },
+        "effects":     { "type": ["string","object","array","null"] },
+        "countermeasures": { "type": ["string","object","array","null"] },
+        "area":        { "type": ["string","object","array","number","null"] },
+        "damage":      { "type": ["string","object","array","number","null"] },
+        "savingThrow": { "type": ["string","object","array","null"] },
+        "duration":    { "type": ["string","object","array","number","null"] },
+        "conditionInflicted": { "type": ["string","object","array","null"] },
+        "miscTags":    { "type": ["array","null"], "items": { "type": "string" } },
+
+        "_copy":       { "type": ["object","null"] }
+      },
+      "required": ["name"],
+      "additionalProperties": true
+    }
+  }
+}
