@@ -1,0 +1,41 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "itemGroup (v1)",
+  "description": "Conservative v1 schema for 2024 itemGroup.",
+  "anyOf": [
+    { "type": "array", "items": { "$ref": "#/$defs/item" } },
+    {
+      "type": "object",
+      "properties": {
+        "itemGroup": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/item" }
+        }
+      },
+      "required": ["itemGroup"],
+      "additionalProperties": true
+    }
+  ],
+  "$defs": {
+    "item": {
+      "type": "object",
+      "properties": {
+        "name":   { "type": "string", "minLength": 1 },
+        "source": { "type": "string" },
+        "caption": { "type": ["string","null"] },
+        "note": { "type": ["string","null"] },
+        "items": {
+          "type": ["array","null"],
+          "items": { "type": ["string","object"] }
+        },
+        "entries": {
+          "type": ["array","null"],
+          "items": { "type": ["string","object","array","number","boolean","null"] }
+        },
+        "_copy": { "type": ["object","null"] }
+      },
+      "required": ["name"],
+      "additionalProperties": true
+    }
+  }
+}
