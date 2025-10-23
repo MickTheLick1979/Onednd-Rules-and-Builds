@@ -81,3 +81,4 @@ Write-Host ("Report: {0}" -f $csv)
 # Exit code: 0 if all present, 1 otherwise
 $anyMissing = $rows | Where-Object { -not $_.HasSchema -or -not $_.HasValidator -or -not $_.HasCI }
 if($anyMissing){ exit 1 } else { exit 0 }
+
