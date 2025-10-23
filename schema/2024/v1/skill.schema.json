@@ -1,0 +1,41 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "skill (v1)",
+  "description": "Conservative v1 schema for 2024 skill.",
+  "anyOf": [
+    { "type": "array", "items": { "$ref": "#/$defs/item" } },
+    {
+      "type": "object",
+      "properties": {
+        "skill": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/item" }
+        }
+      },
+      "required": ["skill"],
+      "additionalProperties": true
+    }
+  ],
+  "$defs": {
+    "entry": { "type": ["string","object","array","number","boolean","null"] },
+    "item": {
+      "type": "object",
+      "properties": {
+        "name":    { "type": "string", "minLength": 1 },
+        "source":  { "type": "string" },
+
+        "ability":   { "type": ["string","null"] },
+        "altNames":  { "type": ["array","null"], "items": { "type": "string" } },
+        "entries":   { "type": ["array","null"], "items": { "$ref": "#/$defs/entry" } },
+
+        "additionalSources": { "type": ["array","null"], "items": { "type": ["string","object","null"] } },
+        "otherSources":      { "type": ["array","null"], "items": { "type": ["string","object","null"] } },
+        "srd": { "type": ["boolean","string","null"] },
+
+        "_copy": { "type": ["object","null"] }
+      },
+      "required": ["name"],
+      "additionalProperties": true
+    }
+  }
+}
