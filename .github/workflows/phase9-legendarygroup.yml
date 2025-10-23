@@ -1,43 +1,30 @@
-﻿name: Phase 9 — legendaryGroup (strict)
-
+﻿name: phase9-legendaryGroup
 on:
-  push:
-    paths:
-      - ".github/workflows/phase9-legendarygroup.yml"
-      - "schema/2024/v1/rules.legendarygroup.schema.json"
-      - "scripts/validate_phase9_legendaryGroup.py"
-      - "scripts/_validation_common.py"
-      - "scripts/__init__.py"
-      - "rules/2024/legendaryGroup.json"
-      - "rules/2024/LegendaryGroup.json"
-      - "rules/2024/*legendarygroup*.json"
-      - "rules/2024/*legendaryGroup*.json"
   pull_request:
     paths:
-      - ".github/workflows/phase9-legendarygroup.yml"
-      - "schema/2024/v1/rules.legendarygroup.schema.json"
-      - "scripts/validate_phase9_legendaryGroup.py"
-      - "scripts/_validation_common.py"
-      - "scripts/__init__.py"
       - "rules/2024/legendaryGroup.json"
-      - "rules/2024/LegendaryGroup.json"
-      - "rules/2024/*legendarygroup*.json"
-      - "rules/2024/*legendaryGroup*.json"
-
+      - "schema/2024/v1/legendaryGroup.schema.json"
+      - "scripts/phase9/validate_legendaryGroup.py"
+      - ".github/workflows/phase9-legendaryGroup.yml"
+  push:
+    branches: [ master ]
+    paths:
+      - "rules/2024/legendaryGroup.json"
+      - "schema/2024/v1/legendaryGroup.schema.json"
+      - "scripts/phase9/validate_legendaryGroup.py"
+      - ".github/workflows/phase9-legendaryGroup.yml"
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
+          python-version: "3.12"
       - name: Install deps
-        run: python -m pip install --upgrade pip jsonschema
-      - name: Validate legendaryGroup
-        env:
-          PYTHONPATH: ${{ github.workspace }}
         run: |
-          python -m scripts.validate_phase9_legendaryGroup
+          python -m pip install --upgrade pip
+          pip install jsonschema
+      - name: Validate legendaryGroup.json
+        run: |
+          python scripts/phase9/validate_legendaryGroup.py
