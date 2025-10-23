@@ -35,5 +35,5 @@
       "required": ["name"],
       "additionalProperties": true
     }
-  ]
+  }
 }
