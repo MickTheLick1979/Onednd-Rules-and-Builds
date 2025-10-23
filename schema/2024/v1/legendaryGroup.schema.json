@@ -1,0 +1,57 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "legendaryGroup (v1)",
+  "description": "Conservative v1 schema for 2024 legendaryGroup.",
+  "anyOf": [
+    { "type": "array", "items": { "$ref": "#/$defs/item" } },
+    {
+      "type": "object",
+      "properties": {
+        "legendaryGroup": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/item" }
+        }
+      },
+      "required": ["legendaryGroup"],
+      "additionalProperties": true
+    }
+  ],
+  "$defs": {
+    "item": {
+      "type": "object",
+      "properties": {
+        "name":   { "type": "string", "minLength": 1 },
+        "source": { "type": "string" },
+
+        "entries": {
+          "type": ["array","null"],
+          "items": { "type": ["string","object","array","number","boolean","null"] }
+        },
+
+        "lairActions": {
+          "type": ["array","object","string","null"],
+          "items": { "type": ["string","object","array","number","boolean","null"] }
+        },
+
+        "regionalEffects": {
+          "type": ["array","object","string","null"],
+          "items": { "type": ["string","object","array","number","boolean","null"] }
+        },
+
+        "additionalSources": {
+          "type": ["array","null"],
+          "items": { "type": ["string","object","null"] }
+        },
+
+        "otherSources": {
+          "type": ["array","null"],
+          "items": { "type": ["string","object","null"] }
+        },
+
+        "_copy": { "type": ["object","null"] }
+      },
+      "required": ["name"],
+      "additionalProperties": true
+    }
+  }
+}
