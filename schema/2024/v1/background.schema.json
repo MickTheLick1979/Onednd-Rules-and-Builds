@@ -1,0 +1,48 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "background (v1)",
+  "description": "Conservative v1 schema for 2024 backgrounds.",
+  "anyOf": [
+    {
+      "type": "array",
+      "items": { "$ref": "#/$defs/backgroundItem" }
+    },
+    {
+      "type": "object",
+      "properties": {
+        "background": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/backgroundItem" }
+        }
+      },
+      "required": ["background"],
+      "additionalProperties": true
+    }
+  ],
+  "$defs": {
+    "backgroundItem": {
+      "type": "object",
+      "properties": {
+        "name":   { "type": "string", "minLength": 1 },
+        "source": { "type": "string" },
+
+        "entries": {
+          "type": "array",
+          "items": { "type": ["string","object","array","number","boolean","null"] }
+        },
+
+        "feat": { "type": ["string","object","array","null"] },
+
+        "skillProficiencies": { "type": ["string","object","array"] },
+        "toolProficiencies":  { "type": ["string","object","array"] },
+        "languageProficiencies": { "type": ["string","object","array"] },
+
+        "startingEquipment":  { "type": ["string","object","array"] },
+
+        "_copy": { "type": ["object","null"] }
+      },
+      "required": ["name"],
+      "additionalProperties": true
+    }
+  }
+}
