@@ -38,4 +38,5 @@ jobs:
           python -m pip install --upgrade pip jsonschema
       - name: Run strict validator (module mode)
         run: |
-          python -m scripts.validate_phase9_species
+          python scripts/phase9/validate_species.py
+
