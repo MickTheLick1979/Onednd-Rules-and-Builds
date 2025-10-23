@@ -1,16 +1,37 @@
 ﻿{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "One D&D 2024 — Sense (v1, conservative)",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "2024 v1 Rules Schema - sense",
   "type": "array",
   "items": {
     "type": "object",
-    "additionalProperties": true,
     "required": ["name", "source"],
     "properties": {
-      "name":   { "type": "string", "minLength": 1 },
+      "name": { "type": "string", "minLength": 1 },
       "source": { "type": "string", "pattern": "^X[A-Z]+$" },
-      "page":   { "type": ["integer", "string", "null"] },
-      "entries": { "type": ["string", "array", "object"] }
-    }
+      "page": {
+        "anyOf": [
+          { "type": "integer" },
+          { "type": "string" },
+          { "type": "null" }
+        ]
+      },
+      "entries": {
+        "anyOf": [
+          { "type": "string" },
+          { "type": "array" },
+          { "type": "object" },
+          { "type": "null" }
+        ]
+      },
+      "desc": {
+        "anyOf": [
+          { "type": "string" },
+          { "type": "array" },
+          { "type": "object" },
+          { "type": "null" }
+        ]
+      }
+    },
+    "additionalProperties": true
   }
 }
