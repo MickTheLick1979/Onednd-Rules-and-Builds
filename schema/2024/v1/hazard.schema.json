@@ -1,7 +1,7 @@
 ﻿{
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "hazard (v1)",
-  "description": "Conservative v1 schema for 2024 hazards/traps. Do not widen without explicit instruction.",
+  "description": "Conservative v1 schema for 2024 hazards/traps.",
   "anyOf": [
     { "type": "array", "items": { "$ref": "#/$defs/item" } },
     {
@@ -23,7 +23,7 @@
         "name":        { "type": "string", "minLength": 1 },
         "source":      { "type": "string" },
 
-        "type":        { "type": ["string","null"] },   /* e.g., Trap, Environment */
+        "type":        { "type": ["string","null"] },
         "severity":    { "type": ["string","number","null"] },
         "level":       { "type": ["number","string","null"] },
 
