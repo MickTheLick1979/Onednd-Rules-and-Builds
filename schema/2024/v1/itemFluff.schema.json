@@ -1,0 +1,49 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "itemFluff (v1)",
+  "description": "Conservative v1 schema for 2024 itemFluff.",
+  "anyOf": [
+    { "type": "array", "items": { "$ref": "#/$defs/item" } },
+    {
+      "type": "object",
+      "properties": {
+        "itemFluff": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/item" }
+        }
+      },
+      "required": ["itemFluff"],
+      "additionalProperties": true
+    }
+  ],
+  "$defs": {
+    "image": {
+      "type": ["object","string"],
+      "properties": {
+        "type": { "type": "string" },
+        "href": { "type": ["string","object"] },
+        "title": { "type": "string" },
+        "credit": { "type": ["string","array","null"] }
+      },
+      "additionalProperties": true
+    },
+    "item": {
+      "type": "object",
+      "properties": {
+        "name":   { "type": "string", "minLength": 1 },
+        "source": { "type": "string" },
+        "entries": {
+          "type": ["array","null"],
+          "items": { "type": ["string","object","array","number","boolean","null"] }
+        },
+        "images": {
+          "type": ["array","null"],
+          "items": { "$ref": "#/$defs/image" }
+        },
+        "_copy": { "type": ["object","null"] }
+      },
+      "required": ["name"],
+      "additionalProperties": true
+    }
+  }
+}
