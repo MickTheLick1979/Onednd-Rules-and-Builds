@@ -1,41 +1,30 @@
-﻿name: Phase 9 — language (strict)
-
+﻿name: phase9-language
 on:
-  push:
-    paths:
-      - ".github/workflows/phase9-language.yml"
-      - "schema/2024/v1/rules.language.schema.json"
-      - "scripts/validate_phase9_language.py"
-      - "scripts/_validation_common.py"
-      - "scripts/__init__.py"
-      - "rules/2024/language.json"
-      - "rules/2024/Language.json"
-      - "rules/2024/*language*.json"
   pull_request:
     paths:
-      - ".github/workflows/phase9-language.yml"
-      - "schema/2024/v1/rules.language.schema.json"
-      - "scripts/validate_phase9_language.py"
-      - "scripts/_validation_common.py"
-      - "scripts/__init__.py"
       - "rules/2024/language.json"
-      - "rules/2024/Language.json"
-      - "rules/2024/*language*.json"
-
+      - "schema/2024/v1/language.schema.json"
+      - "scripts/phase9/validate_language.py"
+      - ".github/workflows/phase9-language.yml"
+  push:
+    branches: [ master ]
+    paths:
+      - "rules/2024/language.json"
+      - "schema/2024/v1/language.schema.json"
+      - "scripts/phase9/validate_language.py"
+      - ".github/workflows/phase9-language.yml"
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
+          python-version: "3.12"
       - name: Install deps
-        run: python -m pip install --upgrade pip jsonschema
-      - name: Validate language
-        env:
-          PYTHONPATH: ${{ github.workspace }}
         run: |
-          python -m scripts.validate_phase9_language
+          python -m pip install --upgrade pip
+          pip install jsonschema
+      - name: Validate language.json
+        run: |
+          python scripts/phase9/validate_language.py
