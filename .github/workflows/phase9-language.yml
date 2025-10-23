@@ -38,4 +38,5 @@ jobs:
         env:
           PYTHONPATH: ${{ github.workspace }}
         run: |
-          python -m scripts.validate_phase9_language
+          python scripts/phase9/validate_language.py
+

@@ -25,7 +25,7 @@ def main():
     run_standard_validation(
         category="language",
         data_path=data_path,
-        schema_path="schema/2024/v1/rules.language.schema.json",
+        schema_path="schema/2024/v1/language.schema.json",
         array_keys=["language"]  # typical root key for this domain
     )
     print(f"[OK] Phase 9: language validated cleanly ({data_path})")
