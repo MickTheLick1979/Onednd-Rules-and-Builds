@@ -1,0 +1,40 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "status (v1)",
+  "description": "Conservative v1 schema for 2024 status.",
+  "anyOf": [
+    { "type": "array", "items": { "$ref": "#/$defs/item" } },
+    {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/item" }
+        }
+      },
+      "required": ["status"],
+      "additionalProperties": true
+    }
+  ],
+  "$defs": {
+    "entry": { "type": ["string","object","array","number","boolean","null"] },
+    "item": {
+      "type": "object",
+      "properties": {
+        "name":    { "type": "string", "minLength": 1 },
+        "source":  { "type": "string" },
+
+        "type":    { "type": ["string","array","null"] },
+        "entries": { "type": ["array","null"], "items": { "$ref": "#/$defs/entry" } },
+
+        "additionalSources": { "type": ["array","null"], "items": { "type": ["string","object","null"] } },
+        "otherSources":      { "type": ["array","null"], "items": { "type": ["string","object","null"] } },
+        "srd": { "type": ["boolean","string","null"] },
+
+        "_copy":  { "type": ["object","null"] }
+      },
+      "required": ["name"],
+      "additionalProperties": true
+    }
+  }
+}
