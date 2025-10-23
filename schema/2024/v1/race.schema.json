@@ -1,0 +1,60 @@
+﻿{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "race (v1)",
+  "description": "Conservative v1 schema for legacy 2014 race (Phase 9). Prefer species going forward.",
+  "anyOf": [
+    { "type": "array", "items": { "$ref": "#/$defs/item" } },
+    {
+      "type": "object",
+      "properties": {
+        "race": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/item" }
+        }
+      },
+      "required": ["race"],
+      "additionalProperties": true
+    }
+  ],
+  "$defs": {
+    "entry": { "type": ["string","object","array","number","boolean","null"] },
+    "item": {
+      "type": "object",
+      "properties": {
+        "name":   { "type": "string", "minLength": 1 },
+        "source": { "type": "string" },
+
+        "ability":   { "type": ["object","array","string","null"] },
+        "size":      { "type": ["string","array","null"] },
+        "speed":     { "type": ["object","string","number","null"] },
+        "age":       { "type": ["string","object","null"] },
+        "height":    { "type": ["string","object","null"] },
+        "weight":    { "type": ["string","object","null"] },
+
+        "entries":   { "type": ["array","null"], "items": { "$ref": "#/$defs/entry" } },
+        "trait":     { "type": ["array","null"], "items": { "$ref": "#/$defs/entry" } },
+
+        "proficiency":            { "type": ["object","array","null"] },
+        "languageProficiencies":  { "type": ["object","array","null"] },
+        "skillProficiencies":     { "type": ["object","array","null"] },
+        "toolProficiencies":      { "type": ["object","array","null"] },
+
+        "resist":     { "type": ["array","string","object","null"] },
+        "vulnerable": { "type": ["array","string","object","null"] },
+        "immune":     { "type": ["array","string","object","null"] },
+
+        "darkvision": { "type": ["number","integer","string","null"] },
+
+        "subraces":   { "type": ["array","null"], "items": { "type": "object", "additionalProperties": true } },
+
+        "additionalSources": { "type": ["array","null"], "items": { "type": ["string","object","null"] } },
+        "otherSources":      { "type": ["array","null"], "items": { "type": ["string","object","null"] } },
+        "srd": { "type": ["boolean","string","null"] },
+
+        "_copy": { "type": ["object","null"] }
+      },
+      "required": ["name"],
+      "additionalProperties": true
+    }
+  }
+}
