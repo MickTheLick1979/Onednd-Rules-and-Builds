@@ -1,38 +1,32 @@
-﻿name: Phase 9 - Class (strict)
+﻿name: phase9-class
 
 on:
-  push:
-    paths:
-      - 'schema/2024/v1/rules.class.schema.json'
-      - 'scripts/validate_phase9_class.py'
-      - 'scripts/_validation_common.py'
-      - 'scripts/__init__.py'
-      - 'rules/2024/class.json'
-      - 'rules/2024/Class.json'
-      - '.github/workflows/phase9-class.yml'
   pull_request:
     paths:
-      - 'schema/2024/v1/rules.class.schema.json'
-      - 'scripts/validate_phase9_class.py'
-      - 'scripts/_validation_common.py'
-      - 'scripts/__init__.py'
-      - 'rules/2024/class.json'
-      - 'rules/2024/Class.json'
-      - '.github/workflows/phase9-class.yml'
+      - "rules/2024/class.json"
+      - "schema/2024/v1/class.schema.json"
+      - "scripts/phase9/validate_class.py"
+      - ".github/workflows/phase9-class.yml"
+  push:
+    branches: [ main ]
+    paths:
+      - "rules/2024/class.json"
+      - "schema/2024/v1/class.schema.json"
+      - "scripts/phase9/validate_class.py"
+      - ".github/workflows/phase9-class.yml"
 
 jobs:
-  validate-class:
+  validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
-      - name: Install dependencies
+          python-version: "3.12"
+      - name: Install deps
         run: |
-          python -m pip install --upgrade pip jsonschema
-      - name: Validate Class (Phase 9 strict)
-        env:
-          PYTHONPATH: ${{ github.workspace }}
+          python -m pip install --upgrade pip
+          pip install jsonschema
+      - name: Validate class.json
         run: |
-          python -m scripts.validate_phase9_class
+          python scripts/phase9/validate_class.py
