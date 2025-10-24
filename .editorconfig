@@ -1,0 +1,14 @@
+﻿# .editorconfig â€” UTF-8 (no BOM), LF for project text files
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{ps1,psm1,cmd,bat}]
+end_of_line = crlf
+
+[*.{json,md,py,yml,yaml}]
+end_of_line = lf

@@ -1,4 +1,4 @@
-﻿name: Phase 9 - Senses (strict)
+name: Phase 9 - Senses (strict)
 
 on:
   pull_request:
@@ -21,15 +21,40 @@ on:
       - ".github/workflows/phase9-senses.yml"
   workflow_dispatch:
 
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   validate-senses:
     name: Validate senses (Phase 9 strict)
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: $\${{ runner.os }}-pip-$\${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            $\${{ runner.os }}-pip-
+      - name: Install deps
+        # normalised: pinned-runtime
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
       - uses: actions/checkout@v4
       - name: Set up Python
         uses: actions/setup-python@v5
+        uses: - name: Install deps
+        uses:   run: |
+        uses:     python -m pip install --upgrade pip
         with:
           python-version: "3.x"
       - name: Install dependencies
@@ -39,3 +64,9 @@ jobs:
       - name: Run strict validator (module mode)
         run: |
           python -m scripts.validate_phase9_senses
+
+
+
+
+
+

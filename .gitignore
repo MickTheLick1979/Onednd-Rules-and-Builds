@@ -1,6 +1,16 @@
-﻿# reports & snapshots (keep PR logs if you want)
+# reports & snapshots (keep PR logs if you want)
 reports/
 snapshot_*.txt
 _write_check.txt
 *.lnk
 indexes/2024/_build.json
+
+# Backups produced by hardening/other scripts
+*.bak_*
+*.bak*
+*.bak_harden
+
+# Backups produced by hardening/other scripts
+*.bak_*
+*.bak*
+*.bak_harden

@@ -1,6 +1,14 @@
-﻿* text=auto
-*.py   text eol=lf
-*.ps1  text eol=lf
-*.json text eol=lf
-*.yml  text eol=lf
-*.md   text eol=lf
+* text=auto
+
+# LF for project files
+*.yml  eol=lf
+*.yaml eol=lf
+*.py   eol=lf
+*.md   eol=lf
+*.json eol=lf
+
+# CRLF for Windows scripts
+*.ps1  eol=crlf
+*.psm1 eol=crlf
+*.cmd  eol=crlf
+*.bat  eol=crlf

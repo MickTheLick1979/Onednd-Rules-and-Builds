@@ -1,0 +1,2 @@
+﻿# Minimal runtime/build deps for validators and scripts
+jsonschema>=4.21,<5

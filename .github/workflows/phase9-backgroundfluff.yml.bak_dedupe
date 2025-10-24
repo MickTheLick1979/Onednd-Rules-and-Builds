@@ -1,0 +1,51 @@
+name: Phase 9 Ã¢â‚¬â€ backgroundFluff
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - 'schema/2024/v1/backgroundFluff.schema.json'
+      - 'scripts/phase9/validate_backgroundFluff.py'
+      - 'rules/2024/**/*background*fluff*.json'
+  pull_request:
+    paths:
+      - 'schema/2024/v1/backgroundFluff.schema.json'
+      - 'scripts/phase9/validate_backgroundFluff.py'
+      - 'rules/2024/**/*background*fluff*.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        # normalised: pinned-runtime
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+        with:
+          python-version: '3.11'
+      - name: Install deps (Phase 9)
+        run: |
+          if [ -f scripts/requirements_phase9.txt ]; then
+            pip install -r scripts/requirements_phase9.txt
+          elif [ -f scripts/requirements.txt ]; then
+            pip install -r scripts/requirements.txt
+          else
+            pip install jsonschema
+          fi
+      - name: Validate backgroundFluff
+        run: python scripts/phase9/validate_backgroundFluff.py
+
+
+
+
+

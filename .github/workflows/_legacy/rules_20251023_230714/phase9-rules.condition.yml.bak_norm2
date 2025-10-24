@@ -1,0 +1,43 @@
+name: Phase 9 â€” rules.condition
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - 'schema/2024/v1/rules.condition.schema.json'
+      - 'scripts/phase9/validate_rules.condition.py'
+      - 'rules/2024/condition.json'
+  pull_request:
+    paths:
+      - 'schema/2024/v1/rules.condition.schema.json'
+      - 'scripts/phase9/validate_rules.condition.py'
+      - 'rules/2024/condition.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        # normalised: pinned-runtime
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install deps (Phase 9)
+        run: |
+          if [ -f scripts/requirements_phase9.txt ]; then
+            pip install -r scripts/requirements_phase9.txt
+          elif [ -f scripts/requirements.txt ]; then
+            pip install -r scripts/requirements.txt
+          else
+            pip install jsonschema
+          fi
+      - name: Validate rules.condition
+        run: python scripts/phase9/validate_rules.condition.py
+

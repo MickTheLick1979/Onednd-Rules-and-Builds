@@ -1,0 +1,40 @@
+name: Phase 9 — species
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - 'schema/2024/v1/species.schema.json'
+      - 'scripts/phase9/validate_species.py'
+      - 'rules/2024/species.json'
+  pull_request:
+    paths:
+      - 'schema/2024/v1/species.schema.json'
+      - 'scripts/phase9/validate_species.py'
+      - 'rules/2024/species.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+        with:
+          python-version: '3.11'
+      - name: Install deps (Phase 9)
+        run: |
+          if [ -f scripts/requirements_phase9.txt ]; then
+            pip install -r scripts/requirements_phase9.txt
+          elif [ -f scripts/requirements.txt ]; then
+            pip install -r scripts/requirements.txt
+          else
+            pip install jsonschema
+          fi
+      - name: Validate species
+        run: python scripts/phase9/validate_species.py
+
+
