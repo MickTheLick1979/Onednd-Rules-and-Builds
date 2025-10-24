@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schema/2024/v1/indexes.subclass_features_by_level.schema.json",
+  "title": "Index — subclass_features_by_level (v1)",
+  "description": "Maps 'Class: Subclass' to level->array-of-feature-names.",
+  "type": "object",
+  "additionalProperties": false,
+  "patternProperties": {
+    ".*": {
+      "type": "object",
+      "additionalProperties": false,
+      "patternProperties": {
+        "^\\d+$": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

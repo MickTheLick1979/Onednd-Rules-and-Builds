@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schema/2024/v1/rules.vehicle.schema.json",
+  "title": "One D&D 2024 — Vehicle (v1, wrapper object)",
+  "description": "Vehicles wrapped as { \"vehicle\": [...] }. Items permissive; require basic identifiers if present.",
+  "type": "object",
+  "required": ["vehicle"],
+  "additionalProperties": false,
+  "properties": {
+    "vehicle": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": ["name", "source"],
+        "properties": {
+          "name":   { "type": "string", "minLength": 1 },
+          "source": { "type": "string" },
+          "page":   { "type": ["integer", "string", "null"] },
+          "type":   { "type": ["string", "null"] },
+          "entries": { "type": ["array", "string", "object", "null"] }
+        }
+      }
+    }
+  }
+}
