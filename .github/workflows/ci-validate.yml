@@ -1,4 +1,4 @@
-name: CI - Validate 2024 Data
+﻿name: CI - Validate 2024 Data
 
 on:
   workflow_dispatch:
@@ -55,28 +55,18 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-py311-
 
-      - name: Install dependencies
+      - id: runval
+        name: Validate ${{ matrix.target }}
         shell: bash
         run: |
           set -euo pipefail
-          python -m pip install --upgrade pip
-          if [ -f requirements.lock ]; then
-            pip install -r requirements.lock
-          else
-            pip install -r requirements.txt
-          fi
-
-      - name: Validate ${{ matrix.target }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          mkdir -p ci_out
+          mkdir -p "ci_out/${{ matrix.target }}"
           case "${{ matrix.target }}" in
             "spell")
               python scripts/phase9/validate_spell.py \
                 --schemas "schema/2024/v1" \
                 --baseline "rules/2024" \
-                --out "ci_out/spell"
+                --out "ci_out/${{ matrix.target }}"
               ;;
             "index:spells_by_class_level")
               python scripts/phase9/validate_spells_by_class_level.py \
@@ -84,18 +74,36 @@ jobs:
                 --baseline "rules/2024" \
                 --mappings "rules/2024/mappings" \
                 --indexes "indexes/2024" \
-                --out "ci_out/spells_by_class_level"
+                --out "ci_out/${{ matrix.target }}"
               ;;
             *)
               echo "Unknown target: '${{ matrix.target }}'"; exit 2
               ;;
           esac
 
+      - name: Write summary artifact
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          out="ci_out/${{ matrix.target }}"
+          mkdir -p "$out"
+          {
+            echo "target=${{ matrix.target }}"
+            echo "status=${{ steps.runval.outcome }}"
+            echo "run_id=${{ github.run_id }}"
+            echo "run_attempt=${{ github.run_attempt }}"
+            echo "sha=${{ github.sha }}"
+            echo "python=$(python --version 2>&1)"
+            echo "pip=$(pip --version 2>&1)"
+            date -u +"utc=%Y-%m-%dT%H:%M:%SZ"
+          } > "$out/summary.txt"
+
       - name: Upload logs
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: logs-${{ matrix.target }}
-          path: |
-            ci_out/**
-            !**/*.tmp
+          path: ci_out/${{ matrix.target }}/**
+          if-no-files-found: error
+          retention-days: 7
