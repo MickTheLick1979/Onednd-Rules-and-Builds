@@ -1,4 +1,4 @@
-name: CI ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Validate 2024 Data
+name: CI - Validate 2024 Data
 
 on:
   push:
