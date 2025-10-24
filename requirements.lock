@@ -1,0 +1,5 @@
+# ------------------------------------------------------------------------------
+# Placeholder lockfile (hash-checked). CI will regenerate via lockfile workflow.
+# Do not edit manually. If this file causes install failures, run the CI workflow:
+#   'Lockfile: refresh requirements.lock'
+# ------------------------------------------------------------------------------
