@@ -1,4 +1,4 @@
-name: CI - Validate 2024 Data
+﻿name: CI - Validate 2024 Data
 
 on:
   workflow_dispatch:
@@ -14,9 +14,43 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  hygiene:
+    name: Hygiene — no BOM, no CRLF
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Enforce no UTF-8 BOM and LF-only line endings
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "Scanning for UTF-8 BOM in tracked text files..."
+          mapfile -t bom < <(git ls-files \
+            '*.json' '*.schema.json' '*.yml' '*.yaml' '*.md' '*.txt' '*.py' '*.ps1' \
+            | xargs -r grep -Il $'\xEF\xBB\xBF' || true)
+          if (( ${#bom[@]} )); then
+            echo "::error title=BOM detected::The following files contain a UTF-8 BOM:"
+            printf '%s\n' "${bom[@]}"
+            exit 1
+          fi
+
+          echo "Scanning for CRLF in tracked text files..."
+          mapfile -t crlf < <(git ls-files \
+            '*.json' '*.schema.json' '*.yml' '*.yaml' '*.md' '*.txt' '*.py' '*.ps1' \
+            | xargs -r grep -Il $'\r' || true)
+          if (( ${#crlf[@]} )); then
+            echo "::error title=CRLF detected::The following files contain CRLF line endings:"
+            printf '%s\n' "${crlf[@]}"
+            exit 1
+          fi
+
+          echo "Hygiene checks passed."
+
   validate:
     name: Validate ${{ matrix.target }}
     runs-on: ubuntu-latest
+    needs: hygiene
     strategy:
       fail-fast: false
       matrix:
@@ -44,6 +78,7 @@ jobs:
       - name: Install dependencies
         shell: bash
         run: |
+          set -euo pipefail
           python -m pip install --upgrade pip
           if [ -f requirements.lock ]; then
             pip install -r requirements.lock
