@@ -1,6 +1,7 @@
-name: CI - Validate 2024 Data
+﻿name: CI - Validate 2024 Data
 
 on:
+  workflow_dispatch:
   push:
     branches: ["**"]
   pull_request:
