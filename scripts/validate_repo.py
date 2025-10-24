@@ -46,24 +46,23 @@ def main():
             f"rules.{name}.schema.json",
         ])
 
-    meta = {"schema_used": None, "data_file": None}; findings = {args.target: []}
+    meta = {"schema_used": None, "data_file": str(data_fp)}
+    findings = {args.target: []}
     rc = 0
 
     if not data_fp.exists():
         findings[args.target].append(f"Missing data file: {data_fp}")
         rc = 2
     if schema_fp is None:
-        findings[args.target].append(
-            f"Missing schema file for '{name}'. Tried: "
-            + (", ".join([
-                f"{name}.schema.json",
-                (f'indexes.{name}.schema.json' if args.target.startswith('index:') else f'rules.{name}.schema.json')
-            ]))
-        )
+        tried = [f"{name}.schema.json", (f'indexes.{name}.schema.json' if args.target.startswith('index:') else f'rules.{name}.schema.json')]
+        findings[args.target].append(f"Missing schema file for '{name}'. Tried: {', '.join(tried)}")
         rc = 2
+    else:
+        meta["schema_used"] = str(schema_fp)
 
     if rc == 0:
-        meta["schema_used"] = str(schema_fp); meta["data_file"] = str(data_fp); data = load_json(data_fp)\nschema = load_json(schema_fp)
+        data = load_json(data_fp)
+        schema = load_json(schema_fp)
         # Use absolute base for resolving $ref
         resolver = RefResolver(base_uri=schema_fp.resolve().parent.as_uri() + "/", referrer=schema)
         validator = Draft202012Validator(schema, resolver=resolver)
@@ -74,11 +73,10 @@ def main():
                 loc = "/".join(str(x) for x in e.path) or "(root)"
                 findings[args.target].append(f"{e.message} @ {loc}")
 
-    outp.write_text(json.dumps({"meta": meta, **findings}, indent=2), encoding="utf-8")
+    report = {"meta": meta, **findings}
+    outp.write_text(json.dumps(report, indent=2), encoding="utf-8")
     if findings[args.target]:
-        print(f"[{args.target}] {len(findings[args.target])} issue(s) found:")
-        for line in findings[args.target][:50]:
-            print(" -", line)
+        print(f"[{args.target}] {len(findings[args.target])} issue(s) found.")
     else:
         print(f"[{args.target}] OK")
     sys.exit(rc)
