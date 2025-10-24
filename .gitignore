@@ -16,3 +16,6 @@ indexes/2024/_build.json
 *.bak_harden
 # Ignore transient workflow scratch area
 .github/workflows/_scratch/
+# Allow public report snapshots while keeping private /reports ignored
+!docs/reports/
+!docs/reports/**
