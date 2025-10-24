@@ -1,4 +1,4 @@
-name: Phase 9 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â language (strict)
+name: Phase 9 ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â language (strict)
 
 on:
   push:
@@ -22,6 +22,11 @@ on:
       - "rules/2024/Language.json"
       - "rules/2024/*language*.json"
 
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -29,6 +34,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: $\${{ runner.os }}-pip-$\${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            $\${{ runner.os }}-pip-
       - name: Install deps
         # normalised: pinned-runtime
         run: |
