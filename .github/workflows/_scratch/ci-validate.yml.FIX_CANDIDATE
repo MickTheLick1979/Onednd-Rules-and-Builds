@@ -1,0 +1,78 @@
+﻿name: CI - Validate 2024 Data
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["**"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  discover:
+    name: Discover JSON targets
+    runs-on: ubuntu-latest
+    outputs:
+      targets: ${{ steps.collect.outputs.targets }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - id: collect
+        name: Build matrix from repo
+        shell: bash
+        run: |
+          val=$(python - <<'PY'
+import json, pathlib
+roots = ["rules/2024", "indexes/2024"]
+files = []
+for root in roots:
+    p = pathlib.Path(root)
+    if p.exists():
+        for f in p.rglob("*.json"):
+            files.append({"path": f.as_posix()})
+if not files:
+    files = [{"path": "_NO_TARGETS_FOUND_"}]
+print(json.dumps(files))
+PY
+)
+          echo "targets=$val" >> "$GITHUB_OUTPUT"
+
+  validate:
+    name: Validate ${{ matrix.path }}
+    needs: discover
+    runs-on: ubuntu-latest
+    if: ${{ needs.discover.outputs.targets != '' }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJson(needs.discover.outputs.targets) }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        shell: bash
+        run: |
+          if [ -f scripts/requirements.txt ]; then
+            python -m pip install --upgrade pip
+            pip install -r scripts/requirements.txt
+          else
+            python -m pip install --upgrade pip
+            pip install jsonschema pyyaml
+          fi
+
+      - name: Validate ${{ matrix.path }}
+        shell: bash
+        run: |
+          if [ "${{ matrix.path }}" = "_NO_TARGETS_FOUND_" ]; then
+            echo "No targets discovered; skipping."
+            exit 0
+          fi
+          python scripts/validate_json.py "${{ matrix.path }}"
