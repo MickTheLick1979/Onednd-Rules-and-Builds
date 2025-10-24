@@ -84,3 +84,7 @@ python .\scripts\analyse_monsters.py ac
 
 **Note:**  
 This repo deliberately excludes anything that does not directly impact player build decisions or core gameplay mechanics.
+
+### CI Status
+![CI — Validate 2024 Data](https://github.com/MickTheLick1979/Onednd-Rules-and-Builds/actions/workflows/ci-validate.yml/badge.svg)
+
