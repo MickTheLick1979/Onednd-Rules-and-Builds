@@ -20,9 +20,54 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Enforce no UTF-8 BOM and LF-only line endings
         shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import subprocess, sys
+
+          EXTS = {
+              '.json','.schema.json','.jsonc','.json5',
+              '.yml','.yaml',
+              '.md','.txt',
+              '.py','.ps1','.psm1','.psd1',
+              '.ini','.cfg','.conf','.toml',
+              '.csv','.tsv'
+          }
+
+          # Get tracked files
+          out = subprocess.check_output(['git','ls-files','-z'])
+          files = [p for p in out.decode('utf-8').split('\\x00') if p]
+
+          def is_text(p: str) -> bool:
+              lp = p.lower()
+              return any(lp.endswith(ext) for ext in EXTS)
+
+          bom = []
+          crlf = []
+          for p in files:
+              if not is_text(p):
+                  continue
+              with open(p, 'rb') as f:
+                  data = f.read()
+              if data.startswith(b'\\xef\\xbb\\xbf'):
+                  bom.append(p)
+              if b'\\r\\n' in data:
+                  crlf.append(p)
+
+          if bom:
+              print('::error title=BOM detected::The following files contain a UTF-8 BOM:')
+              print('\\n'.join(bom))
+              sys.exit(1)
+
+          if crlf:
+              print('::error title=CRLF detected::The following files contain CRLF line endings:')
+              print('\\n'.join(crlf))
+              sys.exit(1)
+
+          print('Hygiene checks passed.')
+          PY        shell: bash
         run: |
           set -euo pipefail
           echo "Scanning for UTF-8 BOM in tracked text files..."
@@ -121,3 +166,4 @@ jobs:
           path: |
             ci_out/**
             !**/*.tmp
+
