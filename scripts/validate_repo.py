@@ -46,7 +46,7 @@ def main():
             f"rules.{name}.schema.json",
         ])
 
-    findings = {args.target: []}
+    meta = {"schema_used": None, "data_file": None}; findings = {args.target: []}
     rc = 0
 
     if not data_fp.exists():
@@ -63,8 +63,7 @@ def main():
         rc = 2
 
     if rc == 0:
-        data = load_json(data_fp)
-        schema = load_json(schema_fp)
+        meta["schema_used"] = str(schema_fp); meta["data_file"] = str(data_fp); data = load_json(data_fp)\nschema = load_json(schema_fp)
         # Use absolute base for resolving $ref
         resolver = RefResolver(base_uri=schema_fp.resolve().parent.as_uri() + "/", referrer=schema)
         validator = Draft202012Validator(schema, resolver=resolver)
@@ -75,7 +74,7 @@ def main():
                 loc = "/".join(str(x) for x in e.path) or "(root)"
                 findings[args.target].append(f"{e.message} @ {loc}")
 
-    outp.write_text(json.dumps(findings, indent=2), encoding="utf-8")
+    outp.write_text(json.dumps({"meta": meta, **findings}, indent=2), encoding="utf-8")
     if findings[args.target]:
         print(f"[{args.target}] {len(findings[args.target])} issue(s) found:")
         for line in findings[args.target][:50]:
