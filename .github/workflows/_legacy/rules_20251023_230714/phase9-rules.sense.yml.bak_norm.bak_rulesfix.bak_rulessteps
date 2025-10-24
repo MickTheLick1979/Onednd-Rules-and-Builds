@@ -1,0 +1,34 @@
+name: Phase 9 — rules.sense
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - 'schema/2024/v1/rules.sense.schema.json'
+      - 'scripts/phase9/validate_rules.sense.py'
+      - 'rules/2024/sense.json'
+  pull_request:
+    paths:
+      - 'schema/2024/v1/rules.sense.schema.json'
+      - 'scripts/phase9/validate_rules.sense.py'
+      - 'rules/2024/sense.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install deps (Phase 9)
+        run: |
+          if [ -f scripts/requirements_phase9.txt ]; then
+            pip install -r scripts/requirements_phase9.txt
+          elif [ -f scripts/requirements.txt ]; then
+            pip install -r scripts/requirements.txt
+          else
+            pip install jsonschema
+          fi
+      - name: Validate rules.sense
+        run: python scripts/phase9/validate_rules.sense.py
