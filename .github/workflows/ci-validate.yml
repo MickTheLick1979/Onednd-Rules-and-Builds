@@ -33,7 +33,6 @@ jobs:
     needs: hygiene
     strategy:
       fail-fast: false
-    # Minimal, known-good targets
       matrix:
         target:
           - spell
@@ -100,11 +99,20 @@ jobs:
             date -u +"utc=%Y-%m-%dT%H:%M:%SZ"
           } > "$out/summary.txt"
 
+      - name: Compute safe artifact name
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Replace any non-portable chars with '-'
+          SAFE="logs-$(echo '${{ matrix.target }}' | tr ':' '-' | tr -c '[:alnum:]_.-+' '-')"
+          echo "ART_NAME=$SAFE" >> "$GITHUB_ENV"
+
       - name: Upload logs
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: logs-${{ matrix.target }}
+          name: ${{ env.ART_NAME }}
           path: ci_out/${{ matrix.target }}/**
           if-no-files-found: error
           retention-days: 7
