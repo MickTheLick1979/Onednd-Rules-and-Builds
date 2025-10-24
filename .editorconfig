@@ -1,4 +1,4 @@
-# .editorconfig — UTF-8 (no BOM), LF for project text files
+﻿# .editorconfig â€” UTF-8 (no BOM), LF for project text files
 root = true
 
 [*]
