@@ -1,4 +1,4 @@
-﻿name: phase9-itemType
+name: phase9-itemType
 on:
   pull_request:
     paths:
@@ -32,4 +32,5 @@ jobs:
       - name: Validate itemType.json
         run: |
           python scripts/phase9/validate_itemType.py
+
 

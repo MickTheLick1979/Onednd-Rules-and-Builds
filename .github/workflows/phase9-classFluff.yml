@@ -1,4 +1,4 @@
-﻿name: phase9-classFluff
+name: phase9-classFluff
 on:
   pull_request:
     paths:
@@ -32,4 +32,5 @@ jobs:
       - name: Validate classFluff.json
         run: |
           python scripts/phase9/validate_classFluff.py
+
 

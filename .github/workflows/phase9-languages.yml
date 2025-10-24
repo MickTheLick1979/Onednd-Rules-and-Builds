@@ -1,4 +1,4 @@
-﻿name: Phase 9 - Languages (strict)
+name: Phase 9 - Languages (strict)
 
 on:
   pull_request:
@@ -42,4 +42,5 @@ jobs:
       - name: Run strict validator
         run: |
           python scripts/validate_phase9_languages.py --file rules/2024/language.json --schema schema/2024/v1/rules.language.schema.json
+
 

@@ -1,4 +1,4 @@
-﻿name: phase9-variantrule
+name: phase9-variantrule
 on:
   pull_request:
     paths:
@@ -32,4 +32,5 @@ jobs:
       - name: Validate variantrule.json
         run: |
           python scripts/phase9/validate_variantrule.py
+
 

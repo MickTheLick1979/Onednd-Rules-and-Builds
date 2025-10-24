@@ -1,4 +1,4 @@
-﻿name: phase9-monster
+name: phase9-monster
 on:
   pull_request:
     paths:
@@ -32,4 +32,5 @@ jobs:
       - name: Validate monster.json
         run: |
           python scripts/phase9/validate_monster.py
+
 

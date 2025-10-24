@@ -1,4 +1,4 @@
-﻿name: phase9-status
+name: phase9-status
 on:
   pull_request:
     paths:
@@ -32,4 +32,5 @@ jobs:
       - name: Validate status.json
         run: |
           python scripts/phase9/validate_status.py
+
 

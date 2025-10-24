@@ -1,4 +1,4 @@
-﻿name: phase9-speciesFluff
+name: phase9-speciesFluff
 on:
   pull_request:
     paths:
@@ -32,4 +32,5 @@ jobs:
       - name: Validate speciesFluff.json
         run: |
           python scripts/phase9/validate_speciesFluff.py
+
 

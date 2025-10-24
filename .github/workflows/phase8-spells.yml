@@ -1,4 +1,4 @@
-﻿name: Phase 8 — Spells (strict)
+name: Phase 8 — Spells (strict)
 
 on:
   pull_request:
@@ -43,4 +43,5 @@ jobs:
       - name: Run Phase 8 strict validator
         run: |
           python scripts/validate_phase8_spells.py
+
 

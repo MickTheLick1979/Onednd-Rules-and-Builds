@@ -1,4 +1,4 @@
-﻿name: phase9-background
+name: phase9-background
 
 on:
   pull_request:
@@ -34,4 +34,5 @@ jobs:
       - name: Validate background.json
         run: |
           python scripts/phase9/validate_background.py
+
 

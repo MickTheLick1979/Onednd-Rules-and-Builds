@@ -1,4 +1,4 @@
-﻿name: Phase 9 — legendaryGroup
+name: Phase 9 — legendaryGroup
 
 on:
   push:
@@ -36,3 +36,4 @@ jobs:
           fi
       - name: Validate legendaryGroup
         run: python scripts/phase9/validate_legendaryGroup.py
+

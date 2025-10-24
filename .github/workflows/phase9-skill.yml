@@ -1,4 +1,4 @@
-﻿name: phase9-skill
+name: phase9-skill
 on:
   pull_request:
     paths:
@@ -32,4 +32,5 @@ jobs:
       - name: Validate skill.json
         run: |
           python scripts/phase9/validate_skill.py
+
 

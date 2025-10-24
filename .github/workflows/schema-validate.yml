@@ -1,4 +1,4 @@
-﻿name: Schema Validation (warn-only)
+name: Schema Validation (warn-only)
 
 on:
   push:
@@ -39,4 +39,5 @@ jobs:
           name: validation-log
           path: reports/**/validation.log
           if-no-files-found: warn
+
 

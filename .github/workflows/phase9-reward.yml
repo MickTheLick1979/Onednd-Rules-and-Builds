@@ -1,4 +1,4 @@
-﻿name: phase9-reward
+name: phase9-reward
 on:
   pull_request:
     paths:
@@ -32,4 +32,5 @@ jobs:
       - name: Validate reward.json
         run: |
           python scripts/phase9/validate_reward.py
+
 

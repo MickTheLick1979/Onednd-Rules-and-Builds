@@ -1,4 +1,4 @@
-﻿name: Phase 9 — featFluff
+name: Phase 9 — featFluff
 
 on:
   push:
@@ -36,3 +36,4 @@ jobs:
           fi
       - name: Validate featFluff
         run: python scripts/phase9/validate_featFluff.py
+

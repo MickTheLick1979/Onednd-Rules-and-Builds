@@ -1,4 +1,4 @@
-﻿name: Phase 9 — spells_by_class_level
+name: Phase 9 — spells_by_class_level
 on: [push, pull_request]
 jobs:
   validate:
@@ -18,3 +18,4 @@ jobs:
           python-version: "3.x"
       - name: Validate spells_by_class_level schema
         run: python scripts/phase9/validate_spells_by_class_level.py
+

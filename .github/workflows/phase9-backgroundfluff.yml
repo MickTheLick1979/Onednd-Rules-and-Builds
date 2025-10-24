@@ -1,4 +1,4 @@
-﻿name: Phase 9 — backgroundFluff
+name: Phase 9 — backgroundFluff
 
 on:
   push:
@@ -36,3 +36,4 @@ jobs:
           fi
       - name: Validate backgroundFluff
         run: python scripts/phase9/validate_backgroundFluff.py
+

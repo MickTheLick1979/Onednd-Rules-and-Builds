@@ -1,4 +1,4 @@
-﻿name: phase9-feat
+name: phase9-feat
 on:
   pull_request:
     paths:
@@ -32,4 +32,5 @@ jobs:
       - name: Validate feat.json
         run: |
           python scripts/phase9/validate_feat.py
+
 

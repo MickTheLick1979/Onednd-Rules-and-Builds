@@ -1,0 +1,13 @@
+name: Phase 9 — spells_by_class_level
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Validate spells_by_class_level schema
+        run: python scripts/phase9/validate_spells_by_class_level.py

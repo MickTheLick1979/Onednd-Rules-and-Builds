@@ -1,4 +1,4 @@
-﻿name: Phase 9 — language (strict)
+name: Phase 9 — language (strict)
 
 on:
   push:
@@ -46,3 +46,4 @@ jobs:
           PYTHONPATH: ${{ github.workspace }}
         run: |
           python -m scripts.validate_phase9_language
+

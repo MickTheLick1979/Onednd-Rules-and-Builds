@@ -1,4 +1,4 @@
-﻿name: phase9-speciesFeature
+name: phase9-speciesFeature
 on:
   pull_request:
     paths:
@@ -32,4 +32,5 @@ jobs:
       - name: Validate speciesFeature.json
         run: |
           python scripts/phase9/validate_speciesFeature.py
+
 

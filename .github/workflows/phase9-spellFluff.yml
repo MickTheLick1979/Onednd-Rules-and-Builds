@@ -1,4 +1,4 @@
-﻿name: phase9-spellFluff
+name: phase9-spellFluff
 on:
   pull_request:
     paths:
@@ -32,4 +32,5 @@ jobs:
       - name: Validate spellFluff.json
         run: |
           python scripts/phase9/validate_spellFluff.py
+
 

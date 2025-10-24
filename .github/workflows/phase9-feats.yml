@@ -1,4 +1,4 @@
-﻿name: Phase 9 — Feats (strict)
+name: Phase 9 — Feats (strict)
 
 on:
   pull_request:
@@ -45,4 +45,5 @@ jobs:
       - name: Run strict validator
         run: |
           python scripts/validate_phase9_feats.py --file rules/2024/feat.json --schema schema/2024/v1/rules.feat.schema.json
+
 

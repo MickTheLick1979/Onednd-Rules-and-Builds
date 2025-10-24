@@ -1,4 +1,4 @@
-﻿name: phase9-subclass
+name: phase9-subclass
 on:
   pull_request:
     paths:
@@ -32,4 +32,5 @@ jobs:
       - name: Validate subclass.json
         run: |
           python scripts/phase9/validate_subclass.py
+
 

@@ -1,4 +1,4 @@
-﻿name: phase9-itemTypeAdditionalEntries
+name: phase9-itemTypeAdditionalEntries
 on:
   pull_request:
     paths:
@@ -32,4 +32,5 @@ jobs:
       - name: Validate itemTypeAdditionalEntries.json
         run: |
           python scripts/phase9/validate_itemTypeAdditionalEntries.py
+
 

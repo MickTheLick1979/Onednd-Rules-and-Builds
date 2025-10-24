@@ -1,4 +1,4 @@
-﻿name: phase9-spell-index-guard
+name: phase9-spell-index-guard
 on:
   pull_request:
     paths:
@@ -36,4 +36,5 @@ jobs:
       - name: Fail if index changed
         run: |
           git diff --exit-code -- indexes/2024/spells_by_class_level.json
+
 

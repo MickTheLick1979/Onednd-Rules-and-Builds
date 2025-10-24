@@ -1,4 +1,4 @@
-﻿name: Phase 9 - Monsters (strict)
+name: Phase 9 - Monsters (strict)
 
 on:
   pull_request:
@@ -42,4 +42,5 @@ jobs:
       - name: Run strict validator
         run: |
           python scripts/validate_phase9_monsters.py --file rules/2024/monster.json --schema schema/2024/v1/rules.monster.schema.json
+
 

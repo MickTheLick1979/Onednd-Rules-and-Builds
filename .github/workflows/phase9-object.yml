@@ -1,4 +1,4 @@
-﻿name: phase9-object
+name: phase9-object
 on:
   pull_request:
     paths:
@@ -32,4 +32,5 @@ jobs:
       - name: Validate object.json
         run: |
           python scripts/phase9/validate_object.py
+
 

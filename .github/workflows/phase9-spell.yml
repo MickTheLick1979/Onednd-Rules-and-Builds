@@ -1,4 +1,4 @@
-﻿name: Phase 9 — spell
+name: Phase 9 — spell
 on: [push, pull_request]
 jobs:
   validate:
@@ -18,3 +18,4 @@ jobs:
           python-version: "3.x"
       - name: Validate spell schema
         run: python scripts/phase9/validate_spell.py
+

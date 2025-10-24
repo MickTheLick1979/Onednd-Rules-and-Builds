@@ -1,4 +1,4 @@
-﻿name: phase9-action
+name: phase9-action
 
 on:
   pull_request:
@@ -34,4 +34,5 @@ jobs:
       - name: Validate action.json
         run: |
           python scripts/phase9/validate_action.py
+
 

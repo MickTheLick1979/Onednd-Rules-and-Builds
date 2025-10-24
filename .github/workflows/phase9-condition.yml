@@ -1,4 +1,4 @@
-﻿name: phase9-condition
+name: phase9-condition
 on:
   pull_request:
     paths:
@@ -32,4 +32,5 @@ jobs:
       - name: Validate condition.json
         run: |
           python scripts/phase9/validate_condition.py
+
 

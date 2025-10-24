@@ -1,4 +1,4 @@
-﻿name: phase9-tableGroup
+name: phase9-tableGroup
 on:
   pull_request:
     paths:
@@ -32,4 +32,5 @@ jobs:
       - name: Validate tableGroup.json
         run: |
           python scripts/phase9/validate_tableGroup.py
+
 

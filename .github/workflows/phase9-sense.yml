@@ -1,4 +1,4 @@
-﻿name: phase9-sense
+name: phase9-sense
 on:
   pull_request:
     paths:
@@ -32,4 +32,5 @@ jobs:
       - name: Validate sense.json
         run: |
           python scripts/phase9/validate_sense.py
+
 

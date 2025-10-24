@@ -1,4 +1,4 @@
-﻿name: phase9-itemProperty
+name: phase9-itemProperty
 on:
   pull_request:
     paths:
@@ -32,4 +32,5 @@ jobs:
       - name: Validate itemProperty.json
         run: |
           python scripts/phase9/validate_itemProperty.py
+
 

@@ -1,4 +1,4 @@
-﻿name: Phase 7 Pilot — strict schema for spells index
+name: Phase 7 Pilot — strict schema for spells index
 
 on:
   push:
@@ -30,4 +30,5 @@ jobs:
 
       - name: Run Phase 7 strict validator
         run: python scripts/validate_phase7_pilot.py
+
 

@@ -1,4 +1,4 @@
-﻿name: Phase 9 — indexes.spells_by_class_level
+name: Phase 9 — indexes.spells_by_class_level
 
 on:
   push:
@@ -36,3 +36,4 @@ jobs:
           fi
       - name: Validate indexes.spells_by_class_level
         run: python scripts/phase9/validate_indexes.spells_by_class_level.py
+
