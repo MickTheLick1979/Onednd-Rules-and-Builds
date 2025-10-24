@@ -86,7 +86,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: ci-reports
+          name: ci-reports-${{ matrix.target }}
           path: reports/ci/
           if-no-files-found: warn
           retention-days: 7
