@@ -1,0 +1,39 @@
+name: phase9-tableGroup
+on:
+  pull_request:
+    paths:
+      - "rules/2024/tableGroup.json"
+      - "schema/2024/v1/tableGroup.schema.json"
+      - "scripts/phase9/validate_tableGroup.py"
+      - ".github/workflows/phase9-tableGroup.yml"
+  push:
+    branches: [ master ]
+    paths:
+      - "rules/2024/tableGroup.json"
+      - "schema/2024/v1/tableGroup.schema.json"
+      - "scripts/phase9/validate_tableGroup.py"
+      - ".github/workflows/phase9-tableGroup.yml"
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install jsonschema
+      - name: Validate tableGroup.json
+        run: |
+          python scripts/phase9/validate_tableGroup.py
+
+
+
+
+
