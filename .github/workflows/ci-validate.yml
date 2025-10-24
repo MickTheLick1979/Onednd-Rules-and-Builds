@@ -1,4 +1,4 @@
-﻿name: CI - Validate 2024 Data
+name: CI - Validate 2024 Data
 
 on:
   workflow_dispatch:
@@ -107,3 +107,4 @@ jobs:
           path: ci_out/${{ matrix.target }}/**
           if-no-files-found: error
           retention-days: 7
+
