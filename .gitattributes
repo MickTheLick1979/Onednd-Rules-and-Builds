@@ -1,14 +1,11 @@
-* text=auto
+﻿# --- Canonical line endings: LF; ensure text normalization ---
+*           text=auto
 
-# LF for project files
-*.yml  eol=lf
-*.yaml eol=lf
-*.py   eol=lf
-*.md   eol=lf
-*.json eol=lf
+*.{json,jsonc,json5}  text eol=lf
+*.{yml,yaml}          text eol=lf
+*.{py,ps1,psm1,psd1}  text eol=lf
+*.md                  text eol=lf
+*.txt                 text eol=lf
 
-# CRLF for Windows scripts
-*.ps1  eol=crlf
-*.psm1 eol=crlf
-*.cmd  eol=crlf
-*.bat  eol=crlf
+# Do not attempt CRLF for Windows just because it's Windows:
+# we build on Linux runners; LF everywhere keeps diffs clean.
