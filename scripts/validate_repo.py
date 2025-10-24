@@ -62,16 +62,7 @@ def main():
 
     if rc == 0:
         data = load_json(data_fp)
-schema = load_json(schema_fp)
-# If data is wrapped like {"language": [...]}, unwrap it for validation
-try:
-    if isinstance(data, dict) and name in data:
-        data = data[name]
-        # note in meta
-        if isinstance(meta, dict):
-            meta["unwrapped_key"] = name
-except Exception:
-    pass
+        schema = load_json(schema_fp)
         # Use absolute base for resolving $ref
         resolver = RefResolver(base_uri=schema_fp.resolve().parent.as_uri() + "/", referrer=schema)
         validator = Draft202012Validator(schema, resolver=resolver)
