@@ -1,0 +1,51 @@
+name: phase9-background
+
+on:
+  pull_request:
+    paths:
+      - "rules/2024/background.json"
+      - "schema/2024/v1/background.schema.json"
+      - "scripts/phase9/validate_background.py"
+      - ".github/workflows/phase9-background.yml"
+  push:
+    branches: [ main ]
+    paths:
+      - "rules/2024/background.json"
+      - "schema/2024/v1/background.schema.json"
+      - "scripts/phase9/validate_background.py"
+      - ".github/workflows/phase9-background.yml"
+
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: $\${{ runner.os }}-pip-$\${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            $\${{ runner.os }}-pip-
+      - name: Install deps
+        # normalised: pinned-runtime
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+      - name: Validate background.json
+        run: |
+          python scripts/phase9/validate_background.py
+
+
+
+
+
+

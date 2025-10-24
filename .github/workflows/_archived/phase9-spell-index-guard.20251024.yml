@@ -1,0 +1,57 @@
+name: phase9-spell-index-guard
+on:
+  pull_request:
+    paths:
+      - "rules/2024/spell.json"
+      - "rules/2024/mappings/spell_levels_xphb.json"
+      - "rules/2024/mappings/spell_to_classes_xphb.json"
+      - "indexes/2024/spells_by_class_level.json"
+      - "scripts/phase9/build_spells_by_class_level.py"
+      - ".github/workflows/phase9-spell-index-guard.yml"
+  push:
+    branches: [ master ]
+    paths:
+      - "rules/2024/spell.json"
+      - "rules/2024/mappings/spell_levels_xphb.json"
+      - "rules/2024/mappings/spell_to_classes_xphb.json"
+      - "indexes/2024/spells_by_class_level.json"
+      - "scripts/phase9/build_spells_by_class_level.py"
+      - ".github/workflows/phase9-spell-index-guard.yml"
+
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  check-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: $\${{ runner.os }}-pip-$\${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            $\${{ runner.os }}-pip-
+      - name: Install deps
+        # normalised: pinned-runtime
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+      - name: Rebuild index deterministically
+        run: |
+          python scripts/phase9/build_spells_by_class_level.py
+      - name: Fail if index changed
+        run: |
+          git diff --exit-code -- indexes/2024/spells_by_class_level.json
+
+
+
+
+
+
