@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   hygiene:
-    name: Hygiene — no BOM, no CRLF
+    name: Hygiene â€” no BOM, no CRLF
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -98,16 +98,14 @@ jobs:
             echo "pip=$(pip --version 2>&1)"
             date -u +"utc=%Y-%m-%dT%H:%M:%SZ"
           } > "$out/summary.txt"
-
       - name: Compute safe artifact name
         if: always()
         shell: bash
         run: |
           set -euo pipefail
-          # Replace any non-portable chars with '-'
-          SAFE="logs-$(echo '${{ matrix.target }}' | tr ':' '-' | tr -c '[:alnum:]_.-+' '-')"
+          # Sanitize target for artifact name: allow [A-Za-z0-9_.-], replace everything else with '-'
+          SAFE="logs-$(printf "%s" "${{ matrix.target }}" | sed -E 's/[^A-Za-z0-9_.-]+/-/g')"
           echo "ART_NAME=$SAFE" >> "$GITHUB_ENV"
-
       - name: Upload logs
         if: always()
         uses: actions/upload-artifact@v4
