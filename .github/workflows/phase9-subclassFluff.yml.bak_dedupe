@@ -1,0 +1,40 @@
+name: phase9-subclassFluff
+on:
+  pull_request:
+    paths:
+      - "rules/2024/subclassFluff.json"
+      - "schema/2024/v1/subclassFluff.schema.json"
+      - "scripts/phase9/validate_subclassFluff.py"
+      - ".github/workflows/phase9-subclassFluff.yml"
+  push:
+    branches: [ master ]
+    paths:
+      - "rules/2024/subclassFluff.json"
+      - "schema/2024/v1/subclassFluff.schema.json"
+      - "scripts/phase9/validate_subclassFluff.py"
+      - ".github/workflows/phase9-subclassFluff.yml"
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install jsonschema
+      - name: Validate subclassFluff.json
+        run: |
+          python scripts/phase9/validate_subclassFluff.py
+
+
+
+
+
+

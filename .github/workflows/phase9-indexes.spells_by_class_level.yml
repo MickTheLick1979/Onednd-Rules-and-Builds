@@ -1,4 +1,4 @@
-name: Phase 9 — indexes.spells_by_class_level
+name: Phase 9 â€” indexes.spells_by_class_level
 
 on:
   push:
