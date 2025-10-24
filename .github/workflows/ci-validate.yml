@@ -59,10 +59,14 @@ jobs:
             pip install -r requirements.lock
           elif [ -f requirements.txt ]; then
             pip install -r requirements.txt
-          else:
+          else
             pip install "jsonschema>=4.21,<5"
           fi
 
+      - name: Ensure jsonschema
+        shell: bash
+        run: |
+          pip install "jsonschema>=4.21,<5"
       - name: Prepare reports directory
         shell: bash
         run: |
