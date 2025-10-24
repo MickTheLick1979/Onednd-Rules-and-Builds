@@ -1,4 +1,4 @@
-name: CI — Validate 2024 Data
+name: CI Ã¢â‚¬â€ Validate 2024 Data
 
 on:
   push:
@@ -75,28 +75,28 @@ jobs:
             echo "scripts/validate_repo.py not found; creating a SHIM that fails with rc=2 and writes an error report." >&2
             mkdir -p scripts
             cat > scripts/validate_repo.py << 'PYEOF'
-#!/usr/bin/env python3
-import argparse, json, sys, pathlib
-ap = argparse.ArgumentParser()
-ap.add_argument("--target", required=True)
-ap.add_argument("--baseline", required=True)
-ap.add_argument("--indexes", required=True)
-ap.add_argument("--schema-root", required=True)
-ap.add_argument("--out", required=True)
-args = ap.parse_args()
-p = pathlib.Path(args.out)
-p.parent.mkdir(parents=True, exist_ok=True)
-err = {
-  "status": "error",
-  "code": 2,
-  "message": "Validator entrypoint missing. Please add scripts/validate_repo.py (Draft 2020-12).",
-  "target": args.target,
-  "expected_cmd": f'python scripts/validate_repo.py --target "{args.target}" --baseline "{args.baseline}" --indexes "{args.indexes}" --schema-root "{args.schema_root}" --out "{args.out}"'
-}
-p.write_text(json.dumps(err, indent=2), encoding="utf-8")
-print(err["message"], file=sys.stderr)
-sys.exit(2)
-PYEOF
+  #!/usr/bin/env python3
+  import argparse, json, sys, pathlib
+  ap = argparse.ArgumentParser()
+  ap.add_argument("--target", required=True)
+  ap.add_argument("--baseline", required=True)
+  ap.add_argument("--indexes", required=True)
+  ap.add_argument("--schema-root", required=True)
+  ap.add_argument("--out", required=True)
+  args = ap.parse_args()
+  p = pathlib.Path(args.out)
+  p.parent.mkdir(parents=True, exist_ok=True)
+  err = {
+    "status": "error",
+    "code": 2,
+    "message": "Validator entrypoint missing. Please add scripts/validate_repo.py (Draft 2020-12).",
+    "target": args.target,
+    "expected_cmd": f'python scripts/validate_repo.py --target "{args.target}" --baseline "{args.baseline}" --indexes "{args.indexes}" --schema-root "{args.schema_root}" --out "{args.out}"'
+  }
+  p.write_text(json.dumps(err, indent=2), encoding="utf-8")
+  print(err["message"], file=sys.stderr)
+  sys.exit(2)
+  PYEOF
             chmod +x scripts/validate_repo.py
           fi
 
