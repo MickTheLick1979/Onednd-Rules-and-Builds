@@ -14,3 +14,5 @@ indexes/2024/_build.json
 *.bak_*
 *.bak*
 *.bak_harden
+# Ignore transient workflow scratch area
+.github/workflows/_scratch/
