@@ -86,7 +86,7 @@ jobs:
             --baseline "rules/2024" \
             --indexes "indexes/2024" \
             --schema-root "schema/2024/v1" \
-            --out "reports/ci/${{ matrix.target }}.json"
+            --out "reports/ci/${{ env.SAFE_NAME }}.json"
 
       - name: Upload validation reports
         if: always()
