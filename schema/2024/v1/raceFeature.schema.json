@@ -1,4 +1,4 @@
-﻿{
+{
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "raceFeature (v1)",
   "description": "Conservative v1 schema for legacy 2014 raceFeature (Phase 9). Prefer speciesFeature going forward.",

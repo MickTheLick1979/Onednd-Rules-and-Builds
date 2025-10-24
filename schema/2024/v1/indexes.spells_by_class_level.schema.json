@@ -1,4 +1,4 @@
-﻿{
+{
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "indexes.spells_by_class_level.schema.v1.json",
   "title": "Indexes: Spells by Class+Level (v1 pilot)",

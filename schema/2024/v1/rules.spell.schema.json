@@ -1,4 +1,4 @@
-﻿{
+{
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://onednd.local/schema/2024/v1/rules.spell.schema.json",
   "title": "2024 Rules — Spell (v1)",

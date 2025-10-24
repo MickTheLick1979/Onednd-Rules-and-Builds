@@ -1,4 +1,4 @@
-﻿{
+{
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.com/schema/2024/v1/rules.background.schema.json",
   "title": "One D&D 2024 — Background (v1, conservative)",
