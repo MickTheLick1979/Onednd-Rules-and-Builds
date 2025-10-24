@@ -26,6 +26,10 @@ jobs:
       - uses: actions/checkout@v4
       - name: Set up Python
         uses: actions/setup-python@v5
+        uses: - name: Install deps
+        uses:   run: |
+        uses:     python -m pip install --upgrade pip
+        uses:     pip install -r requirements.txt
         with:
           python-version: "3.x"
       - name: Install dependencies
@@ -35,3 +39,4 @@ jobs:
       - name: Run strict validator
         run: |
           python scripts/validate_phase9_monsters.py --file rules/2024/monster.json --schema schema/2024/v1/rules.monster.schema.json
+
