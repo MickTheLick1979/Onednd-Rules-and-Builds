@@ -33,6 +33,7 @@ jobs:
     needs: hygiene
     strategy:
       fail-fast: false
+    # Minimal, known-good targets
       matrix:
         target:
           - spell
@@ -107,4 +108,3 @@ jobs:
           path: ci_out/${{ matrix.target }}/**
           if-no-files-found: error
           retention-days: 7
-
