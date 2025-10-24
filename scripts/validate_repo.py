@@ -43,7 +43,8 @@ def main():
     if rc == 0:
         data = load_json(data_fp)
         schema = load_json(schema_fp)
-        resolver = RefResolver(base_uri=schema_fp.parent.as_uri() + "/", referrer=schema)
+        # Use absolute path for $ref base
+        resolver = RefResolver(base_uri=schema_fp.resolve().parent.as_uri() + "/", referrer=schema)
         validator = Draft202012Validator(schema, resolver=resolver)
         errors = sorted(validator.iter_errors(data), key=lambda e: (list(e.path), e.message))
         if errors:
