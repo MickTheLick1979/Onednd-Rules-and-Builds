@@ -4,7 +4,7 @@ import argparse, json, sys, pathlib
 from jsonschema import Draft202012Validator, RefResolver  # jsonschema>=4.21
 
 def load_json(p: pathlib.Path):
-    return json.loads(p.read_text(encoding="utf-8"))
+    return json.loads(p.read_text(encoding="utf-8-sig"))
 
 def main():
     ap = argparse.ArgumentParser()
