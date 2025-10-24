@@ -1,19 +1,31 @@
-name: Phase 9 — spell
+name: Phase 9 Ã¢â‚¬â€ spell
 on: [push, pull_request]
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        # normalised: pinned-runtime
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        # normalised: pinned-runtime
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
       - uses: actions/checkout@v4
       - name: Set up Python
         uses: actions/setup-python@v5
         uses: - name: Install deps
         uses:   run: |
         uses:     python -m pip install --upgrade pip
-        - name: Install deps
-          run: |
-            python -m pip install --upgrade pip
-            pip install -r requirements.txt
         with:
           python-version: "3.x"
       - name: Validate spell schema

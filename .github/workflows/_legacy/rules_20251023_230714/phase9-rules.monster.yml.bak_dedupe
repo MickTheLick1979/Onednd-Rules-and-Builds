@@ -1,4 +1,4 @@
-name: Phase 9 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â rules.monster
+name: Phase 9 ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â rules.monster
 
 on:
   push:
@@ -17,6 +17,14 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        # normalised: pinned-runtime
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"

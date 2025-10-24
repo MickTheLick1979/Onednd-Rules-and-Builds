@@ -1,4 +1,4 @@
-name: Phase 9 — language (strict)
+name: Phase 9 Ã¢â‚¬â€ language (strict)
 
 on:
   push:
@@ -26,6 +26,22 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        # normalised: pinned-runtime
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        # normalised: pinned-runtime
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Python
@@ -33,14 +49,8 @@ jobs:
         uses: - name: Install deps
         uses:   run: |
         uses:     python -m pip install --upgrade pip
-        - name: Install deps
-          run: |
-            python -m pip install --upgrade pip
-            pip install -r requirements.txt
         with:
           python-version: "3.x"
-      - name: Install deps
-        run: python -m pip install --upgrade pip jsonschema
       - name: Validate language
         env:
           PYTHONPATH: ${{ github.workspace }}

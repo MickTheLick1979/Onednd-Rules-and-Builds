@@ -1,4 +1,4 @@
-name: Phase 8 â€” Spells (strict)
+name: Phase 8 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Spells (strict)
 
 on:
   pull_request:
@@ -17,6 +17,9 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
       - name: Check out
         uses: actions/checkout@v4
         with:

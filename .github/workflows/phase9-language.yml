@@ -1,4 +1,4 @@
-name: Phase 9 â€” language (strict)
+name: Phase 9 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â language (strict)
 
 on:
   push:
@@ -34,6 +34,9 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Python
