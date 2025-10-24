@@ -19,3 +19,4 @@ jobs:
       - name: Validate spells_by_class_level schema
         run: python scripts/phase9/validate_spells_by_class_level.py
 
+

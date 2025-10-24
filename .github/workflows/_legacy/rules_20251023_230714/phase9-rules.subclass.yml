@@ -32,3 +32,4 @@ jobs:
           fi
       - name: Validate rules.subclass
         run: python scripts/phase9/validate_rules.subclass.py
+

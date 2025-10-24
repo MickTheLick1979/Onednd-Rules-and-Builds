@@ -37,3 +37,4 @@ jobs:
       - name: Validate legendaryGroup
         run: python scripts/phase9/validate_legendaryGroup.py
 
+

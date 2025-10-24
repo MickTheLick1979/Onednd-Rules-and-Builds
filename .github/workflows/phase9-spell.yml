@@ -19,3 +19,4 @@ jobs:
       - name: Validate spell schema
         run: python scripts/phase9/validate_spell.py
 
+

@@ -38,3 +38,4 @@ jobs:
           git diff --exit-code -- indexes/2024/spells_by_class_level.json
 
 
+

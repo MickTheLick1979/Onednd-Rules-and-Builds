@@ -37,3 +37,4 @@ jobs:
       - name: Validate indexes.spells_by_class_level
         run: python scripts/phase9/validate_indexes.spells_by_class_level.py
 
+
