@@ -33,3 +33,4 @@ jobs:
       - name: Validate rules.action
         run: python scripts/phase9/validate_rules.action.py
 
+
