@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schema/2024/v1/indexes.feats_by_prereq.schema.json",
+  "title": "Index — feats_by_prereq (v1)",
+  "description": "Maps prerequisite strings (e.g., 'CHA>=13', 'Level>=4') to arrays of feat names.",
+  "type": "object",
+  "additionalProperties": false,
+  "patternProperties": {
+    ".*": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    }
+  }
+}
