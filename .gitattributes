@@ -1,4 +1,4 @@
-﻿# --- Canonical line endings: LF; ensure text normalization ---
+# --- Canonical line endings: LF; ensure text normalization ---
 *           text=auto
 
 *.{json,jsonc,json5}  text eol=lf

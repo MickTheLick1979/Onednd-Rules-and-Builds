@@ -1,4 +1,4 @@
-﻿# Project Instructions — One D&D 2024 Character Build Repo
+# Project Instructions — One D&D 2024 Character Build Repo
 
 ## 0) North Star
 This repo is a clean, machine-readable dataset and indexes for building characters using 2024 One D&D rules only. Nothing else is included. Focus = things you pick for a character or that directly affect builds. Monsters are included (for optimisation vs. enemies). Magic items and adventure content are excluded.

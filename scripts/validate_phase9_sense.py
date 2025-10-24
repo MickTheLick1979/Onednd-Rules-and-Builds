@@ -1,4 +1,4 @@
-﻿import os, sys, glob
+import os, sys, glob
 from scripts._validation_common import run_standard_validation
 
 def resolve_data_path():

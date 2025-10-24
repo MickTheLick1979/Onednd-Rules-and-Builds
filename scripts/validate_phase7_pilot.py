@@ -1,4 +1,4 @@
-﻿import json, sys, pathlib
+import json, sys, pathlib
 from jsonschema import validate, Draft202012Validator
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]

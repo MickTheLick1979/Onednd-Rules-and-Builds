@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 Hygiene check: fail if any tracked text file contains a UTF-8 BOM or CRLF line endings.
 - Determines "text" by scanning for NUL bytes (binary => skip).

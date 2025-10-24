@@ -1,4 +1,4 @@
-﻿import argparse, json, sys
+import argparse, json, sys
 from pathlib import Path
 from jsonschema import Draft202012Validator, exceptions as js_exc
 

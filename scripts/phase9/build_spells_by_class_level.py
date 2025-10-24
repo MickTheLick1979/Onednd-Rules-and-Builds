@@ -1,4 +1,4 @@
-﻿import json, os
+import json, os
 from collections import defaultdict
 
 REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))

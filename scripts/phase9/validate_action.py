@@ -1,4 +1,4 @@
-﻿import json, os, sys
+import json, os, sys
 from jsonschema import Draft202012Validator
 
 REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))

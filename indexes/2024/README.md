@@ -1,4 +1,4 @@
-﻿# 2024 Indexes (generated)
+# 2024 Indexes (generated)
 
 Source: rules/2024/baseline/2025-08-11_core (immutable). Do not edit these JSONs by hand.
 

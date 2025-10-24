@@ -1,4 +1,4 @@
-﻿# One D&D 2024 – Core Rules & Player Build Reference
+# One D&D 2024 – Core Rules & Player Build Reference
 
 ## Overview
 This repository contains a **clean, filtered extract** of One D&D 2024 rules and data from the [5etools](https://5etools-mirror-1.github.io/) source files.

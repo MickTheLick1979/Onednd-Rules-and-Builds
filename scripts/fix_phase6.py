@@ -1,4 +1,4 @@
-﻿import json, pathlib, sys
+import json, pathlib, sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 RULES = ROOT / "rules" / "2024"

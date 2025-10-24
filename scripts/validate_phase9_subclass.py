@@ -1,4 +1,4 @@
-﻿import glob, sys
+import glob, sys
 from scripts._validation_common import run_standard_validation
 
 def _resolve_path():

@@ -1,4 +1,4 @@
-﻿import sys
+import sys
 from scripts._validation_common import run_standard_validation
 
 if __name__ == "__main__":

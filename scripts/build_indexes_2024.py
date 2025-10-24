@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 r"""
 build_indexes_2024.py
 Reads the immutable 2024 core baseline and emits lightweight JSON indexes.

@@ -1,4 +1,4 @@
-﻿r"""
+r"""
 build_indexes_2024.py
 Reads the immutable 2024 core baseline and emits lightweight JSON indexes.
 
