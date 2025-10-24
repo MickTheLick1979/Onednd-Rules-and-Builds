@@ -1,90 +1,178 @@
-# One D&D 2024 – Core Rules & Player Build Reference
+# One D&D 2024 — Core Rules & Indexes
 
-## Overview
-This repository contains a **clean, filtered extract** of One D&D 2024 rules and data from the [5etools](https://5etools-mirror-1.github.io/) source files.
+![CI — Validate 2024 Data](https://github.com/MickTheLick1979/Onednd-Rules-and-Builds/actions/workflows/ci-validate.yml/badge.svg)
 
-It is purpose-built for:
-- **Character creation & optimisation**
-- **Core game mechanics reference** (e.g., grappling, unarmed strikes, conditions)
-- **Monster statistics** for meta-analysis (e.g., resistances, common saves, average ACs)
-
-All data is in JSON format for easy querying and integration with ChatGPT or other tools.
-
-## Scope
-
-### Included
-- **Character options**  
-  Backgrounds, classes, subclasses, races (One D&D terminology: “species”), feats, optional features, languages.
-- **Spells**
-- **Equipment & items** (including magic items and item properties)
-- **Core mechanics & rules**  
-  Actions, conditions, skills, senses, variant rules, rules tables.
-- **Monsters & legendary groups** for build-relevant analytics.
-
-### Excluded
-- Adventure/module content
-- Treasure tables & art objects
-- Vehicles, traps, facilities
-- Any content not relevant to player builds or core rules mechanics
-
-## How It’s Built
-All data is pulled from a local 5etools repo using:
-- scripts/build_rules_2024.py – Extracts only 2024 content from allowed sources (XPHB, XDMG, XMM, and any future X* sources), filtered by a strict allow-list of categories.
-- scripts/verify_rules_2024.py – Compares your local 5etools data to the export to confirm counts and spot missing or extra categories.
-
-A strict **per-entry** source filter ensures:
-- Only 2024/X* sources are included
-- No mixed-edition data
-- No stale files from older builds
-
-## Updating the Data
-
-### 1. Build the export
-\\\powershell
-python .\scripts\build_rules_2024.py 
-  --src "C:\5eTools\5etools-src-main\data" 
-  --out "C:\MyGitHubRepos\Onednd-Rules-and-Builds\rules\2024" 
-  --sources XPHB,XDMG,XMM 
-  --accept-xprefix
-\\\
-
-### 2. Verify the export
-\\\powershell
-python .\scripts\verify_rules_2024.py 
-  --src "C:\5eTools\5etools-src-main\data" 
-  --out "C:\MyGitHubRepos\Onednd-Rules-and-Builds\rules\2024"
-\\\
-
-### 3. Commit & push
-\\\powershell
-git add rules/2024
-git commit -m "Update core 2024 rules export"
-git push
-\\\
-
-## Monster Analytics
-Use scripts/analyse_monsters.py for quick queries over the monster dataset.
-
-Examples:
-\\\powershell
-# Top 20 most common resistances
-python .\scripts\analyse_monsters.py resist
-
-# Monsters that resist fire
-python .\scripts\analyse_monsters.py resist --type fire
-
-# Save proficiencies and average bonuses
-python .\scripts\analyse_monsters.py saves
-
-# Average AC overall and by CR
-python .\scripts\analyse_monsters.py ac
-\\\
+> **Read this first:** For environment, encodings, CI conventions, and day‑to‑day guardrails, see **`OneDND-Assistant-Playbook.md`** (PowerShell **7.5.4**, Python **3.11**, UTF‑8 **no BOM**, **LF** endings, single matrix CI).
 
 ---
 
-**Note:**  
-This repo deliberately excludes anything that does not directly impact player build decisions or core gameplay mechanics.
+## Purpose
 
-### CI Status
-![CI � Validate 2024 Data](https://github.com/MickTheLick1979/Onednd-Rules-and-Builds/actions/workflows/ci-validate.yml/badge.svg)
+Ship a **self-contained** One D&D 2024 rules dataset derived from 5etools that downstream tools can consume directly: **cleaned**, **deduped**, and **indexed** JSON—no need to bundle the full 5etools source.
 
+---
+
+## Goals
+
+1. **Self-contained output**: rules, mappings, and indexes live in-repo.  
+2. **Minimal & accurate**: include only 2024/X* (e.g., XPHB) sources; dedupe & normalize.  
+3. **Maintainable**: updates are “drop new source + rebuild,” not hand patches.  
+4. **Fast lookups**: prebuilt indexes (e.g., *spells by class & level*).
+
+---
+
+## Canonical Layout
+
+```
+rules/
+  2024/
+    spell.json
+    class.json
+    feat.json
+    subclass.json
+    ... (other allowed 2024 categories)
+    mappings/
+      spell_to_classes_xphb.json
+      spell_levels_xphb.json
+
+indexes/
+  2024/
+    spells_by_class_level.json
+    feats_by_prereq.json
+    subclass_features.json
+
+scripts/
+  (build, verify, index builders, CI validators)
+
+docs/
+  reports/
+    2025-10-Phase9-Verification.md  (public snapshot)
+
+reports/   (ignored; local scratch outputs)
+```
+
+> **Reports policy**  
+> - `docs/reports/**` is **tracked** (public snapshots for PRs/audits).  
+> - Top-level `/reports/` remains **ignored** for private scratch output.
+
+---
+
+## Build Pipeline (Phase 9 steady state)
+
+**Orchestrator:** `scripts/run_all.ps1`
+
+1. **Build Rules — `scripts/build_rules_2024.py`**  
+   - Read local 5etools `--src`  
+   - Filter to 2024/X* (e.g., XPHB/XDMG/XMM)  
+   - Dedupe (e.g., ~774 raw spells → **391 unique**)  
+   - Write canonical JSON to `rules/2024/`  
+   - Emit helper mappings to `rules/2024/mappings/`
+
+2. **Verify — `scripts/verify_rules_2024.py`**  
+   - Compare counts vs. source  
+   - Flag mismatches/missing categories  
+   - Confirm expected exclusions (adventures, traps, psionics, legacy fluff, etc.)
+
+3. **Build Indexes — `scripts/build_indexes_2024.py`**  
+   - Consume baseline + mappings  
+   - Write compact indexes to `indexes/2024/`
+
+4. **Commit + (optional) Tag**  
+   - Stage updated rules/indexes  
+   - Commit with a clear, single-purpose message; tag when appropriate
+
+---
+
+## CI & Hygiene (keep it green)
+
+- **Single GitHub Actions workflow**: `.github/workflows/ci-validate.yml`  
+  - **Hygiene job first**: enforces **UTF-8 (no BOM)** + **LF** endings across tracked text  
+  - **Matrix validation (minimal set)**: `spell`, `index:spells_by_class_level`  
+  - Per-target summary artifact uploaded with **sanitized names**
+
+- **Local gate before any commit** (must pass):
+```powershell
+Set-Location C:\MyGitHubRepos\Onednd-Rules-and-Builds
+python scripts\ci\hygiene_check.py
+```
+
+- **Pre-commit hook** runs the same hygiene script; commits are blocked on failure.
+
+> Full environment pins and safe patterns are in **`OneDND-Assistant-Playbook.md`**.
+
+---
+
+## Usage — Refresh Against Latest 5etools
+
+### One-shot (recommended)
+```powershell
+.\scripts\run_all.ps1
+```
+
+### Step-by-step
+```powershell
+# 1) Build rules
+python scripts\build_rules_2024.py --src "C:\5eTools\5etools-src-main\data" --out ".\rules\2024"
+
+# 2) Verify
+python scripts\verify_rules_2024.py --src "C:\5eTools\5etools-src-main\data" --out ".\rules\2024"
+
+# 3) Build indexes
+python scripts\build_indexes_2024.py --baseline ".\rules\2024" --out ".\indexes\2024"
+
+# 4) Commit (after local hygiene passes)
+python scripts\ci\hygiene_check.py
+git add rules/2024 indexes/2024
+git commit -m "Refresh One D&D 2024 rules and indexes"
+git push
+```
+
+**Key notes**
+- Spells: **~391 unique** after dedupe  
+- Spell index classes (8): **Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Warlock, Wizard**  
+- Only 2024/X* categories included; exclusions are intentional and verified
+
+---
+
+## Maintenance & Updates
+
+- **New official content**: drop into the 5etools source, re-run the pipeline, commit refreshed outputs.  
+- **Third-party content**: integrate into the source folder **before** running builds; whitelist explicitly if needed.  
+- **New categories**: update build/verify/index scripts to allowlist/exclude explicitly.  
+- **Public verification snapshots**: publish to `docs/reports/` (tracked); keep `/reports/` ignored.
+
+---
+
+## Phase 9 Outcome (baseline)
+
+- CI **green** with a minimal matrix  
+- Hygiene enforced locally & in CI (UTF-8 no BOM, LF only)  
+- Legacy validators/workflows archived; single consolidated workflow active  
+- Public “clean state” snapshot: `docs/reports/2025-10-Phase9-Verification.md`
+
+---
+
+## Transition to Phase 10 (planned next steps)
+
+- Gradually expand CI matrix (e.g., `index:feats_by_prereq`, `index:subclass_features_by_level`)  
+- Schema hardening + data-diff artifacts for PRs  
+- Optional performance smoke tests (build time, file size thresholds)  
+- Optional release packaging (bundled JSON + checksums)
+
+---
+
+## PR Checklist (paste into PR description)
+
+- [ ] Local hygiene passes (`python scripts\ci\hygiene_check.py`)  
+- [ ] Only 2024/X* sources included; exclusions unchanged  
+- [ ] `rules/2024/` and `indexes/2024/` updated as intended  
+- [ ] CI green (hygiene + matrix) with artifacts  
+- [ ] Public snapshots (if any) live under `docs/reports/` and are normalized (UTF-8 no BOM, LF)  
+- [ ] Commit message is clear and single-purpose
+
+---
+
+## References
+
+- **Environment & guardrails**: `OneDND-Assistant-Playbook.md`  
+- **Verification snapshot**: `docs/reports/2025-10-Phase9-Verification.md`
