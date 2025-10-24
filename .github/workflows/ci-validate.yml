@@ -72,6 +72,12 @@ jobs:
         run: |
           mkdir -p reports/ci
 
+      - name: Sanitise artifact name
+        shell: bash
+        run: |
+          SAFE="${{ matrix.target }}"
+          SAFE="${SAFE//:/-}"
+          echo "SAFE_NAME=$SAFE" >> "$GITHUB_ENV"
       - name: Run repo validator
         shell: bash
         run: |
@@ -86,7 +92,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: ci-reports-${{ matrix.target }}
+          name: ci-reports-${{ env.SAFE_NAME }}
           path: reports/ci/
           if-no-files-found: warn
           retention-days: 7
