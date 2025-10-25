@@ -18,4 +18,5 @@ indexes/2024/_build.json
 .github/workflows/_scratch/
 # Allow public report snapshots while keeping private /reports ignored
 !docs/reports/
-!docs/reports/**
+!docs/reports/**rules/2024/_backups/
+scripts/fix_spell_schools_step2.ps1
